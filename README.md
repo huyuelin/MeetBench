@@ -11,9 +11,9 @@ It contains three tightly–coupled components:
 
 | Component | What it is | Location |
 |-----------|------------|----------|
-| **MeetAll** | 231 real-world meetings (≈ 140 h) with aligned transcripts, audio recordings, and 1 180 human-verified agent QA turns | `./MeetAll/` |
-| **MeetBench** | A multi-criteria benchmark (CompassJudger + Prometheus) for evaluating meeting assistants across factuality, user-need satisfaction, conciseness, structure and completeness | `./benchmark/` |
-| **MeetMaster** | A dual-process baseline agent (⚡ Talker + 🧠 Planner) that delivers both low-latency and strong reasoning | `./baseline/MeetMaster/` |
+| **MeetAll** | 231 real-world meetings (≈ 140 h) with aligned transcripts, audio recordings, and 1 180 human-verified agent QA turns | `huggingface` |
+| **MeetBench** | A multi-criteria benchmark (CompassJudger + Prometheus) for evaluating meeting assistants across factuality, user-need satisfaction, conciseness, structure and completeness | `./MeetBench_Benchmark/` |
+| **MeetMaster** | A dual-process baseline agent (⚡ Talker + 🧠 Planner) that delivers both low-latency and strong reasoning | `./MeetMaster/` |
 
 All data, code, and pre-trained checkpoints will be released upon acceptance. Please ⭐ **Star** and **Watch** this repo to get notified!
 
