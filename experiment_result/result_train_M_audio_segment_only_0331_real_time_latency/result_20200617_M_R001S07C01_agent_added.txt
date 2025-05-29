@@ -1,0 +1,670 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 66
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.18s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.32it/s]Loading Whisper model...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.41s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.27s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.14s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.75s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.95s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.76s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.70s/it]
+我002我是店长008营养师007看护006互动部今天把大家叫过来开一个会关于上个月各部门的一些运营情况各部门上个月都要想好哪些问题在本次会议当中提出来并解决它营养补吧因为对于咱们养老人来说咱们的饮食非常重要对于老人来说并不是吃饱就好咱们相对于老人来说需要针对个人的身体情况进行一些调整所以说营养方面上咱们还是有在加强营养方面有在加强嗯这就有一个方案方案的话就是说食品种类可以多样化然后根据多样化就可以涉及到一些成本对然后然后就是根据他们那个老人的出处他们从哪来的然后考虑针对他来做一些什么样的食物嗯不再單一化我们这个养老院呢,主要大概都是上岁数的,上岁数的老年人。然后他们那个身体呢都是很都会有一点问题的所以我们也要为做好这些准备一些各方面的医疗器一些然后为这些老年朋友检查身体的这些简单的检查身体的一些东西血肝啊这方面的然后我们还要提供的就是这个紧急的紧急的这个措施对如果有突发情况的话我们就要做好应对进行一些那个演练有演练其实我们要组织这个演练的活动心脏复苏呼吸这个事情发生的时候我们不至于措手不及对嗯 没了嗯嗯复工过 我就是针对咱们那个嗯 60岁以上 70岁以下的生活能够自理的嗯 咱们就是 一般是一个复工 嗯 负责10个老人就在这里如果生活不能自理的,是我们分成了全部能自理,就不能下床。全部的,我们是两个标普。24小时全部是有一种是一个人负责两个的,有一种是一个人负责四个的,加倍成本,我们搞成了一个人负责四个的。这个油它们嗯,但是那个一个人负责四个的服务质量都要差不多了,肯定不能继续。继续?有的我们就可以采用的,用的尿不湿,往年尿不湿了。嗯,是这样的。这样吧,上级同志通知我们,下个月会有世纪领导来,咱们知道了各位有什么建议和意见可以设想的让老人家可以打交道我希望咱们可以设置一个待客餐厅他们领导来审查的时候可以说跟我们老人一块来就是说来体验一下咱们这个餐厅的饮食问题让他们知道咱们这个餐厅不管是环境也好味道也好我们的餐厅都是很一流的我觉得你说一流影响健康影响健康我觉得是绿色的毕竟咱们是一个高端的养老服务养老其他部分我们可以对一些老人进行一些肌肉康复的训练而且对一些生活能自理的老人咱们可以开展一些活动,联合会,下棋,一些等级的活动,娱乐,联谊,还有可以找他们的一些没有住的中心来的人,一些朋友来我们中心参观,为了发展我们潜在的用户做一些活动。嗯衣服这边衣服肯定上帝领导来检查可能会,门径都会参观对我们就是平时的工作有多好吧然后再就是规范,继续规范一下吧等这些紧急措施的那个医疗设备然后平时的特别就是老人做身体检查的这些设备都要比较专业然后也要这个就是质量上肯定就是要过关吧然后咱们那个医护的这个设施,医护厂做的这个设施,要保证干净,维生。各部门近期有接到过土数码,接到过老人的土数码吗?我们部门经常比较多因为我们是用护理经常有说话能力的老人自己打电话说我们照顾途中啊因为老人有些老人有一些老年痴呆了他自己都记不太清楚对我们进行一个途徒有些他们是没有根据的来指责我们这个东西他们也没法取证但是说咱们给他们制造一些麻烦嗯参与了也有因为咱们这个在今后咱们不是可以搞一些视频监控有一些取证虽然搞这个东西这个玩意是双人间也許能發現不利的東西也
+[Text Detection] 在 502.37 秒检测到关键词 '焦焦',current_time: 496.00, 问题文本: 也能到时候给咱一个证据您好 焦焦如何提升营养不食品种类多样化以满足老人个性化饮食需求对复工这边现在是市面上咱们这复工都经过培训的对咱们都是专业服务
+能到时候给咱一个证据您好 焦焦如何提升营养不食品种类多样化以满足老人个性化饮食需求对复工这边现在是市面上咱们这复工都经过培训的对咱们都是专业服务负责十个人这种养活每天就是早中晚看他们的情况巡视一下因为他们有自理能力咱不用实时监控像那个全护的基本上是要求实时监控对他们的护工要最具有严格要被入保持干爽这都是卫生啊明天要到位包括人家家屋那时候咱们一面而然赶到咱们那个服务的到位嗯注视你干什么嗯对是嗯到时候一定要把这一块做好那精神呢你会没有跟着导演做一些游戏吗嗯我们这个需要在医护部门配合一下找一些咱们的配合咱们的心理医生嗯对老人进行一些心理疏导对于一些解决一些老人常常自己不在身边的一些细节心灵有公平或者是别的孩子老来看自己家孩子怎么来看的这心灵都会有问题的身心健康对这就经常给人留到一个非常困难的这方面都是怎么解决的或者是他们那个亲手能不能接来的,今天让你来探望,不能探望的,让我们那个医护心理师他们想办法出道。现在官网过得了就行了,我觉得可以找一个视频。这个我们是经常做的。每个月找视频。有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地大,能满足新手吗?可以,主要是他们散散步,有生活自理能力的,能打的球的可以打的球,打的篮球有的也可以那是有这方面活动量太大现在60岁70岁以下的人差不多能打但是肯定不能说像年轻人这样只有我懂老人吧到老学到了我觉得让老人去学习也是一种方法是有一些书籍的爱学习的不能再强制学习了对给他们提供了一些书籍这是回路啊老人看回忆过几个东西一些老人可以让他写一些回忆录如果有的信息我们肯定是讲话卖了录这就说到了一些有些老人喜欢养一些宠物这就难点了这方面咱们都怎么做呢有些会养一些鸟啊狗啊 小狗啊 小猫啊這個咱們會幫他們放在同一個機率进
+[Text Detection] 在 1009.85 秒检测到关键词 '娇娇',current_time: 992.00, 问题文本: 进行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在养老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够
+行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在养老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够对他们的身心健康有好处这方面是什么观点这个医护部门对我们合理的建议我认为是他们身心健康有积极的作用这个如果说可以考虑但是也得征求就是子女和他们的应典吧对的如果这方面在计算子女的合理南洋老人是对他们的业绩有影响对,他们不愿意出钱,他们不愿意交费,那是关键的南洋老人是为了老人身心健康,身心都要健康才行这方面子女,如果在合同久了,一些老人互相产生这种感情的话咱要也要及时跟苏宁然后我们回报尽量支持保养对然后我们进行汇报一下嗯然后这个事让他们自己解决一下嗯咱们就是采取一种嗯自给自然对生其自然嗯有利引导哦那对嗯还有什么想要说的吗对员工来说,你们认为餐饮部有什么需要改进的?改进呢我就是说一下咱们的员工餐员工餐和养老餐那个员工餐的质量是不是要提高一点领导说说说员工餐的水平是不是要提高一点中餐现在是什么问题?我认为还好吧几十种菜品大肉大肉就是说咱们的因为咱们那个因为营口多嘛咱们都是用大锅做的所以说咱们做的菜有可能稍微的比较那个那个软一点就跟咱们平常就是比人平常吃的才饿大国一顿的话,把楼不好火候这方面咱可以用设备去改进对,可以改进一些小设备对,引进一些设备,改进这方面还有就是我觉得咱们员工有这方面的反馈,是吗?你们都有这方面的反馈,说参与我们的员工又不是老人不过这方面对这方面也有反馈,咱可以理解在这个基础上對 再改進一下在基础上可以适当的提高一点行吧还有就是近期的话刚才也说到了上一集的检查各个人说了一些应对方法各个人都说了一些应对方法還有就是一些嗯各種各樣的咱们要上级来了吧肯定会有一个连环欢迎嗯欢迎就咱们怎么去搞呢咱们肯定不能让瘫痪上人过去是吧咱们得找一点演员吧也是所有的护工护工来迎接领导打工吧护工和老人老人可以对对对 护工可以参加迎接领导如果要客服外领导去护工还是在岗位对 领导阶段对咱们各部门的一些领导阶段我们去拍一部舞蹈这个我们可以跟老年大学合作搞一些节目因为领导要来搞一个老年大学期因为领导要来欢迎仪式一 不用过分因为老年要来欢迎仪式不用搞得过分工作毕竟是两个老年人这一点一定要保障最后一点就是我们年终了嘛我们开一个年花会咱们故宫给老人表演可以可以都出个节目我们可以出一个炒菜节目炒菜怎么炒翻锅这种就是说因为像咱们高敦,高敦的炒菜厨师的等级是非常高的,都是在新东方培育的。所以说像一些翻锅炒菜那种,都有一些厨艺,刀工啊什么的,给他们看一下。刀工,钓个花什么的。对,刻个白菜。我建议啊,我们有的老人,他有自理能力的。他有这种爱好可以跟着一块做饭对有这个自己能力的嗯有这个意愿老人做饭就可以摄取到安全对有这个自己意愿的有能力的自己能力的嗯确实没有别的问题的可以嗯当然有有什么高黑压制的我我们肯定不让你干了你是吧对他们去呢也就是玩儿玩儿的帮助上忙对打个枪是嗯或者怎么可以包饺子刚才说在这个营养部门整个这个大厂其他部门呢比较有影响我们医护可以组织一个3G半这个形式的防护小知识表演一下一方面增加一个然后又能宣传这方面正式给余小渔乐给这些绿宝人们后宫怎么有拔河想象我们有力量拔河呢可以举办一个拔河比赛你看拔河是在想个别的他们出个像小品之类的像小品搞笑一点提
+[Text Detection] 在 1543.92 秒检测到关键词 '焦焦',current_time: 1519.00, 问题文本: 提高老人和父公之间的感情因为有些现在老人和父公之间的感情安心养老愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求于院方管理规定
+高老人和父公之间的感情因为有些现在老人和父公之间的感情安心养老愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求于院方管理规定对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对嗯所以在这个钱方面老人偷的钱就要怎么样对哦老人偷的钱会有一部分的提升然后一方面是如果咱们这个水平提高了的话咱们这个看货的价格然后价格要求是在给可以提升的对一方面是这个這個就是説怎麼擴大咱們這個通过养老院的这些人呗就是老人的入住率对通过老用户让他们发展新用户老用户咱们可以实际上有会给他们一看他们发展的履历一定有会保持他们的一定的优势老用户的口碑还是挺好的嗯现在主要养老院是为了发展一个趋势对是不是养老院,咱们的养老院跟其他养老院不一样,不是看饭人,就相当于一个老人的小区。对对对。是吧?不是一个……就是一样天天的。对,只不过咱们在,咱们就当一些陪护就相当于一些,照看而不是困,而不是看着他们,而不是像监狱里面的看管,而不是这种。绝对在保证安全的情况下给老人绝对的记忆。创造一个减少烦恼,没有烦恼的环境。这是养老院的宗旨这是养老院未然发展了一个计划有这些高档一点的游乐院他就是有些老人就一个人住一间他里面的家具啊什么都跟在自己家里的一样咱们也非常高端咱们本身就是高端的就是这种公寓式的他们也可以分级的咱们还是分级的有这样的家庭之间的评估差家庭之间的评估差所以就很困难就很残酷但是社会就是这样要分析但是只不过他们到时候但是每一集我们都要让老人感受到快乐对是吧还有什么想要说的,想让专辑们说一说?还有什么想要在本次会议上探讨的?遇到的难点,想让专辑们说一说?没什么,就是互共增加一些年轻人,年轻力量,新生力量除了增加你以前最荣耀的那种充满国立感觉的那些人对老人也是一种看到世界还有我阳光,阳光一点,好,进来对耐心方面有一点,我们是老公亲小夜鹤嘛,老公亲这个,衣服衣服这边,没有什么大的问题就是,有时候会碰到这个国际警察老师不配合的这种情况嗯也看我们平时要有点耐心然后跟老人们沟通因为毕竟是个好事还是有办法解决对 是蔡英蔡英蔡英是什么蔡英原来还是说想要得到更好的一些福的话我的话因为需要提高我们需要一些经费环境与食材都需要良好的经费做铺垫否则咱们也没有那么多办法来做更好像厨师已经是一流的厨师了但是菜市还是有在提高有些菜品咱们可以动员那些有爱好的有生活自理能力的老人羊羊羊羊你也要有这个机可以看到自己自主一下对对对,而且从中看到导的乐趣现在可以举办一些包饺子的小活动像有些老人又喜欢包饺子就可以吃到自己亲手做的饺子每个月可以都制定一些制定一到两个特色活动我们搞活动中心,因为新的主题叫回到知青年代回到知青年代因为有一些旧年代的东西他们的年代的东西有话题,有新的话题,勾心和回忆活动中心里边可以增添设施啊例如香气,买球,设施都可以在里面嗯请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+[Audio Detection] 在 2022.88 秒检测到关键词 '好交交'。
+detection_time: 2022.88, current_time: 2015.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S07C01_agent_added/out_001-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 459600, dtype: float32, min: -0.2381591796875, max: 0.2255859375
+问题音频时间长度: 28.725
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于养老院的分级制度你怎么看待这种贫富差距的处理方式我们如何在保证老人快乐同时实现不同等级的服务和收费标准
+, 1743411662.4948304
+问题音频STT前的时刻: 1743411662.494989
+问题音频STT后的时刻: 1743411663.112415
+问题音频STT时间: 0.6174261569976807
+
+
+[Agent] 最终接收到问题: 您好,焦焦。如何提升营养不食品?种类多样化以满足老人个性化,饮食需求。
+, 1743411663.11259
+问题音频送入Planner的时刻: 1743411663.1130135
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743411663.7384198
+planner new_token time: 1743411664.1317668
+planner new_token time: 1743411664.1322954
+First token received: 1, time: 1743411664.1333046
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411664.1860971
+talker first token time: 1743411664.8123465
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743411664.8469095
+talker first token time: 1743411664.8735209
+talker first token time: 1743411664.8995416
+talker first token time: 1743411664.9254308
+talker first token time: 1743411664.9513664
+talker first token time: 1743411665.0030594
+talker first token time: 1743411665.02897
+talker first token time: 1743411665.0548408
+talker first token time: 1743411665.0807517
+talker first token time: 1743411665.1067288
+talker first token time: 1743411665.1837907
+talker first token time: 1743411665.2352786
+talker first token time: 1743411665.2612438
+talker first token time: 1743411665.2872975
+talker first token time: 1743411665.313289
+talker first token time: 1743411665.3393037
+talker first token time: 1743411665.3654478
+talker first token time: 1743411665.3919485
+talker first token time: 1743411665.4181368
+talker first token time: 1743411665.4702148
+talker first token time: 1743411665.4966161
+talker first token time: 1743411665.5227437
+talker first token time: 1743411665.5489354
+talker first token time: 1743411665.5750265
+talker first token time: 1743411665.6011453
+talker first token time: 1743411665.627536
+talker first token time: 1743411665.704673
+talker first token time: 1743411665.7306323
+talker first token time: 1743411665.756842
+talker first token time: 1743411665.7827737
+talker first token time: 1743411665.808835
+talker first token time: 1743411665.834816
+talker first token time: 1743411665.8866184
+talker first token time: 1743411665.9125657
+talker first token time: 1743411665.9385898
+talker first token time: 1743411665.990442
+talker first token time: 1743411666.042299
+talker first token time: 1743411666.0943115
+talker first token time: 1743411666.1465037
+talker first token time: 1743411666.172762
+talker first token time: 1743411666.1988022
+talker first token time: 1743411666.250916
+talker first token time: 1743411666.2770407
+talker first token time: 1743411666.3032
+talker first token time: 1743411666.3293395
+talker first token time: 1743411666.3555622
+talker first token time: 1743411666.381818
+talker first token time: 1743411666.459342
+talker first token time: 1743411666.4853568
+talker first token time: 1743411666.5114613
+talker first token time: 1743411666.5375173
+talker first token time: 1743411666.5634952
+talker first token time: 1743411666.5894701
+talker first token time: 1743411666.6156304
+talker first token time: 1743411666.6425538
+talker first token time: 1743411666.6689873
+talker first token time: 1743411666.695227
+talker first token time: 1743411666.747079
+talker first token time: 1743411666.7732232
+talker first token time: 1743411666.7992976
+talker first token time: 1743411666.8257518
+talker first token time: 1743411666.8776665
+talker first token time: 1743411666.903846
+talker first token time: 1743411666.9300985
+talker first token time: 1743411666.9562907
+talker first token time: 1743411666.9825013
+talker first token time: 1743411667.059941
+talker first token time: 1743411667.0862892
+talker first token time: 1743411667.1124609
+talker first token time: 1743411667.1384811
+talker first token time: 1743411667.164506
+talker first token time: 1743411667.2164476
+talker first token time: 1743411667.2426102
+talker first token time: 1743411667.268808
+talker first token time: 1743411667.2948277
+talker first token time: 1743411667.32097
+talker first token time: 1743411667.3471887
+talker first token time: 1743411667.3734293
+talker first token time: 1743411667.3995507
+talker first token time: 1743411667.4257898
+talker first token time: 1743411667.452243
+talker first token time: 1743411667.5299933
+talker first token time: 1743411667.5821195
+talker first token time: 1743411667.608411
+talker first token time: 1743411667.6347482
+talker first token time: 1743411667.6609497
+talker first token time: 1743411667.6871824
+talker first token time: 1743411667.7135534
+talker first token time: 1743411667.7656925
+talker first token time: 1743411667.7918062
+talker first token time: 1743411667.818092
+talker first token time: 1743411667.8441553
+talker first token time: 1743411667.870411
+talker first token time: 1743411667.9228997
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为了满足老人个性化饮食需求，可以考虑以下几点：
+
+1. 考虑老人的身体状况和健康需求，选择适合他们的营养补充食品。
+2. 多样化食物种类，包括谷物、蔬菜、水果、肉类、豆类等，确保摄入各种营养素。
+3. 根据老人的口味和偏好选择食品，例如可以选择口感柔软、易消化的食品。
+4. 注意食品的卫生安全，避免购买过期或不新鲜的食品。
+5. 建议老人定期进行体检，以便及时调整饮食计划。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S07C01_agent_added/out_001-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 459600, dtype: float32, min: -0.2381591796875, max: 0.2255859375
+问题音频时间长度: 28.725
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于养老院的分级制度你怎么看待这种贫富差距的处理方式我们如何在保证老人快乐同时实现不同等级的服务和收费标准
+, 1743411669.353104
+问题音频STT前的时刻: 1743411669.3532898
+问题音频STT后的时刻: 1743411671.1427295
+问题音频STT时间: 1.7894396781921387
+
+
+[Agent] 最终接收到问题: 你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够是否能满足老人的护理需求同时针对老人身心健康和精神文化生活方面我们还可以采取哪些具体措施来丰富老人的日常生活
+, 1743411671.1429603
+问题音频送入Planner的时刻: 1743411671.1434186
+planner new_token time: 1743411671.7932644
+planner new_token time: 1743411672.1862366
+First token received: 0, time: 1743411672.1864815
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411672.5788853
+planner new_token time: 1743411672.9714286
+planner new_token time: 1743411673.363868
+planner new_token time: 1743411673.756859
+planner new_token time: 1743411674.1509836
+planner new_token time: 1743411674.5438697
+planner new_token time: 1743411674.9362035
+planner new_token time: 1743411675.3288944
+planner new_token time: 1743411675.721475
+planner new_token time: 1743411676.114452
+planner new_token time: 1743411676.507574
+planner new_token time: 1743411676.9000444
+planner new_token time: 1743411677.2928846
+planner new_token time: 1743411677.6863196
+planner new_token time: 1743411678.079894
+planner new_token time: 1743411678.4733698
+planner new_token time: 1743411678.865989
+planner new_token time: 1743411679.2583697
+planner new_token time: 1743411679.6519873
+planner new_token time: 1743411680.0453205
+planner new_token time: 1743411680.4375784
+planner new_token time: 1743411680.8313012
+planner new_token time: 1743411681.2245
+planner new_token time: 1743411681.6174407
+planner new_token time: 1743411682.0111895
+planner new_token time: 1743411682.4054282
+planner new_token time: 1743411682.7985556
+planner new_token time: 1743411683.1917717
+planner new_token time: 1743411683.5860186
+planner new_token time: 1743411683.9792647
+planner new_token time: 1743411684.3727684
+planner new_token time: 1743411684.7663293
+planner new_token time: 1743411685.1596935
+planner new_token time: 1743411685.5531905
+planner new_token time: 1743411685.946896
+planner new_token time: 1743411686.340508
+planner new_token time: 1743411686.7337325
+planner new_token time: 1743411687.1274302
+planner new_token time: 1743411687.5211763
+planner new_token time: 1743411687.914791
+planner new_token time: 1743411688.308754
+planner new_token time: 1743411688.7029297
+planner new_token time: 1743411689.0967724
+planner new_token time: 1743411689.4905953
+planner new_token time: 1743411689.8851817
+planner new_token time: 1743411690.2796018
+planner new_token time: 1743411690.6738641
+planner new_token time: 1743411690.6745398
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：护工培训 素质问题 护理需求 身心健康 精神文化生活 养老院
+
+
+提取的关键词: ['护工培训', '素质问题', '护理需求', '身心健康', '精神文化生活', '养老院']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743411692.0137177
+one token time in planner tools: 1743411692.411808
+one token time in planner tools: 1743411692.8097267
+one token time in planner tools: 1743411693.207082
+one token time in planner tools: 1743411693.6050885
+one token time in planner tools: 1743411694.0028458
+one token time in planner tools: 1743411694.4006329
+one token time in planner tools: 1743411694.798147
+one token time in planner tools: 1743411695.1955173
+one token time in planner tools: 1743411695.5931463
+one token time in planner tools: 1743411695.9908423
+one token time in planner tools: 1743411696.3886833
+one token time in planner tools: 1743411696.7866523
+one token time in planner tools: 1743411697.1845891
+one token time in planner tools: 1743411697.5824125
+one token time in planner tools: 1743411697.9803245
+one token time in planner tools: 1743411698.3780448
+one token time in planner tools: 1743411698.775706
+one token time in planner tools: 1743411699.1731505
+one token time in planner tools: 1743411699.5706594
+one token time in planner tools: 1743411699.968377
+one token time in planner tools: 1743411700.3659036
+one token time in planner tools: 1743411700.7640524
+one token time in planner tools: 1743411701.1618633
+one token time in planner tools: 1743411701.5594947
+one token time in planner tools: 1743411701.9570765
+one token time in planner tools: 1743411702.3545096
+one token time in planner tools: 1743411702.7520745
+one token time in planner tools: 1743411703.149673
+one token time in planner tools: 1743411703.5476363
+one token time in planner tools: 1743411703.9459143
+one token time in planner tools: 1743411704.3444917
+one token time in planner tools: 1743411704.7425358
+one token time in planner tools: 1743411705.1406999
+one token time in planner tools: 1743411705.5390558
+one token time in planner tools: 1743411705.9369333
+one token time in planner tools: 1743411706.3345182
+one token time in planner tools: 1743411706.7322488
+one token time in planner tools: 1743411707.1303313
+one token time in planner tools: 1743411707.5284123
+one token time in planner tools: 1743411707.926251
+one token time in planner tools: 1743411708.3240116
+one token time in planner tools: 1743411708.7219803
+one token time in planner tools: 1743411709.1208098
+one token time in planner tools: 1743411709.5187001
+one token time in planner tools: 1743411709.9174712
+one token time in planner tools: 1743411710.3152356
+one token time in planner tools: 1743411710.7133937
+one token time in planner tools: 1743411711.1118977
+one token time in planner tools: 1743411711.5097942
+one token time in planner tools: 1743411711.9084973
+one token time in planner tools: 1743411712.3065681
+one token time in planner tools: 1743411712.7049296
+one token time in planner tools: 1743411713.104026
+one token time in planner tools: 1743411713.5022287
+one token time in planner tools: 1743411713.9018195
+one token time in planner tools: 1743411714.3009694
+one token time in planner tools: 1743411714.7005699
+one token time in planner tools: 1743411715.099649
+one token time in planner tools: 1743411715.4979413
+one token time in planner tools: 1743411715.8961737
+one token time in planner tools: 1743411716.29514
+one token time in planner tools: 1743411716.6939893
+one token time in planner tools: 1743411717.0938435
+one token time in planner tools: 1743411717.4923475
+one token time in planner tools: 1743411717.8909984
+one token time in planner tools: 1743411718.2899332
+one token time in planner tools: 1743411718.688522
+one token time in planner tools: 1743411719.0874102
+one token time in planner tools: 1743411719.4864187
+one token time in planner tools: 1743411719.8854315
+one token time in planner tools: 1743411720.2845953
+one token time in planner tools: 1743411720.6840515
+one token time in planner tools: 1743411721.083926
+one token time in planner tools: 1743411721.4838378
+one token time in planner tools: 1743411721.8834033
+one token time in planner tools: 1743411721.8846364
+
+Token count: 77, Total time: 31.0892 seconds, One token time: 0.4038 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：护', '工', '培训', ' ', '素', '质', '问题', ' ', '护', '理', '需求', ' ', '身', '心', '健康', ' ', '精', '神', '文化', '生活', ' ', '养', '老', '院', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地频。有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地大,能满足新手吗?可以,主要是他们散散步,有生活自理能力的,能打的球的可以打的球,打的篮球有的也可以那是有这方面活动量太大现在60岁70岁以下的人差不多能打但是肯定不能说像年轻人这样只有我懂老人吧到老学到了我觉得让老人去学习也是一种方法是有一些书籍的爱学习的不能再强制学习了对给他们提供了一些书籍这是回路啊老人看回忆过几个东西一些老人可以让他写一些回忆录如果有的信息我们肯定是讲话卖了录这就说到了一些有些老人喜欢养一些宠物这就难点了这方面咱们都怎么做呢有些会养一些鸟啊狗啊 小狗啊 小猫啊這個咱們會幫他們放在同一個機率进行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在养老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够对他们的身心健康有好处这方面是什么观点这个医护部门对我们合理的建议我认为是他们身心健康有积极的作用这个如果说可以考虑但是也得征求就是子女和他们的应典吧对的如果这方面在计算子女的合理南洋老人是对他们的业绩有影响对,他们不愿意出钱,他们不愿意交费,那是关键的南洋老人是为了老人身心健康,身心都要健康才行这方面子女,如果在合同久了,一些老人互相产生这种感情的话咱要也要及时跟苏宁然后我们回报尽量支持保养对然后我们进行汇报一下嗯然后这个事让他们自己解决一下嗯咱们就是采取一种嗯自给自然对生其自然嗯有利引导哦那对嗯还有什么想要说的吗对员工来说,你们认为餐饮部有什么需要改进的?改进呢我就是说一下咱们的员工餐员\n---\n这是养老院的宗旨这是养老院未然发展了一个计划有这些高档一点的游乐院他就是有些老人就一个人住一间他里面的家具啊什么都跟在自己家里的一样咱们也非常高端咱们本身就是高端的就是这种公寓式的他们也可以分级的咱们还是分级的有这样的家庭之间的评估差家庭之间的评估差所以就很困难就很残酷但是社会就是这样要分析但是只不过他们到时候但是每一集我们都要让老人感受到快乐对是吧还有什么想要说的,想让专辑们说一说?还有什么想要在本次会议上探讨的?遇到的难点,想让专辑们说一说?没什么,就是互共增加一些年轻人,年轻力量,新生力量除了增加你以前最荣耀的那种充满国立感觉的那些人对老人也是一种看到世界还有我阳光,阳光一点,好,进来对耐心方面有一点,我们是老公亲小夜鹤嘛,老公亲这个,衣服衣服这边,没有什么大的问题就是,有时候会碰到这个国际警察老师不配合的这种情况嗯也看我们平时要有点耐心然后跟老人们沟通因为毕竟是个好事还是有办法解决对 是蔡英蔡英蔡英是什么蔡英原来还是说想要得到更好的一些福的话我的话因为需要提高我们需要一些经费环境与食材都需要良好的经费做铺垫否则咱们也没有那么多办法来做更好像厨师已经是一流的厨师了但是菜市还是有在提高有些菜品咱们可以动员那些有爱好的有生活自理能力的老人羊羊羊羊你也要有这个机可以看到自己自主一下对对对,而且从中看到导的乐趣现在可以举办一些包饺子的小活动像有些老人又喜欢包饺子就可以吃到自己亲手做的饺子每个月可以都制定一些制定一到两个特色活动我们搞活动中心,因为新的主题叫回到知青年代回到知青年代因为有一些旧年代的东西他们的年代的东西有话题,有新的话题,勾心和回忆活动中心里边可以增添设施啊例如香气,买球,设施都可以在里面嗯请不吝点赞 订阅 转发 打赏支持明镜与点点栏目您好,焦焦。如何提升营养不食品?种类多样化以满足老人个性化,饮食需求。你好 娇娇基于之前我们讨论的内容关于养老院【护】工培训和素质问题你认为我们目前的护工培训是否足够是否能满足老人的护理需求同时针对老人身心健康和精神文化生活方面我们还可以采取哪些具体措施来丰富老人的日常###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n关于护工培训和素质的问题，目前的培训似乎已经涵盖了基础护理技能，但仍需进一步加强护工的心理健康培训以及与老人的精神文化交流。为了进一步提升服务质量，可以定期组织专业培训、心理辅导课程，并鼓励护工与老人开展更多互动活动，如包饺子、写回忆录等，以促进老人的精神愉悦和身体健康。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地频。有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地大,能满足新手吗?可以,主要是他们散散步,有生活自理能力的,能打的球的可以打的球,打的篮球有的也可以那是有这方面活动量太大现在60岁70岁以下的人差不多能打但是肯定不能说像年轻人这样只有我懂老人吧到老学到了我觉得让老人去学习也是一种方法是有一些书籍的爱学习的不能再强制学习了对给他们提供了一些书籍这是回路啊老人看回忆过几个东西一些老人可以让他写一些回忆录如果有的信息我们肯定是讲话卖了录这就说到了一些有些老人喜欢养一些宠物这就难点了这方面咱们都怎么做呢有些会养一些鸟啊狗啊 小狗啊 小猫啊這個咱們會幫他們放在同一個機率进行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在养老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够对他们的身心健康有好处这方面是什么观点这个医护部门对我们合理的建议我认为是他们身心健康有积极的作用这个如果说可以考虑但是也得征求就是子女和他们的应典吧对的如果这方面在计算子女的合理南洋老人是对他们的业绩有影响对,他们不愿意出钱,他们不愿意交费,那是关键的南洋老人是为了老人身心健康,身心都要健康才行这方面子女,如果在合同久了,一些老人互相产生这种感情的话咱要也要及时跟苏宁然后我们回报尽量支持保养对然后我们进行汇报一下嗯然后这个事让他们自己解决一下嗯咱们就是采取一种嗯自给自然对生其自然嗯有利引导哦那对嗯还有什么想要说的吗对员工来说,你们认为餐饮部有什么需要改进的?改进呢我就是说一下咱们的员工餐员
+---
+这是养老院的宗旨这是养老院未然发展了一个计划有这些高档一点的游乐院他就是有些老人就一个人住一间他里面的家具啊什么都跟在自己家里的一样咱们也非常高端咱们本身就是高端的就是这种公寓式的他们也可以分级的咱们还是分级的有这样的家庭之间的评估差家庭之间的评估差所以就很困难就很残酷但是社会就是这样要分析但是只不过他们到时候但是每一集我们都要让老人感受到快乐对是吧还有什么想要说的,想让专辑们说一说?还有什么想要在本次会议上探讨的?遇到的难点,想让专辑们说一说?没什么,就是互共增加一些年轻人,年轻力量,新生力量除了增加你以前最荣耀的那种充满国立感觉的那些人对老人也是一种看到世界还有我阳光,阳光一点,好,进来对耐心方面有一点,我们是老公亲小夜鹤嘛,老公亲这个,衣服衣服这边,没有什么大的问题就是,有时候会碰到这个国际警察老师不配合的这种情况嗯也看我们平时要有点耐心然后跟老人们沟通因为毕竟是个好事还是有办法解决对 是蔡英蔡英蔡英是什么蔡英原来还是说想要得到更好的一些福的话我的话因为需要提高我们需要一些经费环境与食材都需要良好的经费做铺垫否则咱们也没有那么多办法来做更好像厨师已经是一流的厨师了但是菜市还是有在提高有些菜品咱们可以动员那些有爱好的有生活自理能力的老人羊羊羊羊你也要有这个机可以看到自己自主一下对对对,而且从中看到导的乐趣现在可以举办一些包饺子的小活动像有些老人又喜欢包饺子就可以吃到自己亲手做的饺子每个月可以都制定一些制定一到两个特色活动我们搞活动中心,因为新的主题叫回到知青年代回到知青年代因为有一些旧年代的东西他们的年代的东西有话题,有新的话题,勾心和回忆活动中心里边可以增添设施啊例如香气,买球,设施都可以在里面嗯请不吝点赞 订阅 转发 打赏支持明镜与点点栏目您好,焦焦。如何提升营养不食品?种类多样化以满足老人个性化,饮食需求。你好 娇娇基于之前我们讨论的内容关于养老院【护】工培训和素质问题你认为我们目前的护工培训是否足够是否能满足老人的护理需求同时针对老人身心健康和精神文化生活方面我们还可以采取哪些具体措施来丰富老人的日常###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+关于护工培训和素质的问题，目前的培训似乎已经涵盖了基础护理技能，但仍需进一步加强护工的心理健康培训以及与老人的精神文化交流。为了进一步提升服务质量，可以定期组织专业培训、心理辅导课程，并鼓励护工与老人开展更多互动活动，如包饺子、写回忆录等，以促进老人的精神愉悦和身体健康。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S07C01_agent_added/out_001-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 459600, dtype: float32, min: -0.2381591796875, max: 0.2255859375
+问题音频时间长度: 28.725
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于养老院的分级制度你怎么看待这种贫富差距的处理方式我们如何在保证老人快乐同时实现不同等级的服务和收费标准
+, 1743411723.1782722
+问题音频STT前的时刻: 1743411723.1784205
+问题音频STT后的时刻: 1743411723.6798468
+问题音频STT时间: 0.5014262199401855
+
+
+[Agent] 最终接收到问题: 你好,焦焦,如何平衡养老院老人情感需求与院方管理规定?
+, 1743411723.6802497
+问题音频送入Planner的时刻: 1743411723.680772
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743411724.2848108
+planner new_token time: 1743411724.6781197
+planner new_token time: 1743411724.678543
+First token received: 1, time: 1743411724.6786368
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411724.6911588
+talker first token time: 1743411724.938572
+talker first token time: 1743411724.9648752
+talker first token time: 1743411724.9960225
+talker first token time: 1743411725.0217578
+talker first token time: 1743411725.0473058
+talker first token time: 1743411725.0730398
+talker first token time: 1743411725.0989163
+talker first token time: 1743411725.12474
+talker first token time: 1743411725.1503787
+talker first token time: 1743411725.1761856
+talker first token time: 1743411725.2022343
+talker first token time: 1743411725.2537644
+talker first token time: 1743411725.2796445
+talker first token time: 1743411725.3055806
+talker first token time: 1743411725.3316462
+talker first token time: 1743411725.3575897
+talker first token time: 1743411725.383543
+talker first token time: 1743411725.4095404
+talker first token time: 1743411725.4355447
+talker first token time: 1743411725.4616244
+talker first token time: 1743411725.5133693
+talker first token time: 1743411725.5394447
+talker first token time: 1743411725.565466
+talker first token time: 1743411725.5915906
+talker first token time: 1743411725.6177266
+talker first token time: 1743411725.6696126
+talker first token time: 1743411725.7217195
+talker first token time: 1743411725.7478912
+talker first token time: 1743411725.7740362
+talker first token time: 1743411725.8001597
+talker first token time: 1743411725.8523293
+talker first token time: 1743411725.8785539
+talker first token time: 1743411725.9048579
+talker first token time: 1743411725.9314437
+talker first token time: 1743411725.9580934
+talker first token time: 1743411726.0103705
+talker first token time: 1743411726.0627997
+talker first token time: 1743411726.0893137
+talker first token time: 1743411726.1159565
+talker first token time: 1743411726.142412
+talker first token time: 1743411726.168749
+talker first token time: 1743411726.221202
+talker first token time: 1743411726.2476454
+talker first token time: 1743411726.274057
+talker first token time: 1743411726.300378
+talker first token time: 1743411726.326769
+talker first token time: 1743411726.3531256
+talker first token time: 1743411726.4058013
+talker first token time: 1743411726.4321754
+talker first token time: 1743411726.4586368
+talker first token time: 1743411726.4851449
+talker first token time: 1743411726.5116913
+talker first token time: 1743411726.564381
+talker first token time: 1743411726.6173368
+talker first token time: 1743411726.643826
+talker first token time: 1743411726.6704972
+talker first token time: 1743411726.697023
+talker first token time: 1743411726.7236154
+talker first token time: 1743411726.750089
+talker first token time: 1743411726.8033102
+talker first token time: 1743411726.8304043
+talker first token time: 1743411726.857488
+talker first token time: 1743411726.88423
+talker first token time: 1743411726.910884
+talker first token time: 1743411726.9376338
+talker first token time: 1743411726.964256
+talker first token time: 1743411726.990968
+talker first token time: 1743411727.0175028
+talker first token time: 1743411727.070739
+talker first token time: 1743411727.097915
+talker first token time: 1743411727.1249316
+talker first token time: 1743411727.1791763
+
+talker输出：
+
+Token count: 96, Total time: 3.7629 seconds, One token time: 0.0392 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+平衡养老院老人情感需求与院方管理规定，首先需要院方充分重视老人的情感需求，提供足够的关爱和陪伴；同时，也需要制定合理的管理制度，保证院内的正常运作。此外，可以引入专业的心理咨询师，定期为老人进行心理疏导，帮助他们解决情感困扰。最后，鼓励老人之间的交流和互动，通过组织各种活动来增强他们的社交圈子，提高他们的生活质量。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S07C01_agent_added/out_001-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 459600, dtype: float32, min: -0.2381591796875, max: 0.2255859375
+问题音频时间长度: 28.725
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于养老院的分级制度你怎么看待这种贫富差距的处理方式我们如何在保证老人快乐同时实现不同等级的服务和收费标准
+, 1743411728.5478098
+问题音频STT前的时刻: 1743411728.5479374
+问题音频STT后的时刻: 1743411729.7027662
+问题音频STT时间: 1.1548287868499756
+
+
+[Agent] 最终接收到问题: 您好,焦焦,基于之前我们讨论的内容,关于养老院的分级制度,你怎么看待这种贫富差距的处理方式,我们如何在保证老人快乐,同时实现不同等级的服务和收费标准?
+, 1743411729.7030516
+问题音频送入Planner的时刻: 1743411729.703413
+planner new_token time: 1743411730.3541644
+planner new_token time: 1743411730.7474225
+First token received: 0, time: 1743411730.7475452
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411731.1409452
+planner new_token time: 1743411731.535837
+planner new_token time: 1743411731.9294105
+planner new_token time: 1743411732.3232796
+planner new_token time: 1743411732.716973
+planner new_token time: 1743411733.1108475
+planner new_token time: 1743411733.5045745
+planner new_token time: 1743411733.8983343
+planner new_token time: 1743411734.2924204
+planner new_token time: 1743411734.686476
+planner new_token time: 1743411735.0800142
+planner new_token time: 1743411735.475083
+planner new_token time: 1743411735.869273
+planner new_token time: 1743411736.2629735
+planner new_token time: 1743411736.6570828
+planner new_token time: 1743411737.0511296
+planner new_token time: 1743411737.4452486
+planner new_token time: 1743411737.8389933
+planner new_token time: 1743411738.2332945
+planner new_token time: 1743411738.6296804
+planner new_token time: 1743411739.0236468
+planner new_token time: 1743411739.4177623
+planner new_token time: 1743411739.8121157
+planner new_token time: 1743411740.2068293
+planner new_token time: 1743411740.600899
+planner new_token time: 1743411740.995224
+planner new_token time: 1743411741.3896334
+planner new_token time: 1743411741.7837152
+planner new_token time: 1743411742.1778553
+planner new_token time: 1743411742.5722852
+planner new_token time: 1743411742.9672081
+planner new_token time: 1743411743.36114
+planner new_token time: 1743411743.7551184
+planner new_token time: 1743411744.1493983
+planner new_token time: 1743411744.5438027
+planner new_token time: 1743411744.9376466
+planner new_token time: 1743411745.3324661
+planner new_token time: 1743411745.727859
+planner new_token time: 1743411746.122426
+planner new_token time: 1743411746.5164955
+planner new_token time: 1743411746.911327
+planner new_token time: 1743411747.305935
+planner new_token time: 1743411747.6998591
+planner new_token time: 1743411748.0941386
+planner new_token time: 1743411748.094857
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：养老院 分级制度 贫富差距 老人快乐 不同等级服务 收费标准
+
+
+提取的关键词: ['养老院', '分级制度', '贫富差距', '老人快乐', '不同等级服务', '收费标准']
+
+找到的上下文片段数量: 3
+one token time in planner tools: 1743411749.9078896
+one token time in planner tools: 1743411750.3103614
+one token time in planner tools: 1743411750.7120702
+one token time in planner tools: 1743411751.1137788
+one token time in planner tools: 1743411751.5157971
+one token time in planner tools: 1743411751.917274
+one token time in planner tools: 1743411752.319
+one token time in planner tools: 1743411752.7205796
+one token time in planner tools: 1743411753.1223304
+one token time in planner tools: 1743411753.5243187
+one token time in planner tools: 1743411753.9264224
+one token time in planner tools: 1743411754.3288362
+one token time in planner tools: 1743411754.7312717
+one token time in planner tools: 1743411755.13352
+one token time in planner tools: 1743411755.5352864
+one token time in planner tools: 1743411755.9374774
+one token time in planner tools: 1743411756.3394516
+one token time in planner tools: 1743411756.7417934
+one token time in planner tools: 1743411757.1435366
+one token time in planner tools: 1743411757.546395
+one token time in planner tools: 1743411757.948701
+one token time in planner tools: 1743411758.3511121
+one token time in planner tools: 1743411758.7540781
+one token time in planner tools: 1743411759.1560206
+one token time in planner tools: 1743411759.5580437
+one token time in planner tools: 1743411759.9596317
+one token time in planner tools: 1743411760.3617907
+one token time in planner tools: 1743411760.7642398
+one token time in planner tools: 1743411761.167752
+one token time in planner tools: 1743411761.5698678
+one token time in planner tools: 1743411761.9730184
+one token time in planner tools: 1743411762.3752313
+one token time in planner tools: 1743411762.7772124
+one token time in planner tools: 1743411763.1790874
+one token time in planner tools: 1743411763.5811994
+one token time in planner tools: 1743411763.9832823
+one token time in planner tools: 1743411764.386429
+one token time in planner tools: 1743411764.7896802
+one token time in planner tools: 1743411765.1930356
+one token time in planner tools: 1743411765.5955195
+one token time in planner tools: 1743411765.9981833
+one token time in planner tools: 1743411766.4011319
+one token time in planner tools: 1743411766.8041563
+one token time in planner tools: 1743411767.2083669
+one token time in planner tools: 1743411767.6109214
+one token time in planner tools: 1743411768.0137448
+one token time in planner tools: 1743411768.4158828
+one token time in planner tools: 1743411768.8187041
+one token time in planner tools: 1743411769.221598
+one token time in planner tools: 1743411769.6246822
+one token time in planner tools: 1743411770.0270817
+one token time in planner tools: 1743411770.4303102
+one token time in planner tools: 1743411770.8327637
+one token time in planner tools: 1743411771.2354681
+one token time in planner tools: 1743411771.6375077
+one token time in planner tools: 1743411772.040589
+one token time in planner tools: 1743411772.4439564
+one token time in planner tools: 1743411772.8476057
+one token time in planner tools: 1743411773.2503102
+one token time in planner tools: 1743411773.6528327
+one token time in planner tools: 1743411774.05606
+one token time in planner tools: 1743411774.460006
+one token time in planner tools: 1743411774.8636816
+one token time in planner tools: 1743411775.266579
+one token time in planner tools: 1743411775.66924
+one token time in planner tools: 1743411776.071673
+one token time in planner tools: 1743411776.4748511
+one token time in planner tools: 1743411776.878301
+one token time in planner tools: 1743411777.282042
+one token time in planner tools: 1743411777.6848493
+one token time in planner tools: 1743411778.0885887
+one token time in planner tools: 1743411778.491903
+one token time in planner tools: 1743411778.8952563
+one token time in planner tools: 1743411779.2992232
+one token time in planner tools: 1743411779.7035408
+one token time in planner tools: 1743411780.1068718
+one token time in planner tools: 1743411780.5093503
+one token time in planner tools: 1743411780.9125533
+one token time in planner tools: 1743411781.3157337
+one token time in planner tools: 1743411781.7204676
+one token time in planner tools: 1743411782.1245654
+one token time in planner tools: 1743411782.528764
+one token time in planner tools: 1743411782.9314082
+one token time in planner tools: 1743411783.3349574
+one token time in planner tools: 1743411783.7384531
+one token time in planner tools: 1743411784.1422715
+one token time in planner tools: 1743411784.5459218
+one token time in planner tools: 1743411784.9493644
+one token time in planner tools: 1743411785.3529372
+one token time in planner tools: 1743411785.7564552
+one token time in planner tools: 1743411786.1601431
+one token time in planner tools: 1743411786.5639462
+one token time in planner tools: 1743411786.9673717
+one token time in planner tools: 1743411787.3707128
+one token time in planner tools: 1743411787.7744102
+one token time in planner tools: 1743411788.1783283
+one token time in planner tools: 1743411788.582319
+one token time in planner tools: 1743411788.9863522
+one token time in planner tools: 1743411789.3899887
+one token time in planner tools: 1743411789.391368
+
+Token count: 100, Total time: 41.1806 seconds, One token time: 0.4118 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：养老', '院', ' 分', '级', '制度', ' ', '贫', '富', '差距', ' ', '老', '人', '快乐', ' 不', '同', '等级', '服务', ' ', '收', '费', '标准', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###我002我是店长008营养师007看护006互动部今天把大家叫过来开一个会关于上个月各部门的一些运营情况各部门上个月都要想好哪些问题在本次会议当中提出来并解决它营养补吧因为对于咱们养老人来说咱们的饮食非常重要对于老人来说并不是吃饱就好咱们相对于老人来说需要针对个人的身体情况进行一些调整所以说营养方面上咱们还是有在加强营养方面有在加强嗯这就有一个方案方案的话就是说食品种类可以多样化然后根据多样化就可以涉及到一些成本对然后然后就是根据他们那个老人的出处他们从哪来的然后考虑针对他来做一些什么样的食物嗯不再單一化我们这个【养】老院呢,主要大概都是上岁数的,上岁数的老年人。然后他们那个身体呢都是很都会有一点问题的所以我们也要为做好这些准备一些各方面的医疗器一些然后为这些老年朋友检查身体的这些简单的检查身体的一些东西血肝啊这方面的然后我们还要提供的就是这个紧急的紧急的这个措施对如果有突发情况的话我们就要做好应对进行一些那个演练有演练其实我们要组织这个演练的活动心脏复苏呼吸这个事情发生的时候我们不至于措手不及对嗯 没了嗯嗯复工过 我就是针对咱们那个嗯 60岁以上 70岁以下的生活能够自理的嗯 咱们就是 一般是一个复工 嗯 负责10个老人就在这里如果生活不能自理的,是我们分成了全部能自理,就不能下床。全部的,我们是两个标普。\n---\n有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地大,能满足新手吗?可以,主要是他们散散步,有生活自理能力的,能打的球的可以打的球,打的篮球有的也可以那是有这方面活动量太大现在60岁70岁以下的人差不多能打但是肯定不能说像年轻人这样只有我懂老人吧到老学到了我觉得让老人去学习也是一种方法是有一些书籍的爱学习的不能再强制学习了对给他们提供了一些书籍这是回路啊老人看回忆过几个东西一些老人可以让他写一些回忆录如果有的信息我们肯定是讲话卖了录这就说到了一些有些老人喜欢养一些宠物这就难点了这方面咱们都怎么做呢有些会养一些鸟啊狗啊 小狗啊 小猫啊這個咱們會幫他們放在同一個機率进行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在【养】老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够对他们的身心健康有好处这方面是什么观点这个医护部门对我们合理的建议我认为是他们身心健康有积极的作用这个如果说可以考虑但是也得征求就是子女和他们的应典吧对的如果这方面在计算子女的合理南洋老人是对他们的业绩有影响对,他们不愿意出钱,他们不愿意交费,那是关键的南洋老人是为了老人身心健康,身心都要健康才行这方面子女,如果在合同久了,一些老人互相产生这种感情的话咱要也要及时跟苏宁然后我们回报尽量支持保养对然后我们进行汇报一下嗯然后这个事让他们自己解决一下嗯咱们就是采取一种嗯自给自然对生其自然嗯有利引导哦那对嗯还有什么想要说的吗对员工来说,你们认为餐饮部有什么需要改进的?改进呢我就是说一下咱们的员工餐员工餐和养老餐那个员工餐的质量是不是要提高一点领导说说说员工餐的水平是不是要提高一点中餐现在是什么问题?我认为还好吧几十种菜品大肉大肉就是说咱们的因为咱们那个因为营口多嘛咱们都是用大锅做的所以说咱们做的菜有可能稍微的比较那个那个软一点就跟咱们平常就是比人平常吃的才饿大国一顿的话,把楼不好火候这方面咱可以用设备去改进对,可以改进一些小设备对,引进一些设备,改进这方面还有就是我觉得咱们员工有这方面的反馈,是吗?你们都有这方面的反馈,说参与我们的员工又不是老人不过这方面对这方面也有反馈,咱可以理解在这个基础上對 再改進一下在基础上可以适当的提高一点行吧还有就是近期的话刚才也说到了上一集的检查各个人说了一些应对方法各个人都说了一些应对方法還有就是一些嗯各種各樣的咱们要上级来了吧肯定会有一个连环欢迎嗯欢迎就咱们怎么去搞呢咱们肯定不能让瘫痪上人过去是吧咱们得找一点演员吧也是所有的护工护工来迎接领导打工吧护工和老人老人可以对对对 护工可以参加迎接领导如果要客服外领导去护工还是在岗位对 领导阶段对咱们各部门的一些领导阶段我们去拍一部舞蹈这个我们可以跟老年大学合作搞一些节目因为领导要来搞一个老年大学期因为领导要来欢迎仪式一 不用过分因为老年要来欢迎仪式不用搞得过分工作毕竟是两个老年人这一点一定要保障最后一点就是我们年终了嘛我们开一个年花会咱们故宫给老人表演可以可以都出个节目我们可以出一个炒菜节目炒菜怎么炒翻锅这种就是说因为像咱们高敦,高敦的炒菜厨师的等级是非常高的,都是在新东方培育\n---\n他有这种爱好可以跟着一块做饭对有这个自己能力的嗯有这个意愿老人做饭就可以摄取到安全对有这个自己意愿的有能力的自己能力的嗯确实没有别的问题的可以嗯当然有有什么高黑压制的我我们肯定不让你干了你是吧对他们去呢也就是玩儿玩儿的帮助上忙对打个枪是嗯或者怎么可以包饺子刚才说在这个营养部门整个这个大厂其他部门呢比较有影响我们医护可以组织一个3G半这个形式的防护小知识表演一下一方面增加一个然后又能宣传这方面正式给余小渔乐给这些绿宝人们后宫怎么有拔河想象我们有力量拔河呢可以举办一个拔河比赛你看拔河是在想个别的他们出个像小品之类的像小品搞笑一点提高老人和父公之间的感情因为有些现在老人和父公之间的感情安心养老愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求于院方管理规定对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对嗯所以在这个钱方面老人偷的钱就要怎么样对哦老人偷的钱会有一部分的提升然后一方面是如果咱们这个水平提高了的话咱们这个看货的价格然后价格要求是在给可以提升的对一方面是这个這個就是説怎麼擴大咱們這個通过【养】老院的这些人呗就是老人的入住率对通过老用户让他们发展新用户老用户咱们可以实际上有会给他们一看他们发展的履历一定有会保持他们的一定的优势老用户的口碑还是挺好的嗯现在主要养老院是为了发展一个趋势对是不是养老院,咱们的养老院跟其他养老院不一样,不是看饭人,就相当于一个老人的小区。对对对。是吧?不是一个……就是一样天天的。对,只不过咱们在,咱们就当一些陪护就相当于一些,照看而不是困,而不是看着他们,而不是像监狱里面的看管,而不是这种。绝对在保证安全的情况下给老人绝对的记忆。创造一个减少烦恼,没有烦恼的环境。这是养老院的宗旨这是养老院未然发展了一个计划有这些高档一点的游乐院他就是有些老人就一个人住一间他里面的家具啊什么都跟在自己家里的一样咱们也非常高端咱们本身就是高端的就是这种公寓式的他们也可以分级的咱们还是分级的有这样的家庭之间的评估差家庭之间的评估差所以就很困难就很残酷但是社会就是这样要分析但是只不过他们到时候但是每一集我们都要让老人感受到快乐对是吧还有什么想要说的,想让专辑们说一说?还有什么想要在本次会议上探讨的?遇到的难点,想让专辑们说一说?没什么,就是互共增加一些年轻人,年轻力量,新生力量除了增加你以前最荣耀的那种充满国立感觉的那些人对老人也是一种看到世界还有我阳光,阳光一点,好,进来对耐心方面有一点,我们是老公亲小夜鹤嘛,老公亲这个,衣服衣服这边,没有什么大的问题就是,有时候会碰到这个国际警察老师不配合的这种情况嗯也看我们平时要有点耐心然后跟老人们沟通因为毕竟是个好事还是有办法解决对 是蔡英蔡英蔡英是什么蔡英原来还是说想要得到更好的一些福的话我的话因为需要提高我们需要一些经费环境与食材都需要良好的经费做铺垫否则咱们也没有那么多办法来做更好像厨师已经是一流的厨师了但是菜市还是有在提高有些菜品咱们可以动员那些有爱好的有生活自理能力的老人羊羊羊羊你也要有这个机可以看到自己自主一下对对对,而且从中看到导的乐趣现在可以举办一些包饺子的小活动像有些老人又喜欢包饺子就可以吃到自己亲手做的饺子每个月可以都制定一些制定一到两个特色活动我们搞活动中心,因为新的主题叫回到知青年代回到知青年代因为有一些旧年代的东西他们的年代的东西有话题,有新的话题,勾心和回忆活动中心里边可以增添设施啊例如香气,买球,设施都可以在里面嗯请不吝点赞 订阅 转发 打赏支持明镜与点点栏目您好,焦###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n该次会议主要围绕养老院运营情况展开讨论，重点提到营养、医疗检查、紧急应对措施及员工培训等方面。会议强调了老年人饮食多样性和个性化的重要性，并提出加强营养配餐方案；同时重视老年人日常健康监测和急救演练，确保突发情况时能有效应对。此外，会议还提及需增强护工的专业培训，以提升服务质量，并鼓励老人参与户外活动和兴趣小组，如包饺子等活动，增进他们的情感交流与生活质量。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###我002我是店长008营养师007看护006互动部今天把大家叫过来开一个会关于上个月各部门的一些运营情况各部门上个月都要想好哪些问题在本次会议当中提出来并解决它营养补吧因为对于咱们养老人来说咱们的饮食非常重要对于老人来说并不是吃饱就好咱们相对于老人来说需要针对个人的身体情况进行一些调整所以说营养方面上咱们还是有在加强营养方面有在加强嗯这就有一个方案方案的话就是说食品种类可以多样化然后根据多样化就可以涉及到一些成本对然后然后就是根据他们那个老人的出处他们从哪来的然后考虑针对他来做一些什么样的食物嗯不再單一化我们这个【养】老院呢,主要大概都是上岁数的,上岁数的老年人。然后他们那个身体呢都是很都会有一点问题的所以我们也要为做好这些准备一些各方面的医疗器一些然后为这些老年朋友检查身体的这些简单的检查身体的一些东西血肝啊这方面的然后我们还要提供的就是这个紧急的紧急的这个措施对如果有突发情况的话我们就要做好应对进行一些那个演练有演练其实我们要组织这个演练的活动心脏复苏呼吸这个事情发生的时候我们不至于措手不及对嗯 没了嗯嗯复工过 我就是针对咱们那个嗯 60岁以上 70岁以下的生活能够自理的嗯 咱们就是 一般是一个复工 嗯 负责10个老人就在这里如果生活不能自理的,是我们分成了全部能自理,就不能下床。全部的,我们是两个标普。
+---
+有的需要咱们的互动配合因为他们跟正面可能真不理对可能整个视频把他们和自己的子女现在家里基本上都手机视频了现在是比较方便嗯我们的口号我们护理部门的口号就是老人的健康就是我们的饭碗嗯对老人的寿命就是我们的长期饭店嗯这个口号各部门都各位要學一下老人的胃就是我们的胃老人的胃就是咱们的胃对衣服呢对吧,有,很好就是需要就到然后定期为大家做检查嗯,行还有就是咱们这个現在老人要事實監察現在醫療方面的一些器械可以服務那怎麼定期的做檢查比如說你去血壓每天早上量一下但是如果要是实时的检查到这个他如果是一个有自理能力的很正常的一个人只是身上有一些常见的这些耳病的话当然还是没有什么可视的咱们能做的就是规律的给老人进行硬性检查就是小额环面的检查请问家属要带老人去大医院做全身体检这是个建议吧现在的餐饮能够几个菜一天除了正规的早中晚餐餐以外他们还要在每天上午 下午和晚上都会有加餐因为有些老人因为有些老人吃完饭有的时候会饿所以他们都有水果加餐除了糖尿病病人以外还有甜品加餐我们都有这些可以保证老人舒适度平常一个餐厅多吗多早上总是最多咱们天哪哈贝下面有十多种早餐但是一定要注意老人的胃对老人的胃就是你们的胃对一定要注意还得注意老人能不能消化对老人能不能消化对不能一整个大骨头因为南北方差异就是餐点差异还大在南方他们吃辣所以说我们会有专门的一个共餐点就是说针对于他们吃辣的那些做辣的菜我们护工部会想办法锻炼老人的胃,让老人能消化点搞一些适当的他们能接受的那些户外活动,帮助他们做一些户外活动现在让户外活动场地大,能满足新手吗?可以,主要是他们散散步,有生活自理能力的,能打的球的可以打的球,打的篮球有的也可以那是有这方面活动量太大现在60岁70岁以下的人差不多能打但是肯定不能说像年轻人这样只有我懂老人吧到老学到了我觉得让老人去学习也是一种方法是有一些书籍的爱学习的不能再强制学习了对给他们提供了一些书籍这是回路啊老人看回忆过几个东西一些老人可以让他写一些回忆录如果有的信息我们肯定是讲话卖了录这就说到了一些有些老人喜欢养一些宠物这就难点了这方面咱们都怎么做呢有些会养一些鸟啊狗啊 小狗啊 小猫啊這個咱們會幫他們放在同一個機率进行养护可以但是说让单独如果有的需要去单独去养的话条件允许的话也可以让允许因为有的是以夫妻形式住在【养】老院的你好 娇娇基于之前我们讨论的内容关于养老院护工培训和素质问题你认为我们目前的护工培训是否足够对他们的身心健康有好处这方面是什么观点这个医护部门对我们合理的建议我认为是他们身心健康有积极的作用这个如果说可以考虑但是也得征求就是子女和他们的应典吧对的如果这方面在计算子女的合理南洋老人是对他们的业绩有影响对,他们不愿意出钱,他们不愿意交费,那是关键的南洋老人是为了老人身心健康,身心都要健康才行这方面子女,如果在合同久了,一些老人互相产生这种感情的话咱要也要及时跟苏宁然后我们回报尽量支持保养对然后我们进行汇报一下嗯然后这个事让他们自己解决一下嗯咱们就是采取一种嗯自给自然对生其自然嗯有利引导哦那对嗯还有什么想要说的吗对员工来说,你们认为餐饮部有什么需要改进的?改进呢我就是说一下咱们的员工餐员工餐和养老餐那个员工餐的质量是不是要提高一点领导说说说员工餐的水平是不是要提高一点中餐现在是什么问题?我认为还好吧几十种菜品大肉大肉就是说咱们的因为咱们那个因为营口多嘛咱们都是用大锅做的所以说咱们做的菜有可能稍微的比较那个那个软一点就跟咱们平常就是比人平常吃的才饿大国一顿的话,把楼不好火候这方面咱可以用设备去改进对,可以改进一些小设备对,引进一些设备,改进这方面还有就是我觉得咱们员工有这方面的反馈,是吗?你们都有这方面的反馈,说参与我们的员工又不是老人不过这方面对这方面也有反馈,咱可以理解在这个基础上對 再改進一下在基础上可以适当的提高一点行吧还有就是近期的话刚才也说到了上一集的检查各个人说了一些应对方法各个人都说了一些应对方法還有就是一些嗯各種各樣的咱们要上级来了吧肯定会有一个连环欢迎嗯欢迎就咱们怎么去搞呢咱们肯定不能让瘫痪上人过去是吧咱们得找一点演员吧也是所有的护工护工来迎接领导打工吧护工和老人老人可以对对对 护工可以参加迎接领导如果要客服外领导去护工还是在岗位对 领导阶段对咱们各部门的一些领导阶段我们去拍一部舞蹈这个我们可以跟老年大学合作搞一些节目因为领导要来搞一个老年大学期因为领导要来欢迎仪式一 不用过分因为老年要来欢迎仪式不用搞得过分工作毕竟是两个老年人这一点一定要保障最后一点就是我们年终了嘛我们开一个年花会咱们故宫给老人表演可以可以都出个节目我们可以出一个炒菜节目炒菜怎么炒翻锅这种就是说因为像咱们高敦,高敦的炒菜厨师的等级是非常高的,都是在新东方培育
+---
+他有这种爱好可以跟着一块做饭对有这个自己能力的嗯有这个意愿老人做饭就可以摄取到安全对有这个自己意愿的有能力的自己能力的嗯确实没有别的问题的可以嗯当然有有什么高黑压制的我我们肯定不让你干了你是吧对他们去呢也就是玩儿玩儿的帮助上忙对打个枪是嗯或者怎么可以包饺子刚才说在这个营养部门整个这个大厂其他部门呢比较有影响我们医护可以组织一个3G半这个形式的防护小知识表演一下一方面增加一个然后又能宣传这方面正式给余小渔乐给这些绿宝人们后宫怎么有拔河想象我们有力量拔河呢可以举办一个拔河比赛你看拔河是在想个别的他们出个像小品之类的像小品搞笑一点提高老人和父公之间的感情因为有些现在老人和父公之间的感情安心养老愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求愉快满年对有些老人和父公之间的感情你好焦焦如何平衡养老愿老人情感需求于院方管理规定对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对嗯所以在这个钱方面老人偷的钱就要怎么样对哦老人偷的钱会有一部分的提升然后一方面是如果咱们这个水平提高了的话咱们这个看货的价格然后价格要求是在给可以提升的对一方面是这个這個就是説怎麼擴大咱們這個通过【养】老院的这些人呗就是老人的入住率对通过老用户让他们发展新用户老用户咱们可以实际上有会给他们一看他们发展的履历一定有会保持他们的一定的优势老用户的口碑还是挺好的嗯现在主要养老院是为了发展一个趋势对是不是养老院,咱们的养老院跟其他养老院不一样,不是看饭人,就相当于一个老人的小区。对对对。是吧?不是一个……就是一样天天的。对,只不过咱们在,咱们就当一些陪护就相当于一些,照看而不是困,而不是看着他们,而不是像监狱里面的看管,而不是这种。绝对在保证安全的情况下给老人绝对的记忆。创造一个减少烦恼,没有烦恼的环境。这是养老院的宗旨这是养老院未然发展了一个计划有这些高档一点的游乐院他就是有些老人就一个人住一间他里面的家具啊什么都跟在自己家里的一样咱们也非常高端咱们本身就是高端的就是这种公寓式的他们也可以分级的咱们还是分级的有这样的家庭之间的评估差家庭之间的评估差所以就很困难就很残酷但是社会就是这样要分析但是只不过他们到时候但是每一集我们都要让老人感受到快乐对是吧还有什么想要说的,想让专辑们说一说?还有什么想要在本次会议上探讨的?遇到的难点,想让专辑们说一说?没什么,就是互共增加一些年轻人,年轻力量,新生力量除了增加你以前最荣耀的那种充满国立感觉的那些人对老人也是一种看到世界还有我阳光,阳光一点,好,进来对耐心方面有一点,我们是老公亲小夜鹤嘛,老公亲这个,衣服衣服这边,没有什么大的问题就是,有时候会碰到这个国际警察老师不配合的这种情况嗯也看我们平时要有点耐心然后跟老人们沟通因为毕竟是个好事还是有办法解决对 是蔡英蔡英蔡英是什么蔡英原来还是说想要得到更好的一些福的话我的话因为需要提高我们需要一些经费环境与食材都需要良好的经费做铺垫否则咱们也没有那么多办法来做更好像厨师已经是一流的厨师了但是菜市还是有在提高有些菜品咱们可以动员那些有爱好的有生活自理能力的老人羊羊羊羊你也要有这个机可以看到自己自主一下对对对,而且从中看到导的乐趣现在可以举办一些包饺子的小活动像有些老人又喜欢包饺子就可以吃到自己亲手做的饺子每个月可以都制定一些制定一到两个特色活动我们搞活动中心,因为新的主题叫回到知青年代回到知青年代因为有一些旧年代的东西他们的年代的东西有话题,有新的话题,勾心和回忆活动中心里边可以增添设施啊例如香气,买球,设施都可以在里面嗯请不吝点赞 订阅 转发 打赏支持明镜与点点栏目您好,焦###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+该次会议主要围绕养老院运营情况展开讨论，重点提到营养、医疗检查、紧急应对措施及员工培训等方面。会议强调了老年人饮食多样性和个性化的重要性，并提出加强营养配餐方案；同时重视老年人日常健康监测和急救演练，确保突发情况时能有效应对。此外，会议还提及需增强护工的专业培训，以提升服务质量，并鼓励老人参与户外活动和兴趣小组，如包饺子等活动，增进他们的情感交流与生活质量。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

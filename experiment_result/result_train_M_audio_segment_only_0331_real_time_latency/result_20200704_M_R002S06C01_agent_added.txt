@@ -1,0 +1,939 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 73
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.18s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.40it/s]Initializing KWS models...
+Loading Whisper model...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.37s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.57s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.86s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.45s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.69s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:15<00:04,  4.68s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.59s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.50s/it]
+001我是董事长010我是A盘007我是B盘做的人005我是C盘做的人019我是D盘做的人嗯行我们跟大家说一下我们都洗开老板吧说一下这个销售情况然后汇报一下这个最近这双半年的销售情况然后结合一下去年的销售情况然后公司会根据你们汇报的数据来决定咱们下半年的这个走向以及这个明年的楼盘这个开发这个客服东宫适合客服东宫公司有没有资金风险大家把自己的情况都概述一下我们上半年的销售业绩是6953万比去年下半年低因为二三月份整个我们就没有开门请不吝点赞 订阅 转发 打赏支持明镜与点点栏目在这个期间,我们的员工并没有停职工作,我们也一直在联系新老客户。所以在3月28号我们开门以后,还是迎来了一批新的客户,成交量也不错。特别是在四五月份的时候,我们推出了一系列的活动,包括一口价的房源。所以11號樓現在最難里面内容基本上已经卖空了9号楼也只剩下了一层和二层现在我们又新开了就是新推出了加推的5号7号和8号楼这个都是三居室的就是120平132平和140平的这样房子然后还有我们的洋房也开始加推价格也比较诱人7层高的洋房我们是卖8200成这个价格虽然是在开加上我们的开发区价格也是挺吸引人的这段时间客户量还是到访的客户还是挺多的我们也一直在维护这些新老客户包括老客户带新客户的一个优惠活动我们会给老客户带新客户一个9.8折的优惠然后呢我们也推出了就是成交砸金蛋的活动没有空的都是一些家用的用得着的一些电器比如说化碳机洗衣机这些东西都是非常实用的并不是说一些好像是就是一些活动就是纯粹娱乐性的活动就砸一金蛋里边拿出来一套茶具什么的不是这样的每一个金蛋里边都是有食物的而且都是很实用的請加油電器在就是在交手户重交的当天客户就可以去砸这个金蛋然后在下个月的话我们会推出新的一些活动这个活动内容和活动的价格区间还在商议中这是我们上半年的一些具体工作你这个楼盘是你觉得股价已经销售了百分之百的话我股政期权的房子现在只有10%的没有收出因为我们5号7号的第5 第5 现在正在申请公布因为说是7月15号就可以拿到手这样的话我们可以加大力的宣传因为股权的话我们还不敢去大力的宣传我們現在只是在賣五中七選的行走现在就剩下九号楼几套房子了就是一层和二层的7月15号正期权这个消息是确认的吗差不多因为现在正在跑最后一个时序基本上可以7月中旬或者就是下旬大概我们就是在一季度7月15号这样的话我们就是推出了这个5号7号8号楼我们就可以大力的去推广了那先开始前期的这个宣传告示吧对我们现在就是不说那个我们在网上去做这些宣传但是我们可以不咱们可以在网上做宣传但是咱们可以不说具体日期咱们可以说7月下旬下旬是10天时间的对吧对每天都是下旬7月30号每个人都可以跟着你的新浪客户去做一个讓他們不會忽悠身边有朋友的话可以介绍过来做好准备了现在该是准备购物的时候了广告这方面可以做一个模糊的时间限制比如说7月30天每天都是7月7月下旬10天从21号到30号都是7月下旬我们可以不说具体的然后还有一个就是因为我们南边的就是紧连着海海洋馆还有气力核如果谁可以做一个海洋馆的一些实景可以跟我们的学生同学一起因为我们现在只是文字性的说我们南边会建一个海洋馆但是不可能我们让客户去展开你想象的空间去想象这个海洋馆是什么样子的如果有一些实体的照片的话我们可以或者说只要是不一定是我们这个当然我们这个还没有建起来可以其他的就排我那些实体照片有,有做,有发案的我们可以做一些,或者说去采集一些实体的照片先出个方案,然后找设计部与宣传部出方案之后,给设计部宣传部让设计部去找图片,不管是从哪找图片还是实体拍摄让他把图片调定或者什么的对对对那个方案上我们出去做发一些宣传产业的时候做成那样或者说做一个短片或者设计一个两三分钟的短片视频那类的行 让他做做好之后交给先生沫先生沫平常来行你做一个方案就行直接给我给他行回去之后拿方案直接就往那边提交就行好的下一个我们那个SEPA我们那个C盘就是主要来主打就是比如说学校我们就是市中心学校有医院然后有商场都是离得比较近的然后我们主要就是建筑面子是55万容积率2.2%2.2%然后我们整体规划是30栋36栋现在就是阳房小高层高层现在就是在疫情之间现在就卖了100多比去年开盘的时候下降了很多可能疫情之间人们收入也下降了本来打算,以前我的客户一直在追踪本来打算有买房的考虑但是现在因为疫情之间有的人做生意的话收入已经停了还有就是有工作的有的人他现在比如说学校老师都开不了课有的就还有教育机会就给一些基础的工资所以说都在刮毛上而且有的人就是说现在就说那个可能楼盘会下降这个价格会降有人就在刮毛我们现在就是说打出的一个我们这个建筑理念的就是说是天然的一个氧巴因为市中心然后我们这个地区的就是说污染啊然后雾啊冬天都比较什么然后我们现在就是打了一个大型的地下的天然氧就在这些建筑中然后这个养八将来就是等我们这个小区入住以后只让我们小区的人去里边然后锻炼身体呀 玩啊不让这个外来的人员进来就是还有就是说是有一部分就是旁边的这个我们宣传的就是说学校 因为它这个是重点小学现在这个好多人現在就有二胎了然后就是说考虑一些这个上学的改改善一下我们现在就是有两梯两户还有两梯四户享受比较好之前有一些小小洋房小别墅最近就是消消热的特别就是不好吧因为它这个价格到底是在哪还有有的有在的那个地下地下这个就是那个夏月然后它这个户型比较大因为下月跟这个上面一层的话下来都得三四百平所以销售都设计都特别不好像这个两屋两屋四户销售还是比较好的因为两屋四户的话价钱大概就是8000左右100多平两口居家四口居家还有新结婚的买的房子还是比较多的我们主要还是嗯社区私密性、数据性、安全性的特点还有警制因为有一个天然的地下氧发所以全天就招来我们宣传点就是说我们这个物业全天的人工行为都是我们自己的物业只能门禁为客户提供安全的保障现在就是我们下半天就是准备出推出一些活动,然后促进一下我们这个销售,因为今年就有疫情嘛,现在就是说销售下降了。当然我们就是准备就是说搞一些打针活动,比如说跟那个,就是去那个就是有些老小区做一下宣传。然后就是说因为我们现在价格其实有推出一些特价房特价房然后一些老小区跟着宣传还有就是跟一些中介是合作看看就是还有就是我们这个就是说是100多平的就是销售就是那个娘房还有在下月的准备就是说去找一些那个公司啊大公司啊去那边搞一下活动看一下这个高级白领啊就是搞一下这个
+[Audio Detection] 在 750.77 秒检测到关键词 '好交交'。
+detection_time: 750.77, current_time: 744.00
+物业就是说第一就是说因为地下的就是天然养发地上的就是有各种这个植物啊还有就是还有儿童乐园啊小桥流水啊我们都会建的可能物业会稍微高一点但是也不会高到那么少我就想考虑一下我们自己公司的这个物业这边像这种的话还是不能放心咱们前期投入的物业因為物業的原因地下洋包的环境直接被損毁了这个的话损失是很大或者是透露的然后既然身边在于白领咱们可以多打造几个样板间然后你们这个楼盘就主打智能智能家居可以打造几个样板间专门弄一下智能家居参观的时候想要一进家什么事都不用带 光嘴说就行了动动嘴 什么东西都好了也能洗澡了地也扫好了饭也做好了就等着你吃完饭就上房睡觉了就这样的打个赌搞一下然后也可以做个相当的片儿宣传一下 投放到网络行下一个我们这个盘呢这个位置还是比较好的嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯现在占地是70米然后它是13万平方米吧然后我们这个盘定位还是比较高的然后上半年应该是这几个月吧三个月吧然后销售额在一个亿是这样的因为咱们这个盘子大户型都比较大就是三三居啊四局这么大大大平方的这个房子嗯然后咱们这个售价呢精装是在一万一万一万二三这样的情况嗯毛坯呢就是九千多到一万这个这个区间嗯嗯然后咱们这个房子的定位呢就是因为一属于它处于咱们这个开发区那一块嘛它是宜居生态非常的就是环境非常的好属于生态的地方也属于这种养老的地方吧并且我们这个也是五证齐全的然后我们针对就是上半年这个市场稍微就是怕出现这种很低迷的情况我们也采取了很多错误可是在那个没办法开门之前就是咱们售楼部没办法开门之前我们还是一直就是在批处引导还有监督咱们这个售楼人员就是这一部分嘛一定要做好这个客户的跟踪维护然后保证到了咱们这在咱们那个开门的时候咱们那个客户都能过来你好 嬌嬌基
+[Text Detection] 在 1021.30 秒检测到关键词 '基于之前',current_time: 1023.00, 问题文本: 基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意愿呢看看房子然后逐步更进能够尽快地签单尽快地让咱们的资金合用
+于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意愿呢看看房子然后逐步更进能够尽快地签单尽快地让咱们的资金合用主要是惠民吧说是惠民也是为了宣传我们的房产然后也是来到现场的就是说是那种去过我们我们售楼过看过房子然后留个电话拿个票然后拿那个票到现场可以领取礼品的这样的一个活动吧做了一个这样的活动咱们前期也是做了很多宣传的给这个活动所以现场来的人还是比较多的再一个也是做了一个活动就是说因为这个夏天嘛夏天到了我们也是在咱们瘦肉部这边也是做了一个美食节的活动其实就是一些小吃啊什么的吸引咱们这个咱们也是提前在这个公众号然后还有这个朋友圈都都做了这个转发宣传然后就是也是让咱们原先的老客户也是为咱们转发宣传然后吸引了也吸引了一部分的那个客户来到咱们这个少罗坡的现场可以为咱们增增加了人气当然很多就是说也有大部分都是过来玩的也有一部分也是有心过来看看房子的其实说是上半年经济不景气但是房子的需求量还是有的所以我们这一块也是抓好这个机会嘛因为咱们也是本地的房产所以咱们这个也不怕就是说那个我们这个房地产做的不好了老板跑了,不会出现这种现象所以说质量什么的都是有网账的然后我这边就是还有就是因为我们这个房产这个盘子它属于定位比较高端所以内部设施整体规划都是比较齐全的比如这个有这个亲子乐园有健康源就是可以为那个业主提供这个身体检查的这一块这个还有咱们的绿化做的也是非常好的就是投机就是咱们那个嗯业主交完手术以后咱们这个这些园的设施都已经上线以后他们都是可以过来去体验的嗯然后就是咱们这个瘦萝菇里边的这个部分都是前期經過很好的培訓不仅是业务能力,还有形象细致都非常好的主要是因为咱们服务的人群是不一样的,比较高端他们对人的素质要求也非常高然后我们服务也必须得非常多道我们这个盘算是这种情况那个是相对来说高端一些的对,定位稍微高一点除了在智能基础方面多加一些舒适这方面我记得你这个盘子大点都是一些比较大的固形吧对然后绿化这边头要稍多一点其实这个维护这方面然后就是对于这个停车场这个停车位你看停车位不够吗停车位这个如果就咱们是设置的是地下停车的就是小区内就是地面上是不让停的因为是要有这个绿化我们设计的是地下停车位这个不能说足够因为每家每户按一家一个的话如果一家两辆车肯定是不够的这样足够的因为是按规划的话肯定是按户规定的建设的停车场记得不是还有一些冗余吗比如说这个写多出来的停车位这些停车位的话卖的时候可以卖但是这个是要附带条件停车位就是转手在卖吗不不不比如说他想要再买一个停车位这个不是他可以挑的就是那个不能让他挑随机买然后再附在上头比如说多少层以上可以买,或者说多少平以上可以买,因为相对来说还是比较紧张的。是。想要说一下我们A盘的这三百年的运营情况。三百年我们的实验销售是9100万,基本上达到了预期。我们这楼盘呢是位于现在是未来的城市中心新东西区这个核心地段北边有人民医院,西边有邢台县医院,附近还有邢台市第七中学,第三中学,东林还有新建的一个精英中学,这精英中学也是开立横中。从就医到受洗都是非常方便的另外中策还有一个联络员是能够提供一个很好的休息场所所以说我们这个设计是一个高端的一个基础区从这个我们目前我们这个说楼面积是我们这个楼盘借入面积大概是总面积是57亩是初步定了是建17栋楼其中有4栋楼已经团购出去了我们的地下车库设计是应该叫1比2就一户特别两个车库其實滿足用戶列島的需求现在老家庭一家有两个车三个车都有所以说这个车库还配得要多一点因为我们车库设计是完全是停在地下是地面上不允许停车的是完全是封闭的上面就是一个体现居住好体现一个天然合一居住要求环境要干净这个并且还有安线再来我们这个小区设计,绿化面积是达到了60%以上。园内小区内有儿童乐园,娱乐设施,还有休闲区域,健身绿道。楼上地面部分基本上就是一个休闲娱乐场所,是不允许汽车出入,这也是现在目前一个高端设计的基本要求。我们我们这个销售主要是针对一些高端人群从咱这个销售铺路上来说也是找一些企业家和明星来代言通过他们的口碑来介绍来推广咱的产品总体来说吧,这个前景是很好的,很不错
+[Audio Detection] 在 1585.28 秒检测到关键词 '好交交'。
+detection_time: 1585.28, current_time: 1581.00
+三个学校,可以直接大力宣传一下所以这个价格也可以再涨一下价格可以再涨停车位这个的话,可以人后变动一下看附近如果有什么地方比较适合在建一个停车场的话外部停车场的话,也可以这个申请一下可以的话你就把辅助人再建一个外部也算是跟高端住房相搭的不让住户为停车场发愁请他为有的是是咱们安的公园公园上白天有些旅游客户车停在那晚上可以就騰出來讓咱小區居民你听到那个味觉嗯现在不是有个智慧泼车吗直接给什么让他规划一下然后咱们每年给人交付金额好的这个就从这个呃 五月费里面扣吧嗯这五月费也可以由咱们公司出一部分然后那什么出一部分反正说是什么说的吧然後看下半年是怎么办下半年这个销售规划然后有什么难点有什么需求可以提一下我们这边主要因为我们这个楼盘属于中低端的所以我们主要针对就是高居的客户包括南河沙河这边的客户因为我们守着快速道他们开车过来的话也很方便其实宣传的就是价格因为他们可以问一下沙河什么价三盒还5000多的我们保保用的时候不到70006000多就可以成交的话他们基本上有的有一个公务就是当天下午来第二天就来交定地有的当天定的有的就软离不留明天我得取取一下钱到银行取一下钱给人留了房子有这样的只要因为这边有小小三居的10500个那种卖就真的卖卖的挺好因为我们楼间距大楼间距60米他要在市里边买一个贵一个楼间距可能是45米48米对吧对对有42米42米43米的这个我们楼间距大一层二层也不所谓也不影响采光我们就是一层二层比他们在六四系统的采光还好所以这个没有问题我们主要就是去针对一下下线的或者就是说那种刚需的客户两个人刚刚来请台,两个人刚刚站在脚跟没有多少机遇的手上,可能父母给掏了手铺,两个孩子刚结婚来请台,我们可以去多收集这样的客户,让他们关注这个楼盘。别说离市区远市区近房的室友第一病患没有我们这儿好第二楼盐菌比我们这儿小第三价格还比我们高是可以推出自己的出风点自己的优势我们这样去宣传嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯在桌上打滚还有收购的电话因为出租车来没跑跟公交车也不一样公交车就这条线但是出租车来没跑我觉得跟出租车在顶上打那个广告出租车商讨然后你可以看只要他来我们家看我们可以车接车送因为我们比较不在市区里面可能坐公交车的话很慢胡椒粉填一小时我们可以接他,因为我们守着宽度,我们要接的话走宽度很快的只要是这种异象托户的话,一般没人,其实在市里边人都还会有个什么缺点的可能我们走路路过,我们去看了一下,不一定进楼的,进社会部的,不一定是真买房子的但是来我们这儿,这真的是异象托户,所以我们可以去接,可以去送鞋看着好像是废了油是吧但是这个开放车申请可以再给我们配两辆因为很多时候有客户没车你跟我切电了或者说别人自己开车开着自己拎车都不能为事儿我们自己有开车是最好的又显得我们正规又显得我们热情小巴车的话可以让行车卖给你PVP个四五辆然后相关司机你可以自己找可以配位一下也可以然后宣传部那边你让宣传部那边把广告直接就直接就下铺到下级线直接铺到下级线对,下级线是全部铺到周边的全部铺一遍第一期这个广告宣传不看效果只要这个力度最新版权知道的来到市里去
+[Text Detection] 在 2045.20 秒检测到关键词 '你好交',current_time: 2015.00, 问题文本: 去看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代
+看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代我们这个就是说在这个最近还这个稍微把这个收容部装修了一下因为我们主要的是就是附近的居民还有学校因为有的家长都带着孩子过来看房子稍微就是弄一个游乐园然后外边呢我们都弄的这个休闲的也是游乐的房子然后那个就是稍微装修一点我们就主打就是学校因为我们是中心嘛还有就是医院超市商铺这些主打然后要是再出手的话一会出手是我们现在就是主要去就是附近的一些厂子然后还有那个附近的这些老社区因为它改善嘛原来都是小户型就是做一些这些宣传行我大致听了一下总体看了一下这个报告然后基本上看你们大部分需求的都是这个宣传那方面的这样可以趁下半年直接就是你们出方案然后把预算等等什么都出一下然后交给宣传部宣传部宣传部门里边给你们宣传一下然后还是分三期宣传第一期我们不要求成效只要求知名度只要求知名度按照投放范围进行覆盖式投放不看这个长码,只看这个node第二期进行详细宣传然后让他们知道具体的东西是什么样的然后具体的价钱以及具体户型都可以宣传一下第三期咱们就优惠政策直接下然后优惠政策的话你们根据不同的定位根据你们不同的定位不同楼盘我会让你们看根据下半年以往的这么一个情况你
+[Text Detection] 在 2224.40 秒检测到关键词 '娇娇',current_time: 2201.00, 问题文本: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售
+还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/out_001-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 504171, dtype: float32, min: -0.138580322265625, max: 0.111175537109375
+问题音频时间长度: 31.5106875
+
+
+[Agent] 接收到问题: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411332.8449733
+问题音频STT前的时刻: 1743411332.8452604
+问题音频STT后的时刻: 1743411333.4221582
+问题音频STT时间: 0.5768978595733643
+
+
+[Agent] 最终接收到问题: 你好,焦焦,新楼盘销售情况如何?以及下半年销售策略有何调整?
+, 1743411333.4224896
+问题音频送入Planner的时刻: 1743411333.4231288
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743411334.0522623
+planner new_token time: 1743411334.446822
+planner new_token time: 1743411334.447273
+First token received: 1, time: 1743411334.448101
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411334.4994807
+talker first token time: 1743411335.123769
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743411335.1855135
+talker first token time: 1743411335.2114072
+talker first token time: 1743411335.2633348
+talker first token time: 1743411335.2894711
+talker first token time: 1743411335.3155653
+talker first token time: 1743411335.3415332
+talker first token time: 1743411335.3675575
+talker first token time: 1743411335.393371
+talker first token time: 1743411335.4193184
+talker first token time: 1743411335.4453077
+talker first token time: 1743411335.4716437
+talker first token time: 1743411335.5235426
+talker first token time: 1743411335.549685
+talker first token time: 1743411335.601693
+talker first token time: 1743411335.6536064
+talker first token time: 1743411335.7056682
+talker first token time: 1743411335.7317865
+talker first token time: 1743411335.7838395
+talker first token time: 1743411335.8100293
+talker first token time: 1743411335.8363163
+talker first token time: 1743411335.8627243
+talker first token time: 1743411335.8892605
+talker first token time: 1743411335.9418278
+talker first token time: 1743411335.9681003
+talker first token time: 1743411335.9943078
+talker first token time: 1743411336.0207515
+talker first token time: 1743411336.073162
+talker first token time: 1743411336.0997794
+talker first token time: 1743411336.126107
+talker first token time: 1743411336.1528409
+talker first token time: 1743411336.1791823
+talker first token time: 1743411336.2055092
+talker first token time: 1743411336.2319303
+talker first token time: 1743411336.2593572
+talker first token time: 1743411336.285822
+talker first token time: 1743411336.3383267
+talker first token time: 1743411336.3648274
+talker first token time: 1743411336.3911817
+talker first token time: 1743411336.4177332
+talker first token time: 1743411336.4442937
+talker first token time: 1743411336.4709246
+talker first token time: 1743411336.5236785
+talker first token time: 1743411336.5504303
+talker first token time: 1743411336.5771606
+talker first token time: 1743411336.6041248
+talker first token time: 1743411336.6311998
+talker first token time: 1743411336.657882
+talker first token time: 1743411336.6846023
+talker first token time: 1743411336.711266
+talker first token time: 1743411336.737895
+talker first token time: 1743411336.7647972
+talker first token time: 1743411336.7916296
+talker first token time: 1743411336.8445902
+talker first token time: 1743411336.8711975
+talker first token time: 1743411336.8977172
+talker first token time: 1743411336.924517
+talker first token time: 1743411336.9512541
+talker first token time: 1743411337.0051026
+talker first token time: 1743411337.032265
+talker first token time: 1743411337.0592115
+talker first token time: 1743411337.086311
+talker first token time: 1743411337.140049
+talker first token time: 1743411337.166897
+talker first token time: 1743411337.193902
+talker first token time: 1743411337.2209206
+talker first token time: 1743411337.274581
+talker first token time: 1743411337.301923
+talker first token time: 1743411337.328934
+talker first token time: 1743411337.3836737
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，娇娇！新楼盘的销售情况主要取决于多种因素，如地段、价格、品质、配套等。目前市场形势整体稳定，库存量适中，但具体表现还需结合当地市场进行分析。至于下半年的销售策略调整，开发商通常会根据市场反馈和行业动态进行优化，例如推出更多优惠活动、提升产品质量和服务水平、扩大营销渠道等。希望能对你有所帮助。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/out_001-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 504171, dtype: float32, min: -0.138580322265625, max: 0.111175537109375
+问题音频时间长度: 31.5106875
+
+
+[Agent] 接收到问题: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411339.8045433
+问题音频STT前的时刻: 1743411339.8051038
+问题音频STT后的时刻: 1743411341.2694004
+问题音频STT时间: 1.464296579360962
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意愿呢
+, 1743411341.2697353
+问题音频送入Planner的时刻: 1743411341.2703133
+planner new_token time: 1743411341.919233
+planner new_token time: 1743411342.3106415
+First token received: 0, time: 1743411342.3107684
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411342.701545
+planner new_token time: 1743411343.09311
+planner new_token time: 1743411343.4846973
+planner new_token time: 1743411343.8769586
+planner new_token time: 1743411344.2685378
+planner new_token time: 1743411344.660551
+planner new_token time: 1743411345.0526278
+planner new_token time: 1743411345.4440777
+planner new_token time: 1743411345.8361778
+planner new_token time: 1743411346.2279804
+planner new_token time: 1743411346.619329
+planner new_token time: 1743411347.0116284
+planner new_token time: 1743411347.4036198
+planner new_token time: 1743411347.7957513
+planner new_token time: 1743411348.187907
+planner new_token time: 1743411348.5797641
+planner new_token time: 1743411348.9719472
+planner new_token time: 1743411349.3642342
+planner new_token time: 1743411349.7561433
+planner new_token time: 1743411350.1483035
+planner new_token time: 1743411350.5400882
+planner new_token time: 1743411350.9325633
+planner new_token time: 1743411351.3251412
+planner new_token time: 1743411351.7179337
+planner new_token time: 1743411352.1102195
+planner new_token time: 1743411352.502731
+planner new_token time: 1743411352.8952098
+planner new_token time: 1743411353.2875216
+planner new_token time: 1743411353.6800025
+planner new_token time: 1743411354.072769
+planner new_token time: 1743411354.4650123
+planner new_token time: 1743411354.8577168
+planner new_token time: 1743411355.2505543
+planner new_token time: 1743411355.643203
+planner new_token time: 1743411356.0359728
+planner new_token time: 1743411356.428525
+planner new_token time: 1743411356.8209882
+planner new_token time: 1743411357.2137456
+planner new_token time: 1743411357.6062093
+planner new_token time: 1743411357.9988801
+planner new_token time: 1743411358.3914154
+planner new_token time: 1743411358.7852213
+planner new_token time: 1743411358.786118
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：智能家居样板间 天然仰巴 特点 优化 展示效果 吸引客户
+
+
+提取的关键词: ['智能家居样板间', '天然仰巴', '特点', '优化', '展示效果', '吸引客户']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743411360.403191
+one token time in planner tools: 1743411360.8028555
+one token time in planner tools: 1743411361.2017365
+one token time in planner tools: 1743411361.6005192
+one token time in planner tools: 1743411361.9995039
+one token time in planner tools: 1743411362.3987248
+one token time in planner tools: 1743411362.7977157
+one token time in planner tools: 1743411363.196782
+one token time in planner tools: 1743411363.5959735
+one token time in planner tools: 1743411363.9959464
+one token time in planner tools: 1743411364.3955472
+one token time in planner tools: 1743411364.794779
+one token time in planner tools: 1743411365.194027
+one token time in planner tools: 1743411365.5933406
+one token time in planner tools: 1743411365.9938643
+one token time in planner tools: 1743411366.3934917
+one token time in planner tools: 1743411366.7930884
+one token time in planner tools: 1743411367.1926193
+one token time in planner tools: 1743411367.5920827
+one token time in planner tools: 1743411367.9920435
+one token time in planner tools: 1743411368.3915954
+one token time in planner tools: 1743411368.7909827
+one token time in planner tools: 1743411369.190551
+one token time in planner tools: 1743411369.5904841
+one token time in planner tools: 1743411369.9902933
+one token time in planner tools: 1743411370.3894985
+one token time in planner tools: 1743411370.7900157
+one token time in planner tools: 1743411371.1891446
+one token time in planner tools: 1743411371.5884488
+one token time in planner tools: 1743411371.9886596
+one token time in planner tools: 1743411372.3879392
+one token time in planner tools: 1743411372.7869978
+one token time in planner tools: 1743411373.186824
+one token time in planner tools: 1743411373.5863392
+one token time in planner tools: 1743411373.9864674
+one token time in planner tools: 1743411374.3856804
+one token time in planner tools: 1743411374.7861135
+one token time in planner tools: 1743411375.1852167
+one token time in planner tools: 1743411375.5850775
+one token time in planner tools: 1743411375.9850023
+one token time in planner tools: 1743411376.3854566
+one token time in planner tools: 1743411376.7861624
+one token time in planner tools: 1743411377.1859872
+one token time in planner tools: 1743411377.5859816
+one token time in planner tools: 1743411377.9859807
+one token time in planner tools: 1743411378.3860693
+one token time in planner tools: 1743411378.7868798
+one token time in planner tools: 1743411379.1872659
+one token time in planner tools: 1743411379.5875707
+one token time in planner tools: 1743411379.9875863
+one token time in planner tools: 1743411380.3885744
+one token time in planner tools: 1743411380.7890909
+one token time in planner tools: 1743411381.189259
+one token time in planner tools: 1743411381.5899124
+one token time in planner tools: 1743411381.9899843
+one token time in planner tools: 1743411382.3899064
+one token time in planner tools: 1743411382.7900977
+one token time in planner tools: 1743411383.1900427
+one token time in planner tools: 1743411383.5900574
+one token time in planner tools: 1743411383.9897614
+one token time in planner tools: 1743411384.3899117
+one token time in planner tools: 1743411384.790251
+one token time in planner tools: 1743411385.1903958
+one token time in planner tools: 1743411385.5905776
+one token time in planner tools: 1743411385.9906032
+one token time in planner tools: 1743411386.391288
+one token time in planner tools: 1743411386.7916577
+one token time in planner tools: 1743411387.1917465
+one token time in planner tools: 1743411387.591776
+one token time in planner tools: 1743411387.9919589
+one token time in planner tools: 1743411388.3920374
+one token time in planner tools: 1743411388.7922711
+one token time in planner tools: 1743411389.1926293
+one token time in planner tools: 1743411389.5924683
+one token time in planner tools: 1743411389.9923322
+one token time in planner tools: 1743411390.3925517
+one token time in planner tools: 1743411390.7926395
+one token time in planner tools: 1743411391.1928208
+one token time in planner tools: 1743411391.592768
+one token time in planner tools: 1743411391.9926493
+one token time in planner tools: 1743411392.3928807
+one token time in planner tools: 1743411392.7930012
+one token time in planner tools: 1743411393.1928306
+one token time in planner tools: 1743411393.5926862
+one token time in planner tools: 1743411393.99247
+one token time in planner tools: 1743411394.3924446
+one token time in planner tools: 1743411394.7926555
+one token time in planner tools: 1743411395.1927304
+one token time in planner tools: 1743411395.592532
+one token time in planner tools: 1743411395.9926383
+one token time in planner tools: 1743411396.3927162
+one token time in planner tools: 1743411396.7928712
+one token time in planner tools: 1743411397.1929877
+one token time in planner tools: 1743411397.5931444
+one token time in planner tools: 1743411397.9930763
+one token time in planner tools: 1743411398.3931105
+one token time in planner tools: 1743411398.793122
+one token time in planner tools: 1743411399.193513
+one token time in planner tools: 1743411399.5937624
+one token time in planner tools: 1743411399.9939435
+one token time in planner tools: 1743411400.3940167
+one token time in planner tools: 1743411400.7942488
+one token time in planner tools: 1743411401.1948662
+one token time in planner tools: 1743411401.5954883
+one token time in planner tools: 1743411401.996043
+one token time in planner tools: 1743411402.3972604
+one token time in planner tools: 1743411402.7978284
+one token time in planner tools: 1743411403.1983962
+one token time in planner tools: 1743411403.5990531
+one token time in planner tools: 1743411403.9995317
+one token time in planner tools: 1743411404.4000785
+one token time in planner tools: 1743411404.8011281
+one token time in planner tools: 1743411405.2027502
+one token time in planner tools: 1743411405.6035235
+one token time in planner tools: 1743411406.0044625
+one token time in planner tools: 1743411406.4054976
+one token time in planner tools: 1743411406.806762
+one token time in planner tools: 1743411407.2075312
+one token time in planner tools: 1743411407.6078064
+one token time in planner tools: 1743411408.0077913
+one token time in planner tools: 1743411408.4080071
+one token time in planner tools: 1743411408.8086095
+one token time in planner tools: 1743411409.2096655
+one token time in planner tools: 1743411409.6096926
+one token time in planner tools: 1743411410.0100083
+one token time in planner tools: 1743411410.4101722
+one token time in planner tools: 1743411410.811097
+one token time in planner tools: 1743411411.2112098
+one token time in planner tools: 1743411411.6114898
+one token time in planner tools: 1743411411.6120167
+
+Token count: 130, Total time: 52.6720 seconds, One token time: 0.4052 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：智能家居', '样板', '间', ' ', '天', '然', '仰', '巴', ' ', '特', '点', ' ', '优化', ' ', '展', '示', '效果', ' ', '吸', '引', '客户', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###然后就是说因为我们现在价格其实有推出一些特价房特价房然后一些老小区跟着宣传还有就是跟一些中介是合作看看就是还有就是我们这个就是说是100多平的就是销售就是那个娘房还有在下月的准备就是说去找一些那个公司啊大公司啊去那边搞一下活动看一下这个高级白领啊就是搞一下这个物业就是说第一就是说因为地下的就是天然养发地上的就是有各种这个植物啊还有就是还有儿童乐园啊小桥流水啊我们都会建的可能物业会稍微高一点但是也不会高到那么少我就想考虑一下我们自己公司的这个物业这边像这种的话还是不能放心咱们前期投入的物业因為物業的原因地下洋包的环境直接被損毁了这个的话损失是很大或者是透露的然后既然身边在于白领咱们可以多打造几个样板间然后你们这个楼盘就主打智能智能家居可以打造几个样板间专门弄一下智能家居参观的时候想要一进家什么事都不用带 光嘴说就行了动动嘴 什么东西都好了也能洗澡了地也扫好了饭也做好了就等着你吃完饭就上房睡觉了就这样的打个赌搞一下然后也可以做个相当的片儿宣传一下 投放到网络行下一个我们这个盘呢这个位置还是比较好的嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯现在占地是70米然后它是13万平方米吧然后我们这个盘定位还是比较高的然后上半年应该是这几个月吧三个月吧然后销售额在一个亿是这样的因为咱们这个盘子大户型都比较大就是三三居啊四局这么大大大平方的这个房子嗯然后咱们这个售价呢精装是在一万一万一万二三这样的情况嗯毛坯呢就是九千多到一万这个这个区间嗯嗯然后咱们这个房子的定位呢就是因为一属于它处于咱们这个开发区那一块嘛它是宜居生态非常的就是环境非常的好属于生态的地方也属于这种养老的地方吧并且我们这个也是五证齐全的然后我们针对就是上半年这个市场稍微就是怕出现这种很低迷的情况我们也采取了很多错误可是在那个没办法开门之前就是咱们售楼部没办法开门之前我们还是一直就是在批处引导还有监督咱们这个售楼人员就是这一部分嘛一定要做好这个客户的跟踪维护然后保证到了咱们这在咱们那个开门的时候咱们那个客户都能过来你好 嬌嬌基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的【展】示效果以吸引更多钱在客户的兴趣和购买意愿呢看看房子然后逐步更进能够尽快地签单尽快地让咱们的资金合用主要是惠民吧说是惠民也是为了宣传我们的房产然后也是来到现场的就是说是那种去过我们我们售楼过看过房子然后留个电话拿个票然后拿那个票到现场可以领取礼品的这样的一个活动吧做了一个这样的活动咱们前期也是做了很多宣传的给这个活动所以现场来的人还是比较多的再一个也是做了一个活动就是说因为这个夏天嘛夏天到了我们也是在咱们瘦肉部这边也是做了一个美食节的活动其实就是一些小吃啊什么的吸引咱们这个咱们也是提前在这个公众号然后还有这个朋友圈都都做了这个转发宣传然后就是也是让咱们原先的老客户也是为咱们转发宣传然后吸引了也吸引了一部分的那个客户来到咱们这个少罗坡的现场可以为咱们增增加了人气当然很多就是说也有大部分都是过来玩的也有一部分也是有心过来看看房子的其实说是上半年经济不景气但是房子的需求量还是有的所以我们这一块也是抓好这个机会嘛因为咱们也是本地的房产所以咱们这个也不怕就是说那个我们这个房地产做的不好了老板跑了,不会出现这种现象所以说质量什么的都是有网账的然后我这边就是还有就是因为我们这个房产这个盘子它属于定位比较高端所以内部设施整体规划都是比较齐全的比如这个有这个亲子乐园有健康源就是可以为那个业主提供这个身体检查的这一块这个还有咱们的绿化做的也是非常好的就是投机就是咱们那个嗯业主交完手术以后咱们这个这些园的设施都已经上线以后他们都是可以过来去体验的嗯然后就是咱们这个瘦萝菇里边的这个部分都是前期經過很好的培訓不仅是业务能力,还有形象细致都非常好的主要是因为咱们服务的人群是不一样的,比较高端他们对人的素质要求也非常高然后我们服务也必须得非常多道我们这个盘算是这种情况那个是相对来说高端一些的对,定位稍微高一点除了在智能基础方面多加一些舒适这方面我记得你这个盘子大点都是一些比较大的固形吧对然后绿化这边头要稍多一点其实这个维护这方面然后就是对于这个停车场这个停车位你看停车位不够吗停车位这个如果就咱们是设置的是地下停车的就是小区内就是地面上是不让停的因为是要有这个绿化我们设计的是地下停车位这个不能说足够因为每家每户按一家一个的话如果一家两辆车肯定是不够的这样足够的因为是按规划的话肯定是按户规定的建设的停车场记得不是还有一些冗余吗比如说这个写多出来的停车位这些停车位的话卖的时候可以卖但是这个是要附带条件停车位就是转手在卖吗不不不比如说他想要再买一个停车位这个不是他可以传。然后就是说因为我们现在价格其实有推出一些特价房特价房然后一些老小区跟着宣传还有就是跟一些中介是合作看看就是还有\n---\n别说离市区远市区近房的室友第一病患没有我们这儿好第二楼盐菌比我们这儿小第三价格还比我们高是可以推出自己的出风点自己的优势我们这样去宣传嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯在桌上打滚还有收购的电话因为出租车来没跑跟公交车也不一样公交车就这条线但是出租车来没跑我觉得跟出租车在顶上打那个广告出租车商讨然后你可以看只要他来我们家看我们可以车接车送因为我们比较不在市区里面可能坐公交车的话很慢胡椒粉填一小时我们可以接他,因为我们守着宽度,我们要接的话走宽度很快的只要是这种异象托户的话,一般没人,其实在市里边人都还会有个什么缺点的可能我们走路路过,我们去看了一下,不一定进楼的,进社会部的,不一定是真买房子的但是来我们这儿,这真的是异象托户,所以我们可以去接,可以去送鞋看着好像是废了油是吧但是这个开放车申请可以再给我们配两辆因为很多时候有客户没车你跟我切电了或者说别人自己开车开着自己拎车都不能为事儿我们自己有开车是最好的又显得我们正规又显得我们热情小巴车的话可以让行车卖给你PVP个四五辆然后相关司机你可以自己找可以配位一下也可以然后宣传部那边你让宣传部那边把广告直接就直接就下铺到下级线直接铺到下级线对,下级线是全部铺到周边的全部铺一遍第一期这个广告宣传不看效果只要这个力度最新版权知道的来到市里去看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代我们这个就是说在这个最近还这个稍微把这个收容部装修了一下因为我们主要的是就是附近的居民还有学校因为有的家长都带着孩子过来看房子稍微就是弄一个游乐园然后外边呢我们都弄的这个休闲的也是游乐的房子然后那个就是稍微装修一点我们就主打就是学校因为我们是中心嘛还有就是医院超市商铺这些主打然后要是再出手的话一会出手是我们现在就是主要去就是附近的一些厂子然后还有那个附近的这些老社区因为它改善嘛原来都是小户型就是做一些这些宣传行我大致听了一下总体看了一下这个报告然后基本上看你们大部分需求的都是这个宣传那方面的这样可以趁下半年直接就是你们出方案然后把预算等等什么都出一下然后交给宣传部宣传部宣传部门里边给你们宣传一下然后还是分三期宣传第一期我们不要求成效只要求知名度只要求知名度按照投放范围进行覆盖式投放不看这个长码,只看这个node第二期进行详细宣传然后让他们知道具体的东西是什么样的然后具体的价钱以及具体户型都可以宣传一下第三期咱们就优惠政策直接下然后优惠政策的话你们根据不同的定位根据你们不同的定位不同楼盘我会让你们看根据下半年以往的这么一个情况你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售你好,焦焦,新楼盘销售情况如何?以及下半年销售策略有何调整?你好焦焦基于之前我们讨论的内容关于我们楼盘主打的【智】能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，为了结合天然仰巴的特点进一步优化智能家具样板间的展示效果，建议：\n\n1. 强调自然环境与智能生活的融合：突出地下仰巴天然环境的优势，并将其与智能生活相结合，如自动空气净化、温度调节等；\n2. 打造智能化家居互动体验：通过演示语音控制家电、智能安全系统等，增强客户的体验感；\n3. 展示智能健康管理系统：将智能家居系统与健康监测功能结合，展示其在家庭生活中的应用，如自动提醒健康管理、远程医疗咨询等。\n\n这些措施有助于提高客户兴趣和购买意愿。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###然后就是说因为我们现在价格其实有推出一些特价房特价房然后一些老小区跟着宣传还有就是跟一些中介是合作看看就是还有就是我们这个就是说是100多平的就是销售就是那个娘房还有在下月的准备就是说去找一些那个公司啊大公司啊去那边搞一下活动看一下这个高级白领啊就是搞一下这个物业就是说第一就是说因为地下的就是天然养发地上的就是有各种这个植物啊还有就是还有儿童乐园啊小桥流水啊我们都会建的可能物业会稍微高一点但是也不会高到那么少我就想考虑一下我们自己公司的这个物业这边像这种的话还是不能放心咱们前期投入的物业因為物業的原因地下洋包的环境直接被損毁了这个的话损失是很大或者是透露的然后既然身边在于白领咱们可以多打造几个样板间然后你们这个楼盘就主打智能智能家居可以打造几个样板间专门弄一下智能家居参观的时候想要一进家什么事都不用带 光嘴说就行了动动嘴 什么东西都好了也能洗澡了地也扫好了饭也做好了就等着你吃完饭就上房睡觉了就这样的打个赌搞一下然后也可以做个相当的片儿宣传一下 投放到网络行下一个我们这个盘呢这个位置还是比较好的嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯,嗯现在占地是70米然后它是13万平方米吧然后我们这个盘定位还是比较高的然后上半年应该是这几个月吧三个月吧然后销售额在一个亿是这样的因为咱们这个盘子大户型都比较大就是三三居啊四局这么大大大平方的这个房子嗯然后咱们这个售价呢精装是在一万一万一万二三这样的情况嗯毛坯呢就是九千多到一万这个这个区间嗯嗯然后咱们这个房子的定位呢就是因为一属于它处于咱们这个开发区那一块嘛它是宜居生态非常的就是环境非常的好属于生态的地方也属于这种养老的地方吧并且我们这个也是五证齐全的然后我们针对就是上半年这个市场稍微就是怕出现这种很低迷的情况我们也采取了很多错误可是在那个没办法开门之前就是咱们售楼部没办法开门之前我们还是一直就是在批处引导还有监督咱们这个售楼人员就是这一部分嘛一定要做好这个客户的跟踪维护然后保证到了咱们这在咱们那个开门的时候咱们那个客户都能过来你好 嬌嬌基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的【展】示效果以吸引更多钱在客户的兴趣和购买意愿呢看看房子然后逐步更进能够尽快地签单尽快地让咱们的资金合用主要是惠民吧说是惠民也是为了宣传我们的房产然后也是来到现场的就是说是那种去过我们我们售楼过看过房子然后留个电话拿个票然后拿那个票到现场可以领取礼品的这样的一个活动吧做了一个这样的活动咱们前期也是做了很多宣传的给这个活动所以现场来的人还是比较多的再一个也是做了一个活动就是说因为这个夏天嘛夏天到了我们也是在咱们瘦肉部这边也是做了一个美食节的活动其实就是一些小吃啊什么的吸引咱们这个咱们也是提前在这个公众号然后还有这个朋友圈都都做了这个转发宣传然后就是也是让咱们原先的老客户也是为咱们转发宣传然后吸引了也吸引了一部分的那个客户来到咱们这个少罗坡的现场可以为咱们增增加了人气当然很多就是说也有大部分都是过来玩的也有一部分也是有心过来看看房子的其实说是上半年经济不景气但是房子的需求量还是有的所以我们这一块也是抓好这个机会嘛因为咱们也是本地的房产所以咱们这个也不怕就是说那个我们这个房地产做的不好了老板跑了,不会出现这种现象所以说质量什么的都是有网账的然后我这边就是还有就是因为我们这个房产这个盘子它属于定位比较高端所以内部设施整体规划都是比较齐全的比如这个有这个亲子乐园有健康源就是可以为那个业主提供这个身体检查的这一块这个还有咱们的绿化做的也是非常好的就是投机就是咱们那个嗯业主交完手术以后咱们这个这些园的设施都已经上线以后他们都是可以过来去体验的嗯然后就是咱们这个瘦萝菇里边的这个部分都是前期經過很好的培訓不仅是业务能力,还有形象细致都非常好的主要是因为咱们服务的人群是不一样的,比较高端他们对人的素质要求也非常高然后我们服务也必须得非常多道我们这个盘算是这种情况那个是相对来说高端一些的对,定位稍微高一点除了在智能基础方面多加一些舒适这方面我记得你这个盘子大点都是一些比较大的固形吧对然后绿化这边头要稍多一点其实这个维护这方面然后就是对于这个停车场这个停车位你看停车位不够吗停车位这个如果就咱们是设置的是地下停车的就是小区内就是地面上是不让停的因为是要有这个绿化我们设计的是地下停车位这个不能说足够因为每家每户按一家一个的话如果一家两辆车肯定是不够的这样足够的因为是按规划的话肯定是按户规定的建设的停车场记得不是还有一些冗余吗比如说这个写多出来的停车位这些停车位的话卖的时候可以卖但是这个是要附带条件停车位就是转手在卖吗不不不比如说他想要再买一个停车位这个不是他可以传。然后就是说因为我们现在价格其实有推出一些特价房特价房然后一些老小区跟着宣传还有就是跟一些中介是合作看看就是还有
+---
+别说离市区远市区近房的室友第一病患没有我们这儿好第二楼盐菌比我们这儿小第三价格还比我们高是可以推出自己的出风点自己的优势我们这样去宣传嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯在桌上打滚还有收购的电话因为出租车来没跑跟公交车也不一样公交车就这条线但是出租车来没跑我觉得跟出租车在顶上打那个广告出租车商讨然后你可以看只要他来我们家看我们可以车接车送因为我们比较不在市区里面可能坐公交车的话很慢胡椒粉填一小时我们可以接他,因为我们守着宽度,我们要接的话走宽度很快的只要是这种异象托户的话,一般没人,其实在市里边人都还会有个什么缺点的可能我们走路路过,我们去看了一下,不一定进楼的,进社会部的,不一定是真买房子的但是来我们这儿,这真的是异象托户,所以我们可以去接,可以去送鞋看着好像是废了油是吧但是这个开放车申请可以再给我们配两辆因为很多时候有客户没车你跟我切电了或者说别人自己开车开着自己拎车都不能为事儿我们自己有开车是最好的又显得我们正规又显得我们热情小巴车的话可以让行车卖给你PVP个四五辆然后相关司机你可以自己找可以配位一下也可以然后宣传部那边你让宣传部那边把广告直接就直接就下铺到下级线直接铺到下级线对,下级线是全部铺到周边的全部铺一遍第一期这个广告宣传不看效果只要这个力度最新版权知道的来到市里去看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代我们这个就是说在这个最近还这个稍微把这个收容部装修了一下因为我们主要的是就是附近的居民还有学校因为有的家长都带着孩子过来看房子稍微就是弄一个游乐园然后外边呢我们都弄的这个休闲的也是游乐的房子然后那个就是稍微装修一点我们就主打就是学校因为我们是中心嘛还有就是医院超市商铺这些主打然后要是再出手的话一会出手是我们现在就是主要去就是附近的一些厂子然后还有那个附近的这些老社区因为它改善嘛原来都是小户型就是做一些这些宣传行我大致听了一下总体看了一下这个报告然后基本上看你们大部分需求的都是这个宣传那方面的这样可以趁下半年直接就是你们出方案然后把预算等等什么都出一下然后交给宣传部宣传部宣传部门里边给你们宣传一下然后还是分三期宣传第一期我们不要求成效只要求知名度只要求知名度按照投放范围进行覆盖式投放不看这个长码,只看这个node第二期进行详细宣传然后让他们知道具体的东西是什么样的然后具体的价钱以及具体户型都可以宣传一下第三期咱们就优惠政策直接下然后优惠政策的话你们根据不同的定位根据你们不同的定位不同楼盘我会让你们看根据下半年以往的这么一个情况你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售你好,焦焦,新楼盘销售情况如何?以及下半年销售策略有何调整?你好焦焦基于之前我们讨论的内容关于我们楼盘主打的【智】能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，为了结合天然仰巴的特点进一步优化智能家具样板间的展示效果，建议：
+
+1. 强调自然环境与智能生活的融合：突出地下仰巴天然环境的优势，并将其与智能生活相结合，如自动空气净化、温度调节等；
+2. 打造智能化家居互动体验：通过演示语音控制家电、智能安全系统等，增强客户的体验感；
+3. 展示智能健康管理系统：将智能家居系统与健康监测功能结合，展示其在家庭生活中的应用，如自动提醒健康管理、远程医疗咨询等。
+
+这些措施有助于提高客户兴趣和购买意愿。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/out_001-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 504171, dtype: float32, min: -0.138580322265625, max: 0.111175537109375
+问题音频时间长度: 31.5106875
+
+
+[Agent] 接收到问题: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411413.7070265
+问题音频STT前的时刻: 1743411413.7073438
+问题音频STT后的时刻: 1743411414.3263273
+问题音频STT时间: 0.6189835071563721
+
+
+[Agent] 最终接收到问题: 你好,焦焦,针对高端楼盘停车为不足问题,你有何建议来优化停车管理?
+, 1743411414.3265114
+问题音频送入Planner的时刻: 1743411414.3272088
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743411414.9330127
+planner new_token time: 1743411415.32653
+planner new_token time: 1743411415.3271391
+First token received: 1, time: 1743411415.3272097
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411415.3383412
+talker first token time: 1743411415.6262922
+talker first token time: 1743411415.6534088
+talker first token time: 1743411415.679896
+talker first token time: 1743411415.7060525
+talker first token time: 1743411415.7319133
+talker first token time: 1743411415.7580528
+talker first token time: 1743411415.8098285
+talker first token time: 1743411415.8359823
+talker first token time: 1743411415.8620582
+talker first token time: 1743411415.888043
+talker first token time: 1743411415.9140112
+talker first token time: 1743411415.9403582
+talker first token time: 1743411415.9663696
+talker first token time: 1743411415.9924626
+talker first token time: 1743411416.0444703
+talker first token time: 1743411416.0969126
+talker first token time: 1743411416.1231763
+talker first token time: 1743411416.1494906
+talker first token time: 1743411416.1757195
+talker first token time: 1743411416.2018378
+talker first token time: 1743411416.228088
+talker first token time: 1743411416.2803636
+talker first token time: 1743411416.3069384
+talker first token time: 1743411416.3390348
+talker first token time: 1743411416.3652203
+talker first token time: 1743411416.391792
+talker first token time: 1743411416.4181952
+talker first token time: 1743411416.4707706
+talker first token time: 1743411416.4969592
+talker first token time: 1743411416.5231318
+talker first token time: 1743411416.5495255
+talker first token time: 1743411416.6020255
+talker first token time: 1743411416.6283932
+talker first token time: 1743411416.654778
+talker first token time: 1743411416.681141
+talker first token time: 1743411416.7075315
+talker first token time: 1743411416.7339988
+talker first token time: 1743411416.7605114
+talker first token time: 1743411416.813104
+talker first token time: 1743411416.8396165
+talker first token time: 1743411416.8661315
+talker first token time: 1743411416.918792
+talker first token time: 1743411416.9453907
+talker first token time: 1743411416.9719415
+talker first token time: 1743411416.998373
+talker first token time: 1743411417.0514545
+talker first token time: 1743411417.0782688
+talker first token time: 1743411417.1051812
+talker first token time: 1743411417.1321802
+talker first token time: 1743411417.159137
+talker first token time: 1743411417.2126179
+talker first token time: 1743411417.2655966
+talker first token time: 1743411417.292304
+talker first token time: 1743411417.3188705
+talker first token time: 1743411417.3718202
+talker first token time: 1743411417.3984733
+talker first token time: 1743411417.42512
+talker first token time: 1743411417.4517672
+talker first token time: 1743411417.4784632
+talker first token time: 1743411417.5317473
+talker first token time: 1743411417.5585299
+talker first token time: 1743411417.5853531
+talker first token time: 1743411417.6120753
+talker first token time: 1743411417.6388466
+talker first token time: 1743411417.6656673
+talker first token time: 1743411417.6928635
+talker first token time: 1743411417.7476969
+
+talker输出：
+
+Token count: 71, Total time: 2.9108 seconds, One token time: 0.0410 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对高端楼盘停车位不足的问题，可以考虑采用智能停车管理系统的解决方案。例如，通过安装自动泊车系统，可以提高车位的使用效率；设置预约停车系统，避免车主浪费时间寻找空位；利用物联网技术，实时监控车位状态，及时调整价格策略等。同时，也可以优化建筑设计，增加地下停车场的面积，或者与周边社区共享车位资源。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/out_001-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 504171, dtype: float32, min: -0.138580322265625, max: 0.111175537109375
+问题音频时间长度: 31.5106875
+
+
+[Agent] 接收到问题: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411419.9440074
+问题音频STT前的时刻: 1743411419.9442248
+问题音频STT后的时刻: 1743411421.4450748
+问题音频STT时间: 1.500849962234497
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容关于高端社区的绿化和学区防宣传策略这个销售情况你认为我们应该如何利用树林超过50年的大树和三个学区的优势来提升小区的吸引力并加大宣传力度呢
+, 1743411421.4453743
+问题音频送入Planner的时刻: 1743411421.4458742
+planner new_token time: 1743411422.0981622
+planner new_token time: 1743411422.4929397
+First token received: 0, time: 1743411422.4930604
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411422.8869832
+planner new_token time: 1743411423.2810898
+planner new_token time: 1743411423.6748626
+planner new_token time: 1743411424.068825
+planner new_token time: 1743411424.4625664
+planner new_token time: 1743411424.8562725
+planner new_token time: 1743411425.2501812
+planner new_token time: 1743411425.6443791
+planner new_token time: 1743411426.0380683
+planner new_token time: 1743411426.4320014
+planner new_token time: 1743411426.8259358
+planner new_token time: 1743411427.2198243
+planner new_token time: 1743411427.6138268
+planner new_token time: 1743411428.0076437
+planner new_token time: 1743411428.401684
+planner new_token time: 1743411428.795636
+planner new_token time: 1743411429.1896577
+planner new_token time: 1743411429.5835466
+planner new_token time: 1743411429.977133
+planner new_token time: 1743411430.372098
+planner new_token time: 1743411430.7661479
+planner new_token time: 1743411431.1600747
+planner new_token time: 1743411431.5544145
+planner new_token time: 1743411431.9496164
+planner new_token time: 1743411432.3440459
+planner new_token time: 1743411432.7380328
+planner new_token time: 1743411433.1322422
+planner new_token time: 1743411433.5268629
+planner new_token time: 1743411433.920964
+planner new_token time: 1743411434.3152685
+planner new_token time: 1743411434.7099755
+planner new_token time: 1743411435.1045477
+planner new_token time: 1743411435.4988668
+planner new_token time: 1743411435.8930602
+planner new_token time: 1743411436.2875192
+planner new_token time: 1743411436.6817832
+planner new_token time: 1743411437.0755916
+planner new_token time: 1743411437.4710965
+planner new_token time: 1743411437.865705
+planner new_token time: 1743411438.2601979
+planner new_token time: 1743411438.6547308
+planner new_token time: 1743411439.0492315
+planner new_token time: 1743411439.4436848
+planner new_token time: 1743411439.8385823
+planner new_token time: 1743411439.8396327
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：高端社区 绿化 学区优势 大树 宣传策略 销售情况 提升吸引力
+
+
+提取的关键词: ['高端社区', '绿化', '学区优势', '大树', '宣传策略', '销售情况', '提升吸引力']
+
+找到的上下文片段数量: 2
+one token time in planner tools: 1743411441.5821881
+one token time in planner tools: 1743411441.984601
+one token time in planner tools: 1743411442.3852727
+one token time in planner tools: 1743411442.7870643
+one token time in planner tools: 1743411443.1888564
+one token time in planner tools: 1743411443.5898666
+one token time in planner tools: 1743411443.9908755
+one token time in planner tools: 1743411444.3923442
+one token time in planner tools: 1743411444.794515
+one token time in planner tools: 1743411445.195092
+one token time in planner tools: 1743411445.5962324
+one token time in planner tools: 1743411445.9975257
+one token time in planner tools: 1743411446.3992622
+one token time in planner tools: 1743411446.8007326
+one token time in planner tools: 1743411447.201813
+one token time in planner tools: 1743411447.602374
+one token time in planner tools: 1743411448.0042095
+one token time in planner tools: 1743411448.4060261
+one token time in planner tools: 1743411448.8081234
+one token time in planner tools: 1743411449.209288
+one token time in planner tools: 1743411449.6110346
+one token time in planner tools: 1743411450.0130246
+one token time in planner tools: 1743411450.4145617
+one token time in planner tools: 1743411450.8161237
+one token time in planner tools: 1743411451.217716
+one token time in planner tools: 1743411451.619506
+one token time in planner tools: 1743411452.0221162
+one token time in planner tools: 1743411452.4241636
+one token time in planner tools: 1743411452.82661
+one token time in planner tools: 1743411453.2280197
+one token time in planner tools: 1743411453.6299403
+one token time in planner tools: 1743411454.0310366
+one token time in planner tools: 1743411454.4320796
+one token time in planner tools: 1743411454.8336644
+one token time in planner tools: 1743411455.2348993
+one token time in planner tools: 1743411455.6361628
+one token time in planner tools: 1743411456.0377524
+one token time in planner tools: 1743411456.438903
+one token time in planner tools: 1743411456.8411746
+one token time in planner tools: 1743411457.2431867
+one token time in planner tools: 1743411457.6456091
+one token time in planner tools: 1743411458.0474691
+one token time in planner tools: 1743411458.4492085
+one token time in planner tools: 1743411458.8505569
+one token time in planner tools: 1743411459.2516398
+one token time in planner tools: 1743411459.6528163
+one token time in planner tools: 1743411460.0543616
+one token time in planner tools: 1743411460.455821
+one token time in planner tools: 1743411460.8576636
+one token time in planner tools: 1743411461.2592547
+one token time in planner tools: 1743411461.661262
+one token time in planner tools: 1743411462.0629497
+one token time in planner tools: 1743411462.4643345
+one token time in planner tools: 1743411462.8665757
+one token time in planner tools: 1743411463.2680504
+one token time in planner tools: 1743411463.6689591
+one token time in planner tools: 1743411464.070319
+one token time in planner tools: 1743411464.471643
+one token time in planner tools: 1743411464.8731759
+one token time in planner tools: 1743411465.2745862
+one token time in planner tools: 1743411465.6764405
+one token time in planner tools: 1743411466.0783663
+one token time in planner tools: 1743411466.4807835
+one token time in planner tools: 1743411466.8827968
+one token time in planner tools: 1743411467.2851882
+one token time in planner tools: 1743411467.6873324
+one token time in planner tools: 1743411468.089248
+one token time in planner tools: 1743411468.4907997
+one token time in planner tools: 1743411468.8927884
+one token time in planner tools: 1743411469.294551
+one token time in planner tools: 1743411469.6963794
+one token time in planner tools: 1743411470.0986893
+one token time in planner tools: 1743411470.500986
+one token time in planner tools: 1743411470.9030428
+one token time in planner tools: 1743411471.3049328
+one token time in planner tools: 1743411471.706691
+one token time in planner tools: 1743411472.1080785
+one token time in planner tools: 1743411472.5100603
+one token time in planner tools: 1743411472.9117355
+one token time in planner tools: 1743411473.3139968
+one token time in planner tools: 1743411473.7160745
+one token time in planner tools: 1743411474.118512
+one token time in planner tools: 1743411474.5208073
+one token time in planner tools: 1743411474.9229474
+one token time in planner tools: 1743411475.3251412
+one token time in planner tools: 1743411475.7268662
+one token time in planner tools: 1743411476.12878
+one token time in planner tools: 1743411476.530676
+one token time in planner tools: 1743411476.932568
+one token time in planner tools: 1743411477.3348413
+one token time in planner tools: 1743411477.7369888
+one token time in planner tools: 1743411478.1395345
+one token time in planner tools: 1743411478.5417714
+one token time in planner tools: 1743411478.9438093
+one token time in planner tools: 1743411479.3454635
+one token time in planner tools: 1743411479.7472959
+one token time in planner tools: 1743411480.14974
+one token time in planner tools: 1743411480.5522249
+one token time in planner tools: 1743411480.954763
+one token time in planner tools: 1743411481.3573453
+one token time in planner tools: 1743411481.759945
+one token time in planner tools: 1743411482.1622982
+one token time in planner tools: 1743411482.5641441
+one token time in planner tools: 1743411482.9658756
+one token time in planner tools: 1743411483.3675935
+one token time in planner tools: 1743411483.7699118
+one token time in planner tools: 1743411484.171955
+one token time in planner tools: 1743411484.5741136
+one token time in planner tools: 1743411484.9767659
+one token time in planner tools: 1743411485.3791337
+one token time in planner tools: 1743411485.7817597
+one token time in planner tools: 1743411486.1841557
+one token time in planner tools: 1743411486.5861022
+one token time in planner tools: 1743411486.9880886
+one token time in planner tools: 1743411487.3902113
+one token time in planner tools: 1743411487.7933388
+one token time in planner tools: 1743411488.1958594
+one token time in planner tools: 1743411488.5982585
+one token time in planner tools: 1743411489.0009227
+one token time in planner tools: 1743411489.402821
+one token time in planner tools: 1743411489.8058658
+one token time in planner tools: 1743411490.2084987
+one token time in planner tools: 1743411490.6117458
+one token time in planner tools: 1743411491.0152266
+one token time in planner tools: 1743411491.418275
+one token time in planner tools: 1743411491.8211267
+one token time in planner tools: 1743411492.223127
+one token time in planner tools: 1743411492.6254988
+one token time in planner tools: 1743411493.027825
+one token time in planner tools: 1743411493.4304216
+one token time in planner tools: 1743411493.8331847
+one token time in planner tools: 1743411494.2358418
+one token time in planner tools: 1743411494.6382353
+one token time in planner tools: 1743411495.0407195
+one token time in planner tools: 1743411495.4428604
+one token time in planner tools: 1743411495.84562
+one token time in planner tools: 1743411496.2481048
+one token time in planner tools: 1743411496.6506698
+one token time in planner tools: 1743411497.0531905
+one token time in planner tools: 1743411497.456078
+one token time in planner tools: 1743411497.8585167
+one token time in planner tools: 1743411498.2606232
+one token time in planner tools: 1743411498.6629357
+one token time in planner tools: 1743411499.0651212
+one token time in planner tools: 1743411499.4677205
+one token time in planner tools: 1743411499.8710277
+one token time in planner tools: 1743411500.2739186
+one token time in planner tools: 1743411500.6775675
+one token time in planner tools: 1743411500.6783018
+
+Token count: 149, Total time: 60.6762 seconds, One token time: 0.4072 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：高端', '社区', ' ', '绿', '化', ' ', '学', '区', '优势', ' ', '大', '树', ' ', '宣', '传', '策略', ' ', '销', '售', '情况', ' 提', '升', '吸引力', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###001我是董事长010我是A盘007我是B盘做的人005我是C盘做的人019我是D盘做的人嗯行我们跟大家说一下我们都洗开老板吧说一下这个【销】售情况然后汇报一下这个最近这双半年的销售情况然后结合一下去年的销售情况然后公司会根据你们汇报的数据来决定咱们下半年的这个走向以及这个明年的楼盘这个开发这个客服东宫适合客服东宫公司有没有资金风险大家把自己的情况都概述一下我们上半年的销售业绩是6953万比去年下半年低因为二三月份整个我们就没有开门请不吝点赞 订阅 转发 打赏支持明镜与点点栏目在这个期间,我们的员工并没有停职工作,我们也一直在联系新老客户。所以在3月28号我们开门以后,还是迎来了一批新的客户,成交量也不错。特别是在四五月份的时候,我们推出了一系列的活动,包括一口价的房源。所以11號樓現在最難里面内容基本上已经卖空了9号楼也只剩下了一层和二层现在我们又新开了就是新推出了加推的5号7号和8号楼这个都是三居室的就是120平132平和140平的这样房子然后还有我们的洋房也开始加推价格也比较诱人7层高的洋房我们是卖8200成这个价格虽然是在开加上我们的开发区价格也是挺吸引人的这段时间客户量还是到访的客户还是挺多的我们也一直在维护这些新老客户包括老客户带新客户的一个优惠活动我们会给老客户带新客户一个9.8折的优惠然后呢我们也推出了就是成交砸金蛋的活动没有空的都是一些家用的用得着的一些电器比如说化碳机洗衣机这些东西都是非常实用的并不是说一些好像是就是一些活动就是纯粹娱乐性的活动就砸一金蛋里边拿出来一套茶具什么的不是这样的每一个金蛋里边都是有食物的而且都是很实用的請加油電器在就是在交手户重交的当天客户就可以去砸这个金蛋然后在下个月的话我们会推出新的一些活动这个活动内容和活动的价格区间还在商议中这是我们上半年的一些具体工作你这个楼盘是你觉得股价已经销售了百分之百的话我股政期权的房子现在只有10%的没有收出因为我们5号7号的第5 第5 现在正在申请公布因为说是7月15号就可以拿到手这样的话我们可以加大力的宣传因为股权的话我们还不敢去大力的宣传我們現在只是在賣五中七選的行走现在就剩下九号楼几套房子了就是一层和二层的7月15号正期权这个消息是确认的吗差不多因为现在正在跑最后一个时序基本上可以7月中旬或者就是下旬大概我们就是在一季度7月15号这样的话我们就是推出了这个5号7号8号楼我们就可以大力的去推广了那先开始前期的这个宣传告示吧对我们现在就是不说那个我们在网上去做这些宣传但是我们可以不咱们可以在网上做宣传但是咱们可以不说具体日期咱们可以说7月下旬下旬是10天时间的对吧对每天都是下旬7月30号每个人都可以跟着你的新浪客户去做一个讓他們不會忽悠身边有朋友的话可以介绍过来做好准备了现在该是准备购物的时候了广告这方面可以做一个模糊的时间限制比如说7月30天每天都是7月7月下旬10天从21号到30号都是7月下旬我们可以不说具体的然后还有一个就是因为我们南边的就是紧连着海海洋馆还有气力核如果谁可以做一个海洋馆的一些实景可以跟我们的学生同学一起因为我们现在只是文字性的说我们南边会建一个海洋馆但是不可能我们让客户去展开你想象的空间去想象这个海洋馆是什么样子的如果有一些实体的照片的话我们可以或者说只要是不一定是我们这个当然我们这个还没有建起来可以其他的就排我那些实体照片有,有做,有发案的我们可以做一些,或者说去采集一些实体的照片先出个方案,然后找设计部与宣传部出方案之后,给设计部宣传部让设计部去找图片,不管是从哪找图片还是实体拍摄让他把图片调定或者什么的对对对那个方案上我们出去做发一些宣传产业的时候做成那样或者说做一个短片或者设计一个两三分钟的短片视频那类的行 让他做做好之后交给先生沫先生沫平常来行你做一个方案就行直接给我给他行回去之后拿方案直接就往那边提交就行好的下一个我们那个SEPA我们那个C盘就是主要来主打就是比如说学校我们就是市中心学校有医院然后有商场都是离得比较近的然后我们主要就是建筑面子是55万容积率2.2%2.2%然后我们整体规划是30栋36栋现在就是阳房小高层高层现在就是在疫情之间现在就卖了100多比去年开盘的时候下降了很多可能疫情之间人们收入也下降了本来打算,以前我的客户一直在追踪本来打算有买房的考虑但是现在因为疫情之间有的人做生意的话收入已经停了还有就是有工作的有的人他现在比如说学校老师都开不了课有的就还有教育机会就给一些基础的工资所以说都在刮毛上而且有的人就是说现在就说那个可能楼盘会下降这个价格会降有人就在刮毛我们现在就是说打出的一个我们这个建筑理念的就是说是天然的一个氧巴因为市中心然后我们这个地区的就是说污染啊然后雾啊冬天都比较什么然后我们现在就是打了一个大型的地下的天然氧就在这些建筑中然后这个养八将来就是等我们这个小区入住以后只让我们小区的人去里边然后锻炼身体呀 玩啊不让这个外来的人员进来就是还有就是说是有一部分就是旁边的这个我们宣传的就是说学校 因为它这个是重点小学现在这个好多人現在就有二胎了然后就是说考虑一些这个上学的改改善一下我们现在就是有两梯两户还有两梯四户享受比较好之前有一些小小洋房小别墅最近就是消消热的特别就是不好吧因为它这个价格到底是在哪还有有的有在的那个地下地下这个就是那个夏月然后它这个户型比较大因为下月跟这个上面一层的话下来都得三四百平所以销售都设计都特别不好像这个两屋两屋四户销售还是比较好的因为两屋四户的话价钱大概就是8000左右100多平两口居家四口居家还有新结婚的买的房子还是比较多的我们主要还是嗯社区私密性、数据性、安全性的特点还有警制因为有一个天然的地下氧发所以全天就招来我们宣传点就是说我们这个物业全天的人工行为都是我们自己的物业只能门禁为客户提供安全的保障现在就是我们下半天就是准备出推出一些活动,然后促进一下我们这个销售,因为今年就有疫情嘛,现在就是说销售下降\n---\n别说离市区远市区近房的室友第一病患没有我们这儿好第二楼盐菌比我们这儿小第三价格还比我们高是可以推出自己的出风点自己的优势我们这样去宣传嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯在桌上打滚还有收购的电话因为出租车来没跑跟公交车也不一样公交车就这条线但是出租车来没跑我觉得跟出租车在顶上打那个广告出租车商讨然后你可以看只要他来我们家看我们可以车接车送因为我们比较不在市区里面可能坐公交车的话很慢胡椒粉填一小时我们可以接他,因为我们守着宽度,我们要接的话走宽度很快的只要是这种异象托户的话,一般没人,其实在市里边人都还会有个什么缺点的可能我们走路路过,我们去看了一下,不一定进楼的,进社会部的,不一定是真买房子的但是来我们这儿,这真的是异象托户,所以我们可以去接,可以去送鞋看着好像是废了油是吧但是这个开放车申请可以再给我们配两辆因为很多时候有客户没车你跟我切电了或者说别人自己开车开着自己拎车都不能为事儿我们自己有开车是最好的又显得我们正规又显得我们热情小巴车的话可以让行车卖给你PVP个四五辆然后相关司机你可以自己找可以配位一下也可以然后宣传部那边你让宣传部那边把广告直接就直接就下铺到下级线直接铺到下级线对,下级线是全部铺到周边的全部铺一遍第一期这个广告宣传不看效果只要这个力度最新版权知道的来到市里去看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代我们这个就是说在这个最近还这个稍微把这个收容部装修了一下因为我们主要的是就是附近的居民还有学校因为有的家长都带着孩子过来看房子稍微就是弄一个游乐园然后外边呢我们都弄的这个休闲的也是游乐的房子然后那个就是稍微装修一点我们就主打就是学校因为我们是中心嘛还有就是医院超市商铺这些主打然后要是再出手的话一会出手是我们现在就是主要去就是附近的一些厂子然后还有那个附近的这些老社区因为它改善嘛原来都是小户型就是做一些这些宣传行我大致听了一下总体看了一下这个报告然后基本上看你们大部分需求的都是这个宣传那方面的这样可以趁下半年直接就是你们出方案然后把预算等等什么都出一下然后交给宣传部宣传部宣传部门里边给你们宣传一下然后还是分三期宣传第一期我们不要求成效只要求知名度只要求知名度按照投放范围进行覆盖式投放不看这个长码,只看这个node第二期进行详细宣传然后让他们知道具体的东西是什么样的然后具体的价钱以及具体户型都可以宣传一下第三期咱们就优惠政策直接下然后优惠政策的话你们根据不同的定位根据你们不同的定位不同楼盘我会让你们看根据下半年以往的这么一个情况你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售你好,焦焦,新楼盘销售情况如何?以及下半年销售策略有何调整?你好焦焦基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意愿呢你好,焦焦,针对高端楼盘停车为不足问题,你有何建议来优化停车管理?你好焦焦基于之前我们讨论的内容关于高端社区的绿化和学区防【宣】传策略这个销售情况你认为我们应该如何利用树林超过50年的大树和三个学区的优势来提升小区的吸引力并加大宣传力度呢###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，【宣】的位置指代的是宣传策略，特别是针对高端社区的绿化和学区优势的宣传。为了提升小区的吸引力并加大宣传力度，可以采取以下措施：\n\n- 利用超过50年的大树，制作一系列具有视觉冲击力的宣传材料，如高清照片和短视频，并通过社交媒体广泛传播。\n- 强调小区内重点小学的优势，特别是针对有二胎家庭的需求，展示学区的便利性和高质量教育资源。\n- 通过线上线下的方式宣传社区内部天然氧吧的独特卖点，强调其对居住健康的益处。\n- 开展现场活动，邀请潜在买家参观，通过实际体验增加对项目的认知和好感度。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###001我是董事长010我是A盘007我是B盘做的人005我是C盘做的人019我是D盘做的人嗯行我们跟大家说一下我们都洗开老板吧说一下这个【销】售情况然后汇报一下这个最近这双半年的销售情况然后结合一下去年的销售情况然后公司会根据你们汇报的数据来决定咱们下半年的这个走向以及这个明年的楼盘这个开发这个客服东宫适合客服东宫公司有没有资金风险大家把自己的情况都概述一下我们上半年的销售业绩是6953万比去年下半年低因为二三月份整个我们就没有开门请不吝点赞 订阅 转发 打赏支持明镜与点点栏目在这个期间,我们的员工并没有停职工作,我们也一直在联系新老客户。所以在3月28号我们开门以后,还是迎来了一批新的客户,成交量也不错。特别是在四五月份的时候,我们推出了一系列的活动,包括一口价的房源。所以11號樓現在最難里面内容基本上已经卖空了9号楼也只剩下了一层和二层现在我们又新开了就是新推出了加推的5号7号和8号楼这个都是三居室的就是120平132平和140平的这样房子然后还有我们的洋房也开始加推价格也比较诱人7层高的洋房我们是卖8200成这个价格虽然是在开加上我们的开发区价格也是挺吸引人的这段时间客户量还是到访的客户还是挺多的我们也一直在维护这些新老客户包括老客户带新客户的一个优惠活动我们会给老客户带新客户一个9.8折的优惠然后呢我们也推出了就是成交砸金蛋的活动没有空的都是一些家用的用得着的一些电器比如说化碳机洗衣机这些东西都是非常实用的并不是说一些好像是就是一些活动就是纯粹娱乐性的活动就砸一金蛋里边拿出来一套茶具什么的不是这样的每一个金蛋里边都是有食物的而且都是很实用的請加油電器在就是在交手户重交的当天客户就可以去砸这个金蛋然后在下个月的话我们会推出新的一些活动这个活动内容和活动的价格区间还在商议中这是我们上半年的一些具体工作你这个楼盘是你觉得股价已经销售了百分之百的话我股政期权的房子现在只有10%的没有收出因为我们5号7号的第5 第5 现在正在申请公布因为说是7月15号就可以拿到手这样的话我们可以加大力的宣传因为股权的话我们还不敢去大力的宣传我們現在只是在賣五中七選的行走现在就剩下九号楼几套房子了就是一层和二层的7月15号正期权这个消息是确认的吗差不多因为现在正在跑最后一个时序基本上可以7月中旬或者就是下旬大概我们就是在一季度7月15号这样的话我们就是推出了这个5号7号8号楼我们就可以大力的去推广了那先开始前期的这个宣传告示吧对我们现在就是不说那个我们在网上去做这些宣传但是我们可以不咱们可以在网上做宣传但是咱们可以不说具体日期咱们可以说7月下旬下旬是10天时间的对吧对每天都是下旬7月30号每个人都可以跟着你的新浪客户去做一个讓他們不會忽悠身边有朋友的话可以介绍过来做好准备了现在该是准备购物的时候了广告这方面可以做一个模糊的时间限制比如说7月30天每天都是7月7月下旬10天从21号到30号都是7月下旬我们可以不说具体的然后还有一个就是因为我们南边的就是紧连着海海洋馆还有气力核如果谁可以做一个海洋馆的一些实景可以跟我们的学生同学一起因为我们现在只是文字性的说我们南边会建一个海洋馆但是不可能我们让客户去展开你想象的空间去想象这个海洋馆是什么样子的如果有一些实体的照片的话我们可以或者说只要是不一定是我们这个当然我们这个还没有建起来可以其他的就排我那些实体照片有,有做,有发案的我们可以做一些,或者说去采集一些实体的照片先出个方案,然后找设计部与宣传部出方案之后,给设计部宣传部让设计部去找图片,不管是从哪找图片还是实体拍摄让他把图片调定或者什么的对对对那个方案上我们出去做发一些宣传产业的时候做成那样或者说做一个短片或者设计一个两三分钟的短片视频那类的行 让他做做好之后交给先生沫先生沫平常来行你做一个方案就行直接给我给他行回去之后拿方案直接就往那边提交就行好的下一个我们那个SEPA我们那个C盘就是主要来主打就是比如说学校我们就是市中心学校有医院然后有商场都是离得比较近的然后我们主要就是建筑面子是55万容积率2.2%2.2%然后我们整体规划是30栋36栋现在就是阳房小高层高层现在就是在疫情之间现在就卖了100多比去年开盘的时候下降了很多可能疫情之间人们收入也下降了本来打算,以前我的客户一直在追踪本来打算有买房的考虑但是现在因为疫情之间有的人做生意的话收入已经停了还有就是有工作的有的人他现在比如说学校老师都开不了课有的就还有教育机会就给一些基础的工资所以说都在刮毛上而且有的人就是说现在就说那个可能楼盘会下降这个价格会降有人就在刮毛我们现在就是说打出的一个我们这个建筑理念的就是说是天然的一个氧巴因为市中心然后我们这个地区的就是说污染啊然后雾啊冬天都比较什么然后我们现在就是打了一个大型的地下的天然氧就在这些建筑中然后这个养八将来就是等我们这个小区入住以后只让我们小区的人去里边然后锻炼身体呀 玩啊不让这个外来的人员进来就是还有就是说是有一部分就是旁边的这个我们宣传的就是说学校 因为它这个是重点小学现在这个好多人現在就有二胎了然后就是说考虑一些这个上学的改改善一下我们现在就是有两梯两户还有两梯四户享受比较好之前有一些小小洋房小别墅最近就是消消热的特别就是不好吧因为它这个价格到底是在哪还有有的有在的那个地下地下这个就是那个夏月然后它这个户型比较大因为下月跟这个上面一层的话下来都得三四百平所以销售都设计都特别不好像这个两屋两屋四户销售还是比较好的因为两屋四户的话价钱大概就是8000左右100多平两口居家四口居家还有新结婚的买的房子还是比较多的我们主要还是嗯社区私密性、数据性、安全性的特点还有警制因为有一个天然的地下氧发所以全天就招来我们宣传点就是说我们这个物业全天的人工行为都是我们自己的物业只能门禁为客户提供安全的保障现在就是我们下半天就是准备出推出一些活动,然后促进一下我们这个销售,因为今年就有疫情嘛,现在就是说销售下降
+---
+别说离市区远市区近房的室友第一病患没有我们这儿好第二楼盐菌比我们这儿小第三价格还比我们高是可以推出自己的出风点自己的优势我们这样去宣传嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯在桌上打滚还有收购的电话因为出租车来没跑跟公交车也不一样公交车就这条线但是出租车来没跑我觉得跟出租车在顶上打那个广告出租车商讨然后你可以看只要他来我们家看我们可以车接车送因为我们比较不在市区里面可能坐公交车的话很慢胡椒粉填一小时我们可以接他,因为我们守着宽度,我们要接的话走宽度很快的只要是这种异象托户的话,一般没人,其实在市里边人都还会有个什么缺点的可能我们走路路过,我们去看了一下,不一定进楼的,进社会部的,不一定是真买房子的但是来我们这儿,这真的是异象托户,所以我们可以去接,可以去送鞋看着好像是废了油是吧但是这个开放车申请可以再给我们配两辆因为很多时候有客户没车你跟我切电了或者说别人自己开车开着自己拎车都不能为事儿我们自己有开车是最好的又显得我们正规又显得我们热情小巴车的话可以让行车卖给你PVP个四五辆然后相关司机你可以自己找可以配位一下也可以然后宣传部那边你让宣传部那边把广告直接就直接就下铺到下级线直接铺到下级线对,下级线是全部铺到周边的全部铺一遍第一期这个广告宣传不看效果只要这个力度最新版权知道的来到市里去看看怎么样做广告的东西做了家门口对村里边比如说墙上都写着某某要买房买哪哪对吧对还是这样墙上各种广告就是广告页其实也花了多少钱对公交公司的出租公司的然后以微信朋友圈等等的广告全扑出去前期就只要一个知名度不要不看成像只看知名度你好交代我们这个就是说在这个最近还这个稍微把这个收容部装修了一下因为我们主要的是就是附近的居民还有学校因为有的家长都带着孩子过来看房子稍微就是弄一个游乐园然后外边呢我们都弄的这个休闲的也是游乐的房子然后那个就是稍微装修一点我们就主打就是学校因为我们是中心嘛还有就是医院超市商铺这些主打然后要是再出手的话一会出手是我们现在就是主要去就是附近的一些厂子然后还有那个附近的这些老社区因为它改善嘛原来都是小户型就是做一些这些宣传行我大致听了一下总体看了一下这个报告然后基本上看你们大部分需求的都是这个宣传那方面的这样可以趁下半年直接就是你们出方案然后把预算等等什么都出一下然后交给宣传部宣传部宣传部门里边给你们宣传一下然后还是分三期宣传第一期我们不要求成效只要求知名度只要求知名度按照投放范围进行覆盖式投放不看这个长码,只看这个node第二期进行详细宣传然后让他们知道具体的东西是什么样的然后具体的价钱以及具体户型都可以宣传一下第三期咱们就优惠政策直接下然后优惠政策的话你们根据不同的定位根据你们不同的定位不同楼盘我会让你们看根据下半年以往的这么一个情况你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售你好,焦焦,新楼盘销售情况如何?以及下半年销售策略有何调整?你好焦焦基于之前我们讨论的内容关于我们楼盘主打的智能家居样板间你认为我们应该如何结合天然仰巴的特点进一步优化样板间的展示效果以吸引更多钱在客户的兴趣和购买意愿呢你好,焦焦,针对高端楼盘停车为不足问题,你有何建议来优化停车管理?你好焦焦基于之前我们讨论的内容关于高端社区的绿化和学区防【宣】传策略这个销售情况你认为我们应该如何利用树林超过50年的大树和三个学区的优势来提升小区的吸引力并加大宣传力度呢###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，【宣】的位置指代的是宣传策略，特别是针对高端社区的绿化和学区优势的宣传。为了提升小区的吸引力并加大宣传力度，可以采取以下措施：
+
+- 利用超过50年的大树，制作一系列具有视觉冲击力的宣传材料，如高清照片和短视频，并通过社交媒体广泛传播。
+- 强调小区内重点小学的优势，特别是针对有二胎家庭的需求，展示学区的便利性和高质量教育资源。
+- 通过线上线下的方式宣传社区内部天然氧吧的独特卖点，强调其对居住健康的益处。
+- 开展现场活动，邀请潜在买家参观，通过实际体验增加对项目的认知和好感度。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200704_M_R002S06C01_agent_added/out_001-M_4.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 504171, dtype: float32, min: -0.138580322265625, max: 0.111175537109375
+问题音频时间长度: 31.5106875
+
+
+[Agent] 接收到问题: 你还需要多少优惠额度的支持然后你们出一个预案给财务那边评估一下然后我看一下能给你们多少的优惠额度然后说根据优惠额度做宣传现在就先进行一期宣传先好的好你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411502.7286165
+问题音频STT前的时刻: 1743411502.7287433
+问题音频STT后的时刻: 1743411503.4061358
+问题音频STT时间: 0.6773924827575684
+
+
+[Agent] 最终接收到问题: 你好娇娇如何制定分阶段宣传方案以提升知名度并最终实现销售目标
+, 1743411503.4062886
+问题音频送入Planner的时刻: 1743411503.4067497
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743411504.0123017
+planner new_token time: 1743411504.4078214
+planner new_token time: 1743411504.4082682
+First token received: 1, time: 1743411504.4083598
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411504.4205773
+talker first token time: 1743411504.6892939
+talker first token time: 1743411504.7161477
+talker first token time: 1743411504.7424114
+talker first token time: 1743411504.7685394
+talker first token time: 1743411504.7945986
+talker first token time: 1743411504.820491
+talker first token time: 1743411504.8464046
+talker first token time: 1743411504.872685
+talker first token time: 1743411504.898666
+talker first token time: 1743411504.9247508
+talker first token time: 1743411504.950544
+talker first token time: 1743411504.9765327
+talker first token time: 1743411505.002443
+talker first token time: 1743411505.054228
+talker first token time: 1743411505.0802548
+talker first token time: 1743411505.1063483
+talker first token time: 1743411505.1325188
+talker first token time: 1743411505.1586022
+talker first token time: 1743411505.1847079
+talker first token time: 1743411505.261743
+talker first token time: 1743411505.3131714
+talker first token time: 1743411505.3390477
+talker first token time: 1743411505.365177
+talker first token time: 1743411505.4168382
+talker first token time: 1743411505.4427593
+talker first token time: 1743411505.4687586
+talker first token time: 1743411505.494802
+talker first token time: 1743411505.5208602
+talker first token time: 1743411505.5468538
+talker first token time: 1743411505.5728717
+talker first token time: 1743411505.5988953
+talker first token time: 1743411505.6249511
+talker first token time: 1743411505.6510556
+talker first token time: 1743411505.7283995
+talker first token time: 1743411505.7546177
+talker first token time: 1743411505.7807918
+talker first token time: 1743411505.832819
+talker first token time: 1743411505.8590555
+talker first token time: 1743411505.9111116
+talker first token time: 1743411505.9371076
+talker first token time: 1743411505.9631505
+talker first token time: 1743411505.989308
+talker first token time: 1743411506.0156903
+talker first token time: 1743411506.0419872
+talker first token time: 1743411506.0942702
+talker first token time: 1743411506.1205623
+talker first token time: 1743411506.1468713
+talker first token time: 1743411506.1988854
+talker first token time: 1743411506.251152
+talker first token time: 1743411506.2775056
+talker first token time: 1743411506.3036864
+talker first token time: 1743411506.3299756
+talker first token time: 1743411506.4076881
+talker first token time: 1743411506.4338942
+talker first token time: 1743411506.4599092
+talker first token time: 1743411506.5119438
+talker first token time: 1743411506.5381408
+talker first token time: 1743411506.564201
+talker first token time: 1743411506.6161041
+talker first token time: 1743411506.6427302
+talker first token time: 1743411506.6690156
+talker first token time: 1743411506.6951063
+talker first token time: 1743411506.7473767
+talker first token time: 1743411506.7741232
+talker first token time: 1743411506.8005483
+talker first token time: 1743411506.853114
+talker first token time: 1743411506.880124
+talker first token time: 1743411506.9324245
+talker first token time: 1743411506.9590738
+talker first token time: 1743411506.9853063
+talker first token time: 1743411507.015081
+talker first token time: 1743411507.0933995
+talker first token time: 1743411507.119809
+talker first token time: 1743411507.145936
+talker first token time: 1743411507.1720524
+talker first token time: 1743411507.2241178
+talker first token time: 1743411507.2502337
+talker first token time: 1743411507.2765656
+talker first token time: 1743411507.3029292
+talker first token time: 1743411507.329211
+talker first token time: 1743411507.3555388
+talker first token time: 1743411507.4078343
+talker first token time: 1743411507.434128
+talker first token time: 1743411507.4606686
+talker first token time: 1743411507.4870503
+talker first token time: 1743411507.5132973
+talker first token time: 1743411507.590882
+talker first token time: 1743411507.6170416
+talker first token time: 1743411507.6431453
+talker first token time: 1743411507.6951594
+talker first token time: 1743411507.7214055
+talker first token time: 1743411507.7477324
+talker first token time: 1743411507.774049
+talker first token time: 1743411507.8004029
+talker first token time: 1743411507.8269274
+talker first token time: 1743411507.8796918
+talker first token time: 1743411507.9062681
+talker first token time: 1743411507.9329407
+talker first token time: 1743411507.9595754
+talker first token time: 1743411507.985986
+talker first token time: 1743411508.012319
+talker first token time: 1743411508.0905483
+talker first token time: 1743411508.1429002
+talker first token time: 1743411508.1689785
+talker first token time: 1743411508.1950538
+talker first token time: 1743411508.2468488
+talker first token time: 1743411508.2732263
+talker first token time: 1743411508.2996113
+talker first token time: 1743411508.325974
+talker first token time: 1743411508.352249
+talker first token time: 1743411508.3786683
+talker first token time: 1743411508.430888
+talker first token time: 1743411508.4572136
+talker first token time: 1743411508.4837272
+talker first token time: 1743411508.5103848
+talker first token time: 1743411508.5371501
+talker first token time: 1743411508.563508
+talker first token time: 1743411508.5900233
+talker first token time: 1743411508.6163561
+talker first token time: 1743411508.642793
+talker first token time: 1743411508.6691153
+talker first token time: 1743411508.7468338
+talker first token time: 1743411508.7729068
+talker first token time: 1743411508.79905
+talker first token time: 1743411508.8256521
+talker first token time: 1743411508.87828
+talker first token time: 1743411508.904599
+talker first token time: 1743411508.9310048
+talker first token time: 1743411508.983869
+talker first token time: 1743411509.009829
+talker first token time: 1743411509.0363233
+talker first token time: 1743411509.0887885
+talker first token time: 1743411509.1151123
+talker first token time: 1743411509.1414528
+talker first token time: 1743411509.1678917
+talker first token time: 1743411509.1942437
+talker first token time: 1743411509.2207425
+talker first token time: 1743411509.273556
+
+talker输出：
+
+Token count: 68, Total time: 2.4119 seconds, One token time: 0.0355 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+制定分阶段的宣传方案以提升知名度并实现销售目标，可以按照以下步骤进行：
+
+1. 确定目标：首先明确提升知名度和销售目标的具体数值。
+
+2. 分阶段设定：根据目标，将整个项目分为几个阶段，如启动期、发展阶段、成熟期等。
+
+3. 设计策略：针对每个阶段，设计相应的宣传策略，包括活动策划、广告投放、公关推广等。
+
+4. 制定预算：为每个阶段分配合适的预算，确保项目的顺利进行。
+
+5. 实施执行：按照计划执行各个阶段的工作，同时根据实际情况进行调整。
+
+6. 检验效果：定期对宣传效果进行评估，看是否达到预期的目标，并据此进行优化。
+
+7. 总结经验：在项目结束后，总结经验教训，以便在未来的项目中应用。
+talker 输出结束
+
+会议数据处理完成。

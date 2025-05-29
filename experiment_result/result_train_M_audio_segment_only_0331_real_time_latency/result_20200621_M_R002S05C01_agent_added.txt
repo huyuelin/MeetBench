@@ -1,0 +1,802 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 73
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.37s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.07it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.63s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.07s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.72s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.16s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.01s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.81s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.78s/it]
+我002我是研发部主管006我是研发一组0103我是研发二组0105我是研发三组011我是研发四组行 好的 今天把大家叫个组组长叫过来開了這個關於討論會近期各部門這個研發方向什麼樣的從一組開始研發一組現在目前那個研究方向是雙輪電動汽車立體包裝電動汽車我們是根據那個陀螺原理以前這個因為是有做過那個國外以前有做過雙輪汽車也有这个界定不是有的摩托包裹摩托但是我们的跟包裹摩托不一样就是我们的用不到目前是在接受这个碰撞实验我们这个是动力方面是纯电池动力提速能达到这个0到100的提速能达到4秒最高行驶里程目前是准备做到200公里200公里行现在这点是这难题呢 难点在于哪难点是还是这个价格定位这个事儿将来弄成了成本比较高比较高的大众不知道能不能接受但是说咱们走这个是便利的一个驾驶员然后就只能再做一名乘客别的难点不大就是在高速运行中发生碰撞他能不能稳住会不会失去他那个陀螺原理他会不会会跑不隐性要多大,需要继续实验。它毕竟不是四轮的,这个东西咱们一定要接近四轮的效果。还有什么就是继续希望对一组进行技术上和财力上支持,以身份成立我们感觉这个项目是很有前景的主要发展因为是接手这个现在停车位都比较紧张这个东西咱们这个东西做出来以后可以跟摩托车停在一块可以做奖材抢占汽车位现在他们那些车位的手费可以很难借电我们虽然是要双轮汽车但是它法律上借电上不能把我们等同于汽车二手这边啊这边主要现在研发的是电池现在进入21世纪以后全世界都在研发一种叫新型的石墨烯电池这个电池因为传统的电池是铅酸和锂电池这两种电池它的导电率和持有性都不高我们现在所研发的锂电池的原理就是这个电子在石墨西方中穿梭在冷冻的当中创作要更快什么新的好处一个就是充电五分钟可以骑可以骑50公里第二个就是它的寿命长不像那电池充着充着就可能它的寿命和公里数就变短了因为现在大家都属于一个快捷的生活嘛没有人会说你充了四五个小时才能做到所以我们要研究这个新能量的电池然后这个石墨烯电池是全国都在,全世界,全国乃至全世界都在研究的一种新能量的电池然后咱们中科院的研究人员现在研究的,咱们国国研究的这个石墨烯电池基本上已经属于在世界的领先地位了所以我觉得我们接下来的工作中心应该是电池方面研发三者现在新能源汽车是大势所趋并且市场占有份额是逐年在增加发展是非常快的从研发来说主要是针对消费者主要是开发以小型微型这种汽车为主因为这些汽车市场占有率比较高客户需求量比较大就是在车型的设计方面就是说小型微型为主另外一个就是说还要就是说增设一些咱那个配套的充电设备因为新能源汽车都需要有这个充电站你像油汽车嘛油汽车它有加油站咱那个但是咱这个新能源汽车充电设施对于咱们来说在全国来看不是很普及对一些顾客来说造成了不便比如说在三四线城市甚至一些乡镇增加了一些充电装置这是我们的一个研发模样现在四组吧现在四组的话主要的方向就是刚才充电桩这一块因为这个现在的话目前市场上的这个充电桩基本上大概都在充满的情况下大概都要十个小时以上这个的话就是也是我们电动汽车行业就是不能普及的一个重要原因因为太时间太长了就是不是很方便所以说我们就是考虑到这个充电桩的话就是我们现在主要就是通过我们把这个双向交流电改成三项交流电的话我们可以进行快速充电就像我们手机一样现在不都有手机快充吗然后我们如果快速充电的情况下基本上半个小时我们就可以达到电池容量的80%左右就是可以起到一个让人哪怕我在路上没有电了我只要旁边有充电桩我就可以很快的继续上路就是这个样的话就可以大大的提高我们汽车的一个市场占有率而且的话这个技术成熟之后我们也是打算把这个充电桩这一块迅速的在市场上铺开来可以就是各部门都说了一下自己几个年号这个方向我说一下我们近期要去参观别的厂的一些生产车间,还有一些研发车间,各位都有什么看法吗?我们准备到那个雅迪雅迪廠的去參觀就是主要是學習他們那個研發模式和研發思路還有研發設備情況對他們一些那個拿得出的優點進行重點學習和考核還有對他們那個博弈環節我們也要發揮出來看能不能发言还有对他们那个车间那个生产工艺,我们也要进行尽可能进行全面的了解。以提高我们那个,如何提高我们的工艺水平,给他们进行有效的竞争,制作出更好的工艺水平。知道了更好的更贴近我们这个公司的生产设备和人机协作效果必要的时候从他们那儿挖挖些人才过来来充实我们这个研发队伍二级这边我觉得咱们可以找一些知名的厂家咱们可以合作因为现在竞争很厉害合作才能共用我们合作之后技术上可以合作营销渠道可以合作当然我们也不可能我们也得留一手我可能把我们所有的底子全给他们说他们也可能会留一手这个时候就需要我们的一些相关人员去想一些办法想要一些大量我还是觉得合作才能够目前三组先说一下自己的意见吧我希望能去小鹏汽车去参观学习因为小鹏汽车一直是走在新能源汽车的前沿地引领了一个潮流另外小鹏汽车的设计特别的人性化非常能够满足现在一些人的要求还能够测量你的健康状况测量你心率啊还有无人驾驶这一块他们都做得比较到位所以说也是受到消费者的青睐我建议到他们那里去学习参观能够掌握一下更好的知识
+[Audio Detection] 在 715.86 秒检测到关键词 '好交交'。
+detection_time: 715.86, current_time: 713.00
+未来我们公司要研发在几个方向第一就是在那个拆卸电池组这个应用要普及可以在这个充电站设置这个电池更换这个服务我们要公司要加大这个电池更换这个服务二就是在这个无线充电这个技术首先利用这个电磁波这个无线传输技术这个电动车可以无线充电目前这个技术正在外国已经有所开始已经开始咱们也要跟得上还有刚才你说的这个控制你说的是汽车这个控制研發出來才能弄到這個移化路面上平稳行驶不论雨水、雨沙、冰冻、路面都要维持汽车驱动力保持车体平稳然后就持久控制技术转弯加速这些跟我们说一下这个对于未来这些技术的这个研发方面的一些事情谢谢关于充电桩或者更换电池这个什么我们就应该改托一下思路我们就是在我们新的研发项目上可以增加太阳能设备太阳能板利用太阳能进行对象成长进行自充电自发电这样能增加咱们这个续航能力就会多了到达到集成减少了充电时间有的可能情况下就是基本上有时候不用充电这个是还有就是五对推行咱们那个汽车的那个自动化驾驶自动驾驶完全可以到处装在咱们那个新年这个汽车上完全能做到无价值就是咱们现在设计的汽车可以把方向盘去掉嗯啊没有方向盘纯粹是自动驾驶只要是有乘客说去哪里他就自动选择路线嗯自动规避那个障碍路嗯是有一个突发事件嗯自我变化那个方向嗯比如有什么变化了能不能自己修正就是说不低于人的不低于人驾驶而且要高于人驾驶抗疲劳这个就直接解决了疲劳驾驶的问题对还有想要说的还有就是现在有研发那种无轮汽车悬浮术悬浮术行业无轮汽车這個我也知道我们也可以在这方面做一些努力在这方面进行基础性的探索嗯行二十几二十几点我还是想搞一下无线充电嗯现在无线充电这个手机的无线充电现在基本上各大平台的手机都有这个无线充电嗯但是无线充电有一个不好处手机的无线充电有一个不好处就是它的感应范围太小了嗯咱们汽车这个地方,我觉得应该把感应范围设置稍大一点当然其中有可能会存在一些安全隐患,比如中间可能会存在一些电流啊之类的东西但是这个都还处于研发阶段,后边可能还要做一些更多的实验啊,讨论啊之类的,去保证这个东西还有什么需要说的吗暂时没有对嗯行嗯那你这个刚才说无线充你们部门在这个相关这个无线充电上面有多少位研发师吗嗯我们在这个无线充电上目前是我们团队有十位研发师但是我们只有两位在研发这个无线充电因为我们部门复大了还是要去研发这个石膜锡电池我们希望可以来把这个使用石墨烯电池和无线充电结合在一起,达到快充无线充电的效果。目前研发这方面进程,石墨烯电池这方面?石墨烯电池是有限于国外的,目前处于试用阶段。可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个无线充电技术我想它实现需要一个过程并且它这个电磁对人体有没有伤害这些东西目前来说不能做到万无一失这方面所以说目前来说就需要一个等待过程在这个等待过程中间的我还是说倾向于解决一些现实性的问题比如说把咱那个汽车电池规格都统一了在充电中假如说客户他在没有时间去充电的话就及时的给他更换电池更换一些新电池能够保证它的正常行驶另外就是说在车身上研究增加太阳能光板通过汽车自身吸收太阳能能量来储备这些能量增加它续航里程这是目前我们所研发的一个方向还有你刚才说更换电池目
+[Text Detection] 在 1326.11 秒检测到关键词 '焦焦',current_time: 1302.00, 问题文本: 目前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司
+前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露这块的话其实还是说现在是主要的工作重点还是在充电桩上面因为这个现在这个咱们的电池相对来说现在已经做的比较就是在同行业来说已经比较好了包括它的一个使用寿命包括它一个体积重量然后包括它的一个那个现在的一个就是容电量现在都已经比较那个什么但是充电这一块是属于我们能够开展就是更多业务的一个重点方面就是说我们现在四部的话现在在研发的同时现在也跟市场那一块也在做沟通就是说我们会不断的把我们这个充电桩这一块然后跟他们进行推进包括就是我们这个最新的一个技术然后他们现在也是在负责招商这一块就是说今后我们会今年内我们会在这个本地区铺开大概一百万个这个充电桩左右就是满足我们现在现阶段满足我们本地的一个充电需求然后因为我们前期的设施就是铺设到位后面的话我们这个汽车就是用户才会想要去购买因为用户购买的前提就是那我出现方便了如果不方便那我就不买了所以说我们前期的这个投放的话是可能是必须要先做到位的然后当我们这个本地市场如果没有问题的情况下我们再进行全国范围内的一个铺设咱们这个充电桩好多年前就有充电桩了,但是它这个相对比较老式,充电这个效率啊,从充电安全角度来考虑都是比较,怎么说呢,都是比较不尽人意的。咱们这个充电桩呢?因为我们充电桩的话现在是突破了一个技术层面的一个需求它首先它的体积就要比原来的充电桩要小2%左右我们现在就是一个立柱式的充电桩就可以满足需求然后呢我们铺设的话也不用非要说就是我们去专门建造一个地方什么的我们只要是在这个公用的这个停车场然后我们都可以去进行合作洽谈然后就是放置我们的充电桩然後包括一些這個
+[Audio Detection] 在 1554.81 秒检测到关键词 '好交交'。
+detection_time: 1554.81, current_time: 1550.00
+关于环保问题,几年前电动车市场电池就出现过环保问题,咱们科研人员经过了这么多年研发,目前咱们是有什么情况呢?之前几年的话咱们这个电池一个是寿命短,一个是充电的公里数短。咱们现在研发的石膜气电池,寿命长,也就不用来回一直更换,这就考虑到一个环保问题。再一个就是,我们可以拿旧电池来我们家换,换去新电池,把这个旧电池进行改造处理给它改成新电池这样它就可以回收利用就对环保也有一点好处这就是我们现在研究为什么要研究这种新型的石膜系电池的意义这种电池要环保现在有两点,一个是所研发的电池寿命长,到使用年限后,FD电池技术人员还可以回收利用,对环保有很大的保护。那个一组这边有什么想说的一组上面就是现在就是说成那个有动机就是说他们说的有动机实际上是有动机这个他们是不是一点不投入啊多少是有点投入但是减少损耗就是咱们公司就是以后是不是就在这方面做一些投入研发这样的除了太阳能反应外找到新的替代性能源,经营成本降下来的东西。现在目前他们很多研发出来的科中用机,咱们都拿来参考参考,看有没有多少干货,拿多少干货,咱们看,咱们能把这个搞出来吧。那咱用不用分出来一个部门,专门搞这个呢?各个部门什么意见?我觉得有关机制工学从理论上来说是不缺乱的我这是想除了技术创新之外是不是还可以考虑经营创新因为现在新能源汽车现在是百花齐放百家争鸣就是各自搞研发都在铺路都在收钱这时候我想把咱那个技术整合一下,能够有效的降低咱的这个经营成本。一个是咱是技术换技术,用咱的一些技术去换咱没有的技术。另一个就是说咱购买别的新技术,因为咱要投入研发,一个不是说光花钱问题,还有时间内投入。但是市场在千变万化时间是不等人的假如说有适合咱汽车发展新技术我们直接去购买过来只要是说价钱合适咱就购买他们的技术总的来说就是说还是把所有资源整合到一块一个是节约时间一个是节约资金把在新能源汽车综合的品质尽快地搞上去其他的我都没有了这块的话就是因为这个现在这个充电桩这一块是我们这边首先研发出来的然后现在我们这一块的话就相当于是我们领先了我们整个同行业这样的话就是我们现在进行大范围的一个铺设可能是其他的企业他们也会来跟我们这边寻求合作因为我们没有必要说每个厂家都去做他们单独自己的一个充电桩但是他们来找我们去做合作的同时他就需要对接到我们的基础上面来包括我们可以给他们收取一定的管理费用和使用费用这样的话就是说对我们整个研发部门来说这也是一笔不小的一个收入我想就是說咱這個既然沖煙狀態已經已經選擇全國的水平了来尽快的制定出充电桩的使用标准来规范一个全国的配备这样一个是在黑银广告市场另外就是说以便于所有的汽车用户都能够使用到在充电桩我觉得是可行的这样的话就是我们这边的话现在整个这个方案已经出来了然后现在就在具体的一个实施阶段然后具体的话到时候我们会再把方案拿到会上来进行一个讨论如果没有问题我们就开始去和其他的厂家进行谈判了目前各部门的研发人数需要补充吗一组需要补充20个关于各方面的专家二点是要补充一些中风物理和化学的一些顶尖的元素我这就是我想的就是出钱购买新技术我们这块的话现在是在和一些高等院校的一个实验室方面进行合作然后的话这
+[Text Detection] 在 2063.64 秒检测到关键词 '焦焦',current_time: 2046.00, 问题文本: 这边的教授这一块的话我们会给他们提供一定的一个经费他们会对我们的一些技术或者什么就是会对我们提供一些技术支持和帮助包括一些实验数据等等你好焦焦基于之前我们讨论的内容关于新能源汽车电池研发和环保问题我们目前研发的石墨烯电池在寿命和环保方面有哪些优势
+边的教授这一块的话我们会给他们提供一定的一个经费他们会对我们的一些技术或者什么就是会对我们提供一些技术支持和帮助包括一些实验数据等等你好焦焦基于之前我们讨论的内容关于新能源汽车电池研发和环保问题我们目前研发的石墨烯电池在寿命和环保方面有哪些优势高研发,研发角度要增加多样化,目前市场,国际市场上,研发项目和国际的公司要合作起来。这边没什么想要多说的,你们还有什么想要说的?一组在说点,就是我们一组准备推出一个经济型的现实意义的项目,就是说现有非能源汽车的改造项目。他们可以改用我们研发出的这种经济型对现有非新能源车辆进行改造成新能源车辆车辆我们这个技术要研发成功以后对市场占有率有点高推广性有点大我们需要各个小组一一协力配合把这个搞成这个没问题那咱们这个其他组还有没有了没有了这也没有了行
+[Text Detection] 在 2229.62 秒检测到关键词 '焦焦',current_time: 2201.00, 问题文本: 行 那咱就散会好的你好焦焦
+ 那咱就散会好的你好焦焦会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/out_001-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 580469, dtype: float32, min: -0.157806396484375, max: 0.1629180908203125
+问题音频时间长度: 36.2793125
+
+
+[Agent] 接收到问题: 行 那咱就散会好的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多样化并加强与国际公司合作
+, 1743410156.675679
+问题音频STT前的时刻: 1743410156.675805
+问题音频STT后的时刻: 1743410157.4225655
+问题音频STT时间: 0.746760368347168
+
+
+[Agent] 最终接收到问题: 你好焦焦研发一组的双轮电动汽车项目目前遇到的主要技术难题是什么
+, 1743410157.42283
+问题音频送入Planner的时刻: 1743410157.4230871
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743410158.05213
+planner new_token time: 1743410158.4470768
+planner new_token time: 1743410158.4478514
+First token received: 1, time: 1743410158.4490023
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743410158.512898
+talker first token time: 1743410159.219823
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743410159.2814178
+talker first token time: 1743410159.3080678
+talker first token time: 1743410159.334169
+talker first token time: 1743410159.3607278
+talker first token time: 1743410159.3873022
+talker first token time: 1743410159.4137897
+talker first token time: 1743410159.4400778
+talker first token time: 1743410159.4662004
+talker first token time: 1743410159.4927495
+talker first token time: 1743410159.5194
+talker first token time: 1743410159.5718446
+talker first token time: 1743410159.5980227
+talker first token time: 1743410159.6243277
+talker first token time: 1743410159.6507063
+talker first token time: 1743410159.6771488
+talker first token time: 1743410159.7035065
+talker first token time: 1743410159.7298641
+talker first token time: 1743410159.7561958
+talker first token time: 1743410159.7823768
+talker first token time: 1743410159.808896
+talker first token time: 1743410159.835565
+talker first token time: 1743410159.8622022
+talker first token time: 1743410159.8889763
+talker first token time: 1743410159.9419491
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，关于娇娇研发的双轮电动汽车项目，目前主要遇到的技术难题是电池续航里程和充电时间的问题。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/out_001-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 580469, dtype: float32, min: -0.157806396484375, max: 0.1629180908203125
+问题音频时间长度: 36.2793125
+
+
+[Agent] 接收到问题: 行 那咱就散会好的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多样化并加强与国际公司合作
+, 1743410161.343742
+问题音频STT前的时刻: 1743410161.3440409
+问题音频STT后的时刻: 1743410164.4326572
+问题音频STT时间: 3.088616371154785
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容关于未来公司研发方向一组提到了可拆卸电池组的应用普及和电池更换服务的加强二组则强调了无线充电技术和汽车控制技术的研发我想请问一下针对这些技术我们具体应该如何规划研发路线图以确保技术领先并满足市场需求同时对于合作共赢的策略我们应该如何选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露
+, 1743410164.4328842
+问题音频送入Planner的时刻: 1743410164.4335887
+planner new_token time: 1743410165.0869346
+planner new_token time: 1743410165.478598
+First token received: 0, time: 1743410165.478809
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743410165.8707826
+planner new_token time: 1743410166.261851
+planner new_token time: 1743410166.6531425
+planner new_token time: 1743410167.0446248
+planner new_token time: 1743410167.4373646
+planner new_token time: 1743410167.8295875
+planner new_token time: 1743410168.2215188
+planner new_token time: 1743410168.6129568
+planner new_token time: 1743410169.0053465
+planner new_token time: 1743410169.397675
+planner new_token time: 1743410169.7898233
+planner new_token time: 1743410170.181835
+planner new_token time: 1743410170.5734837
+planner new_token time: 1743410170.9658532
+planner new_token time: 1743410171.3581905
+planner new_token time: 1743410171.7510405
+planner new_token time: 1743410172.1439135
+planner new_token time: 1743410172.5366542
+planner new_token time: 1743410172.9291553
+planner new_token time: 1743410173.3214636
+planner new_token time: 1743410173.7141888
+planner new_token time: 1743410174.1066096
+planner new_token time: 1743410174.4993806
+planner new_token time: 1743410174.8920896
+planner new_token time: 1743410175.2845056
+planner new_token time: 1743410175.6769307
+planner new_token time: 1743410176.0703683
+planner new_token time: 1743410176.4632728
+planner new_token time: 1743410176.8561394
+planner new_token time: 1743410177.2486837
+planner new_token time: 1743410177.6411784
+planner new_token time: 1743410178.0340812
+planner new_token time: 1743410178.4270792
+planner new_token time: 1743410178.819719
+planner new_token time: 1743410179.213567
+planner new_token time: 1743410179.6074176
+planner new_token time: 1743410180.0007186
+planner new_token time: 1743410180.3946855
+planner new_token time: 1743410180.7880147
+planner new_token time: 1743410181.1812508
+planner new_token time: 1743410181.575058
+planner new_token time: 1743410181.9687083
+planner new_token time: 1743410182.3610675
+planner new_token time: 1743410182.7549014
+planner new_token time: 1743410183.1493595
+planner new_token time: 1743410183.5429587
+planner new_token time: 1743410183.9364688
+planner new_token time: 1743410184.3294911
+planner new_token time: 1743410184.723181
+planner new_token time: 1743410185.1170785
+planner new_token time: 1743410185.1181319
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：可拆卸电池组 无线充电技术 汽车控制技术 研发路线图 合作伙伴 技术合作
+
+
+提取的关键词: ['可拆卸电池组', '无线充电技术', '汽车控制技术', '研发路线图', '合作伙伴', '技术合作']
+
+找到的上下文片段数量: 3
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743410186.4925277
+one token time in planner tools: 1743410186.8907518
+one token time in planner tools: 1743410187.2884116
+one token time in planner tools: 1743410187.6856763
+one token time in planner tools: 1743410188.0829513
+one token time in planner tools: 1743410188.4803083
+one token time in planner tools: 1743410188.8775656
+one token time in planner tools: 1743410189.2751253
+one token time in planner tools: 1743410189.673034
+one token time in planner tools: 1743410190.0706036
+one token time in planner tools: 1743410190.4691122
+one token time in planner tools: 1743410190.8666806
+one token time in planner tools: 1743410191.2638183
+one token time in planner tools: 1743410191.661228
+one token time in planner tools: 1743410192.0584254
+one token time in planner tools: 1743410192.4561698
+one token time in planner tools: 1743410192.8539495
+one token time in planner tools: 1743410193.2516615
+one token time in planner tools: 1743410193.649245
+one token time in planner tools: 1743410194.0469177
+one token time in planner tools: 1743410194.4442484
+one token time in planner tools: 1743410194.8419957
+one token time in planner tools: 1743410195.2394814
+one token time in planner tools: 1743410195.637196
+one token time in planner tools: 1743410196.0349994
+one token time in planner tools: 1743410196.4329305
+one token time in planner tools: 1743410196.8314621
+one token time in planner tools: 1743410197.229548
+one token time in planner tools: 1743410197.628573
+one token time in planner tools: 1743410198.026376
+one token time in planner tools: 1743410198.424553
+one token time in planner tools: 1743410198.8222344
+one token time in planner tools: 1743410199.2197647
+one token time in planner tools: 1743410199.617505
+one token time in planner tools: 1743410200.0151477
+one token time in planner tools: 1743410200.4125624
+one token time in planner tools: 1743410200.8102756
+one token time in planner tools: 1743410201.2079213
+one token time in planner tools: 1743410201.6055706
+one token time in planner tools: 1743410202.003056
+one token time in planner tools: 1743410202.4000504
+one token time in planner tools: 1743410202.798287
+one token time in planner tools: 1743410203.1967077
+one token time in planner tools: 1743410203.5940533
+one token time in planner tools: 1743410203.991511
+one token time in planner tools: 1743410204.38992
+one token time in planner tools: 1743410204.7880535
+one token time in planner tools: 1743410205.1861854
+one token time in planner tools: 1743410205.5837295
+one token time in planner tools: 1743410205.98132
+one token time in planner tools: 1743410206.3786786
+one token time in planner tools: 1743410206.7764134
+one token time in planner tools: 1743410207.174449
+one token time in planner tools: 1743410207.5721369
+one token time in planner tools: 1743410207.9697063
+one token time in planner tools: 1743410208.367376
+one token time in planner tools: 1743410208.7649722
+one token time in planner tools: 1743410209.1634185
+one token time in planner tools: 1743410209.5625029
+one token time in planner tools: 1743410209.9599307
+one token time in planner tools: 1743410210.357671
+one token time in planner tools: 1743410210.7555785
+one token time in planner tools: 1743410211.153218
+one token time in planner tools: 1743410211.550872
+one token time in planner tools: 1743410211.949037
+one token time in planner tools: 1743410212.347852
+one token time in planner tools: 1743410212.746231
+one token time in planner tools: 1743410213.1440356
+one token time in planner tools: 1743410213.5427485
+one token time in planner tools: 1743410213.9416473
+one token time in planner tools: 1743410214.3404677
+one token time in planner tools: 1743410214.738896
+one token time in planner tools: 1743410215.1366205
+one token time in planner tools: 1743410215.5358753
+one token time in planner tools: 1743410215.93456
+one token time in planner tools: 1743410216.332607
+one token time in planner tools: 1743410216.7309864
+one token time in planner tools: 1743410217.1295986
+one token time in planner tools: 1743410217.5282643
+one token time in planner tools: 1743410217.9265673
+one token time in planner tools: 1743410218.3253634
+one token time in planner tools: 1743410218.7243044
+one token time in planner tools: 1743410219.1242652
+one token time in planner tools: 1743410219.523049
+one token time in planner tools: 1743410219.9218442
+one token time in planner tools: 1743410220.3229547
+one token time in planner tools: 1743410220.7223504
+one token time in planner tools: 1743410221.1214879
+one token time in planner tools: 1743410221.520633
+one token time in planner tools: 1743410221.9197524
+one token time in planner tools: 1743410222.3189938
+one token time in planner tools: 1743410222.718076
+one token time in planner tools: 1743410223.1170843
+one token time in planner tools: 1743410223.516362
+one token time in planner tools: 1743410223.915318
+one token time in planner tools: 1743410224.3140655
+one token time in planner tools: 1743410224.712818
+one token time in planner tools: 1743410225.1117244
+one token time in planner tools: 1743410225.5108378
+one token time in planner tools: 1743410225.9103618
+one token time in planner tools: 1743410226.3100028
+one token time in planner tools: 1743410226.708862
+one token time in planner tools: 1743410227.108019
+one token time in planner tools: 1743410227.507397
+one token time in planner tools: 1743410227.9069061
+one token time in planner tools: 1743410228.3061163
+one token time in planner tools: 1743410228.7051044
+one token time in planner tools: 1743410229.1046095
+one token time in planner tools: 1743410229.504181
+one token time in planner tools: 1743410229.9044023
+one token time in planner tools: 1743410230.3041022
+one token time in planner tools: 1743410230.7032459
+one token time in planner tools: 1743410231.1025715
+one token time in planner tools: 1743410231.5030458
+one token time in planner tools: 1743410231.9037793
+one token time in planner tools: 1743410232.3032033
+one token time in planner tools: 1743410232.702419
+one token time in planner tools: 1743410233.1021125
+one token time in planner tools: 1743410233.5019963
+one token time in planner tools: 1743410233.9015856
+one token time in planner tools: 1743410234.3012147
+one token time in planner tools: 1743410234.7010283
+one token time in planner tools: 1743410235.1005278
+one token time in planner tools: 1743410235.5001495
+one token time in planner tools: 1743410235.9008403
+one token time in planner tools: 1743410236.300922
+one token time in planner tools: 1743410236.701494
+one token time in planner tools: 1743410237.101088
+one token time in planner tools: 1743410237.5008645
+one token time in planner tools: 1743410237.901116
+one token time in planner tools: 1743410238.3013701
+one token time in planner tools: 1743410238.7010293
+one token time in planner tools: 1743410239.101494
+one token time in planner tools: 1743410239.5016606
+one token time in planner tools: 1743410239.9019482
+one token time in planner tools: 1743410240.3020153
+one token time in planner tools: 1743410240.701682
+one token time in planner tools: 1743410241.1015007
+one token time in planner tools: 1743410241.5013926
+one token time in planner tools: 1743410241.901153
+one token time in planner tools: 1743410242.3015947
+one token time in planner tools: 1743410242.7021089
+one token time in planner tools: 1743410243.1019726
+one token time in planner tools: 1743410243.103431
+
+Token count: 144, Total time: 57.8450 seconds, One token time: 0.4017 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：可', '拆', '卸', '电池', '组', ' ', '无线', '充电', '技术', ' ', '汽', '车', '控制', '技术', ' ', '研', '发', '路线', '图', ' ', '合', '作', '伙伴', ' ', '技', '术', '合作', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###知道了更好的更贴近我们这个公司的生产设备和人机协作效果必要的时候从他们那儿挖挖些人才过来来充实我们这个研发队伍二级这边我觉得咱们可以找一些知名的厂家咱们可以合作因为现在竞争很厉害合作才能共用我们合作之后技术上可以合作营销渠道可以合作当然我们也不可能我们也得留一手我可能把我们所有的底子全给他们说他们也可能会留一手这个时候就需要我们的一些相关人员去想一些办法想要一些大量我还是觉得合作才能够目前三组先说一下自己的意见吧我希望能去小鹏汽车去参观学习因为小鹏汽车一直是走在新能源汽车的前沿地引领了一个潮流另外小鹏汽车的设计特别的人性化非常能够满足现在一些人的要求还能够测量你的健康状况测量你心率啊还有无人驾驶这一块他们都做得比较到位所以说也是受到消费者的青睐我建议到他们那里去学习参观能够掌握一下更好的知识未来我们公司要研发在几个方向第一就是在那【个】拆卸电池组这个应用要普及可以在这个充电站设置这个电池更换这个服务我们要公司要加大这个电池更换这个服务二就是在这个无线充电这个技术首先利用这个电磁波这个无线传输技术这个电动车可以无线充电目前这个技术正在外国已经有所开始已经开始咱们也要跟得上还有刚才你说的这个控制你说的是汽车这个控制研發出來才能弄到這個移化路面上平稳行驶不论雨水、雨沙、冰冻、路面都要维持汽车驱动力保持车体平稳然后就持久控制技术转弯加速这些跟我们说一下这个对于未来这些技术的这个研发方面的一些事情谢谢关于充电桩或者更换电池这个什么我们就应该改托一下思路我们就是在我们新的研发项目上可以增加太阳能设备太阳能板利用太阳能进行对象成长进行自充电自发电这样能增加咱们这个续航能力就会多了到达到集成减少了充电时间有的可能情况下就是基本上有时候不用充电这个是还有就是五对推行咱们那个汽车的那个自动化驾驶自动驾驶完全可以到处装在咱们那个新年这个汽车上完全能做到无价值就是咱们现在设计的汽车可以把方向盘去掉嗯啊没有方向盘纯粹是自动驾驶只要是有乘客说去哪里他就自动选择路线嗯自动规避那个障碍路嗯是有一个突发事件嗯自我变化那个方向嗯比如有什么变化了能不能自己修正就是说不低于人的不低于人驾驶而且要高于人驾驶抗疲劳这个就直接解决了疲劳驾驶的问题对还有想要说的还有就是现在有研发那种无轮汽车悬浮术悬浮术行业无轮汽车這個我也知道我们也可以在这方面做一些努力在这方面进行基础性的探索嗯行二十几二十几点我还是想搞一下无线充电嗯现在无线充电这个手机的无线充电现在基本上各大平台的手机都有这个无线充电嗯但是无线充电有一个不好处手机的无线充电有一个不好处就是它的感应范围太小了嗯咱们汽车这个地方,我觉得应该把感应范围设置稍大一点当然其中有可能会存在一些安全隐患,比如中间可能会存在一些电流啊之类的东西但是这个都还处于研发阶段,后边可能还要做一些更多的实验啊,讨论啊之类的,去保证这个东西还有什么需要说的吗暂时没有对嗯行嗯那你这个刚才说无线充你们部门在这个相关这个无线充电上面有多少位研发师吗嗯我们在这个无线充电上目前是我们团队有十位研发师但是我们只有两位在研发这个无线充电因为我们部门复大了还是要去研发这个石膜锡电池我们希望可以来把这个使用石墨烯电池和无线充电结合在一起,达到快充无线充电的效\n---\n可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个【无】线充电技术我想它实现需要一个过程并且它这个电磁对人体有没有伤害这些东西目前来说不能做到万无一失这方面所以说目前来说就需要一个等待过程在这个等待过程中间的我还是说倾向于解决一些现实性的问题比如说把咱那个汽车电池规格都统一了在充电中假如说客户他在没有时间去充电的话就及时的给他更换电池更换一些新电池能够保证它的正常行驶另外就是说在车身上研究增加太阳能光板通过汽车自身吸收太阳能能量来储备这些能量增加它续航里程这是目前我们所研发的一个方向还有你刚才说更换电池目前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露这块的话其实还是说现在是主要的工作重点还是在充电桩上面因为这个现在这个咱们的电池相对来说现在已经做的比较就是在同行业来说已经比较好了包括它的一个使用寿命包括它一个体积重量然后包括它的一个那个现在的一个就是容电量现在都已经比较那个什么但是充电这一块是属于我们能够开展就是更多业务的一个重点方面就是说我们现在四部的话现在在研发的同时现在也跟市场那一块也在做沟通就是说我们会不断的把我们这个充电桩这一块然后跟他们进行推进包括就是我们这个最新的一个技术然后他们现在也是在负责招商这一块就是说今后我们会今年内我们会在这个本地区铺开大概一百万个这个充电桩左右就是满足我们现在现阶段满足我们本地的一个充电需求然后因为我们前期的设施就是铺设到位后面的话我们这个汽车就是用户才会想要去购买因为用户购买的前提就是那我出现方便了如果不方便那我就不买了所以说我们前期的这个投放的话是可能是必须要先做到位的然后当我们这个本地市场如果没有问题的情况下我们再进行全国范围内的一个铺设咱们这个充电桩好多年前就有充电桩了,但是它这个相对比较老式,充电这个效率啊,从充电安全角度来考虑都是比较,怎么说呢,都是比较不尽人意\n---\n这边没什么想要多说的,你们还有什么想要说的?一组在说点,就是我们一组准备推出一个经济型的现实意义的项目,就是说现有非能源汽车的改造项目。他们可以改用我们研发出的这种经济型对现有非新能源车辆进行改造成新能源车辆车辆我们这个技术要研发成功以后对市场占有率有点高推广性有点大我们需要各个小组一一协力配合把这个搞成这个没问题那咱们这个其他组还有没有了没有了这也没有了行 那咱就散会好的你好焦焦你好焦焦研发一组的双轮电动汽车项目目前遇到的主要技术难题是什么你好焦焦基于之前我们讨论的内容关于未来公司研发方向一组提到了可拆卸电池组的应用普及和电池更换服务的加强二组则强调了无线充电技术和汽车控制技术的研发我想请问一下针对这些技术我们具体应该如何规划研发路线图以确保技术领先并满足市场需求同时对于合作共赢的策略我们应该如何选择合适的【合】作伙伴并在合作中保护我们的核心技术不被泄露###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，公司未来的研发方向集中在以下几个方面：\n\n1. 可拆卸电池组的应用普及和电池更换服务的加强；\n2. 无线充电技术的研究与开发；\n3. 汽车控制技术的研发，特别是自动驾驶技术。\n\n为了确保技术领先并满足市场需求，公司可以制定如下研发路线图：首先，在可拆卸电池组上，计划增设电池更换服务；其次，在无线充电技术方面，目标是在扩大感应范围的同时解决安全问题；最后，在汽车控制技术方面，将集中力量于自动驾驶功能的研发。此外，为了保护核心技术，公司在选择合作伙伴时应谨慎评估对方的技术水平，并签署保密协议以防止技术外泄。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###知道了更好的更贴近我们这个公司的生产设备和人机协作效果必要的时候从他们那儿挖挖些人才过来来充实我们这个研发队伍二级这边我觉得咱们可以找一些知名的厂家咱们可以合作因为现在竞争很厉害合作才能共用我们合作之后技术上可以合作营销渠道可以合作当然我们也不可能我们也得留一手我可能把我们所有的底子全给他们说他们也可能会留一手这个时候就需要我们的一些相关人员去想一些办法想要一些大量我还是觉得合作才能够目前三组先说一下自己的意见吧我希望能去小鹏汽车去参观学习因为小鹏汽车一直是走在新能源汽车的前沿地引领了一个潮流另外小鹏汽车的设计特别的人性化非常能够满足现在一些人的要求还能够测量你的健康状况测量你心率啊还有无人驾驶这一块他们都做得比较到位所以说也是受到消费者的青睐我建议到他们那里去学习参观能够掌握一下更好的知识未来我们公司要研发在几个方向第一就是在那【个】拆卸电池组这个应用要普及可以在这个充电站设置这个电池更换这个服务我们要公司要加大这个电池更换这个服务二就是在这个无线充电这个技术首先利用这个电磁波这个无线传输技术这个电动车可以无线充电目前这个技术正在外国已经有所开始已经开始咱们也要跟得上还有刚才你说的这个控制你说的是汽车这个控制研發出來才能弄到這個移化路面上平稳行驶不论雨水、雨沙、冰冻、路面都要维持汽车驱动力保持车体平稳然后就持久控制技术转弯加速这些跟我们说一下这个对于未来这些技术的这个研发方面的一些事情谢谢关于充电桩或者更换电池这个什么我们就应该改托一下思路我们就是在我们新的研发项目上可以增加太阳能设备太阳能板利用太阳能进行对象成长进行自充电自发电这样能增加咱们这个续航能力就会多了到达到集成减少了充电时间有的可能情况下就是基本上有时候不用充电这个是还有就是五对推行咱们那个汽车的那个自动化驾驶自动驾驶完全可以到处装在咱们那个新年这个汽车上完全能做到无价值就是咱们现在设计的汽车可以把方向盘去掉嗯啊没有方向盘纯粹是自动驾驶只要是有乘客说去哪里他就自动选择路线嗯自动规避那个障碍路嗯是有一个突发事件嗯自我变化那个方向嗯比如有什么变化了能不能自己修正就是说不低于人的不低于人驾驶而且要高于人驾驶抗疲劳这个就直接解决了疲劳驾驶的问题对还有想要说的还有就是现在有研发那种无轮汽车悬浮术悬浮术行业无轮汽车這個我也知道我们也可以在这方面做一些努力在这方面进行基础性的探索嗯行二十几二十几点我还是想搞一下无线充电嗯现在无线充电这个手机的无线充电现在基本上各大平台的手机都有这个无线充电嗯但是无线充电有一个不好处手机的无线充电有一个不好处就是它的感应范围太小了嗯咱们汽车这个地方,我觉得应该把感应范围设置稍大一点当然其中有可能会存在一些安全隐患,比如中间可能会存在一些电流啊之类的东西但是这个都还处于研发阶段,后边可能还要做一些更多的实验啊,讨论啊之类的,去保证这个东西还有什么需要说的吗暂时没有对嗯行嗯那你这个刚才说无线充你们部门在这个相关这个无线充电上面有多少位研发师吗嗯我们在这个无线充电上目前是我们团队有十位研发师但是我们只有两位在研发这个无线充电因为我们部门复大了还是要去研发这个石膜锡电池我们希望可以来把这个使用石墨烯电池和无线充电结合在一起,达到快充无线充电的效
+---
+可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个【无】线充电技术我想它实现需要一个过程并且它这个电磁对人体有没有伤害这些东西目前来说不能做到万无一失这方面所以说目前来说就需要一个等待过程在这个等待过程中间的我还是说倾向于解决一些现实性的问题比如说把咱那个汽车电池规格都统一了在充电中假如说客户他在没有时间去充电的话就及时的给他更换电池更换一些新电池能够保证它的正常行驶另外就是说在车身上研究增加太阳能光板通过汽车自身吸收太阳能能量来储备这些能量增加它续航里程这是目前我们所研发的一个方向还有你刚才说更换电池目前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露这块的话其实还是说现在是主要的工作重点还是在充电桩上面因为这个现在这个咱们的电池相对来说现在已经做的比较就是在同行业来说已经比较好了包括它的一个使用寿命包括它一个体积重量然后包括它的一个那个现在的一个就是容电量现在都已经比较那个什么但是充电这一块是属于我们能够开展就是更多业务的一个重点方面就是说我们现在四部的话现在在研发的同时现在也跟市场那一块也在做沟通就是说我们会不断的把我们这个充电桩这一块然后跟他们进行推进包括就是我们这个最新的一个技术然后他们现在也是在负责招商这一块就是说今后我们会今年内我们会在这个本地区铺开大概一百万个这个充电桩左右就是满足我们现在现阶段满足我们本地的一个充电需求然后因为我们前期的设施就是铺设到位后面的话我们这个汽车就是用户才会想要去购买因为用户购买的前提就是那我出现方便了如果不方便那我就不买了所以说我们前期的这个投放的话是可能是必须要先做到位的然后当我们这个本地市场如果没有问题的情况下我们再进行全国范围内的一个铺设咱们这个充电桩好多年前就有充电桩了,但是它这个相对比较老式,充电这个效率啊,从充电安全角度来考虑都是比较,怎么说呢,都是比较不尽人意
+---
+这边没什么想要多说的,你们还有什么想要说的?一组在说点,就是我们一组准备推出一个经济型的现实意义的项目,就是说现有非能源汽车的改造项目。他们可以改用我们研发出的这种经济型对现有非新能源车辆进行改造成新能源车辆车辆我们这个技术要研发成功以后对市场占有率有点高推广性有点大我们需要各个小组一一协力配合把这个搞成这个没问题那咱们这个其他组还有没有了没有了这也没有了行 那咱就散会好的你好焦焦你好焦焦研发一组的双轮电动汽车项目目前遇到的主要技术难题是什么你好焦焦基于之前我们讨论的内容关于未来公司研发方向一组提到了可拆卸电池组的应用普及和电池更换服务的加强二组则强调了无线充电技术和汽车控制技术的研发我想请问一下针对这些技术我们具体应该如何规划研发路线图以确保技术领先并满足市场需求同时对于合作共赢的策略我们应该如何选择合适的【合】作伙伴并在合作中保护我们的核心技术不被泄露###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，公司未来的研发方向集中在以下几个方面：
+
+1. 可拆卸电池组的应用普及和电池更换服务的加强；
+2. 无线充电技术的研究与开发；
+3. 汽车控制技术的研发，特别是自动驾驶技术。
+
+为了确保技术领先并满足市场需求，公司可以制定如下研发路线图：首先，在可拆卸电池组上，计划增设电池更换服务；其次，在无线充电技术方面，目标是在扩大感应范围的同时解决安全问题；最后，在汽车控制技术方面，将集中力量于自动驾驶功能的研发。此外，为了保护核心技术，公司在选择合作伙伴时应谨慎评估对方的技术水平，并签署保密协议以防止技术外泄。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/out_001-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 580469, dtype: float32, min: -0.157806396484375, max: 0.1629180908203125
+问题音频时间长度: 36.2793125
+
+
+[Agent] 接收到问题: 行 那咱就散会好的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多样化并加强与国际公司合作
+, 1743410244.2583098
+问题音频STT前的时刻: 1743410244.2585232
+问题音频STT后的时刻: 1743410244.8054924
+问题音频STT时间: 0.5469691753387451
+
+
+[Agent] 最终接收到问题: 你好 娇娇无线充电技术在安全和距离方面的研发进展如何
+, 1743410244.8059797
+问题音频送入Planner的时刻: 1743410244.8063486
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743410245.4100142
+planner new_token time: 1743410245.8042417
+planner new_token time: 1743410245.804749
+First token received: 1, time: 1743410245.8048582
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743410245.8160546
+talker first token time: 1743410246.0579386
+talker first token time: 1743410246.0848806
+talker first token time: 1743410246.1109755
+talker first token time: 1743410246.1372921
+talker first token time: 1743410246.1636784
+talker first token time: 1743410246.1899884
+talker first token time: 1743410246.216111
+talker first token time: 1743410246.242216
+talker first token time: 1743410246.2683666
+talker first token time: 1743410246.2945168
+talker first token time: 1743410246.3207548
+talker first token time: 1743410246.3468583
+talker first token time: 1743410246.3729362
+talker first token time: 1743410246.4256032
+talker first token time: 1743410246.451855
+talker first token time: 1743410246.4863222
+talker first token time: 1743410246.5130396
+talker first token time: 1743410246.5390687
+talker first token time: 1743410246.565005
+talker first token time: 1743410246.5910552
+talker first token time: 1743410246.6170166
+talker first token time: 1743410246.6432638
+talker first token time: 1743410246.6954246
+talker first token time: 1743410246.7217183
+talker first token time: 1743410246.747859
+talker first token time: 1743410246.7738762
+talker first token time: 1743410246.7999427
+talker first token time: 1743410246.82594
+talker first token time: 1743410246.852169
+talker first token time: 1743410246.8783512
+talker first token time: 1743410246.9045825
+talker first token time: 1743410246.9308398
+talker first token time: 1743410246.9570386
+talker first token time: 1743410246.9832156
+talker first token time: 1743410247.0097558
+talker first token time: 1743410247.0366712
+talker first token time: 1743410247.0633223
+talker first token time: 1743410247.0900803
+talker first token time: 1743410247.1166706
+talker first token time: 1743410247.16943
+talker first token time: 1743410247.195995
+talker first token time: 1743410247.2224276
+talker first token time: 1743410247.2488408
+talker first token time: 1743410247.2753196
+talker first token time: 1743410247.3021348
+talker first token time: 1743410247.3288987
+talker first token time: 1743410247.3556652
+talker first token time: 1743410247.3824425
+talker first token time: 1743410247.4093199
+talker first token time: 1743410247.4362407
+talker first token time: 1743410247.4632568
+talker first token time: 1743410247.5168302
+talker first token time: 1743410247.5434895
+talker first token time: 1743410247.5702732
+talker first token time: 1743410247.6239355
+talker first token time: 1743410247.6506493
+talker first token time: 1743410247.6774905
+talker first token time: 1743410247.7043715
+talker first token time: 1743410247.7313273
+talker first token time: 1743410247.7585568
+talker first token time: 1743410247.785425
+talker first token time: 1743410247.8125942
+talker first token time: 1743410247.8393862
+talker first token time: 1743410247.8663104
+talker first token time: 1743410247.893295
+talker first token time: 1743410247.9202795
+talker first token time: 1743410247.9742415
+talker first token time: 1743410248.0014553
+talker first token time: 1743410248.0287523
+talker first token time: 1743410248.055722
+talker first token time: 1743410248.0826986
+talker first token time: 1743410248.109956
+talker first token time: 1743410248.1648352
+
+talker输出：
+
+Token count: 26, Total time: 1.4653 seconds, One token time: 0.0564 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+无线充电技术在安全和距离方面的研发正在积极进行中，不过无线充电设备目前仍然存在一些安全隐患，比如充电器与设备之间的距离过远会导致充电效果不佳或完全无法充电，同时如果充电器与设备接触不良也可能会引发安全事故。为了改善这些问题，研究人员需要继续优化无线充电技术的算法和物理设计，以提高充电效率和安全性。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/out_001-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 580469, dtype: float32, min: -0.157806396484375, max: 0.1629180908203125
+问题音频时间长度: 36.2793125
+
+
+[Agent] 接收到问题: 行 那咱就散会好的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多样化并加强与国际公司合作
+, 1743410249.4532628
+问题音频STT前的时刻: 1743410249.4534504
+问题音频STT后的时刻: 1743410251.1336453
+问题音频STT时间: 1.6801948547363281
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容关于新能源汽车电池研发和环保问题我们目前研发的石墨烯电池在寿命和环保方面有哪些优势同时大概我们是否考虑通过技术创新和经营创新来降低经营成本提高新能源汽车的综合品质
+, 1743410251.1338465
+问题音频送入Planner的时刻: 1743410251.1346755
+planner new_token time: 1743410251.7892694
+planner new_token time: 1743410252.1836846
+First token received: 0, time: 1743410252.183838
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743410252.5792255
+planner new_token time: 1743410252.973363
+planner new_token time: 1743410253.3680296
+planner new_token time: 1743410253.762233
+planner new_token time: 1743410254.156352
+planner new_token time: 1743410254.5509686
+planner new_token time: 1743410254.9459596
+planner new_token time: 1743410255.3406863
+planner new_token time: 1743410255.7346988
+planner new_token time: 1743410256.1294484
+planner new_token time: 1743410256.5237944
+planner new_token time: 1743410256.918519
+planner new_token time: 1743410257.3126729
+planner new_token time: 1743410257.707887
+planner new_token time: 1743410258.1021137
+planner new_token time: 1743410258.4967997
+planner new_token time: 1743410258.8916998
+planner new_token time: 1743410259.2874868
+planner new_token time: 1743410259.68188
+planner new_token time: 1743410260.0767922
+planner new_token time: 1743410260.4708872
+planner new_token time: 1743410260.866098
+planner new_token time: 1743410261.2606547
+planner new_token time: 1743410261.6551409
+planner new_token time: 1743410262.0505838
+planner new_token time: 1743410262.445626
+planner new_token time: 1743410262.8403125
+planner new_token time: 1743410263.2359035
+planner new_token time: 1743410263.6308877
+planner new_token time: 1743410264.0256336
+planner new_token time: 1743410264.4203644
+planner new_token time: 1743410264.8151798
+planner new_token time: 1743410265.2098796
+planner new_token time: 1743410265.6047683
+planner new_token time: 1743410266.000612
+planner new_token time: 1743410266.395403
+planner new_token time: 1743410266.7912967
+planner new_token time: 1743410267.1864648
+planner new_token time: 1743410267.580838
+planner new_token time: 1743410267.9763958
+planner new_token time: 1743410267.9773328
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：石墨烯电池 环保 新能源汽车 经营成本 技术创新
+
+
+提取的关键词: ['石墨烯电池', '环保', '新能源汽车', '经营成本', '技术创新']
+
+找到的上下文片段数量: 3
+one token time in planner tools: 1743410269.417588
+one token time in planner tools: 1743410269.8187304
+one token time in planner tools: 1743410270.2179472
+one token time in planner tools: 1743410270.6178358
+one token time in planner tools: 1743410271.017818
+one token time in planner tools: 1743410271.4176295
+one token time in planner tools: 1743410271.8181758
+one token time in planner tools: 1743410272.2188082
+one token time in planner tools: 1743410272.6181881
+one token time in planner tools: 1743410273.0188324
+one token time in planner tools: 1743410273.4197538
+one token time in planner tools: 1743410273.8201373
+one token time in planner tools: 1743410274.2204685
+one token time in planner tools: 1743410274.621042
+one token time in planner tools: 1743410275.0216277
+one token time in planner tools: 1743410275.4227467
+one token time in planner tools: 1743410275.8233507
+one token time in planner tools: 1743410276.225048
+one token time in planner tools: 1743410276.6260824
+one token time in planner tools: 1743410277.026978
+one token time in planner tools: 1743410277.4277678
+one token time in planner tools: 1743410277.8285418
+one token time in planner tools: 1743410278.22894
+one token time in planner tools: 1743410278.6293328
+one token time in planner tools: 1743410279.0296566
+one token time in planner tools: 1743410279.4306166
+one token time in planner tools: 1743410279.8310912
+one token time in planner tools: 1743410280.231246
+one token time in planner tools: 1743410280.631697
+one token time in planner tools: 1743410281.0320287
+one token time in planner tools: 1743410281.4325638
+one token time in planner tools: 1743410281.8326907
+one token time in planner tools: 1743410282.232793
+one token time in planner tools: 1743410282.632982
+one token time in planner tools: 1743410283.0334554
+one token time in planner tools: 1743410283.4343312
+one token time in planner tools: 1743410283.8349738
+one token time in planner tools: 1743410284.2360861
+one token time in planner tools: 1743410284.6361907
+one token time in planner tools: 1743410285.0369134
+one token time in planner tools: 1743410285.4385214
+one token time in planner tools: 1743410285.8402414
+one token time in planner tools: 1743410286.2417958
+one token time in planner tools: 1743410286.6431906
+one token time in planner tools: 1743410287.0450015
+one token time in planner tools: 1743410287.4464543
+one token time in planner tools: 1743410287.8478904
+one token time in planner tools: 1743410288.248898
+one token time in planner tools: 1743410288.6502495
+one token time in planner tools: 1743410289.05098
+one token time in planner tools: 1743410289.4524124
+one token time in planner tools: 1743410289.8541245
+one token time in planner tools: 1743410290.255662
+one token time in planner tools: 1743410290.6574786
+one token time in planner tools: 1743410291.059812
+one token time in planner tools: 1743410291.4618442
+one token time in planner tools: 1743410291.8638084
+one token time in planner tools: 1743410292.265732
+one token time in planner tools: 1743410292.6667187
+one token time in planner tools: 1743410293.0676475
+one token time in planner tools: 1743410293.4690738
+one token time in planner tools: 1743410293.8709245
+one token time in planner tools: 1743410294.2726667
+one token time in planner tools: 1743410294.67438
+one token time in planner tools: 1743410295.0758948
+one token time in planner tools: 1743410295.4777348
+one token time in planner tools: 1743410295.8798501
+one token time in planner tools: 1743410296.281538
+one token time in planner tools: 1743410296.6834888
+one token time in planner tools: 1743410297.084984
+one token time in planner tools: 1743410297.4867754
+one token time in planner tools: 1743410297.8892045
+one token time in planner tools: 1743410298.2912393
+one token time in planner tools: 1743410298.6937022
+one token time in planner tools: 1743410299.0954788
+one token time in planner tools: 1743410299.4976816
+one token time in planner tools: 1743410299.8997238
+one token time in planner tools: 1743410300.301995
+one token time in planner tools: 1743410300.7038822
+one token time in planner tools: 1743410301.1052573
+one token time in planner tools: 1743410301.507311
+one token time in planner tools: 1743410301.9091263
+one token time in planner tools: 1743410302.3114476
+one token time in planner tools: 1743410302.7137065
+one token time in planner tools: 1743410303.1156597
+one token time in planner tools: 1743410303.5179317
+one token time in planner tools: 1743410303.9199128
+one token time in planner tools: 1743410304.3218837
+one token time in planner tools: 1743410304.7233195
+one token time in planner tools: 1743410305.124962
+one token time in planner tools: 1743410305.5266325
+one token time in planner tools: 1743410305.9288266
+one token time in planner tools: 1743410306.3306208
+one token time in planner tools: 1743410306.7327871
+one token time in planner tools: 1743410307.1354003
+one token time in planner tools: 1743410307.5378516
+one token time in planner tools: 1743410307.9399428
+one token time in planner tools: 1743410308.341965
+one token time in planner tools: 1743410308.7435598
+one token time in planner tools: 1743410309.1453142
+one token time in planner tools: 1743410309.5473437
+one token time in planner tools: 1743410309.5487692
+
+Token count: 102, Total time: 41.4626 seconds, One token time: 0.4065 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：石', '墨', '烯', '电池', ' ', '环', '保', ' 新', '能源', '汽车', ' ', '经', '营', '成本', ' ', '技', '术', '创新', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###还有什么就是继续希望对一组进行技术上和财力上支持,以身份成立我们感觉这个项目是很有前景的主要发展因为是接手这个现在停车位都比较紧张这个东西咱们这个东西做出来以后可以跟摩托车停在一块可以做奖材抢占汽车位现在他们那些车位的手费可以很难借电我们虽然是要双轮汽车但是它法律上借电上不能把我们等同于汽车二手这边啊这边主要现在研发的是电池现在进入21世纪以后全世界都在研发一种叫新型的石墨烯电池这个电池因为传统的电池是铅酸和锂电池这两种电池它的导电率和持有性都不高我们现在所研发的锂电池的原理就是这个电子在石墨西方中穿梭在冷冻的当中创作要更快什么新的好处一个就是充电五分钟可以骑可以骑50公里第二个就是它的寿命长不像那电池充着充着就可能它的寿命和公里数就变短了因为现在大家都属于一个快捷的生活嘛没有人会说你充了四五个小时才能做到所以我们要研究这个新能量的电池然后这个石墨烯电池是全国都在,全世界,全国乃至全世界都在研究的一种新能量的电池然后咱们中科院的研究人员现在研究的,还有什么就是继续希望对一组进行技术上和财力上支持,以身份成立我们感觉这个项目是很有前景的主要发展因为是接手这个现在停车位都比较紧张这个东西咱们这个东西做出来以后可以跟摩托车停在一块可以做奖材抢占汽车位现在他们那些车位的手费可以很难借电我们虽然是要双轮汽车但是它法律上借电上不能把我们等同于汽车二手这边啊这边主要现在研发的是电池现在进入21世纪以后全世界都在研发一种叫新型的【石】墨烯电池这个电池因为传统的电池是铅酸和锂电池这两种电池它的导电率和持有性都不高我们现在所研发的锂电池的原理就是这个电子在石墨西方中穿梭在冷冻的当中创作要更快什么新的好处一个就是充电五分钟可以骑可以骑50公里第二个就是它的寿命长不像那电池充着充着就可能它的寿命和公里数就变短了因为现在大家都属于一个快捷的生活嘛没有人会说你充了四五个小时才能做到所以我们要研究这个新能量的电池然后这个石墨烯电池是全国都在,全世界,全国乃至全世界都在研究的一种新能量的电池然后咱们中科院的研究人员现在研究的,咱们国国研究的这个石墨烯电池基本上已经属于在世界的领先地位了所以我觉得我们接下来的工作中心应该是电池方面研发三者现在新能源汽车是大势所趋并且市场占有份额是逐年在增加发展是非常快的从研发来说主要是针对消费者主要是开发以小型微型这种汽车为主因为这些汽车市场占有率比较高客户需求量比较大就是在车型的设计方面就是说小型微型为主另外一个就是说还要就是说增设一些咱那个配套的充电设备因为新能源汽车都需要有这个充电站你像油汽车嘛油汽车它有加油站咱那个但是咱这个新能源汽车充电设施对于咱们来说在全国来看不是很普及对一些顾客来说造成了不便比如说在三四线城市甚至一些乡镇增加了一些充电装置这是我们的一个研发模样现在四组吧现在四组的话主要的方向就是刚才充电桩这一块因为这个现在的话目前市场上的这个充电桩基本上大概都在充满的情况下大概都要十个小时以上这个的话就是也是我们电动汽车行业就是\n---\n可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个无线充电技术我想它实现需要一个过程并且它这个电磁对人体有没有伤害这些东西目前来说不能做到万无一失这方面所以说目前来说就需要一个等待过程在这个等待过程中间的我还是说倾向于解决一些现实性的问题比如说把咱那个汽车电池规格都统一了在充电中假如说客户他在没有时间去充电的话就及时的给他更换电池更换一些新电池能够保证它的正常行驶另外就是说在车身上研究增加太阳能光板通过汽车自身吸收太阳能能量来储备这些能量增加它续航里程这是目前我们所研发的一个方向还有你刚才说更换电池目前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露这块的话其实还是说现在是主要的工作重点还是在充电桩上面因为这个现在这个咱们的电池相对来说现在已经做的比较就是在同行业来说已经比较好了包括它的一个使用寿命包括它一个体积重量然后包括它的一个那个现在的一个就是容电量现在都已经比较那个什么但是充电这一块是属于我们能够开展就是更多业务的一个重点方面就是说我们现在四部的话现在在研发的同时现在也跟市场那一块也在做沟通就是说我们会不断的把我们这个充电桩这一块然后跟他们进行推进包括就是我们这个最新的一个技术然后他们现在也是在负责招商这一块就是说今后我们会今年内我们会在这个本地区铺开大概一百万个这个充电桩左右就是满足我们现在现阶段满足我们本地的一个充电需求然后因为我们前期的设施就是铺设到位后面的话我们这个汽车就是用户才会想要去购买因为用户购买的前提就是那我出现方便了如果不方便那我就不买了所以说我们前期的这个投放的话是可能是必须要先做到位的然后当我们这个本地市场如果没有问题的情况下我们再进行全国范围内的一个铺设咱们这个充电桩好多年前就有充电桩了,但是它这个相对比较老式,充电这个效率啊,从充电安全角度来考虑都是比较,怎么说呢,都是比较不尽人意的。咱们这个充电桩呢?因为我们充电桩的话现在是突破了一个技术层面的一个需求它首先它的体积就要比原来的充电桩要小2%左右我们现在就是一个立柱式的充电桩就可以满足需求然后呢我们铺设的话也不用非要说就是我们去专门建造一个地方什么的我们只要是在这个公用段。可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个无线充电技术我想它实现需要一个过程并\n---\n他们可以改用我们研发出的这种经济型对现有非新能源车辆进行改造成新能源车辆车辆我们这个技术要研发成功以后对市场占有率有点高推广性有点大我们需要各个小组一一协力配合把这个搞成这个没问题那咱们这个其他组还有没有了没有了这也没有了行 那咱就散会好的你好焦焦你好焦焦研发一组的双轮电动汽车项目目前遇到的主要技术难题是什么你好焦焦基于之前我们讨论的内容关于未来公司研发方向一组提到了可拆卸电池组的应用普及和电池更换服务的加强二组则强调了无线充电技术和汽车控制技术的研发我想请问一下针对这些技术我们具体应该如何规划研发路线图以确保技术领先并满足市场需求同时对于合作共赢的策略我们应该如何选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露你好 娇娇无线充电技术在安全和距离方面的研发进展如何你好,焦焦,基于之前我们讨论的内容关于新能源汽车电池研发和环保问题我们目前研发的【石】墨烯电池在寿命和环保方面有哪些优势同时大概我们是否考虑通过技术创新和经营创新来降低经营成本提高新能源汽车的综合品质###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议提到的关键技术之一是石墨烯电池的研发。这种电池相比于传统铅酸和锂电池，在导电率和持久性上有显著提升，具有充电五分钟可行驶50公里及更长寿命的优点。此外，该电池还具有环保特性，符合新能源汽车的发展趋势。因此，其优势在于快速充电、长寿命以及环境友好。同时，为了进一步降低经营成本并提高新能源汽车的综合品质，会议提出可通过技术创新与经营创新相结合的方式实现。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###还有什么就是继续希望对一组进行技术上和财力上支持,以身份成立我们感觉这个项目是很有前景的主要发展因为是接手这个现在停车位都比较紧张这个东西咱们这个东西做出来以后可以跟摩托车停在一块可以做奖材抢占汽车位现在他们那些车位的手费可以很难借电我们虽然是要双轮汽车但是它法律上借电上不能把我们等同于汽车二手这边啊这边主要现在研发的是电池现在进入21世纪以后全世界都在研发一种叫新型的石墨烯电池这个电池因为传统的电池是铅酸和锂电池这两种电池它的导电率和持有性都不高我们现在所研发的锂电池的原理就是这个电子在石墨西方中穿梭在冷冻的当中创作要更快什么新的好处一个就是充电五分钟可以骑可以骑50公里第二个就是它的寿命长不像那电池充着充着就可能它的寿命和公里数就变短了因为现在大家都属于一个快捷的生活嘛没有人会说你充了四五个小时才能做到所以我们要研究这个新能量的电池然后这个石墨烯电池是全国都在,全世界,全国乃至全世界都在研究的一种新能量的电池然后咱们中科院的研究人员现在研究的,还有什么就是继续希望对一组进行技术上和财力上支持,以身份成立我们感觉这个项目是很有前景的主要发展因为是接手这个现在停车位都比较紧张这个东西咱们这个东西做出来以后可以跟摩托车停在一块可以做奖材抢占汽车位现在他们那些车位的手费可以很难借电我们虽然是要双轮汽车但是它法律上借电上不能把我们等同于汽车二手这边啊这边主要现在研发的是电池现在进入21世纪以后全世界都在研发一种叫新型的【石】墨烯电池这个电池因为传统的电池是铅酸和锂电池这两种电池它的导电率和持有性都不高我们现在所研发的锂电池的原理就是这个电子在石墨西方中穿梭在冷冻的当中创作要更快什么新的好处一个就是充电五分钟可以骑可以骑50公里第二个就是它的寿命长不像那电池充着充着就可能它的寿命和公里数就变短了因为现在大家都属于一个快捷的生活嘛没有人会说你充了四五个小时才能做到所以我们要研究这个新能量的电池然后这个石墨烯电池是全国都在,全世界,全国乃至全世界都在研究的一种新能量的电池然后咱们中科院的研究人员现在研究的,咱们国国研究的这个石墨烯电池基本上已经属于在世界的领先地位了所以我觉得我们接下来的工作中心应该是电池方面研发三者现在新能源汽车是大势所趋并且市场占有份额是逐年在增加发展是非常快的从研发来说主要是针对消费者主要是开发以小型微型这种汽车为主因为这些汽车市场占有率比较高客户需求量比较大就是在车型的设计方面就是说小型微型为主另外一个就是说还要就是说增设一些咱那个配套的充电设备因为新能源汽车都需要有这个充电站你像油汽车嘛油汽车它有加油站咱那个但是咱这个新能源汽车充电设施对于咱们来说在全国来看不是很普及对一些顾客来说造成了不便比如说在三四线城市甚至一些乡镇增加了一些充电装置这是我们的一个研发模样现在四组吧现在四组的话主要的方向就是刚才充电桩这一块因为这个现在的话目前市场上的这个充电桩基本上大概都在充满的情况下大概都要十个小时以上这个的话就是也是我们电动汽车行业就是
+---
+可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个无线充电技术我想它实现需要一个过程并且它这个电磁对人体有没有伤害这些东西目前来说不能做到万无一失这方面所以说目前来说就需要一个等待过程在这个等待过程中间的我还是说倾向于解决一些现实性的问题比如说把咱那个汽车电池规格都统一了在充电中假如说客户他在没有时间去充电的话就及时的给他更换电池更换一些新电池能够保证它的正常行驶另外就是说在车身上研究增加太阳能光板通过汽车自身吸收太阳能能量来储备这些能量增加它续航里程这是目前我们所研发的一个方向还有你刚才说更换电池目前这个电池使用寿命目前电池大约是比较好的电池可能就是说能够跑500公里这是好的有些老师其实可能就是一二百公里就需要更换你好焦焦基于之前我们讨论的内容关于未来公司选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露这块的话其实还是说现在是主要的工作重点还是在充电桩上面因为这个现在这个咱们的电池相对来说现在已经做的比较就是在同行业来说已经比较好了包括它的一个使用寿命包括它一个体积重量然后包括它的一个那个现在的一个就是容电量现在都已经比较那个什么但是充电这一块是属于我们能够开展就是更多业务的一个重点方面就是说我们现在四部的话现在在研发的同时现在也跟市场那一块也在做沟通就是说我们会不断的把我们这个充电桩这一块然后跟他们进行推进包括就是我们这个最新的一个技术然后他们现在也是在负责招商这一块就是说今后我们会今年内我们会在这个本地区铺开大概一百万个这个充电桩左右就是满足我们现在现阶段满足我们本地的一个充电需求然后因为我们前期的设施就是铺设到位后面的话我们这个汽车就是用户才会想要去购买因为用户购买的前提就是那我出现方便了如果不方便那我就不买了所以说我们前期的这个投放的话是可能是必须要先做到位的然后当我们这个本地市场如果没有问题的情况下我们再进行全国范围内的一个铺设咱们这个充电桩好多年前就有充电桩了,但是它这个相对比较老式,充电这个效率啊,从充电安全角度来考虑都是比较,怎么说呢,都是比较不尽人意的。咱们这个充电桩呢?因为我们充电桩的话现在是突破了一个技术层面的一个需求它首先它的体积就要比原来的充电桩要小2%左右我们现在就是一个立柱式的充电桩就可以满足需求然后呢我们铺设的话也不用非要说就是我们去专门建造一个地方什么的我们只要是在这个公用段。可以吧就是涂涂使用了但是反響也是特別好但是我們也多多少少会存在一些问题比如说有电池会接触不了之类的我们也在积极地寻找自己的问题以待解决到行那在这个无线充电方向无线充电的话我们现在主打的目标就是这个距离和安全这两个方面上因为这两个方面其实是大家最关注的两个方面一个就是无线充电你的口水用方法到底有多少还有你在这个可视频范围里面到底安不安全这个是现在广大民众所担心的两个问题这也是我们团队现在所研发的问题这方面你觉得未来能解决吗这方面我大方面认为这方面这两个问题距离这方面不是问题因为这个就是考虑到就是一个电极反应的问题海上安全方面的问题我们就是可以搞一个密闭的空间或者搞一个什么的去解决这个问题这个问题可能是有办法可以解决的但是需要一些时间未来预计多长时间预计6个月到1年吧6个月到12个月去解决这个问题目前在相关领域相关公司这边我们去做过这个学习交流我们去交流的时候我发现我们的技术就是比他们有限的都比他们有限的对那咱们要抓紧时间好那三组这边那个这个无线充电技术我想它实现需要一个过程并
+---
+他们可以改用我们研发出的这种经济型对现有非新能源车辆进行改造成新能源车辆车辆我们这个技术要研发成功以后对市场占有率有点高推广性有点大我们需要各个小组一一协力配合把这个搞成这个没问题那咱们这个其他组还有没有了没有了这也没有了行 那咱就散会好的你好焦焦你好焦焦研发一组的双轮电动汽车项目目前遇到的主要技术难题是什么你好焦焦基于之前我们讨论的内容关于未来公司研发方向一组提到了可拆卸电池组的应用普及和电池更换服务的加强二组则强调了无线充电技术和汽车控制技术的研发我想请问一下针对这些技术我们具体应该如何规划研发路线图以确保技术领先并满足市场需求同时对于合作共赢的策略我们应该如何选择合适的合作伙伴并在合作中保护我们的核心技术不被泄露你好 娇娇无线充电技术在安全和距离方面的研发进展如何你好,焦焦,基于之前我们讨论的内容关于新能源汽车电池研发和环保问题我们目前研发的【石】墨烯电池在寿命和环保方面有哪些优势同时大概我们是否考虑通过技术创新和经营创新来降低经营成本提高新能源汽车的综合品质###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议提到的关键技术之一是石墨烯电池的研发。这种电池相比于传统铅酸和锂电池，在导电率和持久性上有显著提升，具有充电五分钟可行驶50公里及更长寿命的优点。此外，该电池还具有环保特性，符合新能源汽车的发展趋势。因此，其优势在于快速充电、长寿命以及环境友好。同时，为了进一步降低经营成本并提高新能源汽车的综合品质，会议提出可通过技术创新与经营创新相结合的方式实现。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S05C01_agent_added/out_001-F_4.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 580469, dtype: float32, min: -0.157806396484375, max: 0.1629180908203125
+问题音频时间长度: 36.2793125
+
+
+[Agent] 接收到问题: 行 那咱就散会好的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多样化并加强与国际公司合作
+, 1743410310.7035694
+问题音频STT前的时刻: 1743410310.7037156
+问题音频STT后的时刻: 1743410311.2051363
+问题音频STT时间: 0.5014207363128662
+
+
+[Agent] 最终接收到问题: 你好,教教如何推动研发多样化并加强与国际公司合作。
+, 1743410311.2057211
+问题音频送入Planner的时刻: 1743410311.206184
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743410311.8643172
+planner new_token time: 1743410312.2597299
+planner new_token time: 1743410312.2603457
+First token received: 1, time: 1743410312.2604573
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743410312.2741513
+talker first token time: 1743410312.5087729
+talker first token time: 1743410312.535675
+talker first token time: 1743410312.5616164
+talker first token time: 1743410312.5877135
+talker first token time: 1743410312.6137562
+talker first token time: 1743410312.6395977
+talker first token time: 1743410312.6654477
+talker first token time: 1743410312.6914592
+talker first token time: 1743410312.7184706
+talker first token time: 1743410312.7707732
+talker first token time: 1743410312.7969615
+talker first token time: 1743410312.8230727
+talker first token time: 1743410312.8491418
+talker first token time: 1743410312.8752565
+talker first token time: 1743410312.901237
+talker first token time: 1743410312.927168
+talker first token time: 1743410312.9533088
+talker first token time: 1743410312.979505
+talker first token time: 1743410313.0054536
+talker first token time: 1743410313.0571961
+talker first token time: 1743410313.1092448
+talker first token time: 1743410313.1356018
+talker first token time: 1743410313.1618035
+talker first token time: 1743410313.1879077
+talker first token time: 1743410313.2141187
+talker first token time: 1743410313.2404227
+talker first token time: 1743410313.2664852
+talker first token time: 1743410313.3185222
+talker first token time: 1743410313.3447738
+talker first token time: 1743410313.3710704
+talker first token time: 1743410313.3972886
+talker first token time: 1743410313.4235213
+talker first token time: 1743410313.4498198
+talker first token time: 1743410313.4762444
+talker first token time: 1743410313.5285227
+talker first token time: 1743410313.554962
+talker first token time: 1743410313.5812013
+talker first token time: 1743410313.6076717
+talker first token time: 1743410313.6341412
+talker first token time: 1743410313.6605668
+talker first token time: 1743410313.713035
+talker first token time: 1743410313.7395396
+talker first token time: 1743410313.7658885
+talker first token time: 1743410313.7922125
+talker first token time: 1743410313.8187463
+talker first token time: 1743410313.8454447
+talker first token time: 1743410313.898414
+talker first token time: 1743410313.9513435
+talker first token time: 1743410313.9781723
+talker first token time: 1743410314.0047972
+talker first token time: 1743410314.0314705
+talker first token time: 1743410314.0579903
+talker first token time: 1743410314.0846162
+talker first token time: 1743410314.138306
+talker first token time: 1743410314.165242
+talker first token time: 1743410314.1922746
+talker first token time: 1743410314.2190518
+talker first token time: 1743410314.2459211
+talker first token time: 1743410314.299632
+talker first token time: 1743410314.3266943
+talker first token time: 1743410314.3539984
+talker first token time: 1743410314.3809392
+talker first token time: 1743410314.407928
+talker first token time: 1743410314.4349205
+talker first token time: 1743410314.461884
+talker first token time: 1743410314.4889634
+talker first token time: 1743410314.5160308
+talker first token time: 1743410314.5695238
+talker first token time: 1743410314.623137
+talker first token time: 1743410314.6499796
+talker first token time: 1743410314.6770513
+talker first token time: 1743410314.7041237
+talker first token time: 1743410314.73115
+talker first token time: 1743410314.758155
+talker first token time: 1743410314.8125336
+talker first token time: 1743410314.8400311
+talker first token time: 1743410314.8673751
+talker first token time: 1743410314.8947005
+talker first token time: 1743410314.9220033
+talker first token time: 1743410314.9491768
+talker first token time: 1743410314.9762325
+talker first token time: 1743410315.0034208
+talker first token time: 1743410315.0307236
+talker first token time: 1743410315.0856876
+
+talker输出：
+
+Token count: 74, Total time: 2.3515 seconds, One token time: 0.0318 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+推动研发多样化并加强与国际公司合作，首先需要有开放的思维和包容的文化氛围。其次，可以采取多种措施来促进多元化，例如鼓励员工参与多元化的项目，提供多样化的培训和发展机会，以及建立跨职能团队等。此外，为了加强与国际公司的合作，可以积极参与国际交流活动，与国际公司建立联系，并寻求合作的机会。同时，也需要有一套有效的国际合作机制，以确保与国际公司的合作能够顺利进行。
+talker 输出结束
+
+会议数据处理完成。

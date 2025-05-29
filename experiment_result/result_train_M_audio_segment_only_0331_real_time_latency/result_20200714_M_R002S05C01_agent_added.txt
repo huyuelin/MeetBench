@@ -1,0 +1,669 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200714_M_R002S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 62
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.20s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.12it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.46s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.72s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.08s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.93s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.75s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.70s/it]
+002我是总监005经纪人018经纪人B026经纪人C013经纪人D咱们今天把哥们儿叫过来咱们开一个哥们儿的一个说一下够不够目前的工作情况,哪个经营人开始提供一些情况,现在存在的一些问题。A这边先说吧。其实我们经纪人跟明星的关系也是一言难尽。就是说你看我们的经纪人员就是有明天的保姆啊就是跟做蘿蔔一樣,還要再配蘿蔔再配怎麼知道它成為這個市場的搶手褲對,這一塊什麼樣我們最近就是,之前就是說搞了一個選秀選了一部分新人,男的女的都有嘛对现在这个不是各种团做得挺好的女团男团像主电影嗯嗯之前的这个老的女生呢就是说嗯比如说这个我带的这个嗯杨天的啊她就是嗯比较前面我们拍的这个年轻片啊拍的就是比较好嗯还有就是嗯她跟这个我们这个女明星的搭档她俩人就是说也传了一信就是说最近做一些这个现在就是说因为这个这个行业这个综艺最近都比较福报他们就是最近做一个综艺都是带小朋友的就是说就是在一个就是做一个梦幻的一个这个小山庄里边有菜地啊有动物带一些小朋友们都去里边就是就是住着就是住著然後給他們做飯啊我們請了四五個他们都一起做这个节目这个主题是什么主题就是跟明星的小朋友们一起做这个娱乐节目嘛这叫什么主题主要的就是叫明星们孩子们去森林里啊就是嗯那么前有这这块这个现在是一个想法还是准备一个嗯就是刚刚那个就是说已经开始就是说预做刚接的这个就是地面丢满已经有这方面这个计划了对就是这个我们就是说他俩就是说之前因为就是这方面找哪个明星嗯男的女的男的女的还有请了一些小朋友小男孩和女孩特别可爱的一些小朋友素人小朋友对他们就说在这个小山庄里边有小森林里边有这个就是有这个中地孩子们可以就是中地还有一些小动物还有什么咱们这边请了明星有大几位这块有目标没现在现在就是说嗯几个目标我们这边两个人还有香港的一个明星香港有三位明星香港有一个明星现在他刚做大了看他当期现在行吗还有一定要有咱们后期的一些问题咱们赞助之类的一些问题这个我们就是在礼播里面里边会插过一些广告我们今天跟一个奶粉人来谈这个孩子嘛不是得喝奶粉吗对就是节目里头就是喝这个孩子奶粉还有就是厨房目前这个市场咱们市场我觉得还挺好的因为之前有做了一个挺好的节目效果还行效果挺好的咱要选人方面咱们公司的人还要就是那个稍微绵一点我们俩带着嘛咱们这公司这两个人最近也是挺火的就是一些言情的电视剧啊播的也挺好其实就是我们就是说这个女团男团吧就是我手下的这个刚选秀过来正在培训请了舞蹈老师啊还有就是音乐老师还有就是他们其实就是说现在就是说还有他们的一个定位他的性格上我们都会找专人就是说了解他们第一就是不是光他们跳的好唱的好还有性格方面他就组织了一个女团男团他们就之间也得团结能够经常出事打架还有就是形象气质方面都得有专门的培训这个请了好多老师就是现在正在打造打造的话然后如果叫人说看一下就是说他们比较好的话比如说你可以在我们这个节目参加一下嗯,我们中国这个现在就是手下下的就不一样了嗯,对嗯,像我这一盘,我这一盘主要就是让我的艺人们他们主要就是走演艺这方面像我这以前那个,现在的那个小花,她是前几年演一个网剧,红了然后而且也有跟一些大导演进行合作,然后也有就是不错的那个表现但是就說我們藝人這方面也不知道是他太飄了還是什麼心態反正有點問題因為畢竟他也是沒紅幾年嘛但是在尊重咱一些大佬們一些前輩們顯得不夠恭敬然後有時候說話也不過腦子然後但是他那個這需要怎麼培訓對需要也是有一些危機場合我們都已經給他處理過了就之前他那個就比如說電影大國會上不是女一号但她确诊了C这个其实是大忌行业大忌对其实有时候咱们其实挺看重这些就是潜移默化的然后就是说也是赶紧公关因为就是说是拍摄角度问题反正因为媒体也都跟咱们是好朋友嘛然后也就是稀里糊涂这件事也算压过去了就是说而且背后有一些赞助商们因为他比较青春靓丽嘛有那种活力而且也是很少见那种遇见那种类型目前对的以
+[Text Detection] 在 503.06 秒检测到关键词 '焦焦',current_time: 496.00, 问题文本: 以国产类型来说,这种女主类型还是比较好你好,焦焦,如何提升旗下艺人的专业素养和危机公关处理能力?小见的针对她这方面的,她主要一些拍电视剧、电影这个主要就是电视剧电影大IP网络小说改编的剧对这一块咱们目前
+国产类型来说,这种女主类型还是比较好你好,焦焦,如何提升旗下艺人的专业素养和危机公关处理能力?小见的针对她这方面的,她主要一些拍电视剧、电影这个主要就是电视剧电影大IP网络小说改编的剧对这一块咱们目前就算是女主成长的一个故事跟她的气质符合是符合的因为我们是到了她的类型我们才去找的我们有专人去看剧本的时候我们也商谈过就是被改编嘛然后也是根据改编也跟原作者商量过就是要打造的中国那种大女主类型比如说以前的一类小白花或者说依靠男主上位的那种他这个就是主要是更注重的摄影就是奋斗前期的一个宣传这一份嗯现在我们已经在准备了就是已经额标题已经弄好了而且各家媒体也都嗯打好招呼了就是到时候就是说肯定会开发布会的嗯到时候我们也就会趁机就宣传一番然后另外就是说咱们除了这个小孩之外我们也正在物色新人然后有些刚毕业的那些大学生那个形象也不错因为现在这个网剧它也算是一个试水就是说好多人一日都不通但是现在目前小孩也是从网剧脱颖而出的所以我们也是接手一个也是有几个小IP让他们新人去试水因为他们虽然新人表演比较智能吧但他们那种青春那种活力就还有一些因为他们也没有就是拘泥于那种表演不是特别面谱化面具化所以说他们表演也是比较自然的而且就是说跟导演就说我们也都看过了有几个人有几个前置不错的新人我们也正在培养然后另外就是说还有个电影就是刚才说还有两部电影一个就是预计就让那些小小花小草们就刚出我们看好的那些小花小草就进行一个客串也是算是听一下因为都是大老演大制作对因为混点服另外就是他们可以就对自己的表演也积累一些经验跟一些有名的人有前前跟一些大佬前辈们合作对它们也是有很大的影响大帮助的,让他们学到更多。我们也希望能从这里发现出很不错的苗子。刚才说的那部电影,前期这一部做得怎么样?剧组正在拍摄中。男主角这一部?男主角就是请来国内最火的明星,罗某。他们已经驻足了然后已经跟他那个小小花,正拍着咱那个前期宣传要做到位这个剧组时不时可以放一下剧组的一些照片哦,录透,录透可以时不时的放一下给别人一个这个接触感觉现在剧里上映,还得根据国家的一些但是我们这个一定要热度不要的对热度方面一定要跟得上这块还有什么现场化是吗现在现场化是什么样的化现在现场化主要就是演技主要是出自咱们家一个艺人的演技因为他现在就经过我们那个培训还有包装之后他现在比以前就好很多好很多不管是为人除人方面还有就是表演上面以前是台词要诸不清还会不清虽然有那个配音老师补救吧但毕竟不是说但是你拍戏的时候你可能一些就容易让人出戏不容易进入状态然后经过咱老师指导之后他那个这方面改善很多然后另外就是说现在不都受疫情影响你越来越不能开工然后但是咱因为咱这部电影它是一是早 因为也是疫情结束刚解放的时候才开拍咱们也很注重这些方面另外就是说因为咱的导演也是大导演他就是剧本已经打造了三年这个剧本方面肯定是没问题的而且导演也就是希望给大家一个惊喜所以说拍摄时间比较长然后像咱前段小时会有那种亚戏情况就比如说我同时接了好几部戏然后因为这个我们主要是想让他从那种流浪小流量小花往那个到一路转变,就转型给他转型所以说我们没有给他接太多所以人事方面一定要做好对,然后主要是在演技上和他多下功夫另外就是说给他解采了几个就那个,要电影邀约,还要电视剧邀约因为我们这个毕竟是跟大导演合作嘛然后对他本身都是有国际影响力的所以说不需要再接其他导演的还有另外就是说跟一些高端品牌我们这也会跟剧组说好的,该需要他代言的时候他也会请假出来去。因为这样的话,时不时要提升他的报名度,这样的话也不会让别人忘了他。方方斗。嗯。那其实有个这个持续的方方斗。啊,对。我们这边的话主要就是请了一些知名的男演员还有女演员去拍一部就是现在的网剧现在是手头上工作了是吗对然后这个网剧主题是属于一种翻拍像那种大话西游之类的网剧但是故事情节更加的详细了细腻了对但是我们最近那个男演员闹了一些绯闻所以决定现在要更换一些演员这个前期已经拍了是吗这个前期是第一集会有试镜都已经试过镜了但是因为绯闻的缘故没有再请这个男演员前期这个宣传是有什么样的也宣传你造势了一样宣传的时候是已经放出来预告了但是具体开拍和播放的日期还没有放出去现在人们对换演员这个有什么建议意见吗没有意见没有意见就是这个换下去的演员没有意见如果要往上换演员的话现在大多数推荐的都是一种现代比较火的一些小鲜肉之类的东西但是我们想往去请一些不是那种像现在小鲜肉那种老腊肉是吗?有演技的对给他们做绿叶,带给他们就找一种那种小时候是同性的那种拍过戏的像一些和李来杰合作的副子档那种现在也是属于但是他他毕竟是武打练员嘛而且肯定不能找那种小鲜肉吊着威亚显得不正经对看了让人感觉特别的烦躁就是属于看脸去了没有演技只有脸这个不行 肯定不行的我们要追求这个动作方面的这种幅度较大动作规范的这种演员如果请一些老演员的话也可以然后就是说请
+[Text Detection] 在 1033.45 秒检测到关键词 '娇娇',current_time: 1023.00, 问题文本: 请这些演员拍这个戏宣传这方面我暂时没有什么好的意义你好 娇娇基于之前我们讨论内容关于女主角的电视剧和电影宣传策略你认为我们应该如何平衡她的曝光度和演技提升同时确保在疫情期间
+这些演员拍这个戏宣传这方面我暂时没有什么好的意义你好 娇娇基于之前我们讨论内容关于女主角的电视剧和电影宣传策略你认为我们应该如何平衡她的曝光度和演技提升同时确保在疫情期间对对对也可以参加一些娱乐节目,可以宣传一下娱乐节目宣传一下就是这一方面还有就是属于这种毕竟是属于这种西游记类型悟空类型的像一些妖魔鬼怪这种演员因为有很多女演员现在像以前那样拍戏肯定是不行的就是整个脸都不知道是谁的那种现在可能要求就是露脸化妆但是不能太过难看这方面我感觉现在现在的很多年轻的女演员都做不到这边因为要求上镜的肯定要求露脸露脸这样的话这样的话可以让这些女演员去参加一下这个A剧组的这个综艺节目让他们露一下脸然后宣传一下这个东西让他们知道演员是谁如果化妆化的太过浓艳的话就不太好对就像以前一些知名的演员像一些毛巨啊我曾拍过一种类似于西游的这种片子结果大家都不知道是他结果大家到现在都不知道是他因为他当时的妆画看不出来是谁感觉就是普通的一个群演到后边才知道是一个知名演员你看那个周班戏群众那个老一版对,老的西游记他们都在棚上就唐僧沙僧还能看着其他人都不知道谁我现在毕竟是这边经纪人嘛因为这个明星最近有很多女演员受这个影响很多人都在家歇懒了而且有点长胖身材有些不符合我们这种要求我们这个戏还要再过一段时间才能上映因为这方面需要调节一下她们身体健康其实那个最近杨可莉也是像江村的这个剧一样,就胖的变形了穿的也不得不在乎这样的话咱们就应该对男艺人要求比较严格一点其实不光对他们,对男公司来说,对他们来说也是挺好的首先就是能看他们的自律精神对这方面也是健康从各个方面看出来这个演员的素质对还有他的演技嗯怎么样进行提升这是其中一点还有一点就是现在比较流行的一种比方说就是悬疑反转剧我们准备拍一个类似于就是警察那方面类型的一种悬疑请到一些艺人像最近比较火的三叉戟啊这种东西都是扮喜剧然后扮警察然后日常生活中给你介绍这些故事我准备拍一种就是类似于悬疑比下一些比模仿一些那些韩剧吧,算是,他们那些都会有一些警察都会有一些反转,所以这方面,可以给我,你们可以给我推荐几个吗?就是类似的。嗯。你像,玄宇咱们首先想的就是日本不免亏误,因为他那个,但是反权问题嘛,咱肯定不能,能够找来几个中国优秀的嗯其实呢选你的话就现在小时候比较火的鬼之洞还有这些藏密密码还有这个动笔记这一些这个现在拍比较多的就是这个鬼追灯跟这个动笔记拍比较多这个但是这个藏密密码到现在期间为止没有人拍过这些电视剧我觉得它可以作为一个根据吧就咱们可以改这个小说小说改电视剧或者改电影让它改一改我觉得可以这个也是在近期新年吧他的反响一直都是不错的一波反射我觉得最近就是你看都是平凡网剧啊言情啊穿越啊对这种都比较多但是我觉得最近这个韩国就是一个片子通常就是虽然精神病但没有关系就是这个韩剧这属于什么类型的呀就是他就是说他都是这个就是对精神上面有一些从小都有就是精神上面的疾病不是不是他本身就是神经病比如说小时候生了刺激心里都有黑暗的这个女主角受到刺激以后就这样杀人就是属于一个正常人黑化的故事对 就是这个电视剧我觉得就是说跟精神病人都有接触吧嗯 比如说也可以埋下他们的胆圈啊什么的然后另外对 除了这个刚才说那个降低密码之外就那个乐器撞灵他这个作者其实也挺出名的我们也可以跟他协商一下,也可以跟他的小说改变一下,也是挺有影响力的。因为咱们中国的小说肯定不像外国小说,外国小说一般像一些柯南道尔写的一些侦探,还有一些悬疑比较多。中国一般都是属于玄幻小说属于爱情画面那种而且很多都已经被翻拍过了咱们这就不进行翻拍要进行一个创新那如果要找真人的话,咱们就需要找几个优秀的编剧,对不对?我们需要找几个编剧。要找编剧的话,刚才说的,最近是要上映一部网剧嘛,那个演员已经更换好了,就差不多下个月就可以上映了,开拍。然后处于一种星期连歌模式。还有就是要上映一部电视剧,这方面刚才你们给出了意见了,说要找编剧说一下自己的这种悬疑犯的这个电视剧还要就是请一些你们说的那些演员或者要购买一些版权来做这个警察悬疑这方面的这种东西然后这边主要就是这个就开准备开一个演唱会嗯这个歌手准备开演唱会这一块是咱歌手开演唱会的一块对,咱准备在这个鸟巢开一个演唱会演唱会吧,咱们这个,现在还在擦盘阶段当中擦盘的话是有两种考虑的一种就是咱们自己开,自己筹备再一个就是找这个能够接盘演唱会的演出机构但是这个两方面都有好有坏吧这个走这个街更轻松一点我更轻松相比于是这个咱们自己自己开嗯 因为自己开的话利润比较大 但是风险也高嗯 嗯 找 但是找这个经纪公司的话就是利润比较低 风险也比较低 但是我觉得还是自己开比较好 咱们自己公司也没有也有这个实力开那这个场地的话就在这个苗巢时间的话就大概在这个8月15号8月15号16号然后还要向当地的文化管理局进行审批,提出申请,进行审批,看他们文化部这一关能不能过。一般没有特务情况的话,十天左右就可以过文化部这一关。咱们前期如果做推广的话就需要需要这个批文才能去做推广就是做这个广告才可以出一些这个卖往来卖票嗯在这个常规情况下这个在出这个洋上票的时间大概都在45天左右咱们出票的时间越长这个准备工作操办工作做的时间也会越充足然后就这个需要准备的一些东西比如造型啊这个场地的布置啊等等一系列做的都会比较充足然后同时风险性比较小,对咱们歌手保护也算是比较好吧所以在墙里,一个两个的知名度比较高的对,然后就是宣传,宣传的话分为几波宣传吧第一波宣传就是在新的发布会交代还有歌手的一些名单还有这个演出的行单还有这个演唱会的一些基本信息同时也可以开始卖票第二波宣传就是当地的一些报纸 杂志或者网络发通稿然后还有这个演唱会近期的一些准备情况舞台音箱 歌手的一些近期情况票房情况这是咱们进行的第二波宣传然后第三波宣传就是第三波宣传第三波宣传就是这个第三波宣传咱们主办方其实能做的就已经很少了就是一个临场卖票就是咱们这个肯定会有一些人来临场来了但是没有票这个可能当然也会有一些人这个退票啊干嘛的这个就属于临场的演唱会结束之后咱们还会有一个后续的宣传靠歌手本身的地位,演唱会造成的轰动性,还有经纪公司运作能力,再推广一下歌手,让歌手的名气在网上提一提。近些年举办演唱会的明星其实卖的票房都是比较好的他们的基本上都是满场没有空座咱们这儿的话这
+[Text Detection] 在 1763.24 秒检测到关键词 '娇娇',current_time: 1736.00, 问题文本: 这个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这个第一方面就是先发误会第二方面就是这个当地一些报纸杂志第三方面就是现场临场收票嗯就三方面宣传嘛你好娇娇如何提升旗下歌手的识别
+个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这个第一方面就是先发误会第二方面就是这个当地一些报纸杂志第三方面就是现场临场收票嗯就三方面宣传嘛你好娇娇如何提升旗下歌手的识别然后咱们这儿歌手的话是比较多的但是咱们这个节目单往后也需要具体的详谈一下确定这个歌手是比较全面的不能说单方面就唱一种类歌看咱们像我们这边这个女团男团新出道有没有可能就是说咱们唱一首就是赛嗯可以就中间穿插一些嘛地方都是留公司的话中间穿插线也是可以的嗯,但是也是宣传吧。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。
+[Audio Detection] 在 1881.98 秒检测到关键词 '好交交'。
+detection_time: 1881.98, current_time: 1860.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200714_M_R002S05C01_agent_added/out_003-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 736619, dtype: float32, min: -0.196075439453125, max: 0.254302978515625
+问题音频时间长度: 46.0386875
+
+
+[Agent] 接收到问题: 差不多了就可以抱着这个唱一个电影鼓励曲嗯 可以 对那就先到这吧嗯行 咱回吧嗯你好 娇娇基于之前我们讨论的内容关于演唱会的宣传策略你能否详细说明一下我们计划进行的三波宣传具体包括哪些内容,以及他们各自在演唱会推广中扮演的角色和预期效果。
+, 1743409247.8874946
+问题音频STT前的时刻: 1743409247.8876116
+问题音频STT后的时刻: 1743409248.439909
+问题音频STT时间: 0.5522973537445068
+
+
+[Agent] 最终接收到问题: 你好,娇娇,如何提升旗下艺人的专业素养和危机公关处理能力?
+, 1743409248.4400728
+问题音频送入Planner的时刻: 1743409248.440498
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743409249.0693233
+planner new_token time: 1743409249.463293
+planner new_token time: 1743409249.4638443
+First token received: 1, time: 1743409249.4649808
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409249.5253274
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743409250.1702223
+talker first token time: 1743409250.221845
+talker first token time: 1743409250.2476294
+talker first token time: 1743409250.27341
+talker first token time: 1743409250.2994368
+talker first token time: 1743409250.3251472
+talker first token time: 1743409250.3510172
+talker first token time: 1743409250.4022245
+talker first token time: 1743409250.4281895
+talker first token time: 1743409250.4545724
+talker first token time: 1743409250.4806974
+talker first token time: 1743409250.506675
+talker first token time: 1743409250.5325718
+talker first token time: 1743409250.5587783
+talker first token time: 1743409250.5846777
+talker first token time: 1743409250.6108918
+talker first token time: 1743409250.6370394
+talker first token time: 1743409250.71407
+talker first token time: 1743409250.7398586
+talker first token time: 1743409250.765902
+talker first token time: 1743409250.7923825
+talker first token time: 1743409250.818477
+talker first token time: 1743409250.8445282
+talker first token time: 1743409250.8706977
+talker first token time: 1743409250.8967264
+talker first token time: 1743409250.9226213
+talker first token time: 1743409250.9486585
+talker first token time: 1743409250.974557
+talker first token time: 1743409251.0005271
+talker first token time: 1743409251.02673
+talker first token time: 1743409251.0529335
+talker first token time: 1743409251.1050246
+talker first token time: 1743409251.131043
+talker first token time: 1743409251.1575506
+talker first token time: 1743409251.183702
+talker first token time: 1743409251.2100182
+talker first token time: 1743409251.2363183
+talker first token time: 1743409251.3141155
+talker first token time: 1743409251.3401277
+talker first token time: 1743409251.3660748
+talker first token time: 1743409251.3920903
+talker first token time: 1743409251.443775
+talker first token time: 1743409251.4698343
+talker first token time: 1743409251.495673
+talker first token time: 1743409251.521782
+talker first token time: 1743409251.548004
+talker first token time: 1743409251.5999188
+talker first token time: 1743409251.6259084
+talker first token time: 1743409251.651871
+talker first token time: 1743409251.677795
+talker first token time: 1743409251.7039332
+talker first token time: 1743409251.7300394
+talker first token time: 1743409251.8069942
+talker first token time: 1743409251.8585622
+talker first token time: 1743409251.884582
+talker first token time: 1743409251.910543
+talker first token time: 1743409251.936609
+talker first token time: 1743409251.9626908
+talker first token time: 1743409251.9887416
+talker first token time: 1743409252.0148127
+talker first token time: 1743409252.0411353
+talker first token time: 1743409252.0931451
+talker first token time: 1743409252.1192732
+talker first token time: 1743409252.1455245
+talker first token time: 1743409252.1719449
+talker first token time: 1743409252.1981099
+talker first token time: 1743409252.2244444
+talker first token time: 1743409252.250627
+talker first token time: 1743409252.2767918
+talker first token time: 1743409252.3543231
+talker first token time: 1743409252.3804545
+talker first token time: 1743409252.4066696
+talker first token time: 1743409252.4326231
+talker first token time: 1743409252.4586852
+talker first token time: 1743409252.4846716
+talker first token time: 1743409252.5108473
+talker first token time: 1743409252.5367444
+talker first token time: 1743409252.562956
+talker first token time: 1743409252.6149762
+talker first token time: 1743409252.6410673
+talker first token time: 1743409252.6670437
+talker first token time: 1743409252.6930845
+talker first token time: 1743409252.7193851
+talker first token time: 1743409252.7457032
+talker first token time: 1743409252.7983038
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 建立完善的职业培训体系，定期对艺人进行专业技能培训和素养教育。
+2. 制定明确的艺人在危机公关处理方面的规定和标准，提高艺人的危机意识。
+3. 加强与媒体、粉丝等各方的沟通，建立良好的形象和信誉。
+4. 鼓励艺人参与公益事业和社会活动，提升他们的社会责任感和公民素质。
+5. 对艺人的言行举止进行监控和管理，及时纠正错误和不良行为。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200714_M_R002S05C01_agent_added/out_003-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 736619, dtype: float32, min: -0.196075439453125, max: 0.254302978515625
+问题音频时间长度: 46.0386875
+
+
+[Agent] 接收到问题: 差不多了就可以抱着这个唱一个电影鼓励曲嗯 可以 对那就先到这吧嗯行 咱回吧嗯你好 娇娇基于之前我们讨论的内容关于演唱会的宣传策略你能否详细说明一下我们计划进行的三波宣传具体包括哪些内容,以及他们各自在演唱会推广中扮演的角色和预期效果。
+, 1743409254.9265616
+问题音频STT前的时刻: 1743409254.926701
+问题音频STT后的时刻: 1743409256.109533
+问题音频STT时间: 1.1828320026397705
+
+
+[Agent] 最终接收到问题: 你好,焦焦。基于之前我们讨论内容关于女主角的电视剧和电影宣传策略,你认为我们应该如何平衡她的曝光度和演技提升,同时确保在疫情期间的宣传效果不受影响?
+, 1743409256.1097014
+问题音频送入Planner的时刻: 1743409256.1105902
+planner new_token time: 1743409256.756994
+planner new_token time: 1743409257.1488798
+First token received: 0, time: 1743409257.149119
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409257.5409715
+planner new_token time: 1743409257.9333353
+planner new_token time: 1743409258.3257923
+planner new_token time: 1743409258.718748
+planner new_token time: 1743409259.111291
+planner new_token time: 1743409259.5039368
+planner new_token time: 1743409259.8965259
+planner new_token time: 1743409260.2911804
+planner new_token time: 1743409260.6841915
+planner new_token time: 1743409261.0766025
+planner new_token time: 1743409261.469364
+planner new_token time: 1743409261.8627796
+planner new_token time: 1743409262.2554486
+planner new_token time: 1743409262.6477675
+planner new_token time: 1743409263.0403957
+planner new_token time: 1743409263.4325504
+planner new_token time: 1743409263.8261173
+planner new_token time: 1743409264.2189622
+planner new_token time: 1743409264.6116943
+planner new_token time: 1743409265.004562
+planner new_token time: 1743409265.3971894
+planner new_token time: 1743409265.790619
+planner new_token time: 1743409266.183654
+planner new_token time: 1743409266.5769887
+planner new_token time: 1743409266.9700565
+planner new_token time: 1743409267.363679
+planner new_token time: 1743409267.7573302
+planner new_token time: 1743409268.1504178
+planner new_token time: 1743409268.5439966
+planner new_token time: 1743409268.9370944
+planner new_token time: 1743409269.3305333
+planner new_token time: 1743409269.7242196
+planner new_token time: 1743409270.1185532
+planner new_token time: 1743409270.5113757
+planner new_token time: 1743409270.905226
+planner new_token time: 1743409271.2983425
+planner new_token time: 1743409271.691982
+planner new_token time: 1743409272.0856988
+planner new_token time: 1743409272.4791338
+planner new_token time: 1743409272.87329
+planner new_token time: 1743409273.2675993
+planner new_token time: 1743409273.6614316
+planner new_token time: 1743409273.6623871
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：女主角 宣传策略 平衡曝光度 演技提升 疫情期间宣传
+
+
+提取的关键词: ['女主角', '宣传策略', '平衡曝光度', '演技提升', '疫情期间宣传']
+
+找到的上下文片段数量: 3
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743409274.9405844
+one token time in planner tools: 1743409275.3376057
+one token time in planner tools: 1743409275.7344034
+one token time in planner tools: 1743409276.131681
+one token time in planner tools: 1743409276.529102
+one token time in planner tools: 1743409276.9267263
+one token time in planner tools: 1743409277.324456
+one token time in planner tools: 1743409277.7218294
+one token time in planner tools: 1743409278.1193914
+one token time in planner tools: 1743409278.5174878
+one token time in planner tools: 1743409278.9147289
+one token time in planner tools: 1743409279.3120215
+one token time in planner tools: 1743409279.7092857
+one token time in planner tools: 1743409280.1080408
+one token time in planner tools: 1743409280.5058696
+one token time in planner tools: 1743409280.9037392
+one token time in planner tools: 1743409281.3010812
+one token time in planner tools: 1743409281.6979914
+one token time in planner tools: 1743409282.0949852
+one token time in planner tools: 1743409282.4920442
+one token time in planner tools: 1743409282.8886049
+one token time in planner tools: 1743409283.2856917
+one token time in planner tools: 1743409283.6830313
+one token time in planner tools: 1743409284.0808344
+one token time in planner tools: 1743409284.4780526
+one token time in planner tools: 1743409284.8752131
+one token time in planner tools: 1743409285.2720332
+one token time in planner tools: 1743409285.6693678
+one token time in planner tools: 1743409286.0663197
+one token time in planner tools: 1743409286.4637928
+one token time in planner tools: 1743409286.8613183
+one token time in planner tools: 1743409287.259412
+one token time in planner tools: 1743409287.6568449
+one token time in planner tools: 1743409288.0532985
+one token time in planner tools: 1743409288.4507627
+one token time in planner tools: 1743409288.848471
+one token time in planner tools: 1743409289.2454355
+one token time in planner tools: 1743409289.6427956
+one token time in planner tools: 1743409290.0402908
+one token time in planner tools: 1743409290.437896
+one token time in planner tools: 1743409290.8355544
+one token time in planner tools: 1743409291.2328923
+one token time in planner tools: 1743409291.6301577
+one token time in planner tools: 1743409292.0275638
+one token time in planner tools: 1743409292.4247375
+one token time in planner tools: 1743409292.8224366
+one token time in planner tools: 1743409293.2202256
+one token time in planner tools: 1743409293.6181319
+one token time in planner tools: 1743409294.0155632
+one token time in planner tools: 1743409294.413193
+one token time in planner tools: 1743409294.8109639
+one token time in planner tools: 1743409295.208788
+one token time in planner tools: 1743409295.6064515
+one token time in planner tools: 1743409296.0044131
+one token time in planner tools: 1743409296.40194
+one token time in planner tools: 1743409296.8000953
+one token time in planner tools: 1743409297.1980648
+one token time in planner tools: 1743409297.5957575
+one token time in planner tools: 1743409297.9935076
+one token time in planner tools: 1743409298.391196
+one token time in planner tools: 1743409298.7891462
+one token time in planner tools: 1743409299.187201
+one token time in planner tools: 1743409299.5852778
+one token time in planner tools: 1743409299.9843702
+one token time in planner tools: 1743409300.382271
+one token time in planner tools: 1743409300.7804747
+one token time in planner tools: 1743409301.1789355
+one token time in planner tools: 1743409301.5781753
+one token time in planner tools: 1743409301.9768906
+one token time in planner tools: 1743409302.3759716
+one token time in planner tools: 1743409302.7743874
+one token time in planner tools: 1743409303.1728377
+one token time in planner tools: 1743409303.5708835
+one token time in planner tools: 1743409303.9693925
+one token time in planner tools: 1743409304.367226
+one token time in planner tools: 1743409304.7658997
+one token time in planner tools: 1743409305.1637306
+one token time in planner tools: 1743409305.5616646
+one token time in planner tools: 1743409305.9598434
+one token time in planner tools: 1743409306.3583734
+one token time in planner tools: 1743409306.7569733
+one token time in planner tools: 1743409307.1556332
+one token time in planner tools: 1743409307.5546353
+one token time in planner tools: 1743409307.953352
+one token time in planner tools: 1743409308.3526013
+one token time in planner tools: 1743409308.751843
+one token time in planner tools: 1743409309.1511838
+one token time in planner tools: 1743409309.5495675
+one token time in planner tools: 1743409309.947968
+one token time in planner tools: 1743409310.3467906
+one token time in planner tools: 1743409310.745371
+one token time in planner tools: 1743409311.1442301
+one token time in planner tools: 1743409311.5434575
+one token time in planner tools: 1743409311.9425008
+one token time in planner tools: 1743409311.9438288
+
+Token count: 95, Total time: 38.1720 seconds, One token time: 0.4018 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：女主角', ' ', '宣', '传', '策略', ' ', '平', '衡', '曝光', '度', ' ', '演', '技', '提升', ' ', '疫', '情', '期间', '宣传', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###我们这边的话主要就是请了一些知名的男演员还有女演员去拍一部就是现在的网剧现在是手头上工作了是吗对然后这个网剧主题是属于一种翻拍像那种大话西游之类的网剧但是故事情节更加的详细了细腻了对但是我们最近那个男演员闹了一些绯闻所以决定现在要更换一些演员这个前期已经拍了是吗这个前期是第一集会有试镜都已经试过镜了但是因为绯闻的缘故没有再请这个男演员前期这个宣传是有什么样的也宣传你造势了一样宣传的时候是已经放出来预告了但是具体开拍和播放的日期还没有放出去现在人们对换演员这个有什么建议意见吗没有意见没有意见就是这个换下去的演员没有意见如果要往上换演员的话现在大多数推荐的都是一种现代比较火的一些小鲜肉之类的东西但是我们想往去请一些不是那种像现在小鲜肉那种老腊肉是吗?有演技的对给他们做绿叶,带给他们就找一种那种小时候是同性的那种拍过戏的像一些和李来杰合作的副子档那种现在也是属于但是他他毕竟是武打练员嘛而且肯定不能找那种小鲜肉吊着威亚显得不正经对看了让人感觉特别的烦躁就是属于看脸去了没有演技只有脸这个不行 肯定不行的我们要追求这个动作方面的这种幅度较大动作规范的这种演员如果请一些老演员的话也可以然后就是说请这些演员拍这个戏宣传这方面我暂时没有什么好的意义你好 娇娇基于之前我们讨论内容关于【女】主角的电视剧和电影宣传策略你认为我们应该如何平衡她的曝光度和演技提升同时确保在疫情期间对对对也可以参加一些娱乐节目,可以宣传一下娱乐节目宣传一下就是这一方面还有就是属于这种毕竟是属于这种西游记类型悟空类型的像一些妖魔鬼怪这种演员因为有很多女演员现在像以前那样拍戏肯定是不行的就是整个脸都不知道是谁的那种现在可能要求就是露脸化妆但是不能太过难看这方面我感觉现在现在的很多年轻的女演员都做不到这边因为要求上镜的肯定要求露脸露脸这样的话这样的话可以让这些女演员去参加一下这个A剧组的这个综艺节目让他们露一下脸然后宣传一下这个东西让他们知道演员是谁如果化妆化的太过浓艳的话就不太好对就像以前一些知名的演员像一些毛巨啊我曾拍过一种类似于西游的这种片子结果大家都不知道是他结果大家到现在都不知道是他因为他当时的妆画看不出来是谁感觉就是普通的一个群演到后边才知道是一个知名演员你看那个周班戏群众那个老一版对,老的西游记他们都在棚上就唐僧沙僧还能看着其他人都不知道谁我现在毕竟是这边经纪人嘛因为这个明星最近有很多女演员受这个影响很多人都在家歇懒了而且有点长胖身材有些不符合我们这种要求我们这个戏还要再过一段时间才能上映因为这方面需要调节一下她们身体健康其实那个最近杨可莉也是像江村的这个剧一样,就胖的变形了穿的也不得不在乎这样的话咱们就应该对男艺人要求比较严格一点其实不光对他们,对男公司来说,对他们来说也是挺好的首先就是能看他们的自律精神对这方面也是健康从各个方面看出来这个演员的素质对还有他的演技嗯怎么样进行提升这是其中一点还有一点就是现在比较流行的一种比方说就是悬疑反转剧我们准备拍一个类似于就是警察那方面类型的一种悬疑请到一些艺人像最近比较火的三叉戟啊这种东西都是扮喜剧然后扮警察然后日常生活中给你介绍这些故事我准备拍一种就是类似于悬疑比下一些比模仿一些那些韩剧吧,算是,他们那些都会有一些警察都会有一些反转,所以这方面,可以给我,你们可以给我推荐几个吗?就是类似\n---\n你像,玄宇咱们首先想的就是日本不免亏误,因为他那个,但是反权问题嘛,咱肯定不能,能够找来几个中国优秀的嗯其实呢选你的话就现在小时候比较火的鬼之洞还有这些藏密密码还有这个动笔记这一些这个现在拍比较多的就是这个鬼追灯跟这个动笔记拍比较多这个但是这个藏密密码到现在期间为止没有人拍过这些电视剧我觉得它可以作为一个根据吧就咱们可以改这个小说小说改电视剧或者改电影让它改一改我觉得可以这个也是在近期新年吧他的反响一直都是不错的一波反射我觉得最近就是你看都是平凡网剧啊言情啊穿越啊对这种都比较多但是我觉得最近这个韩国就是一个片子通常就是虽然精神病但没有关系就是这个韩剧这属于什么类型的呀就是他就是说他都是这个就是对精神上面有一些从小都有就是精神上面的疾病不是不是他本身就是神经病比如说小时候生了刺激心里都有黑暗的这个【女】主角受到刺激以后就这样杀人就是属于一个正常人黑化的故事对 就是这个电视剧我觉得就是说跟精神病人都有接触吧嗯 比如说也可以埋下他们的胆圈啊什么的然后另外对 除了这个刚才说那个降低密码之外就那个乐器撞灵他这个作者其实也挺出名的我们也可以跟他协商一下,也可以跟他的小说改变一下,也是挺有影响力的。因为咱们中国的小说肯定不像外国小说,外国小说一般像一些柯南道尔写的一些侦探,还有一些悬疑比较多。中国一般都是属于玄幻小说属于爱情画面那种而且很多都已经被翻拍过了咱们这就不进行翻拍要进行一个创新那如果要找真人的话,咱们就需要找几个优秀的编剧,对不对?我们需要找几个编剧。要找编剧的话,刚才说的,最近是要上映一部网剧嘛,那个演员已经更换好了,就差不多下个月就可以上映了,开拍。\n---\n近些年举办演唱会的明星其实卖的票房都是比较好的他们的基本上都是满场没有空座咱们这儿的话这个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这个第一方面就是先发误会第二方面就是这个当地一些报纸杂志第三方面就是现场临场收票嗯就三方面宣传嘛你好娇娇如何提升旗下歌手的识别然后咱们这儿歌手的话是比较多的但是咱们这个节目单往后也需要具体的详谈一下确定这个歌手是比较全面的不能说单方面就唱一种类歌看咱们像我们这边这个女团男团新出道有没有可能就是说咱们唱一首就是赛嗯可以就中间穿插一些嘛地方都是留公司的话中间穿插线也是可以的嗯,但是也是宣传吧。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。你好,娇娇,如何提升旗下艺人的专业素养和危机公关处理能力?你好,焦焦。基于之前我们讨论内容关于【女】主角的电视剧和电影宣传策略,你认为我们应该如何平衡她的曝光度和演技提升,同时确保在疫情期间的宣传效果不受影###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议上提及的【女】主角电视剧和电影宣传策略重点在于平衡其曝光度与演技提升，同时确保疫情时期的宣传效果。一方面，增加她在娱乐节目中的曝光度，让她更多地参与综艺节目以提高知名度；另一方面，在化妆方面保持适度，避免过于浓重，确保观众能清楚辨认她的面容。此外，安排适当的培训和演出机会帮助她提升演技，并通过社交媒体等渠道维持正面形象和公众关注度。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###我们这边的话主要就是请了一些知名的男演员还有女演员去拍一部就是现在的网剧现在是手头上工作了是吗对然后这个网剧主题是属于一种翻拍像那种大话西游之类的网剧但是故事情节更加的详细了细腻了对但是我们最近那个男演员闹了一些绯闻所以决定现在要更换一些演员这个前期已经拍了是吗这个前期是第一集会有试镜都已经试过镜了但是因为绯闻的缘故没有再请这个男演员前期这个宣传是有什么样的也宣传你造势了一样宣传的时候是已经放出来预告了但是具体开拍和播放的日期还没有放出去现在人们对换演员这个有什么建议意见吗没有意见没有意见就是这个换下去的演员没有意见如果要往上换演员的话现在大多数推荐的都是一种现代比较火的一些小鲜肉之类的东西但是我们想往去请一些不是那种像现在小鲜肉那种老腊肉是吗?有演技的对给他们做绿叶,带给他们就找一种那种小时候是同性的那种拍过戏的像一些和李来杰合作的副子档那种现在也是属于但是他他毕竟是武打练员嘛而且肯定不能找那种小鲜肉吊着威亚显得不正经对看了让人感觉特别的烦躁就是属于看脸去了没有演技只有脸这个不行 肯定不行的我们要追求这个动作方面的这种幅度较大动作规范的这种演员如果请一些老演员的话也可以然后就是说请这些演员拍这个戏宣传这方面我暂时没有什么好的意义你好 娇娇基于之前我们讨论内容关于【女】主角的电视剧和电影宣传策略你认为我们应该如何平衡她的曝光度和演技提升同时确保在疫情期间对对对也可以参加一些娱乐节目,可以宣传一下娱乐节目宣传一下就是这一方面还有就是属于这种毕竟是属于这种西游记类型悟空类型的像一些妖魔鬼怪这种演员因为有很多女演员现在像以前那样拍戏肯定是不行的就是整个脸都不知道是谁的那种现在可能要求就是露脸化妆但是不能太过难看这方面我感觉现在现在的很多年轻的女演员都做不到这边因为要求上镜的肯定要求露脸露脸这样的话这样的话可以让这些女演员去参加一下这个A剧组的这个综艺节目让他们露一下脸然后宣传一下这个东西让他们知道演员是谁如果化妆化的太过浓艳的话就不太好对就像以前一些知名的演员像一些毛巨啊我曾拍过一种类似于西游的这种片子结果大家都不知道是他结果大家到现在都不知道是他因为他当时的妆画看不出来是谁感觉就是普通的一个群演到后边才知道是一个知名演员你看那个周班戏群众那个老一版对,老的西游记他们都在棚上就唐僧沙僧还能看着其他人都不知道谁我现在毕竟是这边经纪人嘛因为这个明星最近有很多女演员受这个影响很多人都在家歇懒了而且有点长胖身材有些不符合我们这种要求我们这个戏还要再过一段时间才能上映因为这方面需要调节一下她们身体健康其实那个最近杨可莉也是像江村的这个剧一样,就胖的变形了穿的也不得不在乎这样的话咱们就应该对男艺人要求比较严格一点其实不光对他们,对男公司来说,对他们来说也是挺好的首先就是能看他们的自律精神对这方面也是健康从各个方面看出来这个演员的素质对还有他的演技嗯怎么样进行提升这是其中一点还有一点就是现在比较流行的一种比方说就是悬疑反转剧我们准备拍一个类似于就是警察那方面类型的一种悬疑请到一些艺人像最近比较火的三叉戟啊这种东西都是扮喜剧然后扮警察然后日常生活中给你介绍这些故事我准备拍一种就是类似于悬疑比下一些比模仿一些那些韩剧吧,算是,他们那些都会有一些警察都会有一些反转,所以这方面,可以给我,你们可以给我推荐几个吗?就是类似
+---
+你像,玄宇咱们首先想的就是日本不免亏误,因为他那个,但是反权问题嘛,咱肯定不能,能够找来几个中国优秀的嗯其实呢选你的话就现在小时候比较火的鬼之洞还有这些藏密密码还有这个动笔记这一些这个现在拍比较多的就是这个鬼追灯跟这个动笔记拍比较多这个但是这个藏密密码到现在期间为止没有人拍过这些电视剧我觉得它可以作为一个根据吧就咱们可以改这个小说小说改电视剧或者改电影让它改一改我觉得可以这个也是在近期新年吧他的反响一直都是不错的一波反射我觉得最近就是你看都是平凡网剧啊言情啊穿越啊对这种都比较多但是我觉得最近这个韩国就是一个片子通常就是虽然精神病但没有关系就是这个韩剧这属于什么类型的呀就是他就是说他都是这个就是对精神上面有一些从小都有就是精神上面的疾病不是不是他本身就是神经病比如说小时候生了刺激心里都有黑暗的这个【女】主角受到刺激以后就这样杀人就是属于一个正常人黑化的故事对 就是这个电视剧我觉得就是说跟精神病人都有接触吧嗯 比如说也可以埋下他们的胆圈啊什么的然后另外对 除了这个刚才说那个降低密码之外就那个乐器撞灵他这个作者其实也挺出名的我们也可以跟他协商一下,也可以跟他的小说改变一下,也是挺有影响力的。因为咱们中国的小说肯定不像外国小说,外国小说一般像一些柯南道尔写的一些侦探,还有一些悬疑比较多。中国一般都是属于玄幻小说属于爱情画面那种而且很多都已经被翻拍过了咱们这就不进行翻拍要进行一个创新那如果要找真人的话,咱们就需要找几个优秀的编剧,对不对?我们需要找几个编剧。要找编剧的话,刚才说的,最近是要上映一部网剧嘛,那个演员已经更换好了,就差不多下个月就可以上映了,开拍。
+---
+近些年举办演唱会的明星其实卖的票房都是比较好的他们的基本上都是满场没有空座咱们这儿的话这个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这个第一方面就是先发误会第二方面就是这个当地一些报纸杂志第三方面就是现场临场收票嗯就三方面宣传嘛你好娇娇如何提升旗下歌手的识别然后咱们这儿歌手的话是比较多的但是咱们这个节目单往后也需要具体的详谈一下确定这个歌手是比较全面的不能说单方面就唱一种类歌看咱们像我们这边这个女团男团新出道有没有可能就是说咱们唱一首就是赛嗯可以就中间穿插一些嘛地方都是留公司的话中间穿插线也是可以的嗯,但是也是宣传吧。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。嗯。你好,娇娇,如何提升旗下艺人的专业素养和危机公关处理能力?你好,焦焦。基于之前我们讨论内容关于【女】主角的电视剧和电影宣传策略,你认为我们应该如何平衡她的曝光度和演技提升,同时确保在疫情期间的宣传效果不受影###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议上提及的【女】主角电视剧和电影宣传策略重点在于平衡其曝光度与演技提升，同时确保疫情时期的宣传效果。一方面，增加她在娱乐节目中的曝光度，让她更多地参与综艺节目以提高知名度；另一方面，在化妆方面保持适度，避免过于浓重，确保观众能清楚辨认她的面容。此外，安排适当的培训和演出机会帮助她提升演技，并通过社交媒体等渠道维持正面形象和公众关注度。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200714_M_R002S05C01_agent_added/out_003-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 736619, dtype: float32, min: -0.196075439453125, max: 0.254302978515625
+问题音频时间长度: 46.0386875
+
+
+[Agent] 接收到问题: 差不多了就可以抱着这个唱一个电影鼓励曲嗯 可以 对那就先到这吧嗯行 咱回吧嗯你好 娇娇基于之前我们讨论的内容关于演唱会的宣传策略你能否详细说明一下我们计划进行的三波宣传具体包括哪些内容,以及他们各自在演唱会推广中扮演的角色和预期效果。
+, 1743409314.0088642
+问题音频STT前的时刻: 1743409314.0092156
+问题音频STT后的时刻: 1743409314.5686147
+问题音频STT时间: 0.5593991279602051
+
+
+[Agent] 最终接收到问题: 你好,教教如何提升旗下歌手的识别度和参与娱乐节目的宣传效果。
+, 1743409314.5687742
+问题音频送入Planner的时刻: 1743409314.5691686
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409315.1729176
+planner new_token time: 1743409315.5660756
+planner new_token time: 1743409315.5663996
+First token received: 1, time: 1743409315.566525
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409315.5820794
+talker first token time: 1743409315.8704915
+talker first token time: 1743409315.8974621
+talker first token time: 1743409315.9238443
+talker first token time: 1743409315.9501226
+talker first token time: 1743409315.9763236
+talker first token time: 1743409316.0025609
+talker first token time: 1743409316.0287519
+talker first token time: 1743409316.0551102
+talker first token time: 1743409316.0815606
+talker first token time: 1743409316.107653
+talker first token time: 1743409316.1337702
+talker first token time: 1743409316.159981
+talker first token time: 1743409316.1859996
+talker first token time: 1743409316.2121122
+talker first token time: 1743409316.2381744
+talker first token time: 1743409316.3156323
+talker first token time: 1743409316.3416843
+talker first token time: 1743409316.3678632
+talker first token time: 1743409316.393934
+talker first token time: 1743409316.420005
+talker first token time: 1743409316.4460332
+talker first token time: 1743409316.497885
+talker first token time: 1743409316.5240335
+talker first token time: 1743409316.550355
+talker first token time: 1743409316.5767708
+talker first token time: 1743409316.6030598
+talker first token time: 1743409316.6295798
+talker first token time: 1743409316.6561537
+talker first token time: 1743409316.6824608
+talker first token time: 1743409316.7599943
+talker first token time: 1743409316.7860355
+talker first token time: 1743409316.81197
+talker first token time: 1743409316.8380501
+talker first token time: 1743409316.8641975
+talker first token time: 1743409316.8903122
+talker first token time: 1743409316.916388
+talker first token time: 1743409316.968373
+talker first token time: 1743409316.9945369
+talker first token time: 1743409317.0206845
+talker first token time: 1743409317.0471704
+talker first token time: 1743409317.0731642
+talker first token time: 1743409317.150607
+talker first token time: 1743409317.176592
+talker first token time: 1743409317.2029147
+talker first token time: 1743409317.2296677
+talker first token time: 1743409317.2560563
+talker first token time: 1743409317.3084142
+talker first token time: 1743409317.3347425
+talker first token time: 1743409317.3608553
+talker first token time: 1743409317.3869581
+talker first token time: 1743409317.4388504
+talker first token time: 1743409317.4650662
+talker first token time: 1743409317.5170877
+talker first token time: 1743409317.543251
+talker first token time: 1743409317.5694244
+talker first token time: 1743409317.5955887
+talker first token time: 1743409317.6731265
+talker first token time: 1743409317.7249415
+talker first token time: 1743409317.7509015
+talker first token time: 1743409317.7768886
+talker first token time: 1743409317.8028917
+talker first token time: 1743409317.854839
+talker first token time: 1743409317.880868
+talker first token time: 1743409317.9069798
+talker first token time: 1743409317.932979
+talker first token time: 1743409317.9591906
+talker first token time: 1743409317.9856868
+talker first token time: 1743409318.0121138
+talker first token time: 1743409318.0385306
+talker first token time: 1743409318.0648768
+talker first token time: 1743409318.0912125
+talker first token time: 1743409318.1174974
+talker first token time: 1743409318.1951501
+talker first token time: 1743409318.2214386
+talker first token time: 1743409318.2476077
+talker first token time: 1743409318.2738664
+talker first token time: 1743409318.300086
+talker first token time: 1743409318.326336
+talker first token time: 1743409318.3524969
+talker first token time: 1743409318.404487
+talker first token time: 1743409318.4308617
+talker first token time: 1743409318.4569144
+talker first token time: 1743409318.4830606
+talker first token time: 1743409318.5094044
+talker first token time: 1743409318.5615368
+talker first token time: 1743409318.587766
+talker first token time: 1743409318.6139383
+talker first token time: 1743409318.6401198
+talker first token time: 1743409318.6663115
+talker first token time: 1743409318.6925914
+talker first token time: 1743409318.7702491
+talker first token time: 1743409318.796578
+talker first token time: 1743409318.823169
+talker first token time: 1743409318.8495824
+talker first token time: 1743409318.8759031
+talker first token time: 1743409318.9020817
+talker first token time: 1743409318.9540873
+talker first token time: 1743409318.980351
+talker first token time: 1743409319.0066547
+talker first token time: 1743409319.033049
+talker first token time: 1743409319.059411
+talker first token time: 1743409319.1117895
+talker first token time: 1743409319.1381116
+talker first token time: 1743409319.1643353
+talker first token time: 1743409319.1906307
+talker first token time: 1743409319.216845
+talker first token time: 1743409319.2701476
+
+talker输出：
+
+Token count: 86, Total time: 3.2999 seconds, One token time: 0.0384 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+提升旗下歌手的识别度和参与娱乐节目宣传效果的方法有：
+
+1. 制定独特的音乐风格，使歌手在众多艺人中脱颖而出。
+2. 定期发布高质量的新作品，保持粉丝的关注度。
+3. 参与各种宣传活动，如签售会、发布会等，增加曝光率。
+4. 建立良好的形象，通过公益事业或个人博客等方式与粉丝互动。
+5. 合理安排演出档期，保证歌手有足够的休息时间，同时也能满足粉丝的需求。
+6. 积极参加各类综艺节目，通过表现展示自己的才华，提高曝光度和知名度。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200714_M_R002S05C01_agent_added/out_003-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 736619, dtype: float32, min: -0.196075439453125, max: 0.254302978515625
+问题音频时间长度: 46.0386875
+
+
+[Agent] 接收到问题: 差不多了就可以抱着这个唱一个电影鼓励曲嗯 可以 对那就先到这吧嗯行 咱回吧嗯你好 娇娇基于之前我们讨论的内容关于演唱会的宣传策略你能否详细说明一下我们计划进行的三波宣传具体包括哪些内容,以及他们各自在演唱会推广中扮演的角色和预期效果。
+, 1743409321.406432
+问题音频STT前的时刻: 1743409321.4065537
+问题音频STT后的时刻: 1743409322.6487577
+问题音频STT时间: 1.242203950881958
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于演唱会的宣传策略,你能否详细说明一下我们计划进行的三波宣传具体包括哪些内容,以及他们各自在演唱会推广中扮演的角色和预期效果?
+, 1743409322.6491246
+问题音频送入Planner的时刻: 1743409322.6496935
+planner new_token time: 1743409323.3394206
+planner new_token time: 1743409323.7328098
+First token received: 0, time: 1743409323.7329767
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409324.126709
+planner new_token time: 1743409324.5198042
+planner new_token time: 1743409324.912719
+planner new_token time: 1743409325.306326
+planner new_token time: 1743409325.7003784
+planner new_token time: 1743409326.0933845
+planner new_token time: 1743409326.4865916
+planner new_token time: 1743409326.880328
+planner new_token time: 1743409327.2743707
+planner new_token time: 1743409327.6682904
+planner new_token time: 1743409328.0623415
+planner new_token time: 1743409328.4558563
+planner new_token time: 1743409328.8492393
+planner new_token time: 1743409329.243456
+planner new_token time: 1743409329.6367476
+planner new_token time: 1743409330.0305033
+planner new_token time: 1743409330.4238675
+planner new_token time: 1743409330.8173552
+planner new_token time: 1743409331.2104557
+planner new_token time: 1743409331.6047163
+planner new_token time: 1743409331.999221
+planner new_token time: 1743409332.393599
+planner new_token time: 1743409332.7875214
+planner new_token time: 1743409333.1817913
+planner new_token time: 1743409333.575094
+planner new_token time: 1743409333.9692962
+planner new_token time: 1743409334.3638313
+planner new_token time: 1743409334.7581675
+planner new_token time: 1743409335.1520123
+planner new_token time: 1743409335.5458713
+planner new_token time: 1743409335.940688
+planner new_token time: 1743409336.3349612
+planner new_token time: 1743409336.7289343
+planner new_token time: 1743409337.1234622
+planner new_token time: 1743409337.5175686
+planner new_token time: 1743409337.5182436
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：演唱会 宣传策略 三波宣传 预期效果
+
+
+提取的关键词: ['演唱会', '宣传策略', '三波宣传', '预期效果']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743409338.1970837
+one token time in planner tools: 1743409338.59077
+one token time in planner tools: 1743409338.9847085
+one token time in planner tools: 1743409339.3784504
+one token time in planner tools: 1743409339.772034
+one token time in planner tools: 1743409340.1657526
+one token time in planner tools: 1743409340.559726
+one token time in planner tools: 1743409340.9534004
+one token time in planner tools: 1743409341.3470333
+one token time in planner tools: 1743409341.7409554
+one token time in planner tools: 1743409342.1351514
+one token time in planner tools: 1743409342.529126
+one token time in planner tools: 1743409342.923188
+one token time in planner tools: 1743409343.3173344
+one token time in planner tools: 1743409343.7112663
+one token time in planner tools: 1743409344.105349
+one token time in planner tools: 1743409344.5006478
+one token time in planner tools: 1743409344.8951185
+one token time in planner tools: 1743409345.2893713
+one token time in planner tools: 1743409345.683776
+one token time in planner tools: 1743409346.0777705
+one token time in planner tools: 1743409346.4720268
+one token time in planner tools: 1743409346.865805
+one token time in planner tools: 1743409347.2602534
+one token time in planner tools: 1743409347.6547525
+one token time in planner tools: 1743409348.0488997
+one token time in planner tools: 1743409348.4432006
+one token time in planner tools: 1743409348.8375597
+one token time in planner tools: 1743409349.231671
+one token time in planner tools: 1743409349.6256313
+one token time in planner tools: 1743409350.019757
+one token time in planner tools: 1743409350.4139783
+one token time in planner tools: 1743409350.8078308
+one token time in planner tools: 1743409351.2020063
+one token time in planner tools: 1743409351.5970333
+one token time in planner tools: 1743409351.9916325
+one token time in planner tools: 1743409352.3856943
+one token time in planner tools: 1743409352.780505
+one token time in planner tools: 1743409353.1747797
+one token time in planner tools: 1743409353.5688078
+one token time in planner tools: 1743409353.9632368
+one token time in planner tools: 1743409354.3578656
+one token time in planner tools: 1743409354.7526674
+one token time in planner tools: 1743409355.1467884
+one token time in planner tools: 1743409355.541338
+one token time in planner tools: 1743409355.9358249
+one token time in planner tools: 1743409356.3310246
+one token time in planner tools: 1743409356.7254345
+one token time in planner tools: 1743409357.1199114
+one token time in planner tools: 1743409357.514375
+one token time in planner tools: 1743409357.9087043
+one token time in planner tools: 1743409358.3030186
+one token time in planner tools: 1743409358.698013
+one token time in planner tools: 1743409359.0925324
+one token time in planner tools: 1743409359.4872708
+one token time in planner tools: 1743409359.8820643
+one token time in planner tools: 1743409360.2771745
+one token time in planner tools: 1743409360.6728745
+one token time in planner tools: 1743409361.0677488
+one token time in planner tools: 1743409361.462529
+one token time in planner tools: 1743409361.857873
+one token time in planner tools: 1743409362.2528229
+one token time in planner tools: 1743409362.6477532
+one token time in planner tools: 1743409363.0424697
+one token time in planner tools: 1743409363.4374526
+one token time in planner tools: 1743409363.832262
+one token time in planner tools: 1743409363.8332958
+
+Token count: 67, Total time: 26.2300 seconds, One token time: 0.3915 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：演唱会', ' ', '宣', '传', '策略', ' ', '三', '波', '宣传', ' ', '预', '期', '效果', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###一般没有特务情况的话,十天左右就可以过文化部这一关。咱们前期如果做推广的话就需要需要这个批文才能去做推广就是做这个广告才可以出一些这个卖往来卖票嗯在这个常规情况下这个在出这个洋上票的时间大概都在45天左右咱们出票的时间越长这个准备工作操办工作做的时间也会越充足然后就这个需要准备的一些东西比如造型啊这个场地的布置啊等等一系列做的都会比较充足然后同时风险性比较小,对咱们歌手保护也算是比较好吧所以在墙里,一个两个的知名度比较高的对,然后就是宣传,宣传的话分为几波宣传吧第一波宣传就是在新的发布会交代还有歌手的一些名单还有这个演出的行单还有这个演唱会的一些基本信息同时也可以开始卖票第二波宣传就是当地的一些报纸 杂志或者网络发通稿然后还有这个【演】唱会近期的一些准备情况舞台音箱 歌手的一些近期情况票房情况这是咱们进行的第二波宣传然后第三波宣传就是第三波宣传第三波宣传就是这个第三波宣传咱们主办方其实能做的就已经很少了就是一个临场卖票就是咱们这个肯定会有一些人来临场来了但是没有票这个可能当然也会有一些人这个退票啊干嘛的这个就属于临场的演唱会结束之后咱们还会有一个后续的宣传靠歌手本身的地位,演唱会造成的轰动性,还有经纪公司运作能力,再推广一下歌手,让歌手的名气在网上提一提。近些年举办演唱会的明星其实卖的票房都是比较好的他们的基本上都是满场没有空座咱们这儿的话这个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这过。###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据提供的会议内容，【演】字所在部分指的是演唱会的宣传计划。具体来说，第二波宣传包括当地报纸、杂志或网络发布通稿，并介绍近期的准备情况，如舞台音箱设置和歌手近况及票房情况等。此阶段主要是为了进一步扩大影响和吸引观众购票。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###一般没有特务情况的话,十天左右就可以过文化部这一关。咱们前期如果做推广的话就需要需要这个批文才能去做推广就是做这个广告才可以出一些这个卖往来卖票嗯在这个常规情况下这个在出这个洋上票的时间大概都在45天左右咱们出票的时间越长这个准备工作操办工作做的时间也会越充足然后就这个需要准备的一些东西比如造型啊这个场地的布置啊等等一系列做的都会比较充足然后同时风险性比较小,对咱们歌手保护也算是比较好吧所以在墙里,一个两个的知名度比较高的对,然后就是宣传,宣传的话分为几波宣传吧第一波宣传就是在新的发布会交代还有歌手的一些名单还有这个演出的行单还有这个演唱会的一些基本信息同时也可以开始卖票第二波宣传就是当地的一些报纸 杂志或者网络发通稿然后还有这个【演】唱会近期的一些准备情况舞台音箱 歌手的一些近期情况票房情况这是咱们进行的第二波宣传然后第三波宣传就是第三波宣传第三波宣传就是这个第三波宣传咱们主办方其实能做的就已经很少了就是一个临场卖票就是咱们这个肯定会有一些人来临场来了但是没有票这个可能当然也会有一些人这个退票啊干嘛的这个就属于临场的演唱会结束之后咱们还会有一个后续的宣传靠歌手本身的地位,演唱会造成的轰动性,还有经纪公司运作能力,再推广一下歌手,让歌手的名气在网上提一提。近些年举办演唱会的明星其实卖的票房都是比较好的他们的基本上都是满场没有空座咱们这儿的话这个前期这边宣传怎么宣传到这边宣传的话就是刚才我说的这三方面嘛第一方面是这过。###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据提供的会议内容，【演】字所在部分指的是演唱会的宣传计划。具体来说，第二波宣传包括当地报纸、杂志或网络发布通稿，并介绍近期的准备情况，如舞台音箱设置和歌手近况及票房情况等。此阶段主要是为了进一步扩大影响和吸引观众购票。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

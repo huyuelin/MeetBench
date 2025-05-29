@@ -1,0 +1,852 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 71
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.21s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.12it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.48s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:04,  4.38s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.76s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.34s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:10<00:09,  4.55s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:15<00:04,  4.61s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.55s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.47s/it]
+002我是董事长006我是总经理021我是办公室022我是安保012我是工程部咱们公司今天开个工作例会下面请办公室讲讲咱们近期的计划工作计划就是业主的缴费情况啊怎么能说说这不是夏季了吗然后这个用水情况增加了缴费情况都已经他们都会暗示缴费因为现在都是水电都是地理的咱们那个前段时间那个机器设备都是刚更新好的有客户投诉业主投诉我们就对我们提出意见是吧有就是咱们那个因为更新了那个缴费那个电的那个机器嘛然后有人不会使用所以我觉得咱们可以加一个那个使用使用说明就是怎么充现在不是一卡充电吗先去国家电网充电然后再把卡插进去然后有的客户就是找不到自己家的那个口在哪所以咱们可以加一个使用说明你说的咱们这个下季的用水量增加你说怎么用水量增加是咱们绿化用水量增加了吗基面用水量增加就是绿化也增加了基面用水量增加跟咱们没有直接关系的是吧咱们绿化用水量增加了这个确实是咱们的成本这个电阻可能马上就要改成云护一流然后不用插就直接可能我们手机手机要了手机的话就可以精确到个人了然后它这个可能要换的那个电表就是只能显示流量但是它不显示就是你的用电量你只能在手机上查到你的这个用电多少然后呢如果说家里断电了就可以直接用手机来缴费它以后的那种对对对我们小区马上就要进行更换现在好多那种缴电方式都跟现在的那个手机充值一样它会自动显示你欠哪多少钱 还有你居哥多少钱那现在这个环境维护怎么做环境维护挺好的最近不是国家倡导垃圾分类吗小区垃圾桶也换了然后也进行分类了居民做的还是不错的居民还是 咱们做的怎么样咱们是每天按时清理垃圾那保安部怎么样咱们现在这个保安部那天有一位业主的钱包住在了电梯里面然后被我们的保洁人员捡到了然后交到了保安部里面有现金若干、银行卡若干还有身份证然后最后业主很着急嘛他来找的时候很着急最后找到我们确实是在我们这里最后很高兴第二天给我们送来的一个锦旗还有一次一个业主在外出溜走的时候就是我们被投诉了一次就是呃外出六没有带那个铲屎的东西然后就是很破坏环境然后就投资到我们保安部了然后我们保安部把这个问题反映到保洁部了然后保洁部最近是怎么处理的应该是加拿大军队综合办说说怎么处理的我觉得咱们可以弄一个专门遛狗的区域划分一下然后主要是想遛狗遛猫的然后到时候按时打造这个有点难度啊我们就是画戏如果是画戏两个人的宠物呢确实有部分但是我标识他们遛过的时候 嵌上衣服不能过就是心意的上场散步这是我们的要求再一个就是我们有专门的箱子里面放的就是这种工具还有比方说我们也有一些卫生纸还有一个探索它使得这个产能更有方就是我们都有配对一些东西对吧这样的话你也会觉得我们做的会更好对这个就是哪个部门碰见了哪个部门处理像现在这种事不用给办公室报告这个是吧保安就可以解决这个问题是吧保安就可以解决就是咱们那个保安咱们那个设备安保设备怎么样咱们小区的安保设备运用怎么样安保设备监控一直都是24小时高清监控监控一直没有出现一个问题有没有改进的地方有一点不反应地下的车库进楼道的门有个单元好像是二号楼二单元说是能进不能出然后我们去看了一下那个门子可能确实是能进出了问题然后这两天就要进行这个整改整改那个费用了不用问题费用不是很高,因为它的锁子当时可能是按的时候按反了,就是能进不能出了,然后把这个锁子调换成位置就可以了。只要有卡的话,其实不能刷卡的话它也不开门,因为里面有能拉锁,外面没有能拉锁,是这样。就是安保,咱们现在有没有刀枪之类的发生在小区里面?最近知道最近没有但是我觉得我们依然需要加强巡逻就是说咱们的漏洞那样 有没有漏洞漏洞可能是除了咱们门禁以外 门禁门禁如果就是他们有看到我们的监控是不是有死角太多对对 越过咱们那个我们能够不战斗号再加点电话对吧小区后门小区的那个小门虽然平常是锁着的但是可能会有人员翻入然后那个位置是一个监控死角那怎么解决?工程部想协调一下,咱们怎么解决这个事?是加那个监控?360度那个加一个能够360度旋转的360度可以这样的话我们的视角会更广阔一点能够加电网?电网最好不要加,我们这是小区有居民小区不让你加一般的人他也不反,咱们在通常电量电量的比例,有的就是电麻一下电吧还是会有危险但是有一定危险性我觉得最好电这个就千万别找了万一有小孩子了是吧咱们是居住的环境咱们也不是监狱还不需要加监护是吧我们加了电难道我们把我们的居民控制在里面吗不是控制在里面就是说不让进出的地方保证他安全我就是一个闲话随便说说这个其实还是没必要加电但是我们就是多加两个监护加监护是对的然後我
+[Text Detection] 在 505.71 秒检测到关键词 '好教教',current_time: 496.00, 问题文本: 我们的保安部尽量多注意一下或者你写上有电误碰但是手机的话就你好教教如何改进小区安保设备以减少监控资料但是实际上没有电可以写上有的孩子就好奇主要就是安全家监控是最主要的这个刑法说嘛监控率监控的覆盖率和
+们的保安部尽量多注意一下或者你写上有电误碰但是手机的话就你好教教如何改进小区安保设备以减少监控资料但是实际上没有电可以写上有的孩子就好奇主要就是安全家监控是最主要的这个刑法说嘛监控率监控的覆盖率和小区总是会有游浪狗游浪猫这个到底是把他们赶走还是给他们准备好东西,让他们吃完再走总是会有,然后会突然逃窜出来这个问题最好还是游浪猫是一番主要的游浪猫太多了我们有居民他也不定时的会喂一些东西给游浪猫就是看居民有没有要认领的没有认领的就签那咱们要配合我的建议就是清理出去他就回来了所以说定时的为一些东西叫他们不要在小区乱动吓人突然间逃窜出来你说这一撤解解决撤解一点他又放在小区了要不我们就下楼了下楼了然后把他往下楼了然後把他往窄的地方那小区那边多了以后,那成了收养宠物的地方我可以找到,然后就是,我们以前给花鼠囊的一些笼子我知道,那你弄出来以后,咱们现在养宠物的吧要签了一部经历啊,谁负责抓住它,然后养到上面,那只能这样这个笼子就是它里面放了个鸡腿然后这个猫一进来自动一采养这个是要成本的长期也不是不要成本这个不用费多这个物业里有一天还要养宠物的一样玩意没有现在是怎么回事就是我们的居民呀他有一部分人他不觉得就是我们这个流浪猫对他就是生命了对他也觉得他也是爱情的一个生命对对对他定是在家里边吃不了东西然后在里面但是猫和狗只要有东西吃他就回来如果量数量太多的话这一定会产生影响有一些部分他就不喜欢了他就会说白了就会未懂所以我觉得最好就是先办一些那个领养看有没有业主希望去领养他们对 集中起来然后就是过段时间以后没有业主领养的话咱们最好是找那比如说弄一些笼子专门把他们先圈起来对 咱们找个专门的可以圈起来 当然说有战友能力我建议尽量把猫、狗、野、流浪猫、猿、狗等送到动物保护协会哦 像咱们早日因为咱们这个就像刚才总经理说的咱们有分神去管理它这边咱们没有这个义务不在尽量把他送到这个端门去看管一下而且它们身上也不干净主要是万一居民被咬的话还得自费去打疫苗还是把它送走这样就要给到处要给我们的业主们解释一下就可以了行好的那工程上面有没有现在咱们需要维护的设备它要能管到然后我们工程上去就看了一下它那个拐弯的地方就是它前期都是塑料的然后太阳日晒的时间长了然后它就产生开裂然后我们就是近期要会统一的把它换成金属铜的 铜质的这样的话它就不会再出现开裂然后就不会出现这个问题这部分费用啊这个费用应该是从我们物业费里到出的好好好好好好好好好好好好好好好好好好好好好好好好好好好好好材料也是咱们出吗?这个每户的话就是一个拐弯的话就是2块5毛钱费用无数这样的话就可以接受这个人还有安装所有注意安全的问题这种没有问题我们顶楼的话都是有直接门子可以进入开门拿钥匙开门进入就行了它都是平放的平放的开门那就是有的事就是像这个长期问题就是说建议这个业主以后就不使用那个太阳能行不行这样有的业主人家也不是说因为你看下雨的话他太阳能够高通因为太阳能出现很多问题有时候水满了以后往下滴点水就见水啊就是很多这种事啊嗯一般他就是每户吧有的人人家就是应该就对不用有的业主他不在家不在家弄人家水下來花花是被小河養那他自己忘了出现这个问题很普遍他没在家咱们不能入室也没法现在是这样业主愿意用太阳能我们就得去给你维修有的时候家里就愿意用电电烧我就不使太阳能当然太阳能这部分我就可以不用了这次解决以后劝导尽量还是少使太阳能如果出现这个问题他们不在家上水我们可以建立一个上水淤了以后咱们就有怎么处理流法案但是有的时候咱们的业主的投诉啊这个他上水淤不一定他淤入他自己的水是吧他淤太多了他水位他自己出我真的我这水位自己淤他就说他淤入的话他会自己注意的我知道自己注意有不注意的时候咱们采取什么措施有的这个他是流水多了影响别的业主是吧人家都采河河一样是是是有反应对对对因为它是它要流到外面的水就到中心都如果下面的话,那是因为它上面就比如说的那个太阳能管啊,裂了,它一般的话它都只会留到自己家里的卫生间的。它是一个上边管一个下面管,如果管子不出现问题的话就留到自己家卫生间。你看这个太阳能这个事儿,它维护这个事儿,如果是你要说咱们要长期给它维护,去监管这个东西啊,那咱们的工作量也大了,是吧?工作量大了还有危险性。这个不用调节主要就是那就是咱们只能等它漏水了以后再检查出现问题了再检查漏成小河再检查它如果出现我们会用工程部定期的去漏水检查一次太阳能然后发现它停止出现这个东西如果是他们要使太阳能就是让他们增加交易费用维护太阳能的费用嗯就是咱们负责这个事如果发现漏了咱们就及时把它们维护这个在我们物业费里面应该有体现而
+[Text Detection] 在 1011.25 秒检测到关键词 '佼佼',current_time: 992.00, 问题文本: 而是你不用在那外收你再外收不是为什么为什么就是说要额外就收这一部分因为不是自然的这个东西太阳能使太阳能的这不是普遍的因为我们现在听见当中它就是你要说它有太阳能付费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以
+是你不用在那外收你再外收不是为什么为什么就是说要额外就收这一部分因为不是自然的这个东西太阳能使太阳能的这不是普遍的因为我们现在听见当中它就是你要说它有太阳能付费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以咱们就是想办法不让它漏中小河再下一管我们就是要就是上面下一道通道通道它自己家里头它要能出现问题的话就是说家里头以上这个就是我们来给它维修的对但凡是涉及到它家里的话这是它自己自费点维修的我们可以我们可以出我们就是管如果是漏水标准不让它漏一地漏下水一地就是说咱们那个上面那个排斥管道排斥管道不用担心因为我们的排水系统都是很安全的 不会把我们手机编掉放进去放进去它这个太阳能的水就不会出现水不会不会它会直接的话从楼顶下面然后进就是直接进下水道它不会对我们造成大量的影响一定保持这个管道的畅通这个没问题没问题还有别的吗还有那个别的我这边有个问题我今天来咱这个小区咱们就这样近期到了汛期防洪防汛你們有安排嗎我們目前準備了大概有救生條不用不用因為我們地下水溪很沒小溪水很容易從車庫口進去所以我们准备了大概500多袋沙虾然后只要下大雨的话,我们就把整个门口堆积起来就会,我们现在入口有两个所以说一个水一个口大概有200多袋沙子水的力量是不能估计的没有问题那我们地下收库的拍摄机能安全吗拍摄机能没有问题,根本没有问题主要就是它不会大量的进就行了然后我们实在不行了我们准备的沙袋可以把整个我们在这个门口堵起来,就是外面能开区发停,我们地下车路也绝对没有水,叫我们小区的车只要停在我们车路,绝对让人放心。那要是客户第二天想要用车呢,这样很不方便吧?如果水都下起了,外面街路要出车,我们绝对没有问题。连夜的就吧?当然你开外面都是水然后它肯定出不去了水一退的话我们就把煞电给挪开那时候咱们不是配备出水泵实在不行就是因为出水泵我们地下车库如果进水的话我们可以及时的开出水泵把水抽出去我们就是说只要外面的水没有水的话我们就可以把沙袋挪掉然后也就成但外面的水要下着雨水很大的话我们就会告知他们不行外面的水积水很厉害你要是出水的话你的车就会容易淹对吧保安这边也要注意这个事情我们平常也是在那多派几名安保人员如果说有业主想要出车的话我们视情况而定如果说水量足以安全的话我们会给他分分放开沙袋如果说不是很安全的话我们就尽量给他协商如果说他执意要出车的话那就是后果他自己承担了这个要说签因为三天前我们这儿闹放了一次洪涝然后我们这里的水地下室浸过一次水当时在建设当中因为浸的不过也不多据说啊因为当时我还没有来认识建设工他们说地下室当时下雨的话浸了一下水然后我们就是根据这个情况准备了500多吨沙子就是防止它如果这种50年或者是上百年遇到风水的话也有方法来对付总经理这边还有什么安排针对刚才的到时候发现反正我统一指挥协调如果是我们自己不行的话现在已经有计划了如果是我们自己做的不行的话就是向政府部门求援利用我们现有的设备和人员进行最大限度的控制它这个危害我們小區有什麼低窪地區如果下雨,比如说堵啊,水比较多啊,都存在那里吗?应该是有个那个花池啊,地下,我们一般到雨季都会把这个地下室,不是吧,比如说下雨开始工作的话,都会进行定期的清理,然后发现有堵塞的话,立马就给它输出了。这块做的不错还有就是咱们我想听一下现在咱们总公司要评选优秀的一个团队咱们这一块目前总经理这块有安排想要因为推选总公司要推选优秀的一个人物总经理这块手下有人吗这个人当然我们会推选就是看总公司的要求和标准我们就是要推荐多少人呢要推荐那个安保还是工程啊是哪边来有要求啊不知道这一块没有要求就是就是员工就行了对我建议是我们每个部门都要有优秀这样的话大家伙才干活呢才有干劲才有干劲有名额限制有名额限制就是我们工程部也要有一个然后保安部也要有那些人对最好都要有对我们保洁也要有就有一个团队你们整个团队团队选出来,选一支团队,然后到总公司参加一个比赛。就是选技术坚稳。对,就是优秀的员工。对,技术坚稳,技术过得硬。各部门有推荐的人选吧,什么标准,定的标准。我们可以推荐形象到位形象差不多我们按照顾问业务的技术性没有问题懂电懂水回修水管回修电线还能帮我们办东西我们的业主们考东西不是你这工程啊你好多门禁的弱电设备你都得回回修不是有简单的一个建议对啊这个没有问题的这位姑娘挺吃苦,特别热心,有帮忙的居民都愿意找她那些老人们,喜欢找她聊聊天,这个姑娘是厌恶的,比较好南南城湖还有一名不到二十大几的一个小伙子,经历很旺盛,巡逻的力度很强我们他是在超额的办公室工作发现发现过隐患沙漠是吧他发现过就是我们发生了一些情况对他发生了就是因为他的工作积极嗯年轻人有二十岁对 年轻人有二十岁不行 到时候咱们那个把这个人选这个情况弄了咱们讨论一下定一个字怎么定啊是吧嗯可以推荐一下是吧我写个推荐信然后给我们总部报一下为什么推荐他原因啊对手机的话就可以你好 嬌嬌針對小區訊息防洪防汛措施你认为我们还需要做哪些准备对比方说它对电对水比较了解或者我们这个保安的形象好了然后热情给物业服务了是吧比方说帮物业帮业主搬东西这个团队协作里边就讲了咱们这些团队协作嘛这个东西有些事有的事有的事都是保安和工程都是互相帮助互相支援是吧嗯办公室之间的互相支援我们早些是吧这咱懂了这这个议题就到这吧咱们还有什么要求吗这一节嗯开机器嗯就是工程部这个咱们这个小区那个楼楼体外墙那个需要更新维护吗嗯别的小区有没有要再做这个保存同意更快保存我们这边外墙有一个部分,前期可能刷的漆不太好,然后有时候,然后业主们反映说不好看,然后报期,同意了进行一下审刷,然后进一点更好的漆,让它不会太冷。那墙壁灵的比别的小区分已经就是在政府的支持下搞的那个更换外墙啊咱们可以去想办法申请申请这个更换外墙这不现代文明城市吗这个要是卖雷的墙的话这个可能但是如果主体墙的话这个是因为这种主体墙就是一至三成的这个颜色这个颜色气出现问题所以说这个政府是不管的但是我们的颜色气政府管过好像是不管的这个政府好像是不管的他只不过就是说你内墙的话然后你分发给一个这个这个内墙政府管现在保温层有的地方可以小区申请保温层那个就是应该是在公共维修基金里头不是政府出钱政府出钱是不是那个文明城市一部分那我们到时候申报一下主要是小区列入改造小区那我们就是把这个外墙什么的对然后进行把坏的进行入关然后我们看看统一的费用然后我们订单然后给政府看看有没有什么保障我觉得咱们小区的门牌号可以修改一下就有居民点外卖的时候外卖小哥找不到那个门牌号咱可以弄一个醒目的大牌子你信不信信不信把那个门牌号标好做大一点更显眼睛然后精确一点因为我们小区在房产局这边显示的楼号是不对的因为我们楼的排布局应该是从东往西来长但是到房产局的话它是不让这样走的它是从南到北的长所以说他们楼号多显眼睛对对对那我们就经不起风吹日晒同意一下跟防灾局那边的电话号走那边去你说对对正规化哦那就同意然后你这一个礼拜进行更换吧行同意一下行安保安保有没有说嗯就是就是咱们每天小区门禁到了后半夜出去喝完酒以后的那些没有带补贴卡或者说他有点耍流氓的意思这个我们安保部就经常就把它带到安保室首先是不会让他在小区乱晃这个要确定是我们小区的人因为我们的保安可能他24小时轮班吧他也许不认识别人但是缺陷一下事物的小区域因为这样的话我们就一定要把它安全的送到家里对这个让他喝多了然后睡到大楼上这个咱们就是能不能那个刷脸是文件的可以不可以那得装新设备这个暂时是用的因为我们我们的这个卡的用的还是不错的要是说刷脸刷脸进的话刷脸的话是只有一个通道还是也得多通道开一个通道可能费用就高了费用就高了这也得跟业主协商业主大会早上合成但是可能业主也不太会嗯暂时好像还没有这个这个啊是咱们得创新意义咱们可以创新意义嗯你是打算做一个东西然后大伙多来试一试对对对对对对这个你现在很多人卡在外面了这不可能可以被我们的业主们商议一下觉得这个方便的话觉得比较方便我们就给点钱应该是不我们应该是嗯应该行对只要是我们让大家安成对只要我们业主然后采集一下面子嗯这样的方式让他们觉得就那两个人你进来你刷对面对嗯对这个就势必了因为咱们这个保安你不可能多认识那么多人是吧对可以这个金总你说的这个很好我们开这个业主大会的时候然后跟业主稍微一下不行我们就合计合计就是这设备上了多少钱多少钱这个设备啊就是科技含量稍高一点但是说因为现在刷脸制度都很多你很拥有很多所以说这个设备应该不可能完全可以就是看它这个我们这儿就是硬件的话就是能够容纳这个人识别有多少人因为我们我们这小区大概有18度多了嘛所以说我们居住的人很多就怕它这个信息量冲向别的应该是有问题现在的这个科技这么发达这个信息量肯定是可以出现的对那这个问题因为因为因为我们这里了解到的就是他没有说过就是刷点这个储存量的就是因为我们小区大所以说我们可以试一下对对对这个事必须解决一下你看現在有那個小区里边还有租户是吧可能就是对对公司里的可能刷卡你去刷卡有时候不带着或者说一家人不能一家人一个人每个人一个卡吧还有就是这个状态如果是不能保证每人一个卡以后就是咱们如果不严格实行门禁制度你看这个人刷了以后第二点紧接跟进他还会不刷卡进来是吧有的漏洞咱们严格就是刷点这个东西如果是不通用这个就是咱们刷卡制度这个漏洞还是太大了如果刷卡的话,我们也要保留,然后也可以刷脸,这样的话是双保险。如果合适就取消了。当然,如果我们刷脸没有问题的话,到班的话刷卡就可以了。因为刷脸进我们小区,刷卡的话是进龙道。因为我们现在是双控,所以说暂时刷卡不能取消。嗯,对对对就是比如说,咱们要实现这个发展的话不可能的很
+[Text Detection] 在 2058.34 秒检测到关键词 '基于之前',current_time: 2046.00, 问题文本: 很多的业主都同意要使用刷脸镜肯定有一部分人不同意因为他是租客他不想交这一份钱或者有其他情况所以租客手机的话可以好你好 交交基于之前我们讨论的内容关于小区门禁系统升级的问题你怎么看待刷脸门禁的可行性如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到服务可能不愿意
+多的业主都同意要使用刷脸镜肯定有一部分人不同意因为他是租客他不想交这一份钱或者有其他情况所以租客手机的话可以好你好 交交基于之前我们讨论的内容关于小区门禁系统升级的问题你怎么看待刷脸门禁的可行性如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到服务可能不愿意然后你下地下车库,地下车库往手去走,每个单元又有一个门径。所以说这样的话,我们涉及到的门径大概就得有50多个门径。是这样的。所以说这个费用的话,应该是不小。刷脸和指纹都可以那行 那就是设备这个计划到时候再来延迟延迟是吧到时候做成本到时候弄出来对了咱们都估到时候估算一下行那今天那个会议就到这了我们约事行好下会
+[Audio Detection] 在 2177.28 秒检测到关键词 '好交交'。
+detection_time: 2177.28, current_time: 2170.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/out_004-M_0.wav
+问题音频片段长度: 151211, dtype: float32, min: -0.10302734375, max: 0.098663330078125
+问题音频时间长度: 9.4506875
+
+
+[Agent] 接收到问题: 对手机的话就可以你好娇娇针对租客物业费问题
+, 1743409550.5953205
+问题音频STT前的时刻: 1743409550.5954294
+问题音频STT后的时刻: 1743409551.1387215
+问题音频STT时间: 0.5432920455932617
+
+
+[Agent] 最终接收到问题: 手机的话就你好佼佼,如何改进小区安保设备,以减少监控死角。
+, 1743409551.1390028
+问题音频送入Planner的时刻: 1743409551.1396196
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743409551.7708905
+planner new_token time: 1743409552.1659064
+planner new_token time: 1743409552.1663723
+First token received: 1, time: 1743409552.167486
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409552.2196667
+talker first token time: 1743409552.7828217
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743409552.8168547
+talker first token time: 1743409552.8425899
+talker first token time: 1743409552.8681982
+talker first token time: 1743409552.8938985
+talker first token time: 1743409552.9195254
+talker first token time: 1743409552.9704916
+talker first token time: 1743409552.9959905
+talker first token time: 1743409553.0216038
+talker first token time: 1743409553.0472329
+talker first token time: 1743409553.0730069
+talker first token time: 1743409553.1491573
+talker first token time: 1743409553.2001634
+talker first token time: 1743409553.22584
+talker first token time: 1743409553.251922
+talker first token time: 1743409553.3036292
+talker first token time: 1743409553.3296332
+talker first token time: 1743409553.3554459
+talker first token time: 1743409553.3811753
+talker first token time: 1743409553.4326265
+talker first token time: 1743409553.458455
+talker first token time: 1743409553.509843
+talker first token time: 1743409553.5356035
+talker first token time: 1743409553.5613694
+talker first token time: 1743409553.6131077
+talker first token time: 1743409553.640393
+talker first token time: 1743409553.6666493
+talker first token time: 1743409553.692605
+talker first token time: 1743409553.7184954
+talker first token time: 1743409553.7444162
+talker first token time: 1743409553.770319
+talker first token time: 1743409553.8467302
+talker first token time: 1743409553.8723922
+talker first token time: 1743409553.8979554
+talker first token time: 1743409553.9236083
+talker first token time: 1743409553.9746723
+talker first token time: 1743409554.0003672
+talker first token time: 1743409554.0260155
+talker first token time: 1743409554.0516374
+talker first token time: 1743409554.0774686
+talker first token time: 1743409554.103144
+talker first token time: 1743409554.1544187
+talker first token time: 1743409554.1802313
+talker first token time: 1743409554.2060843
+talker first token time: 1743409554.231934
+talker first token time: 1743409554.25769
+talker first token time: 1743409554.283466
+talker first token time: 1743409554.3093123
+talker first token time: 1743409554.3351736
+talker first token time: 1743409554.4117124
+talker first token time: 1743409554.463184
+talker first token time: 1743409554.4890409
+talker first token time: 1743409554.51484
+talker first token time: 1743409554.5663207
+talker first token time: 1743409554.592352
+talker first token time: 1743409554.618359
+talker first token time: 1743409554.6442897
+talker first token time: 1743409554.6703017
+talker first token time: 1743409554.6963453
+talker first token time: 1743409554.7481804
+talker first token time: 1743409554.7742321
+talker first token time: 1743409554.826208
+talker first token time: 1743409554.8522832
+talker first token time: 1743409554.878377
+talker first token time: 1743409554.9045205
+talker first token time: 1743409554.9306638
+talker first token time: 1743409554.9567692
+talker first token time: 1743409554.9828558
+talker first token time: 1743409555.0600283
+talker first token time: 1743409555.085782
+talker first token time: 1743409555.111589
+talker first token time: 1743409555.1374784
+talker first token time: 1743409555.1892118
+talker first token time: 1743409555.2151513
+talker first token time: 1743409555.2411158
+talker first token time: 1743409555.2671015
+talker first token time: 1743409555.2934122
+talker first token time: 1743409555.3196797
+talker first token time: 1743409555.3459
+talker first token time: 1743409555.3721695
+talker first token time: 1743409555.4243963
+talker first token time: 1743409555.450512
+talker first token time: 1743409555.4766383
+talker first token time: 1743409555.5027819
+talker first token time: 1743409555.5289705
+talker first token time: 1743409555.5550497
+talker first token time: 1743409555.5812044
+talker first token time: 1743409555.6073792
+talker first token time: 1743409555.6846473
+talker first token time: 1743409555.710552
+talker first token time: 1743409555.762856
+talker first token time: 1743409555.7898934
+talker first token time: 1743409555.8160906
+talker first token time: 1743409555.8423336
+talker first token time: 1743409555.868522
+talker first token time: 1743409555.8946724
+talker first token time: 1743409555.9467163
+talker first token time: 1743409555.9727242
+talker first token time: 1743409555.9988868
+talker first token time: 1743409556.051364
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对小区安保设备的改进，可以考虑以下几点：
+
+1. 智能化：利用现代科技手段，如人脸识别、车牌识别等，提高安保设备的智能化水平。
+
+2. 全方位覆盖：在小区内安装监控设备，确保各个角落都能被覆盖到。
+
+3. 网络化：将安保设备与互联网连接，可以通过手机APP等方式进行远程监控和管理。
+
+4. 可扩展性：随着小区规模的扩大或需求的变化，可以随时添加或升级安保设备。
+
+5. 数据安全：保障数据的安全性和隐私性，防止数据泄露。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/out_004-M_1.wav
+问题音频片段长度: 151211, dtype: float32, min: -0.10302734375, max: 0.098663330078125
+问题音频时间长度: 9.4506875
+
+
+[Agent] 接收到问题: 对手机的话就可以你好娇娇针对租客物业费问题
+, 1743409556.796734
+问题音频STT前的时刻: 1743409556.7968493
+问题音频STT后的时刻: 1743409559.5608113
+问题音频STT时间: 2.7639620304107666
+
+
+[Agent] 最终接收到问题: 不费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以还是集中喂养并定期清理另外对于太阳能管道漏水的问题我们计划统一更换为金属同质管道费用从物业费中支出对手机化肥你认为这样的解决方案是否合理是否还有其他需要考虑的因素
+, 1743409559.561175
+问题音频送入Planner的时刻: 1743409559.561659
+planner new_token time: 1743409560.2181191
+planner new_token time: 1743409560.609686
+First token received: 0, time: 1743409560.6098344
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409561.0006795
+planner new_token time: 1743409561.3915584
+planner new_token time: 1743409561.7831974
+planner new_token time: 1743409562.1750555
+planner new_token time: 1743409562.5672276
+planner new_token time: 1743409562.9591844
+planner new_token time: 1743409563.351264
+planner new_token time: 1743409563.7430854
+planner new_token time: 1743409564.1350513
+planner new_token time: 1743409564.5268052
+planner new_token time: 1743409564.918492
+planner new_token time: 1743409565.3105447
+planner new_token time: 1743409565.7022588
+planner new_token time: 1743409566.0942318
+planner new_token time: 1743409566.4865475
+planner new_token time: 1743409566.8787498
+planner new_token time: 1743409567.2708774
+planner new_token time: 1743409567.6629128
+planner new_token time: 1743409568.0549467
+planner new_token time: 1743409568.4470289
+planner new_token time: 1743409568.8391392
+planner new_token time: 1743409569.2315128
+planner new_token time: 1743409569.6235754
+planner new_token time: 1743409570.015484
+planner new_token time: 1743409570.4077768
+planner new_token time: 1743409570.7999191
+planner new_token time: 1743409571.1919508
+planner new_token time: 1743409571.5841367
+planner new_token time: 1743409571.9759538
+planner new_token time: 1743409572.368613
+planner new_token time: 1743409572.760981
+planner new_token time: 1743409573.1528616
+planner new_token time: 1743409573.5454137
+planner new_token time: 1743409573.9379892
+planner new_token time: 1743409574.3304248
+planner new_token time: 1743409574.7233186
+planner new_token time: 1743409575.115893
+planner new_token time: 1743409575.508131
+planner new_token time: 1743409575.9014943
+planner new_token time: 1743409576.2942126
+planner new_token time: 1743409576.687828
+planner new_token time: 1743409577.0810728
+planner new_token time: 1743409577.4743354
+planner new_token time: 1743409577.867055
+planner new_token time: 1743409578.2602704
+planner new_token time: 1743409578.6534958
+planner new_token time: 1743409579.0467246
+planner new_token time: 1743409579.4398978
+planner new_token time: 1743409579.833004
+planner new_token time: 1743409580.2260277
+planner new_token time: 1743409580.619319
+planner new_token time: 1743409580.6203103
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小区流浪猫狗 动物保护协会 集中喂养 太阳能管道漏水 金属同质管道 物业费
+
+
+提取的关键词: ['小区流浪猫狗', '动物保护协会', '集中喂养', '太阳能管道漏水', '金属同质管道', '物业费']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743409581.6427004
+one token time in planner tools: 1743409582.0376632
+one token time in planner tools: 1743409582.4316983
+one token time in planner tools: 1743409582.8262408
+one token time in planner tools: 1743409583.220849
+one token time in planner tools: 1743409583.6150448
+one token time in planner tools: 1743409584.0094254
+one token time in planner tools: 1743409584.4036808
+one token time in planner tools: 1743409584.7981982
+one token time in planner tools: 1743409585.1921344
+one token time in planner tools: 1743409585.5867746
+one token time in planner tools: 1743409585.9811742
+one token time in planner tools: 1743409586.3760436
+one token time in planner tools: 1743409586.7712693
+one token time in planner tools: 1743409587.1659503
+one token time in planner tools: 1743409587.5604093
+one token time in planner tools: 1743409587.9552088
+one token time in planner tools: 1743409588.3502345
+one token time in planner tools: 1743409588.745224
+one token time in planner tools: 1743409589.1396432
+one token time in planner tools: 1743409589.5341797
+one token time in planner tools: 1743409589.9284852
+one token time in planner tools: 1743409590.3234
+one token time in planner tools: 1743409590.7181835
+one token time in planner tools: 1743409591.1130452
+one token time in planner tools: 1743409591.508243
+one token time in planner tools: 1743409591.9035451
+one token time in planner tools: 1743409592.298247
+one token time in planner tools: 1743409592.6926756
+one token time in planner tools: 1743409593.0875697
+one token time in planner tools: 1743409593.4831262
+one token time in planner tools: 1743409593.8783689
+one token time in planner tools: 1743409594.273124
+one token time in planner tools: 1743409594.6681907
+one token time in planner tools: 1743409595.0634856
+one token time in planner tools: 1743409595.4591024
+one token time in planner tools: 1743409595.8539746
+one token time in planner tools: 1743409596.248619
+one token time in planner tools: 1743409596.6440709
+one token time in planner tools: 1743409597.0398347
+one token time in planner tools: 1743409597.435963
+one token time in planner tools: 1743409597.831494
+one token time in planner tools: 1743409598.2267182
+one token time in planner tools: 1743409598.6223605
+one token time in planner tools: 1743409599.0176792
+one token time in planner tools: 1743409599.4131804
+one token time in planner tools: 1743409599.8086984
+one token time in planner tools: 1743409600.204051
+one token time in planner tools: 1743409600.5995622
+one token time in planner tools: 1743409600.994972
+one token time in planner tools: 1743409601.3904016
+one token time in planner tools: 1743409601.7858799
+one token time in planner tools: 1743409602.1821754
+one token time in planner tools: 1743409602.5781946
+one token time in planner tools: 1743409602.9739542
+one token time in planner tools: 1743409603.369425
+one token time in planner tools: 1743409603.7649658
+one token time in planner tools: 1743409604.160707
+one token time in planner tools: 1743409604.5566432
+one token time in planner tools: 1743409604.9517944
+one token time in planner tools: 1743409605.3480902
+one token time in planner tools: 1743409605.7440484
+one token time in planner tools: 1743409606.140037
+one token time in planner tools: 1743409606.536217
+one token time in planner tools: 1743409606.932722
+one token time in planner tools: 1743409607.3290093
+one token time in planner tools: 1743409607.724698
+one token time in planner tools: 1743409608.1207645
+one token time in planner tools: 1743409608.517471
+one token time in planner tools: 1743409608.9138975
+one token time in planner tools: 1743409609.310123
+one token time in planner tools: 1743409609.7067258
+one token time in planner tools: 1743409610.1029818
+one token time in planner tools: 1743409610.104033
+
+Token count: 74, Total time: 29.3204 seconds, One token time: 0.3962 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：小区', '流浪', '猫', '狗', ' ', '动', '物', '保护', '协会', ' ', '集', '中', '喂', '养', ' ', '太', '阳', '能', '管道', '漏水', ' ', '金属', '同', '质', '管道', ' ', '物', '业', '费', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###你看这个太阳能这个事儿,它维护这个事儿,如果是你要说咱们要长期给它维护,去监管这个东西啊,那咱们的工作量也大了,是吧?工作量大了还有危险性。这个不用调节主要就是那就是咱们只能等它漏水了以后再检查出现问题了再检查漏成小河再检查它如果出现我们会用工程部定期的去漏水检查一次太阳能然后发现它停止出现这个东西如果是他们要使太阳能就是让他们增加交易费用维护太阳能的费用嗯就是咱们负责这个事如果发现漏了咱们就及时把它们维护这个在我们物业费里面应该有体现而是你不用在那外收你再外收不是为什么为什么就是说要额外就收这一部分因为不是自然的这个东西太阳能使太阳能的这不是普遍的因为我们现在听见当中它就是你要说它有太阳能付费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到【动】物保护协会对手机的话就可以咱们就是想办法不让它漏中小河再下一管我们就是要就是上面下一道通道通道它自己家里头它要能出现问题的话就是说家里头以上这个就是我们来给它维修的对但凡是涉及到它家里的话这是它自己自费点维修的我们可以我们可以出我们就是管如果是漏水标准不让它漏一地漏下水一地就是说咱们那个上面那个排斥管道排斥管道不用担心因为我们的排水系统都是很安全的 不会把我们手机编掉放进去放进去它这个太阳能的水就不会出现水不会不会它会直接的话从楼顶下面然后进就是直接进下水道它不会对我们造成大量的影响一定保持这个管道的畅通这个没问题没问题还有别的吗还有那个别的我这边有个问题我今天来咱这个小区咱们就这样近期到了汛期防洪防汛你們有安排嗎我們目前準備了大概有救生條不用不用因為我們地下水溪很沒小溪水很容易從車庫口進去所以我们准备了大概500多袋沙虾然后只要下大雨的话,我们就把整个门口堆积起来就会,我们现在入口有两个所以说一个水一个口大概有200多袋沙子水的力量是不能估计的没有问题那我们地下收库的拍摄机能安全吗拍摄机能没有问题,根本没有问题主要就是它不会大量的进就行了然后我们实在不行了我们准备的沙袋可以把整个我们在这个门口堵起来,就是外面能开区发停,我们地下车路也绝对没有水,叫我们小区的车只要停在我们车路,绝对让人放心。\n---\n嗯,对对对就是比如说,咱们要实现这个发展的话不可能的很多的业主都同意要使用刷脸镜肯定有一部分人不同意因为他是租客他不想交这一份钱或者有其他情况所以租客手机的话可以好你好 交交基于之前我们讨论的内容关于小区门禁系统升级的问题你怎么看待刷脸门禁的可行性如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到服务可能不愿意然后你下地下车库,地下车库往手去走,每个单元又有一个门径。所以说这样的话,我们涉及到的门径大概就得有50多个门径。是这样的。所以说这个费用的话,应该是不小。刷脸和指纹都可以那行 那就是设备这个计划到时候再来延迟延迟是吧到时候做成本到时候弄出来对了咱们都估到时候估算一下行那今天那个会议就到这了我们约事行好下会手机的话就你好佼佼,如何改进小区安保设备,以减少监控死角。不费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于【小】区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以还是集中喂养并定期清理另外对于太阳能管道漏水的问题我们计划统一更换为金属同质管道费用从物业费中支出对手机化肥你认为这样的解决方案是否合理是否还有其他需要考虑的###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，关于小区流浪猫狗的问题，建议将它们送到动物保护协会进行妥善安置。同时，针对太阳能管道漏水问题，计划统一更换为金属同质管道，费用将从物业费中支出。这种解决方案较为合理，能够有效避免管道漏水问题。此外，还需考虑加强小区安保设备，减少监控死角。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###你看这个太阳能这个事儿,它维护这个事儿,如果是你要说咱们要长期给它维护,去监管这个东西啊,那咱们的工作量也大了,是吧?工作量大了还有危险性。这个不用调节主要就是那就是咱们只能等它漏水了以后再检查出现问题了再检查漏成小河再检查它如果出现我们会用工程部定期的去漏水检查一次太阳能然后发现它停止出现这个东西如果是他们要使太阳能就是让他们增加交易费用维护太阳能的费用嗯就是咱们负责这个事如果发现漏了咱们就及时把它们维护这个在我们物业费里面应该有体现而是你不用在那外收你再外收不是为什么为什么就是说要额外就收这一部分因为不是自然的这个东西太阳能使太阳能的这不是普遍的因为我们现在听见当中它就是你要说它有太阳能付费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到【动】物保护协会对手机的话就可以咱们就是想办法不让它漏中小河再下一管我们就是要就是上面下一道通道通道它自己家里头它要能出现问题的话就是说家里头以上这个就是我们来给它维修的对但凡是涉及到它家里的话这是它自己自费点维修的我们可以我们可以出我们就是管如果是漏水标准不让它漏一地漏下水一地就是说咱们那个上面那个排斥管道排斥管道不用担心因为我们的排水系统都是很安全的 不会把我们手机编掉放进去放进去它这个太阳能的水就不会出现水不会不会它会直接的话从楼顶下面然后进就是直接进下水道它不会对我们造成大量的影响一定保持这个管道的畅通这个没问题没问题还有别的吗还有那个别的我这边有个问题我今天来咱这个小区咱们就这样近期到了汛期防洪防汛你們有安排嗎我們目前準備了大概有救生條不用不用因為我們地下水溪很沒小溪水很容易從車庫口進去所以我们准备了大概500多袋沙虾然后只要下大雨的话,我们就把整个门口堆积起来就会,我们现在入口有两个所以说一个水一个口大概有200多袋沙子水的力量是不能估计的没有问题那我们地下收库的拍摄机能安全吗拍摄机能没有问题,根本没有问题主要就是它不会大量的进就行了然后我们实在不行了我们准备的沙袋可以把整个我们在这个门口堵起来,就是外面能开区发停,我们地下车路也绝对没有水,叫我们小区的车只要停在我们车路,绝对让人放心。
+---
+嗯,对对对就是比如说,咱们要实现这个发展的话不可能的很多的业主都同意要使用刷脸镜肯定有一部分人不同意因为他是租客他不想交这一份钱或者有其他情况所以租客手机的话可以好你好 交交基于之前我们讨论的内容关于小区门禁系统升级的问题你怎么看待刷脸门禁的可行性如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到服务可能不愿意然后你下地下车库,地下车库往手去走,每个单元又有一个门径。所以说这样的话,我们涉及到的门径大概就得有50多个门径。是这样的。所以说这个费用的话,应该是不小。刷脸和指纹都可以那行 那就是设备这个计划到时候再来延迟延迟是吧到时候做成本到时候弄出来对了咱们都估到时候估算一下行那今天那个会议就到这了我们约事行好下会手机的话就你好佼佼,如何改进小区安保设备,以减少监控死角。不费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于【小】区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以还是集中喂养并定期清理另外对于太阳能管道漏水的问题我们计划统一更换为金属同质管道费用从物业费中支出对手机化肥你认为这样的解决方案是否合理是否还有其他需要考虑的###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，关于小区流浪猫狗的问题，建议将它们送到动物保护协会进行妥善安置。同时，针对太阳能管道漏水问题，计划统一更换为金属同质管道，费用将从物业费中支出。这种解决方案较为合理，能够有效避免管道漏水问题。此外，还需考虑加强小区安保设备，减少监控死角。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/out_004-M_2.wav
+问题音频片段长度: 151211, dtype: float32, min: -0.10302734375, max: 0.098663330078125
+问题音频时间长度: 9.4506875
+
+
+[Agent] 接收到问题: 对手机的话就可以你好娇娇针对租客物业费问题
+, 1743409610.615644
+问题音频STT前的时刻: 1743409610.6157563
+问题音频STT后的时刻: 1743409611.3802145
+问题音频STT时间: 0.764458179473877
+
+
+[Agent] 最终接收到问题: 对手机的话就可以你好 娇娇针对小区训起防洪防汛措施你认为我们还需要做哪些准备
+, 1743409611.3803904
+问题音频送入Planner的时刻: 1743409611.3812737
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409611.98228
+planner new_token time: 1743409612.37636
+planner new_token time: 1743409612.3768945
+First token received: 1, time: 1743409612.3769913
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409612.38677
+talker first token time: 1743409612.6912394
+talker first token time: 1743409612.7428403
+talker first token time: 1743409612.7688358
+talker first token time: 1743409612.794626
+talker first token time: 1743409612.8206198
+talker first token time: 1743409612.8464932
+talker first token time: 1743409612.8723207
+talker first token time: 1743409612.923937
+talker first token time: 1743409612.94982
+talker first token time: 1743409612.9757388
+talker first token time: 1743409613.0017877
+talker first token time: 1743409613.027777
+talker first token time: 1743409613.0538838
+talker first token time: 1743409613.105885
+talker first token time: 1743409613.1323664
+talker first token time: 1743409613.1588104
+talker first token time: 1743409613.185385
+talker first token time: 1743409613.2118738
+talker first token time: 1743409613.2893069
+talker first token time: 1743409613.3154204
+talker first token time: 1743409613.3414207
+talker first token time: 1743409613.3673887
+talker first token time: 1743409613.3934526
+talker first token time: 1743409613.4452767
+talker first token time: 1743409613.471454
+talker first token time: 1743409613.4974766
+talker first token time: 1743409613.5235472
+talker first token time: 1743409613.5498183
+talker first token time: 1743409613.5761325
+talker first token time: 1743409613.6021993
+talker first token time: 1743409613.6282854
+talker first token time: 1743409613.6545956
+talker first token time: 1743409613.680752
+talker first token time: 1743409613.7068455
+talker first token time: 1743409613.7329412
+talker first token time: 1743409613.8100574
+talker first token time: 1743409613.8360753
+talker first token time: 1743409613.8620956
+talker first token time: 1743409613.8880517
+talker first token time: 1743409613.914389
+talker first token time: 1743409613.9406025
+talker first token time: 1743409613.9668703
+talker first token time: 1743409613.9930768
+talker first token time: 1743409614.0449576
+talker first token time: 1743409614.071148
+talker first token time: 1743409614.097324
+talker first token time: 1743409614.1234097
+talker first token time: 1743409614.1754668
+talker first token time: 1743409614.2018661
+talker first token time: 1743409614.2279341
+talker first token time: 1743409614.2540226
+talker first token time: 1743409614.3313084
+talker first token time: 1743409614.3573804
+talker first token time: 1743409614.3833983
+talker first token time: 1743409614.4095032
+talker first token time: 1743409614.4355564
+talker first token time: 1743409614.4616692
+talker first token time: 1743409614.5135243
+talker first token time: 1743409614.5395162
+talker first token time: 1743409614.565684
+talker first token time: 1743409614.617498
+talker first token time: 1743409614.643715
+talker first token time: 1743409614.669802
+talker first token time: 1743409614.7217927
+talker first token time: 1743409614.7478707
+talker first token time: 1743409614.774064
+talker first token time: 1743409614.800135
+talker first token time: 1743409614.8263435
+talker first token time: 1743409614.9036648
+talker first token time: 1743409614.929634
+talker first token time: 1743409614.9556859
+talker first token time: 1743409614.9817328
+talker first token time: 1743409615.0078418
+talker first token time: 1743409615.033882
+talker first token time: 1743409615.0598614
+talker first token time: 1743409615.1116774
+talker first token time: 1743409615.1379452
+talker first token time: 1743409615.1642115
+talker first token time: 1743409615.216397
+talker first token time: 1743409615.24276
+talker first token time: 1743409615.2695355
+talker first token time: 1743409615.2960463
+talker first token time: 1743409615.3223944
+talker first token time: 1743409615.3486254
+talker first token time: 1743409615.3749328
+talker first token time: 1743409615.4012349
+talker first token time: 1743409615.4274385
+talker first token time: 1743409615.5049684
+talker first token time: 1743409615.5311327
+talker first token time: 1743409615.5570524
+talker first token time: 1743409615.5831823
+talker first token time: 1743409615.6092815
+talker first token time: 1743409615.6353843
+talker first token time: 1743409615.6615002
+talker first token time: 1743409615.687767
+talker first token time: 1743409615.739726
+talker first token time: 1743409615.765988
+talker first token time: 1743409615.7922046
+talker first token time: 1743409615.8183231
+talker first token time: 1743409615.8706594
+talker first token time: 1743409615.8969853
+talker first token time: 1743409615.9233663
+talker first token time: 1743409615.9498196
+talker first token time: 1743409616.0020282
+talker first token time: 1743409616.028327
+talker first token time: 1743409616.054969
+talker first token time: 1743409616.0815942
+talker first token time: 1743409616.1081462
+talker first token time: 1743409616.18595
+talker first token time: 1743409616.2119493
+talker first token time: 1743409616.238018
+talker first token time: 1743409616.264132
+talker first token time: 1743409616.3161416
+talker first token time: 1743409616.3421519
+talker first token time: 1743409616.3682387
+talker first token time: 1743409616.3942878
+talker first token time: 1743409616.446535
+talker first token time: 1743409616.472801
+talker first token time: 1743409616.499289
+talker first token time: 1743409616.5256426
+talker first token time: 1743409616.5518618
+talker first token time: 1743409616.5781476
+talker first token time: 1743409616.63076
+
+talker输出：
+
+Token count: 101, Total time: 3.8563 seconds, One token time: 0.0382 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 建立健全防汛救灾机制，成立专门的防汛救灾小组，明确分工和责任。
+2. 加强防汛知识宣传教育，提高居民的防洪意识和自救互救能力。
+3. 定期对小区进行安全隐患排查，及时修复排水系统、加固建筑物等。
+4. 配备必要的防汛物资，如沙袋、救生艇、手电筒等。
+5. 制定详细的应急疏散预案，定期进行演练，确保在紧急情况下能够迅速安全撤离。
+6. 加强与气象部门的沟通协作，及时掌握雨情、水情等信息，做好预警预报工作。
+7. 在洪水来临时，要果断采取措施，避免人员伤亡和财产损失。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/out_004-M_3.wav
+问题音频片段长度: 151211, dtype: float32, min: -0.10302734375, max: 0.098663330078125
+问题音频时间长度: 9.4506875
+
+
+[Agent] 接收到问题: 对手机的话就可以你好娇娇针对租客物业费问题
+, 1743409617.316812
+问题音频STT前的时刻: 1743409617.316938
+问题音频STT后的时刻: 1743409619.6775718
+问题音频STT时间: 2.3606338500976562
+
+
+[Agent] 最终接收到问题: 手机的话可以靠你好佼佼,基于之前我们讨论的内容,关于小区门禁系统升级的问题,你怎么看待刷脸门禁的可行性?如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到租屋可能不愿意承担额外费用的情况同时我们应该如何确保刷脸门禁系统的安全性和稳定性以避免信息泄露的风险
+, 1743409619.677725
+问题音频送入Planner的时刻: 1743409619.6783526
+planner new_token time: 1743409620.3360894
+planner new_token time: 1743409620.7303169
+First token received: 0, time: 1743409620.7304475
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409621.1247168
+planner new_token time: 1743409621.5178406
+planner new_token time: 1743409621.9116578
+planner new_token time: 1743409622.3058724
+planner new_token time: 1743409622.6996655
+planner new_token time: 1743409623.0935879
+planner new_token time: 1743409623.4872425
+planner new_token time: 1743409623.8813841
+planner new_token time: 1743409624.2750592
+planner new_token time: 1743409624.669214
+planner new_token time: 1743409625.0632014
+planner new_token time: 1743409625.4562488
+planner new_token time: 1743409625.85014
+planner new_token time: 1743409626.2437074
+planner new_token time: 1743409626.637279
+planner new_token time: 1743409627.0317316
+planner new_token time: 1743409627.4256802
+planner new_token time: 1743409627.8196652
+planner new_token time: 1743409628.213157
+planner new_token time: 1743409628.6071725
+planner new_token time: 1743409629.0008721
+planner new_token time: 1743409629.3948016
+planner new_token time: 1743409629.7889519
+planner new_token time: 1743409630.1826236
+planner new_token time: 1743409630.5765333
+planner new_token time: 1743409630.9709888
+planner new_token time: 1743409631.3654807
+planner new_token time: 1743409631.7593474
+planner new_token time: 1743409632.1534388
+planner new_token time: 1743409632.5481477
+planner new_token time: 1743409632.9423296
+planner new_token time: 1743409633.3362606
+planner new_token time: 1743409633.7306583
+planner new_token time: 1743409634.125099
+planner new_token time: 1743409634.518981
+planner new_token time: 1743409634.9124115
+planner new_token time: 1743409635.3060153
+planner new_token time: 1743409635.700709
+planner new_token time: 1743409635.7013698
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：刷脸门禁 系统升级 安全性 租屋额外费用
+
+
+提取的关键词: ['刷脸门禁', '系统升级', '安全性', '租屋额外费用']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743409636.345136
+one token time in planner tools: 1743409636.7378201
+one token time in planner tools: 1743409637.1303356
+one token time in planner tools: 1743409637.5234532
+one token time in planner tools: 1743409637.9182315
+one token time in planner tools: 1743409638.3116536
+one token time in planner tools: 1743409638.704536
+one token time in planner tools: 1743409639.0973322
+one token time in planner tools: 1743409639.4898424
+one token time in planner tools: 1743409639.8830023
+one token time in planner tools: 1743409640.275808
+one token time in planner tools: 1743409640.6691136
+one token time in planner tools: 1743409641.0622814
+one token time in planner tools: 1743409641.4558773
+one token time in planner tools: 1743409641.8488746
+one token time in planner tools: 1743409642.2422228
+one token time in planner tools: 1743409642.6351814
+one token time in planner tools: 1743409643.028407
+one token time in planner tools: 1743409643.421722
+one token time in planner tools: 1743409643.814939
+one token time in planner tools: 1743409644.2079852
+one token time in planner tools: 1743409644.6013315
+one token time in planner tools: 1743409644.9950974
+one token time in planner tools: 1743409645.3884618
+one token time in planner tools: 1743409645.7817795
+one token time in planner tools: 1743409646.174841
+one token time in planner tools: 1743409646.568474
+one token time in planner tools: 1743409646.961918
+one token time in planner tools: 1743409647.3550603
+one token time in planner tools: 1743409647.7481847
+one token time in planner tools: 1743409648.1415076
+one token time in planner tools: 1743409648.5348287
+one token time in planner tools: 1743409648.9281604
+one token time in planner tools: 1743409649.3216023
+one token time in planner tools: 1743409649.714893
+one token time in planner tools: 1743409650.108047
+one token time in planner tools: 1743409650.501618
+one token time in planner tools: 1743409650.8956857
+one token time in planner tools: 1743409651.2891273
+one token time in planner tools: 1743409651.6831255
+one token time in planner tools: 1743409652.0770066
+one token time in planner tools: 1743409652.4705474
+one token time in planner tools: 1743409652.8658352
+one token time in planner tools: 1743409653.25973
+one token time in planner tools: 1743409653.65325
+one token time in planner tools: 1743409654.0473042
+one token time in planner tools: 1743409654.4415123
+one token time in planner tools: 1743409654.8355894
+one token time in planner tools: 1743409655.2288938
+one token time in planner tools: 1743409655.6226823
+one token time in planner tools: 1743409656.0162852
+one token time in planner tools: 1743409656.410003
+one token time in planner tools: 1743409656.803981
+one token time in planner tools: 1743409657.197669
+one token time in planner tools: 1743409657.5912845
+one token time in planner tools: 1743409657.9851882
+one token time in planner tools: 1743409658.37998
+one token time in planner tools: 1743409658.7738698
+one token time in planner tools: 1743409659.167382
+one token time in planner tools: 1743409659.5615242
+one token time in planner tools: 1743409659.955186
+one token time in planner tools: 1743409660.3488846
+one token time in planner tools: 1743409660.7427716
+one token time in planner tools: 1743409661.136827
+one token time in planner tools: 1743409661.5312622
+one token time in planner tools: 1743409661.9249043
+one token time in planner tools: 1743409662.3189666
+one token time in planner tools: 1743409662.7142456
+one token time in planner tools: 1743409663.1082494
+one token time in planner tools: 1743409663.5023015
+one token time in planner tools: 1743409663.8963523
+one token time in planner tools: 1743409664.2904155
+one token time in planner tools: 1743409664.6849964
+one token time in planner tools: 1743409665.079908
+one token time in planner tools: 1743409665.4739408
+one token time in planner tools: 1743409665.8691595
+one token time in planner tools: 1743409666.2632425
+one token time in planner tools: 1743409666.658006
+one token time in planner tools: 1743409667.053021
+one token time in planner tools: 1743409667.4473279
+one token time in planner tools: 1743409667.8414013
+one token time in planner tools: 1743409668.2358434
+one token time in planner tools: 1743409668.6301305
+one token time in planner tools: 1743409669.0240247
+one token time in planner tools: 1743409669.4185245
+one token time in planner tools: 1743409669.812444
+one token time in planner tools: 1743409670.2066479
+one token time in planner tools: 1743409670.6010542
+one token time in planner tools: 1743409670.9957404
+one token time in planner tools: 1743409671.391061
+one token time in planner tools: 1743409671.7853296
+one token time in planner tools: 1743409672.1798491
+one token time in planner tools: 1743409672.5747495
+one token time in planner tools: 1743409672.5761979
+
+Token count: 94, Total time: 36.7710 seconds, One token time: 0.3912 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：刷', '脸', '门', '禁', ' ', '系', '统', '升级', ' ', '安', '全', '性', ' ', '租', '屋', '额外', '费用', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###不费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以还是集中喂养并定期清理另外对于太阳能管道漏水的问题我们计划统一更换为金属同质管道费用从物业费中支出对手机化肥你认为这样的解决方案是否合理是否还有其他需要考虑的因素对手机的话就可以你好 娇娇针对小区训起防洪防汛措施你认为我们还需要做哪些准备手机的话可以靠你好佼佼,基于之前我们讨论的内容,关于小区门禁系统升级的问题,你怎么看待刷脸门禁的可行性?如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到租屋可能不愿意承担额外费用的情况同时我们应该如何确保刷脸门禁系统的【安】全性和稳定性以避免信息泄露的风险###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n关于小区门禁系统升级到刷脸门禁的问题，我认为这种方案具有较高的可行性和先进性，但同时也需充分考虑不同业主的意见和需求。针对租屋者不愿意承担额外费用的情况，可以通过物业费调整或增加一次性安装费用补贴的方式缓解这一矛盾。此外，为了确保刷脸门禁系统的安全性与稳定性，我们需要选择信誉良好的供应商，并且进行多次测试和安全评估，以防止信息泄露风险。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###不费的话就对手机的你可可以你好佼佼基于之前我们讨论的内容内容关于小区流浪猫狗的问题你建议我们应该如何妥善处理是将它们送到动物保护协会对手机的话就可以还是集中喂养并定期清理另外对于太阳能管道漏水的问题我们计划统一更换为金属同质管道费用从物业费中支出对手机化肥你认为这样的解决方案是否合理是否还有其他需要考虑的因素对手机的话就可以你好 娇娇针对小区训起防洪防汛措施你认为我们还需要做哪些准备手机的话可以靠你好佼佼,基于之前我们讨论的内容,关于小区门禁系统升级的问题,你怎么看待刷脸门禁的可行性?如果实施刷脸门禁我们应该如何平衡业主的不同意见特别是考虑到租屋可能不愿意承担额外费用的情况同时我们应该如何确保刷脸门禁系统的【安】全性和稳定性以避免信息泄露的风险###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+关于小区门禁系统升级到刷脸门禁的问题，我认为这种方案具有较高的可行性和先进性，但同时也需充分考虑不同业主的意见和需求。针对租屋者不愿意承担额外费用的情况，可以通过物业费调整或增加一次性安装费用补贴的方式缓解这一矛盾。此外，为了确保刷脸门禁系统的安全性与稳定性，我们需要选择信誉良好的供应商，并且进行多次测试和安全评估，以防止信息泄露风险。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200705_M_R002S01C01_agent_added/out_004-M_4.wav
+问题音频片段长度: 151211, dtype: float32, min: -0.10302734375, max: 0.098663330078125
+问题音频时间长度: 9.4506875
+
+
+[Agent] 接收到问题: 对手机的话就可以你好娇娇针对租客物业费问题
+, 1743409673.0980437
+问题音频STT前的时刻: 1743409673.0982382
+问题音频STT后的时刻: 1743409673.8175123
+问题音频STT时间: 0.7192740440368652
+
+
+[Agent] 最终接收到问题: 对手机的话就可以你好佼佼针对租客物业费问题你建议如何平衡租客和小区安全之间的关系
+, 1743409673.8176959
+问题音频送入Planner的时刻: 1743409673.8184955
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409674.4221754
+planner new_token time: 1743409674.8163857
+planner new_token time: 1743409674.817031
+First token received: 1, time: 1743409674.8171947
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409674.82679
+talker first token time: 1743409675.1084092
+talker first token time: 1743409675.1354525
+talker first token time: 1743409675.1614473
+talker first token time: 1743409675.1873574
+talker first token time: 1743409675.213319
+talker first token time: 1743409675.2392385
+talker first token time: 1743409675.26525
+talker first token time: 1743409675.2912498
+talker first token time: 1743409675.3174489
+talker first token time: 1743409675.369292
+talker first token time: 1743409675.3953297
+talker first token time: 1743409675.421495
+talker first token time: 1743409675.4476492
+talker first token time: 1743409675.473728
+talker first token time: 1743409675.5002623
+talker first token time: 1743409675.5266223
+talker first token time: 1743409675.5528681
+talker first token time: 1743409675.5789227
+talker first token time: 1743409675.6049635
+talker first token time: 1743409675.6309843
+talker first token time: 1743409675.683031
+talker first token time: 1743409675.7352724
+talker first token time: 1743409675.7614071
+talker first token time: 1743409675.7877843
+talker first token time: 1743409675.8141596
+talker first token time: 1743409675.840312
+talker first token time: 1743409675.8665843
+talker first token time: 1743409675.892761
+talker first token time: 1743409675.9189882
+talker first token time: 1743409675.9713297
+talker first token time: 1743409675.997951
+talker first token time: 1743409676.0245311
+talker first token time: 1743409676.0513248
+talker first token time: 1743409676.0778472
+talker first token time: 1743409676.130491
+talker first token time: 1743409676.157024
+talker first token time: 1743409676.1842186
+talker first token time: 1743409676.210988
+talker first token time: 1743409676.2378244
+talker first token time: 1743409676.2642639
+talker first token time: 1743409676.3171701
+talker first token time: 1743409676.3439353
+talker first token time: 1743409676.3703887
+talker first token time: 1743409676.3971016
+talker first token time: 1743409676.4239109
+talker first token time: 1743409676.4504566
+talker first token time: 1743409676.4769762
+talker first token time: 1743409676.5034463
+talker first token time: 1743409676.5299444
+talker first token time: 1743409676.55643
+talker first token time: 1743409676.6094954
+talker first token time: 1743409676.6627305
+talker first token time: 1743409676.689228
+talker first token time: 1743409676.715873
+talker first token time: 1743409676.742589
+talker first token time: 1743409676.7693396
+talker first token time: 1743409676.795891
+talker first token time: 1743409676.8224664
+talker first token time: 1743409676.875357
+talker first token time: 1743409676.9020286
+talker first token time: 1743409676.928608
+talker first token time: 1743409676.95518
+talker first token time: 1743409676.9819999
+talker first token time: 1743409677.009031
+talker first token time: 1743409677.035796
+talker first token time: 1743409677.06279
+talker first token time: 1743409677.0898511
+talker first token time: 1743409677.1165156
+talker first token time: 1743409677.1433716
+talker first token time: 1743409677.196656
+talker first token time: 1743409677.223518
+talker first token time: 1743409677.2505753
+talker first token time: 1743409677.2774038
+talker first token time: 1743409677.3042314
+talker first token time: 1743409677.331064
+talker first token time: 1743409677.3578923
+talker first token time: 1743409677.3849638
+talker first token time: 1743409677.4118679
+talker first token time: 1743409677.4388504
+talker first token time: 1743409677.465631
+talker first token time: 1743409677.5190454
+talker first token time: 1743409677.5459657
+talker first token time: 1743409677.5729365
+talker first token time: 1743409677.599821
+talker first token time: 1743409677.6267512
+talker first token time: 1743409677.6804566
+talker first token time: 1743409677.7075515
+talker first token time: 1743409677.734602
+talker first token time: 1743409677.761641
+talker first token time: 1743409677.7886372
+talker first token time: 1743409677.8156774
+talker first token time: 1743409677.8706136
+
+talker输出：
+
+Token count: 124, Total time: 4.2459 seconds, One token time: 0.0342 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为平衡租客和小区安全之间的关系，建议可以在租赁合同中明确约定双方的责任和义务。例如，租客应妥善保管好自己的物品，不得随意破坏小区设施，而房东则应该提供安全、舒适的居住环境，并定期对小区进行维护管理。此外，还可以通过建立租客信用系统，对遵守合同约定的租客给予优惠或奖励，而对于违反规定的租客，则应采取相应的惩罚措施。这样既可以保证小区的安全，也可以保护租客的权益。
+talker 输出结束
+
+会议数据处理完成。

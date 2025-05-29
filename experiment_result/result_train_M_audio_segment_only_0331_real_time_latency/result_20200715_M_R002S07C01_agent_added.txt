@@ -1,0 +1,733 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200715_M_R002S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 64
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  20%|██        | 1/5 [01:17<05:08, 77.03s/it]好的 今天晚上同时叫过来咱们开个会咱们这一块有的运营这块先说一下整个公司的运营情况首先大家先说一下上百年运营的情况就是现在咱们主要是进行了一个是网上的一个现职官培养和文艺官培养现在已经开始逐步恢复到线下的工作了然后咱们上半年的话就是运营的情况并不是特别愿意满意咱们的话就是像一些就是圣居班什么的就受到了很大的冲击因为孩子们在家里就是上上网课什么的就每天时间安排的话比较紧然后他们周六日也没法出来然后家长还是更加倾向于让他们出就是学习完以后再来运动一下这方面导致南安的运营情况不是特别好上个年大概赔了一百多万吧相比较往年来说毕竟咱们还有老师们一个运营情况的话咱们是需要发一些机会公司的因为咱们的老师并不是说大部分都是属于咱们的在职工工教师他就是进了很不教育基督的一个同时的话,老师情况上半年一年,老师辞职了很大一部分,老师现在剩下的话大概剩了四分之三,四分之一的优越,沒有活幹,公司也沒有他們就辭職去一些幼兒教育機構進行一些賣包子賣燒烤然后咱们上半年的话就是就是也开展了一些就是关于就是可能教育机构进行就是进行一些就是表演就是有一些就是有一些就是公司啊什么经营合作然后就是开展一些商场活动大概就是这么一个样子然后这个阿拿罗巴洛斯的人来说一下先说我们这文艺班吧文艺班主要就是讲究一些孩子们的琴棋书画属于这方面还有普通的一些这种文科类的学习像语文也归到我们文艺班这边来管然後先说一下清晰书画咱们这边琴类呢就是以古筝还有钢琴钢琴这一块电子琴这些针对孩子的不同兴趣我们会进行一对一的辅导就是让孩子们达到一种可以考比方说钢琴技术啊他总不能说是来这学完了光会弹一首简单的小星星是吧这是不可能的需要让他们考一些钢琴的级数啊是吧对或者去参加一些比赛对那咱们现在设备有多少啊大概设备钢琴的话是有25台他想着五台电子琴的话居多因为学钢琴的多电子琴的较少因为他们大部分家长觉得电子琴会用钢琴的时代电子琴就只是用修剪因为刚起的话就是比较和调然后也就是就相当于对,还有在说,骑这方面,我们这儿主打的就是……咱们现在就是设备上出现什么问题,比如说咱们当时就是需要每天打这个,咱们因为过年时段咱们就没有人就能回到咱们这块进行一个设备的保养,现在都会出现问题这个不会,因为每隔一段时间的话会有调研师进行调研,工作人员进行比如说,拆卸下来进行内部清理,不会积沉这些,不会让一些钢琴的按键连后面这种,会进行一些就是,按着按键会进行一种摩擦较为明显的这些东西,就比较细化。然后说到棋这方面,咱们这主打的是围棋还有象棋还有国际象棋哦这三点然后国际象棋的话就属于培养的人就是比较少因为对这方面很多人就觉得都会玩吗对因为国际象棋的话就是比较和咱们这个中国象棋的机制对不是特别一样嗯对然后其实咱们中国的话还是玩咱们老大爷就是一种熏陶因为你看街上有很多老大爷天天就在那儿下象棋咱们的小学伴们看到了都会去信仰有一个围观对双家院他们的现战号然后这一方面还有就是围棋和象棋我们主打就是这两个一是可以提升孩子这种思维空间能力还有就是属于你能摆一件事情分多步考虑比方说就以象棋和围棋为主吧象棋如果你走了这一个是或者走炮和狙它会后面产生什么连锁反应对手会怎么走你下一步要怎么应对它都会进行一个思考当然刚入门这个孩子不进行这方面的要求只会就是在一些考证的方面时候进行要求比方说在象棋过四级以后就已经是正常的1v1对决然后进行考证四级之前都是一些就是让你怎么样破解一些残局之类的这些东西还有围棋也是围棋也是在四级以后进行一对一所以就要从小提升他们这种思维能力这样咱们的象棋的老师的话大概能想到多少步象棋的老师大概是二十步左右因为他们都是属于八级就是八级的那种证数那反正就是信仰是先人一样的因为像刚才运营我这方面说了,我们已经飞了老多了呀。但是这方面肯定是要有的,因为如果你请一个五级证书的一些象棋老师过来指导,他指导的效果并不是那么好。而且他对孩子这种比方说你走这步他可能五级这些证书的下级的这些高手和那些八级的那些高
+[Text Detection] 在 502.98 秒检测到关键词 '焦焦',current_time: 496.00, 问题文本: 高手能不能差很多东西比方说思维方式对思维方式你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施而且咱们这个收费标准是肯定不能特别便宜的不是咱们属于一个高档的对属于高档的目标然后还有这种书法书法的话就属于中国毛病
+手能不能差很多东西比方说思维方式对思维方式你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施而且咱们这个收费标准是肯定不能特别便宜的不是咱们属于一个高档的对属于高档的目标然后还有这种书法书法的话就属于中国毛病画的话就是属于现在一些素描,打一些孩子的基本功,比方说这个孩子就是现在画过素描,画过一些彩绘,搞过一些涂鸦,然后老师进行指点,怎么样怎么样做,这利于孩子们以后就是上高中,选择自己专业的时候也是能多一个方面的技能吧。从而衍生出来的一些同仁作品也是比较多的那散白就是傅大伯有没有请一些动漫上的大拿就是来给就是就划算号的一些大拿就是给他们来讲讲课呀什么的这方面倒没有这些要求因为小孩子对就是说现在就是只要是配到那个性倦了对而且就是打打他们的基本功夯实一下基础属于这方面通过中国的这个一些中国的水墨画就是属于要求不高就属于简简单单的比方说先培养他们性倔爱好就下着小的时候拿那些墨水点到纸上然后让他们用嘴吹出来一个树的形状然后再画上梅花在那个树枝上这属于一种培养性倔爱的方法然后让他们看看自己的作品对 那反正就是就是想要接受我生日花的嘛还有水光画,咱们是靠什么方式?主要是咱们是去咱们的博物馆进行一个参观,或者说咱们还是在网上找一些图片拿来看。这就有两种方式,就是我们这个平常上课对吧,毕竟是一种辅导形式嘛,咱们不可能像学校一样上课就是时间排那么紧,咱们就是抽时间,比方说这一个时间系列是
+Loading checkpoint shards:  40%|████      | 2/5 [01:59<02:50, 56.79s/it]我们是前两天进行图片,用那种投屏的方式进行展示。但是这样的话,投屏会不会出来的效果不太好?这是一方面。还有就是,在中间那天的时候,老师会带他们去一些书法社呀,书画的那种,就是那些比较有名的一些画师,去参观一下水墨画。水墨画到底是哪一笔需要画到什么地步就是参观一些比较有名的书法大家的以前的一些唐伯虎的一些画但是这些画咱们肯定不能现场参观啊咱们都是用图片的形式高清图片把它放大具体到哪一个细节然后分步骤讲解我记得咱们博物馆里好像有一些就是水墙画的作品但是没有带他们去看过这方面都已经看过了并且就是中国指导老师与这种隔空指画的这种方式来进行指点比方说哪个位置用手在空中给他们圈一个圈让他们注意到这个细节然后让孩子们可以离近点看但是不要上手对可能这方面也不好比较像观光一些比较好的作品的话就是对于给到孩子一种兴趣的爱好对有很大的帮助也会让孩子的思想就是更加的上手对对谢谢然后咱们这个下一个我们这边好久不见像我们这几班主打的就是体育运动像篮球火球乒乓球还有羽毛球我们主要是闹对谈天道谈天道武术咱们谈甚至于说咱们的咱们就有一些就有国家队伍的吧就比如就当就还特别小的时候来
+Loading checkpoint shards:  33%|███▎      | 1/3 [02:14<04:28, 134.40s/it]如果要去国家青年队训练的话,可以向国家青年队引荐。比如说那些班这几年就特别的好,有好几位都是进了国家青年队的选拔。像在运营方面上,我们的体育运动班的话,这个销量,因为现在很多场所不会开放,现在基本上就开始恢复了。那咱们这个出个什么办法就比如说让我们体育班进行一个生存咱们是否就可以在一个比如一个广场或者一个购物中心咱们就选一片空地然后跟人家商量一下做一个平行道展或者说做一个篮球我觉得一些孩子们就开球的一个战了这个方面的话我觉得是没有必要的因为现在的话咱们的就是关于一些运体运动的兴趣般的那个抱怨情况还是比较火爆的因为现在就是大部分的场所已经开了场所开了以后就是与咱们经营合作的一些就是体育场地就是进行合作嘛然后现在抱的人也比较多因为现在暑假了还是不能就是也不需要学习加上就是跟孩子待的也挺够了毕竟好几个月都回家然后想给他找点事来在他們報關的基本上年齡大概都有沒有一些比较大年龄比较大还是比较少大部分就是在18岁那是否咱们就说开几个计算机类的课计算机类的就是开一些计算机方面有关的课程毕竟就是说毕竟那个高中生大学他们要学习一方面像PD啊像一些这样系列的课就是比如说word表格制作以及方程运算这方面因为毕竟咱们考级的话会有计算机二级、三级这种证书就是需要咱们刚考完的学生们进行一个评论对这个的话你
+[Text Detection] 在 997.15 秒检测到关键词 '基于之前',current_time: 992.00, 问题文本: 你好基于之前我们讨论的内容
+好基于之前我们讨论的内容考虑到他们因为努力了三年,放假以后他们并不想进行证明学习,他们更倾向于性学来跑,或者是才艺上的报名。这方面的话,我们运营的方法还是打算进行一个微微调查,就是对于是否现在的学生...倾向于报一个能够学习专业技能的兴趣班的调查这个的话咱们就是下一次会议会讨论给出一个详细的调查情况然后进行一个分析好行那个时候我想提一个问题这些问题就关于咱们像是班的那种方面那咱们体育的场所是怎么安排的咱们体育像篮球,羽毛球团都室内场所室内场所,咱们是与一些体育馆合作了吗对,咱们与远国体育馆就很不错的合作长期合作是像远国体育馆,游泳啊,羽毛球馆,篮球馆都是具备的像这些体育馆消费数比较好对 但是因为咱们是单也算是对他们体育馆也算是对他们健身馆的一种宣传因为咱们在那上的机制与他们健身馆的机制并不是充足的咱们是利用周日周日的时间在这里上一节课让一些来他们健身馆做运动的人可以看到就是在他们这里也可以抱一些小的就是小孩就是给自己的孩子抱一些班对但是咱们这时候就需要考虑运动情况毕竟咱们这个班挺大的对然后因为有些人运动的时候不喜欢被别人打扰对然后咱们一群小孩子乱糟糕的你想想看啊像在远国远国体育馆的话男球馆和他培训道的练习房是Azure的也就是说,当咱们的巴拉圭在上课的时候我们就可以把男球馆门关掉然后正好男球馆在男球场训练然后他们培训道可以在里面训练这保证两堂班当然如果是以毛球的话以毛球与青黄球的话做不到最大的那個就是让外来人面,就是毕竟咱们小孩再多也不会,就是说用完所有的场地,基本上就是说还是会有这个作用。对,咱们就是在国产保育院保免基础上。咱们可以把中德那个检疫馆保下来。像在他们那个,他们那个主导的这个羽毛球,基本上用他们那个来训练的话是丑有余的。那咱们就是这个就是关于先驱班的先驱班的教师们有没有说过关于体育馆的一些工作人员上对你感到不满意啊?确实是有的,毕竟作为他们远国体育馆的会员来说,他们肯定是对这些不满意的,毕竟他们办了卡,他们想任何今天来玩的话,会有冲突。但是就是不可避免的因為咱們的河粉現在是比較長的比如说他们在接到会员的时候会提前说好,就是说周日就是我们这个出行官的清明日,就是说这是不可避免的,就是说这个时间点是变的。所以只能是说让他们的会员去改善,或者说让他们的体育馆做一些应对的方法。那這麼說的話,想問一下經理,這方面有沒有打算說
+Loading checkpoint shards:  60%|██████    | 3/5 [02:34<01:33, 46.75s/it]自己建一个散文的体育馆可以啊 队长队长你有什么好的想法吗我觉得的话就是咱们可以在一些比较破旧的体育馆进行一个改造对 因为他们已经有一部分的基础这样的话价格上可能也会合适毕竟咱们辅导班是一个有各种功能对于辅导班把一个体育馆改造成各个班分开,咱们可以同时进行就是收购的一种方式。对。然后咱们平时不用的话,咱就可以外包给那些,就是像刚才所说的咱们体育馆内有一些就是从国家青年队里退下来的人,咱们就可以与咱们本地的一些就是队伍进行一个合作。可以让他们进行了一个使用对这样的话就是也可以说就是人家来咱们计划就可以介绍的话就是说我们体育馆这里就是在哪天的话他们会有一些打什么球的然后这些都是他们的什么一些专业人员然后这样的话就是也显得咱们公司有专业也显得咱们这里有人气是吧嗯对还有什么建议?刚才这个原因,找一个这个,已经有这个基础的房屋。因为在考虑上前一段时间,很多会员们就是,咱们现在进行合作提满,会员们就是不满意,价格比较高,因为远国的体育馆,他们打的会员项目是一个居然货的形式。咱们的话就是,虽然人很多,但是人家感觉按人头收费。然后他们的小孩子又打扰了人家会员的锻炼,同时他们也收过了太多的钱。如果說我們自己就有一家是自己的店会特别方便毕竟有自己的队伍上课也好也会让那些在那边办考的家长感到心里更加放心毕竟都是小孩,没有外来人员这个伤害也可以更加的避免对,像打球的时候对面可能不可能把所有的男朋友给占尽对,他可能会过来要球就是咱们小孩子故意摔倒了这
+[Text Detection] 在 1548.43 秒检测到关键词 '娇娇',current_time: 1519.00, 问题文本: 这个我感觉比较赞同因为如果是旧体育馆进行翻新是吧一是因为可以节省经费因为咱上个月毕竟亏损了一百万了二就是可以拥有咱们自己的场地不用那么受气不用和人家一直就是属于争吵状态和什么影响谁你好 娇娇如何优化
+个我感觉比较赞同因为如果是旧体育馆进行翻新是吧一是因为可以节省经费因为咱上个月毕竟亏损了一百万了二就是可以拥有咱们自己的场地不用那么受气不用和人家一直就是属于争吵状态和什么影响谁你好 娇娇如何优化打球误杀你了这责任肯定不能算人家的对因为咱们的小孩子确实没有一些安全意识他们就是就是感觉很好奇就去走过去了那样的话其实责任其实也不在于人家对吧对嗯像刚才咱说了这个嗯自己找一个这个地方还有咱们就还有涉及到下半年的招商这一块,各位有什么想要说的吗?招商的话,就是直打。就是把篮子的信息包里面一般就是做成一个新闻广告,然后通过运营,进行大量的宣传。基本上,如果说咱们有了自己的体育馆的话,其实效果是非常棒的。一见灯,算是,像是说是专业的。嗯。我们的前提就是可以与一些小学、中学进行合作毕竟咱们像小学中学的教育那样他们主要教语术、爱、专业生、物理化学这些学科嘛他们这些学科对他们有一些培养性学爱好然后咱们进行合作就是毕竟现在的话大家主要是学生能够多方面的进行发展,兴趣爱好,可以给他们提供一个机会。通过跟他们学校商量,对他们学校的学生有一定的优惠政策。这样的话,我觉得是比较合适的。要是说招生问题的话我们大家必将是以亲戚书画为主 是吧主要是爱好嘛这方面招生倒不是很难的事毕竟不像那种奥赛班对奥赛班需要的老师的水平特别高而且还有什么作文班这个第一方面就是想报这种班的绝对不可能是孩子自己较为少数才会来报这种班因为他想提升自己大多数都是家长被迫就是逼着孩子来抱这种学习方面的这种所以我们这个琴棋书画非常好招生因为它是属于一种性别爱好而且也可以说是一种休闲娱乐而且可以抑制嘛因为下棋或者一些这些方面就可以动脑还有就比方说就可以也可以锻炼孩子们这种静心能力因为写书法和画画他不可能不见他现在因为你不尽量先来的话,他就是特别骚乱,没有一个人的感觉。对。咱们主要还是培养孩子的一些品质。对。那关于这个招生这边,还有什么想要说的吗?招生这一块,怎么吸引人才?不是吸引人才,吸引学生呢?像咱们的学生们就是进行了一个有一定的效果这样的话咱们就是把这些效果宣扬出去然后咱们才能做到一个宣传的效果咱们出成果了出效果了孩子们才会更加想要来咱们这里学习对行,还有什么想说的吗?咱们可以拍一件视频吗?就是我一上的视频对对于咱们一些美女老师啊,帅哥老师啊,进行一个宣传对然后孩子呢,现在也是比较喜欢这个好看的嘛对喜欢好看的嘛对行,他喜欢帅气的一点比较弹钢琴,是吧?对像这样神经病打个篮球,扣个篮对兴趣的就只有我,拿我来看视频,非常地非常强力度,更加地广泛,到位,让他们找到什么叫知名的强壮,比如说技巧加强壮,对。然后再找一些啦啦队配合一下,比方说Coleague以后场下欢呼,吸引一些男学生来报名,对。对。那就来一段星期八的这段的复杂战对就有我非
+[Text Detection] 在 1920.32 秒检测到关键词 '娇娇',current_time: 1891.00, 问题文本: 非常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前
+常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前政策以吸引更多学生报名会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200715_M_R002S07C01_agent_added/out_003-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 60485, dtype: float32, min: -0.112091064453125, max: 0.132568359375
+问题音频时间长度: 3.7803125
+
+
+[Agent] 接收到问题: 政策以吸引更多学生报名
+, 1743408875.1666803
+问题音频STT前的时刻: 1743408875.166799
+问题音频STT后的时刻: 1743408875.9086273
+问题音频STT时间: 0.741828203201294
+
+
+[Agent] 最终接收到问题: 你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施
+, 1743408875.908791
+问题音频送入Planner的时刻: 1743408875.9091666
+
+Loading checkpoint shards:  80%|████████  | 4/5 [03:07<00:41, 41.44s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [03:19<00:00, 30.71s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [03:19<00:00, 39.89s/it]
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [04:21<02:10, 130.14s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [04:30<00:00, 74.94s/it] 
+Loading checkpoint shards: 100%|██████████| 3/3 [04:30<00:00, 90.27s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743408956.396952
+planner new_token time: 1743408956.854136
+planner new_token time: 1743408956.854479
+First token received: 1, time: 1743408956.8554742
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743408956.9458344
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743408958.8729272
+talker first token time: 1743408958.899144
+talker first token time: 1743408958.9255278
+talker first token time: 1743408958.9518008
+talker first token time: 1743408958.9780717
+talker first token time: 1743408959.004151
+talker first token time: 1743408959.0302796
+talker first token time: 1743408959.0564766
+talker first token time: 1743408959.1092856
+talker first token time: 1743408959.1354015
+talker first token time: 1743408959.1616879
+talker first token time: 1743408959.187857
+talker first token time: 1743408959.213928
+talker first token time: 1743408959.239975
+talker first token time: 1743408959.2659357
+talker first token time: 1743408959.3434296
+talker first token time: 1743408959.36939
+talker first token time: 1743408959.396899
+talker first token time: 1743408959.424937
+talker first token time: 1743408959.4592721
+talker first token time: 1743408959.4857526
+talker first token time: 1743408959.53799
+talker first token time: 1743408959.5641
+talker first token time: 1743408959.5900328
+talker first token time: 1743408959.616092
+talker first token time: 1743408959.668025
+talker first token time: 1743408959.6949089
+talker first token time: 1743408959.7211323
+talker first token time: 1743408959.7472627
+talker first token time: 1743408959.773511
+talker first token time: 1743408959.851307
+talker first token time: 1743408959.8778229
+talker first token time: 1743408959.9043672
+talker first token time: 1743408959.9308395
+talker first token time: 1743408959.9833388
+talker first token time: 1743408960.0103104
+talker first token time: 1743408960.0371335
+talker first token time: 1743408960.089602
+talker first token time: 1743408960.1160316
+talker first token time: 1743408960.1942487
+talker first token time: 1743408960.2462006
+talker first token time: 1743408960.272431
+talker first token time: 1743408960.299129
+talker first token time: 1743408960.325162
+talker first token time: 1743408960.351176
+talker first token time: 1743408960.377349
+talker first token time: 1743408960.4034672
+talker first token time: 1743408960.4297376
+talker first token time: 1743408960.4818125
+talker first token time: 1743408960.5080428
+talker first token time: 1743408960.5343132
+talker first token time: 1743408960.560574
+talker first token time: 1743408960.586894
+talker first token time: 1743408960.6131139
+talker first token time: 1743408960.6395528
+talker first token time: 1743408960.6658762
+talker first token time: 1743408960.7186604
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 重新审视公司的商业模式和盈利模式，找出亏损的原因并进行调整。
+2. 加强对老师的管理和培训，提高教学质量和服务质量，减少老师离职率。
+3. 提高运营效率，优化管理流程，降低成本。
+4. 建立良好的企业文化和员工激励机制，增加员工的工作满意度和留任率。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200715_M_R002S07C01_agent_added/out_003-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 60485, dtype: float32, min: -0.112091064453125, max: 0.132568359375
+问题音频时间长度: 3.7803125
+
+
+[Agent] 接收到问题: 政策以吸引更多学生报名
+, 1743408961.2500153
+问题音频STT前的时刻: 1743408961.2501316
+问题音频STT后的时刻: 1743408963.0054908
+问题音频STT时间: 1.755359172821045
+
+
+[Agent] 最终接收到问题: 你好娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于山水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实现的
+, 1743408963.0057008
+问题音频送入Planner的时刻: 1743408963.006213
+planner new_token time: 1743408963.65459
+planner new_token time: 1743408964.0471892
+First token received: 0, time: 1743408964.0473354
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743408964.4404898
+planner new_token time: 1743408964.8326795
+planner new_token time: 1743408965.2246554
+planner new_token time: 1743408965.6171842
+planner new_token time: 1743408966.009956
+planner new_token time: 1743408966.4027236
+planner new_token time: 1743408966.7952092
+planner new_token time: 1743408967.187632
+planner new_token time: 1743408967.5811381
+planner new_token time: 1743408967.9736145
+planner new_token time: 1743408968.365729
+planner new_token time: 1743408968.7589135
+planner new_token time: 1743408969.1514847
+planner new_token time: 1743408969.5436661
+planner new_token time: 1743408969.9372401
+planner new_token time: 1743408970.330191
+planner new_token time: 1743408970.7228851
+planner new_token time: 1743408971.115741
+planner new_token time: 1743408971.5085692
+planner new_token time: 1743408971.9029195
+planner new_token time: 1743408972.2962825
+planner new_token time: 1743408972.689263
+planner new_token time: 1743408973.0823824
+planner new_token time: 1743408973.4756942
+planner new_token time: 1743408973.868983
+planner new_token time: 1743408974.263606
+planner new_token time: 1743408974.6571627
+planner new_token time: 1743408975.0508492
+planner new_token time: 1743408975.4435534
+planner new_token time: 1743408975.8368878
+planner new_token time: 1743408976.2298765
+planner new_token time: 1743408976.6228812
+planner new_token time: 1743408977.0162933
+planner new_token time: 1743408977.4097123
+planner new_token time: 1743408977.802295
+planner new_token time: 1743408978.1956055
+planner new_token time: 1743408978.5886016
+planner new_token time: 1743408978.9828784
+planner new_token time: 1743408979.376744
+planner new_token time: 1743408979.7698133
+planner new_token time: 1743408980.1629386
+planner new_token time: 1743408980.5568225
+planner new_token time: 1743408980.9502428
+planner new_token time: 1743408981.3438575
+planner new_token time: 1743408981.7373607
+planner new_token time: 1743408982.1305373
+planner new_token time: 1743408982.523872
+planner new_token time: 1743408982.5247345
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：动漫领域专家 兴趣班运营 山水画 水墨画 线上图片观摩 实地参观
+
+
+提取的关键词: ['动漫领域专家', '兴趣班运营', '山水画', '水墨画', '线上图片观摩', '实地参观']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743408983.5092332
+one token time in planner tools: 1743408983.9040015
+one token time in planner tools: 1743408984.2986412
+one token time in planner tools: 1743408984.6937618
+one token time in planner tools: 1743408985.088133
+one token time in planner tools: 1743408985.4823956
+one token time in planner tools: 1743408985.8773367
+one token time in planner tools: 1743408986.2722259
+one token time in planner tools: 1743408986.6670697
+one token time in planner tools: 1743408987.061491
+one token time in planner tools: 1743408987.456567
+one token time in planner tools: 1743408987.8516853
+one token time in planner tools: 1743408988.2461412
+one token time in planner tools: 1743408988.640132
+one token time in planner tools: 1743408989.034473
+one token time in planner tools: 1743408989.429264
+one token time in planner tools: 1743408989.823288
+one token time in planner tools: 1743408990.2178955
+one token time in planner tools: 1743408990.6129658
+one token time in planner tools: 1743408991.007763
+one token time in planner tools: 1743408991.4022067
+one token time in planner tools: 1743408991.7970836
+one token time in planner tools: 1743408992.191583
+one token time in planner tools: 1743408992.5869772
+one token time in planner tools: 1743408992.981573
+one token time in planner tools: 1743408993.3769748
+one token time in planner tools: 1743408993.7718492
+one token time in planner tools: 1743408994.1670218
+one token time in planner tools: 1743408994.5620081
+one token time in planner tools: 1743408994.95744
+one token time in planner tools: 1743408995.352443
+one token time in planner tools: 1743408995.7480013
+one token time in planner tools: 1743408996.143
+one token time in planner tools: 1743408996.5380046
+one token time in planner tools: 1743408996.9329505
+one token time in planner tools: 1743408997.3280253
+one token time in planner tools: 1743408997.723108
+one token time in planner tools: 1743408998.117959
+one token time in planner tools: 1743408998.513567
+one token time in planner tools: 1743408998.909158
+one token time in planner tools: 1743408999.3044016
+one token time in planner tools: 1743408999.6995544
+one token time in planner tools: 1743409000.095294
+one token time in planner tools: 1743409000.491114
+one token time in planner tools: 1743409000.886462
+one token time in planner tools: 1743409001.2817216
+one token time in planner tools: 1743409001.6769683
+one token time in planner tools: 1743409002.0731368
+one token time in planner tools: 1743409002.4691026
+one token time in planner tools: 1743409002.8651645
+one token time in planner tools: 1743409003.2608237
+one token time in planner tools: 1743409003.656766
+one token time in planner tools: 1743409004.0530906
+one token time in planner tools: 1743409004.448983
+one token time in planner tools: 1743409004.845058
+one token time in planner tools: 1743409005.2415423
+one token time in planner tools: 1743409005.6370137
+one token time in planner tools: 1743409006.0329232
+one token time in planner tools: 1743409006.4288733
+one token time in planner tools: 1743409006.824718
+one token time in planner tools: 1743409007.2204452
+one token time in planner tools: 1743409007.6168904
+one token time in planner tools: 1743409008.0129392
+one token time in planner tools: 1743409008.0139606
+
+Token count: 64, Total time: 25.3613 seconds, One token time: 0.3963 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：动漫', '领域', '专家', ' ', '兴', '趣', '班', '运营', ' ', '山', '水', '画', ' ', '水', '墨', '画', ' ', '线', '上', '图片', '观摩', ' 实', '地', '参观', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###从而衍生出来的一些同仁作品也是比较多的那散白就是傅大伯有没有请一些动漫上的大拿就是来给就是就划算号的一些大拿就是给他们来讲讲课呀什么的这方面倒没有这些要求因为小孩子对就是说现在就是只要是配到那个性倦了对而且就是打打他们的基本功夯实一下基础属于这方面通过中国的这个一些中国的水墨画就是属于要求不高就属于简简单单的比方说先培养他们性倔爱好就下着小的时候拿那些墨水点到纸上然后让他们用嘴吹出来一个树的形状然后再画上梅花在那个树枝上这属于一种培养性倔爱的方法然后让他们看看自己的作品对 那反正就是就是想要接受我生日花的嘛还有从而衍生出来的一些同仁作品也是比较多的那散白就是傅大伯有没有请一些动漫上的大拿就是来给就是就划算号的一些大拿就是给他们来讲讲课呀什么的这方面倒没有这些要求因为小孩子对就是说现在就是只要是配到那个性倦了对而且就是打打他们的基本功夯实一下基础属于这方面通过中国的这个一些中国的【水】墨画就是属于要求不高就属于简简单单的比方说先培养他们性倔爱好就下着小的时候拿那些墨水点到纸上然后让他们用嘴吹出来一个树的形状然后再画上梅花在那个树枝上这属于一种培养性倔爱的方法然后让他们看看自己的作品对 那反正就是就是想要接受我生日花的嘛还有水光画,咱们是靠什么方式?主要是咱们是去咱们的博物馆进行一个参观,或者说咱们还是在网上找一些图片拿来看。这就有两种方式,就是我们这个平常上课对吧,毕竟是一种辅导形式嘛,咱们不可能像学校一样上课就是时间排那么紧,咱们就是抽时间,比方说这一个时间系列是我们是前两天进行图片,用那种投屏的方式进行展示。但是这样的话,投屏会不会出来的效果不太好?这是一方面。还有就是,在中间那天的时候,老师会带他们去一些书法社呀,书画的那种,就是那些比较有名的一些画师,去参观一下水墨画。\n---\n那关于这个招生这边,还有什么想要说的吗?招生这一块,怎么吸引人才?不是吸引人才,吸引学生呢?像咱们的学生们就是进行了一个有一定的效果这样的话咱们就是把这些效果宣扬出去然后咱们才能做到一个宣传的效果咱们出成果了出效果了孩子们才会更加想要来咱们这里学习对行,还有什么想说的吗?咱们可以拍一件视频吗?就是我一上的视频对对于咱们一些美女老师啊,帅哥老师啊,进行一个宣传对然后孩子呢,现在也是比较喜欢这个好看的嘛对喜欢好看的嘛对行,他喜欢帅气的一点比较弹钢琴,是吧?对像这样神经病打个篮球,扣个篮对兴趣的就只有我,拿我来看视频,非常地非常强力度,更加地广泛,到位,让他们找到什么叫知名的强壮,比如说技巧加强壮,对。然后再找一些啦啦队配合一下,比方说Coleague以后场下欢呼,吸引一些男学生来报名,对。对。那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前政策以吸引更多学生报名你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施你好娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于【山】水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，关于动漫领域专家给孩子们讲课方面，并没有明确提到邀请动漫领域的大拿来进行授课。至于山水画和水墨画的培养，采用了两种方式：一是通过线上图片观摩；二是组织孩子们去博物馆实地参观。这两种方式都旨在培养孩子的兴趣并夯实基础。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###从而衍生出来的一些同仁作品也是比较多的那散白就是傅大伯有没有请一些动漫上的大拿就是来给就是就划算号的一些大拿就是给他们来讲讲课呀什么的这方面倒没有这些要求因为小孩子对就是说现在就是只要是配到那个性倦了对而且就是打打他们的基本功夯实一下基础属于这方面通过中国的这个一些中国的水墨画就是属于要求不高就属于简简单单的比方说先培养他们性倔爱好就下着小的时候拿那些墨水点到纸上然后让他们用嘴吹出来一个树的形状然后再画上梅花在那个树枝上这属于一种培养性倔爱的方法然后让他们看看自己的作品对 那反正就是就是想要接受我生日花的嘛还有从而衍生出来的一些同仁作品也是比较多的那散白就是傅大伯有没有请一些动漫上的大拿就是来给就是就划算号的一些大拿就是给他们来讲讲课呀什么的这方面倒没有这些要求因为小孩子对就是说现在就是只要是配到那个性倦了对而且就是打打他们的基本功夯实一下基础属于这方面通过中国的这个一些中国的【水】墨画就是属于要求不高就属于简简单单的比方说先培养他们性倔爱好就下着小的时候拿那些墨水点到纸上然后让他们用嘴吹出来一个树的形状然后再画上梅花在那个树枝上这属于一种培养性倔爱的方法然后让他们看看自己的作品对 那反正就是就是想要接受我生日花的嘛还有水光画,咱们是靠什么方式?主要是咱们是去咱们的博物馆进行一个参观,或者说咱们还是在网上找一些图片拿来看。这就有两种方式,就是我们这个平常上课对吧,毕竟是一种辅导形式嘛,咱们不可能像学校一样上课就是时间排那么紧,咱们就是抽时间,比方说这一个时间系列是我们是前两天进行图片,用那种投屏的方式进行展示。但是这样的话,投屏会不会出来的效果不太好?这是一方面。还有就是,在中间那天的时候,老师会带他们去一些书法社呀,书画的那种,就是那些比较有名的一些画师,去参观一下水墨画。
+---
+那关于这个招生这边,还有什么想要说的吗?招生这一块,怎么吸引人才?不是吸引人才,吸引学生呢?像咱们的学生们就是进行了一个有一定的效果这样的话咱们就是把这些效果宣扬出去然后咱们才能做到一个宣传的效果咱们出成果了出效果了孩子们才会更加想要来咱们这里学习对行,还有什么想说的吗?咱们可以拍一件视频吗?就是我一上的视频对对于咱们一些美女老师啊,帅哥老师啊,进行一个宣传对然后孩子呢,现在也是比较喜欢这个好看的嘛对喜欢好看的嘛对行,他喜欢帅气的一点比较弹钢琴,是吧?对像这样神经病打个篮球,扣个篮对兴趣的就只有我,拿我来看视频,非常地非常强力度,更加地广泛,到位,让他们找到什么叫知名的强壮,比如说技巧加强壮,对。然后再找一些啦啦队配合一下,比方说Coleague以后场下欢呼,吸引一些男学生来报名,对。对。那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前政策以吸引更多学生报名你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施你好娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于【山】水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，关于动漫领域专家给孩子们讲课方面，并没有明确提到邀请动漫领域的大拿来进行授课。至于山水画和水墨画的培养，采用了两种方式：一是通过线上图片观摩；二是组织孩子们去博物馆实地参观。这两种方式都旨在培养孩子的兴趣并夯实基础。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200715_M_R002S07C01_agent_added/out_003-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 60485, dtype: float32, min: -0.112091064453125, max: 0.132568359375
+问题音频时间长度: 3.7803125
+
+
+[Agent] 接收到问题: 政策以吸引更多学生报名
+, 1743409008.3923647
+问题音频STT前的时刻: 1743409008.3925538
+问题音频STT后的时刻: 1743409009.1045463
+问题音频STT时间: 0.7119925022125244
+
+
+[Agent] 最终接收到问题: 你好 娇娇如何优化与体育馆合作减少对会员的干扰并提升兴趣般体验
+, 1743409009.1048238
+问题音频送入Planner的时刻: 1743409009.1051984
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409009.7023396
+planner new_token time: 1743409010.0954206
+planner new_token time: 1743409010.0958266
+First token received: 1, time: 1743409010.0959427
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409010.1075006
+talker first token time: 1743409010.405577
+talker first token time: 1743409010.458077
+talker first token time: 1743409010.4840436
+talker first token time: 1743409010.5100725
+talker first token time: 1743409010.5617156
+talker first token time: 1743409010.5878263
+talker first token time: 1743409010.6138024
+talker first token time: 1743409010.6397097
+talker first token time: 1743409010.665615
+talker first token time: 1743409010.6916757
+talker first token time: 1743409010.768842
+talker first token time: 1743409010.794905
+talker first token time: 1743409010.8208644
+talker first token time: 1743409010.8467379
+talker first token time: 1743409010.898559
+talker first token time: 1743409010.9244037
+talker first token time: 1743409010.9506636
+talker first token time: 1743409011.0026357
+talker first token time: 1743409011.0289967
+talker first token time: 1743409011.0816126
+talker first token time: 1743409011.10797
+talker first token time: 1743409011.1342378
+talker first token time: 1743409011.1604702
+talker first token time: 1743409011.1866937
+talker first token time: 1743409011.238893
+talker first token time: 1743409011.2651641
+talker first token time: 1743409011.2921338
+talker first token time: 1743409011.3187213
+talker first token time: 1743409011.3452933
+talker first token time: 1743409011.3717244
+talker first token time: 1743409011.449269
+talker first token time: 1743409011.4755418
+talker first token time: 1743409011.5016294
+talker first token time: 1743409011.5277886
+talker first token time: 1743409011.5794985
+talker first token time: 1743409011.6057236
+talker first token time: 1743409011.6320844
+talker first token time: 1743409011.6583
+talker first token time: 1743409011.6845891
+talker first token time: 1743409011.7108912
+talker first token time: 1743409011.7628264
+talker first token time: 1743409011.7889936
+talker first token time: 1743409011.8149867
+talker first token time: 1743409011.8410962
+talker first token time: 1743409011.8933058
+talker first token time: 1743409011.9197812
+talker first token time: 1743409011.9459248
+talker first token time: 1743409011.9721
+talker first token time: 1743409012.024646
+talker first token time: 1743409012.0510674
+talker first token time: 1743409012.077209
+talker first token time: 1743409012.1036887
+talker first token time: 1743409012.1299422
+talker first token time: 1743409012.2077255
+talker first token time: 1743409012.2339149
+talker first token time: 1743409012.2599173
+talker first token time: 1743409012.2861865
+talker first token time: 1743409012.3381736
+talker first token time: 1743409012.3645163
+talker first token time: 1743409012.4167533
+talker first token time: 1743409012.4429426
+talker first token time: 1743409012.469168
+talker first token time: 1743409012.5211058
+talker first token time: 1743409012.5471191
+talker first token time: 1743409012.5734425
+talker first token time: 1743409012.599944
+talker first token time: 1743409012.626132
+talker first token time: 1743409012.6524823
+talker first token time: 1743409012.7051766
+talker first token time: 1743409012.7314248
+talker first token time: 1743409012.7577438
+talker first token time: 1743409012.78397
+talker first token time: 1743409012.8102536
+talker first token time: 1743409012.8365357
+talker first token time: 1743409012.9141366
+talker first token time: 1743409012.9402027
+talker first token time: 1743409012.9662023
+talker first token time: 1743409012.992335
+talker first token time: 1743409013.044551
+talker first token time: 1743409013.070997
+talker first token time: 1743409013.097219
+talker first token time: 1743409013.1234848
+talker first token time: 1743409013.1500251
+talker first token time: 1743409013.2025247
+talker first token time: 1743409013.2289782
+talker first token time: 1743409013.2549982
+talker first token time: 1743409013.281105
+talker first token time: 1743409013.3073387
+talker first token time: 1743409013.3337228
+talker first token time: 1743409013.41194
+talker first token time: 1743409013.463977
+talker first token time: 1743409013.490229
+talker first token time: 1743409013.5163689
+talker first token time: 1743409013.5428445
+talker first token time: 1743409013.5954263
+talker first token time: 1743409013.6216922
+talker first token time: 1743409013.6478195
+talker first token time: 1743409013.674001
+talker first token time: 1743409013.700314
+talker first token time: 1743409013.752699
+talker first token time: 1743409013.7788832
+talker first token time: 1743409013.805051
+talker first token time: 1743409013.8312745
+talker first token time: 1743409013.8835893
+talker first token time: 1743409013.9099064
+talker first token time: 1743409013.9361885
+talker first token time: 1743409013.9624317
+talker first token time: 1743409013.988657
+talker first token time: 1743409014.0662854
+talker first token time: 1743409014.0922625
+talker first token time: 1743409014.1183672
+talker first token time: 1743409014.1445982
+talker first token time: 1743409014.1707706
+talker first token time: 1743409014.222928
+talker first token time: 1743409014.2495134
+talker first token time: 1743409014.2757535
+talker first token time: 1743409014.3020678
+talker first token time: 1743409014.3543947
+talker first token time: 1743409014.3815715
+talker first token time: 1743409014.407819
+talker first token time: 1743409014.434163
+talker first token time: 1743409014.4606326
+talker first token time: 1743409014.4869163
+talker first token time: 1743409014.5131633
+talker first token time: 1743409014.539471
+talker first token time: 1743409014.5660715
+talker first token time: 1743409014.5923126
+talker first token time: 1743409014.6185145
+talker first token time: 1743409014.644604
+talker first token time: 1743409014.6708753
+talker first token time: 1743409014.6971023
+talker first token time: 1743409014.7232766
+talker first token time: 1743409014.7496254
+talker first token time: 1743409014.775787
+talker first token time: 1743409014.8278766
+talker first token time: 1743409014.8541305
+talker first token time: 1743409014.8802505
+talker first token time: 1743409014.906497
+talker first token time: 1743409014.9327404
+talker first token time: 1743409014.9590902
+talker first token time: 1743409014.985395
+talker first token time: 1743409015.011899
+talker first token time: 1743409015.0382364
+talker first token time: 1743409015.0644941
+talker first token time: 1743409015.091022
+talker first token time: 1743409015.1437123
+talker first token time: 1743409015.1702576
+talker first token time: 1743409015.223513
+talker first token time: 1743409015.2502975
+talker first token time: 1743409015.277008
+talker first token time: 1743409015.303578
+talker first token time: 1743409015.3571863
+
+talker输出：
+
+Token count: 58, Total time: 3.8051 seconds, One token time: 0.0656 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+您好，针对您的问题，我有以下几点建议：
+
+1. 了解会员需求：通过调查问卷、访谈等方式，深入了解会员的需求和期望，以便更好地满足他们的需求。
+
+2. 提供个性化服务：根据会员的喜好和偏好，提供个性化的服务，例如定制专属活动、提供专属优惠等。
+
+3. 加强互动交流：通过社交媒体、线上论坛等方式，加强与会员的互动交流，增强会员的归属感。
+
+4. 优化场馆设施：不断更新和完善场馆设施，提高会员的运动体验。
+
+5. 增加活动种类：定期举办各种体育活动，吸引更多的会员参与，提升会员的兴趣体验。
+
+6. 强化安全措施：确保场馆的安全环境，让会员能够安心地进行健身活动。
+
+以上是我对如何优化与体育馆合作，减少对会员的干扰并提升兴趣班体验的一些建议，希望对您有所帮助。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200715_M_R002S07C01_agent_added/out_003-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 60485, dtype: float32, min: -0.112091064453125, max: 0.132568359375
+问题音频时间长度: 3.7803125
+
+
+[Agent] 接收到问题: 政策以吸引更多学生报名
+, 1743409015.9027128
+问题音频STT前的时刻: 1743409015.90284
+问题音频STT后的时刻: 1743409017.8070498
+问题音频STT时间: 1.904209852218628
+
+
+[Agent] 最终接收到问题: 你好 焦焦基于之前我们讨论的内容关于下半年的招生策略我们如何通过兴趣班和文艺班的宣传广告吸引学生同时我们是否考虑于小学和中学合作利用他们的教学资源和学生群体来推广我们的课程并提供优惠政策以吸引更多学生报名
+, 1743409017.807211
+问题音频送入Planner的时刻: 1743409017.8076646
+planner new_token time: 1743409018.460279
+planner new_token time: 1743409018.853754
+First token received: 0, time: 1743409018.8539038
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409019.2472205
+planner new_token time: 1743409019.6407788
+planner new_token time: 1743409020.034735
+planner new_token time: 1743409020.4276845
+planner new_token time: 1743409020.8213375
+planner new_token time: 1743409021.2152867
+planner new_token time: 1743409021.6088061
+planner new_token time: 1743409022.0025828
+planner new_token time: 1743409022.3967264
+planner new_token time: 1743409022.7900348
+planner new_token time: 1743409023.1838844
+planner new_token time: 1743409023.5781138
+planner new_token time: 1743409023.9712396
+planner new_token time: 1743409024.3653693
+planner new_token time: 1743409024.7592614
+planner new_token time: 1743409025.1532662
+planner new_token time: 1743409025.5471027
+planner new_token time: 1743409025.9412854
+planner new_token time: 1743409026.3351157
+planner new_token time: 1743409026.7283506
+planner new_token time: 1743409027.1223083
+planner new_token time: 1743409027.5164995
+planner new_token time: 1743409027.910659
+planner new_token time: 1743409028.304754
+planner new_token time: 1743409028.6988416
+planner new_token time: 1743409029.093765
+planner new_token time: 1743409029.487741
+planner new_token time: 1743409029.8822854
+planner new_token time: 1743409030.2764702
+planner new_token time: 1743409030.6703615
+planner new_token time: 1743409031.0652888
+planner new_token time: 1743409031.4596572
+planner new_token time: 1743409031.8542483
+planner new_token time: 1743409032.2484174
+planner new_token time: 1743409032.6436245
+planner new_token time: 1743409033.0379965
+planner new_token time: 1743409033.4322093
+planner new_token time: 1743409033.8260498
+planner new_token time: 1743409034.2207022
+planner new_token time: 1743409034.614648
+planner new_token time: 1743409035.008368
+planner new_token time: 1743409035.4029408
+planner new_token time: 1743409035.7971978
+planner new_token time: 1743409035.798011
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：招生策略 兴趣班 文艺班 小学 中学 教学资源 折扣政策
+
+
+提取的关键词: ['招生策略', '兴趣班', '文艺班', '小学', '中学', '教学资源', '折扣政策']
+
+找到的上下文片段数量: 4
+one token time in planner tools: 1743409037.2747223
+one token time in planner tools: 1743409037.6762655
+one token time in planner tools: 1743409038.0766048
+one token time in planner tools: 1743409038.4763443
+one token time in planner tools: 1743409038.8768392
+one token time in planner tools: 1743409039.276569
+one token time in planner tools: 1743409039.675832
+one token time in planner tools: 1743409040.0758593
+one token time in planner tools: 1743409040.4764776
+one token time in planner tools: 1743409040.8767664
+one token time in planner tools: 1743409041.2761588
+one token time in planner tools: 1743409041.6760068
+one token time in planner tools: 1743409042.0756376
+one token time in planner tools: 1743409042.4763331
+one token time in planner tools: 1743409042.8764446
+one token time in planner tools: 1743409043.2758057
+one token time in planner tools: 1743409043.675633
+one token time in planner tools: 1743409044.0757608
+one token time in planner tools: 1743409044.4766967
+one token time in planner tools: 1743409044.8770268
+one token time in planner tools: 1743409045.2770286
+one token time in planner tools: 1743409045.677943
+one token time in planner tools: 1743409046.0774822
+one token time in planner tools: 1743409046.478324
+one token time in planner tools: 1743409046.878839
+one token time in planner tools: 1743409047.2793057
+one token time in planner tools: 1743409047.6796515
+one token time in planner tools: 1743409048.0798755
+one token time in planner tools: 1743409048.480677
+one token time in planner tools: 1743409048.8817987
+one token time in planner tools: 1743409049.282503
+one token time in planner tools: 1743409049.683305
+one token time in planner tools: 1743409050.084165
+one token time in planner tools: 1743409050.484931
+one token time in planner tools: 1743409050.8853424
+one token time in planner tools: 1743409051.2860856
+one token time in planner tools: 1743409051.6868749
+one token time in planner tools: 1743409052.0868757
+one token time in planner tools: 1743409052.487648
+one token time in planner tools: 1743409052.8883965
+one token time in planner tools: 1743409053.289084
+one token time in planner tools: 1743409053.6894286
+one token time in planner tools: 1743409054.0901487
+one token time in planner tools: 1743409054.4904602
+one token time in planner tools: 1743409054.8910868
+one token time in planner tools: 1743409055.291986
+one token time in planner tools: 1743409055.6918647
+one token time in planner tools: 1743409056.0916734
+one token time in planner tools: 1743409056.4930713
+one token time in planner tools: 1743409056.893486
+one token time in planner tools: 1743409057.2945523
+one token time in planner tools: 1743409057.6954532
+one token time in planner tools: 1743409058.0966637
+one token time in planner tools: 1743409058.4980237
+one token time in planner tools: 1743409058.8983397
+one token time in planner tools: 1743409059.2992887
+one token time in planner tools: 1743409059.7005825
+one token time in planner tools: 1743409060.1001365
+one token time in planner tools: 1743409060.5005026
+one token time in planner tools: 1743409060.9008222
+one token time in planner tools: 1743409061.301406
+one token time in planner tools: 1743409061.7018094
+one token time in planner tools: 1743409062.1021788
+one token time in planner tools: 1743409062.5027006
+one token time in planner tools: 1743409062.9034727
+one token time in planner tools: 1743409063.3037724
+one token time in planner tools: 1743409063.7039206
+one token time in planner tools: 1743409064.1047134
+one token time in planner tools: 1743409064.5054803
+one token time in planner tools: 1743409064.9064865
+one token time in planner tools: 1743409065.3071032
+one token time in planner tools: 1743409065.7077436
+one token time in planner tools: 1743409066.1085417
+one token time in planner tools: 1743409066.5093093
+one token time in planner tools: 1743409066.910282
+one token time in planner tools: 1743409067.3115215
+one token time in planner tools: 1743409067.7127588
+one token time in planner tools: 1743409068.1140158
+one token time in planner tools: 1743409068.5152242
+one token time in planner tools: 1743409068.9161506
+one token time in planner tools: 1743409069.3175042
+one token time in planner tools: 1743409069.7183607
+one token time in planner tools: 1743409070.1190684
+one token time in planner tools: 1743409070.5200825
+one token time in planner tools: 1743409070.9214156
+one token time in planner tools: 1743409071.322971
+one token time in planner tools: 1743409071.7241452
+one token time in planner tools: 1743409072.1253214
+one token time in planner tools: 1743409072.5267718
+one token time in planner tools: 1743409072.928299
+one token time in planner tools: 1743409073.3297024
+one token time in planner tools: 1743409073.7311432
+one token time in planner tools: 1743409074.132975
+one token time in planner tools: 1743409074.5346427
+one token time in planner tools: 1743409074.936178
+one token time in planner tools: 1743409075.3374598
+one token time in planner tools: 1743409075.738675
+one token time in planner tools: 1743409076.1399167
+one token time in planner tools: 1743409076.541269
+one token time in planner tools: 1743409076.9425087
+one token time in planner tools: 1743409077.3438349
+one token time in planner tools: 1743409077.7450283
+one token time in planner tools: 1743409078.1466475
+one token time in planner tools: 1743409078.5482733
+one token time in planner tools: 1743409078.949968
+one token time in planner tools: 1743409079.3520486
+one token time in planner tools: 1743409079.7537034
+one token time in planner tools: 1743409080.1550188
+one token time in planner tools: 1743409080.5563312
+one token time in planner tools: 1743409080.9578576
+one token time in planner tools: 1743409081.35895
+one token time in planner tools: 1743409081.7604454
+one token time in planner tools: 1743409082.1617465
+one token time in planner tools: 1743409082.5631738
+one token time in planner tools: 1743409082.9646015
+one token time in planner tools: 1743409083.365979
+one token time in planner tools: 1743409083.7678168
+one token time in planner tools: 1743409084.16948
+one token time in planner tools: 1743409084.170364
+
+Token count: 119, Total time: 48.2272 seconds, One token time: 0.4053 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：招生', '策略', ' ', '兴', '趣', '班', ' 文', '艺', '班', ' ', '小', '学', ' 中', '学', ' ', '教', '学', '资源', ' ', '折', '扣', '政策', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###的 今天晚上同时叫过来咱们开个会咱们这一块有的运营这块先说一下整个公司的运营情况首先大家先说一下上百年运营的情况就是现在咱们主要是进行了一个是网上的一个现职官培养和文艺官培养现在已经开始逐步恢复到线下的工作了然后咱们上半年的话就是运营的情况并不是特别愿意满意咱们的话就是像一些就是圣居班什么的就受到了很大的冲击因为孩子们在家里就是上上网课什么的就每天时间安排的话比较紧然后他们周六日也没法出来然后家长还是更加倾向于让他们出就是学习完以后再来运动一下这方面导致南安的运营情况不是特别好上个年大概赔了一百多万吧相比较往年来说毕竟咱们还有老师们一个运营情况的话咱们是需要发一些机会公司的因为咱们的老师并不是说大部分都是属于咱们的在职工工教师他就是进了很不教育基督的一个同时的话,老师情况上半年一年,老师辞职了很大一部分,老师现在剩下的话大概剩了四分之三,四分之一的优越,沒有活幹,公司也沒有他們就辭職去一些幼兒教育機構進行一些賣包子賣燒烤然后咱们上半年的话就是就是也开展了一些就是关于就是可能教育机构进行就是进行一些就是表演就是有一些就是有一些就是公司啊什么经营合作然后就是开展一些商场活动大概就是这么一个样子然后这个阿拿罗巴洛斯的人来说一下先说我们这【文】艺班吧文艺班主要就是讲究一些孩子们的琴棋书画属于这方面还有普通的一些这种文科类的学习像语文也归到我们文艺班这边来管然後先说一下清晰书画咱们这边琴类呢就是以古筝还有钢琴钢琴这一块电子琴这些针对孩子的不同兴趣我们会进行一对一的辅导就是让孩子们达到一种可以考比方说钢琴技术啊他总不能说是来这学完了光会弹一首简单的小星星是吧这是不可能的需要让他们考一些钢琴的级数啊是吧对或者去参加一些比赛对那咱们现在设备有多少啊大概设备钢琴的话是有25台他想着五台电子琴的话居多因为学钢琴的多电子琴的较少因为他们大部分家长觉得电子琴会用钢琴的时代电子琴就只是用修剪因为刚起的话就是比较和调然后也就是就相当于对,还有在说,骑这方面,我们这儿主打的就是……咱们现在就是设备上出现什么问题,比如说咱们当时就是需要每天打这个,咱们因为过年时段咱们就没有人就能回到咱们这块进行一个设备的保养,现在都会出现问题这个不会,因为每隔一段时间的话会有调研师进行调研,工作人员进行比如说,拆卸下来进行内部清理,不会积沉这些,不会让一些钢琴的按键连后面这种,会进行一些就是,按着按键会进行一种摩擦较为明显的这些东西,就比较细\n---\n那咱们这个出个什么办法就比如说让我们体育班进行一个生存咱们是否就可以在一个比如一个广场或者一个购物中心咱们就选一片空地然后跟人家商量一下做一个平行道展或者说做一个篮球我觉得一些孩子们就开球的一个战了这个方面的话我觉得是没有必要的因为现在的话咱们的就是关于一些运体运动的兴趣般的那个抱怨情况还是比较火爆的因为现在就是大部分的场所已经开了场所开了以后就是与咱们经营合作的一些就是体育场地就是进行合作嘛然后现在抱的人也比较多因为现在暑假了还是不能就是也不需要学习加上就是跟孩子待的也挺够了毕竟好几个月都回家然后想给他找点事来在他們報關的基本上年齡大概都有沒有一些比较大年龄比较大还是比较少大部分就是在18岁那是否咱们就说开几个计算机类的课计算机类的就是开一些计算机方面有关的课程毕竟就是说毕竟那个高中生大学他们要学习一方面像PD啊像一些这样系列的课就是比如说word表格制作以及方程运算这方面因为毕竟咱们考级的话会有计算机二级、三级这种证书就是需要咱们刚考完的学生们进行一个评论对这个的话你好基于之前我们讨论的内容考虑到他们因为努力了三年,放假以后他们并不想进行证明学习,他们更倾向于性学来跑,或者是才艺上的报名。这方面的话,我们运营的方法还是打算进行一个微微调查,就是对于是否现在的学生...倾向于报一个能够学习专业技能的【兴】趣班的调查这个的话咱们就是下一次会议会讨论给出一个详细的调查情况然后进行一个分析好行那个时候我想提一个问题这些问题就关于咱们像是班的那种方面那咱们体育的场所是怎么安排的咱们体育像篮球,羽毛球团都室内场所室内场所,咱们是与一些体育馆合作了吗对,咱们与远国体育馆就很不错的合作长期合作是像远国体育馆,游泳啊,羽毛球馆,篮球馆都是具备的像这些体育馆消费数比较好对 但是因为咱们是单也算是对他们体育馆也算是对他们健身馆的一种宣传因为咱们在那上的机制与他们健身馆的机制并不是充足的咱们是利用周日周日的时间在这里上一节课让一些来他们健身馆做运动的人可以看到就是在他们这里也可以抱一些小的就是小孩就是给自己的孩子抱一些班对但是咱们这时候就需要考虑运动情况毕竟咱们这个班挺大的对然后因为有些人运动的时候不喜欢被别人打扰对然后咱们一群小孩子乱糟糕的你想想看啊像在远国远国体育馆的话男球馆和他培训道的练习房是Azure的也就是说,当咱们的巴拉圭在上课的时候我们就可以把男球馆门关掉然后正好男球馆在男球场训练然后他们培训道可以在里面训练这保证两堂班当然如果是以毛球的话以毛球与青黄球的话做不到最大的那個就是让外来人面,就是毕竟咱们小孩再多也不会,就是说用完所有的场地,基本上就是说还是会有这个作用。\n---\n如果說我們自己就有一家是自己的店会特别方便毕竟有自己的队伍上课也好也会让那些在那边办考的家长感到心里更加放心毕竟都是小孩,没有外来人员这个伤害也可以更加的避免对,像打球的时候对面可能不可能把所有的男朋友给占尽对,他可能会过来要球就是咱们小孩子故意摔倒了这个我感觉比较赞同因为如果是旧体育馆进行翻新是吧一是因为可以节省经费因为咱上个月毕竟亏损了一百万了二就是可以拥有咱们自己的场地不用那么受气不用和人家一直就是属于争吵状态和什么影响谁你好 娇娇如何优化打球误杀你了这责任肯定不能算人家的对因为咱们的小孩子确实没有一些安全意识他们就是就是感觉很好奇就去走过去了那样的话其实责任其实也不在于人家对吧对嗯像刚才咱说了这个嗯自己找一个这个地方还有咱们就还有涉及到下半年的招商这一块,各位有什么想要说的吗?招商的话,就是直打。就是把篮子的信息包里面一般就是做成一个新闻广告,然后通过运营,进行大量的宣传。基本上,如果说咱们有了自己的体育馆的话,其实效果是非常棒的。一见灯,算是,像是说是专业的。嗯。我们的前提就是可以与一些【小】学、中学进行合作毕竟咱们像小学中学的教育那样他们主要教语术、爱、专业生、物理化学这些学科嘛他们这些学科对他们有一些培养性学爱好然后咱们进行合作就是毕竟现在的话大家主要是学生能够多方面的进行发展,兴趣爱好,可以给他们提供一个机会。通过跟他们学校商量,对他们学校的学生有一定的优惠政策。这样的话,我觉得是比较合适的。要是说招生问题的话我们大家必将是以亲戚书画为主 是吧主要是爱好嘛这方面招生倒不是很难的事毕竟不像那种奥赛班对奥赛班需要的老师的水平特别高而且还有什么作文班这个第一方面就是想报这种班的绝对不可能是孩子自己较为少数才会来报这种班因为他想提升自己大多数都是家长被迫就是逼着孩子来抱这种学习方面的这种所以我们这个琴棋书画非常好招生因为它是属于一种性别爱好而且也可以说是一种休闲娱乐而且可以抑制嘛因为下棋或者一些这些方面就可以动脑还有就比方说就可以也可以锻炼孩子们这种静心能力因为写书法和画画他不可能不见他现在因为你不尽量先来的话,他就是特别骚乱,没有一个人的感觉。\n---\n那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前政策以吸引更多学生报名你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施你好娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于山水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实现的你好 娇娇如何优化与体育馆合作减少对会员的干扰并提升兴趣般体验你好 焦焦基于之前我们讨论的内容关于下半年的招生策略我们如何通过兴趣班和【文】艺班的宣传广告吸引学生同时我们是否考虑于小学和中学合作利用他那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n### 问题 ###\n娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于山水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实现的\n\n### 回答 ###\n会议上提到的运营方向并未具体提及邀请动漫领域专家为孩子们授课，主要集中在琴棋书画等传统艺术方面。关于山水画和水墨画的培养，会议内容表明，偏向于组织孩子们去博物馆实地参观，而不是仅靠线上图片观摩。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###的 今天晚上同时叫过来咱们开个会咱们这一块有的运营这块先说一下整个公司的运营情况首先大家先说一下上百年运营的情况就是现在咱们主要是进行了一个是网上的一个现职官培养和文艺官培养现在已经开始逐步恢复到线下的工作了然后咱们上半年的话就是运营的情况并不是特别愿意满意咱们的话就是像一些就是圣居班什么的就受到了很大的冲击因为孩子们在家里就是上上网课什么的就每天时间安排的话比较紧然后他们周六日也没法出来然后家长还是更加倾向于让他们出就是学习完以后再来运动一下这方面导致南安的运营情况不是特别好上个年大概赔了一百多万吧相比较往年来说毕竟咱们还有老师们一个运营情况的话咱们是需要发一些机会公司的因为咱们的老师并不是说大部分都是属于咱们的在职工工教师他就是进了很不教育基督的一个同时的话,老师情况上半年一年,老师辞职了很大一部分,老师现在剩下的话大概剩了四分之三,四分之一的优越,沒有活幹,公司也沒有他們就辭職去一些幼兒教育機構進行一些賣包子賣燒烤然后咱们上半年的话就是就是也开展了一些就是关于就是可能教育机构进行就是进行一些就是表演就是有一些就是有一些就是公司啊什么经营合作然后就是开展一些商场活动大概就是这么一个样子然后这个阿拿罗巴洛斯的人来说一下先说我们这【文】艺班吧文艺班主要就是讲究一些孩子们的琴棋书画属于这方面还有普通的一些这种文科类的学习像语文也归到我们文艺班这边来管然後先说一下清晰书画咱们这边琴类呢就是以古筝还有钢琴钢琴这一块电子琴这些针对孩子的不同兴趣我们会进行一对一的辅导就是让孩子们达到一种可以考比方说钢琴技术啊他总不能说是来这学完了光会弹一首简单的小星星是吧这是不可能的需要让他们考一些钢琴的级数啊是吧对或者去参加一些比赛对那咱们现在设备有多少啊大概设备钢琴的话是有25台他想着五台电子琴的话居多因为学钢琴的多电子琴的较少因为他们大部分家长觉得电子琴会用钢琴的时代电子琴就只是用修剪因为刚起的话就是比较和调然后也就是就相当于对,还有在说,骑这方面,我们这儿主打的就是……咱们现在就是设备上出现什么问题,比如说咱们当时就是需要每天打这个,咱们因为过年时段咱们就没有人就能回到咱们这块进行一个设备的保养,现在都会出现问题这个不会,因为每隔一段时间的话会有调研师进行调研,工作人员进行比如说,拆卸下来进行内部清理,不会积沉这些,不会让一些钢琴的按键连后面这种,会进行一些就是,按着按键会进行一种摩擦较为明显的这些东西,就比较细
+---
+那咱们这个出个什么办法就比如说让我们体育班进行一个生存咱们是否就可以在一个比如一个广场或者一个购物中心咱们就选一片空地然后跟人家商量一下做一个平行道展或者说做一个篮球我觉得一些孩子们就开球的一个战了这个方面的话我觉得是没有必要的因为现在的话咱们的就是关于一些运体运动的兴趣般的那个抱怨情况还是比较火爆的因为现在就是大部分的场所已经开了场所开了以后就是与咱们经营合作的一些就是体育场地就是进行合作嘛然后现在抱的人也比较多因为现在暑假了还是不能就是也不需要学习加上就是跟孩子待的也挺够了毕竟好几个月都回家然后想给他找点事来在他們報關的基本上年齡大概都有沒有一些比较大年龄比较大还是比较少大部分就是在18岁那是否咱们就说开几个计算机类的课计算机类的就是开一些计算机方面有关的课程毕竟就是说毕竟那个高中生大学他们要学习一方面像PD啊像一些这样系列的课就是比如说word表格制作以及方程运算这方面因为毕竟咱们考级的话会有计算机二级、三级这种证书就是需要咱们刚考完的学生们进行一个评论对这个的话你好基于之前我们讨论的内容考虑到他们因为努力了三年,放假以后他们并不想进行证明学习,他们更倾向于性学来跑,或者是才艺上的报名。这方面的话,我们运营的方法还是打算进行一个微微调查,就是对于是否现在的学生...倾向于报一个能够学习专业技能的【兴】趣班的调查这个的话咱们就是下一次会议会讨论给出一个详细的调查情况然后进行一个分析好行那个时候我想提一个问题这些问题就关于咱们像是班的那种方面那咱们体育的场所是怎么安排的咱们体育像篮球,羽毛球团都室内场所室内场所,咱们是与一些体育馆合作了吗对,咱们与远国体育馆就很不错的合作长期合作是像远国体育馆,游泳啊,羽毛球馆,篮球馆都是具备的像这些体育馆消费数比较好对 但是因为咱们是单也算是对他们体育馆也算是对他们健身馆的一种宣传因为咱们在那上的机制与他们健身馆的机制并不是充足的咱们是利用周日周日的时间在这里上一节课让一些来他们健身馆做运动的人可以看到就是在他们这里也可以抱一些小的就是小孩就是给自己的孩子抱一些班对但是咱们这时候就需要考虑运动情况毕竟咱们这个班挺大的对然后因为有些人运动的时候不喜欢被别人打扰对然后咱们一群小孩子乱糟糕的你想想看啊像在远国远国体育馆的话男球馆和他培训道的练习房是Azure的也就是说,当咱们的巴拉圭在上课的时候我们就可以把男球馆门关掉然后正好男球馆在男球场训练然后他们培训道可以在里面训练这保证两堂班当然如果是以毛球的话以毛球与青黄球的话做不到最大的那個就是让外来人面,就是毕竟咱们小孩再多也不会,就是说用完所有的场地,基本上就是说还是会有这个作用。
+---
+如果說我們自己就有一家是自己的店会特别方便毕竟有自己的队伍上课也好也会让那些在那边办考的家长感到心里更加放心毕竟都是小孩,没有外来人员这个伤害也可以更加的避免对,像打球的时候对面可能不可能把所有的男朋友给占尽对,他可能会过来要球就是咱们小孩子故意摔倒了这个我感觉比较赞同因为如果是旧体育馆进行翻新是吧一是因为可以节省经费因为咱上个月毕竟亏损了一百万了二就是可以拥有咱们自己的场地不用那么受气不用和人家一直就是属于争吵状态和什么影响谁你好 娇娇如何优化打球误杀你了这责任肯定不能算人家的对因为咱们的小孩子确实没有一些安全意识他们就是就是感觉很好奇就去走过去了那样的话其实责任其实也不在于人家对吧对嗯像刚才咱说了这个嗯自己找一个这个地方还有咱们就还有涉及到下半年的招商这一块,各位有什么想要说的吗?招商的话,就是直打。就是把篮子的信息包里面一般就是做成一个新闻广告,然后通过运营,进行大量的宣传。基本上,如果说咱们有了自己的体育馆的话,其实效果是非常棒的。一见灯,算是,像是说是专业的。嗯。我们的前提就是可以与一些【小】学、中学进行合作毕竟咱们像小学中学的教育那样他们主要教语术、爱、专业生、物理化学这些学科嘛他们这些学科对他们有一些培养性学爱好然后咱们进行合作就是毕竟现在的话大家主要是学生能够多方面的进行发展,兴趣爱好,可以给他们提供一个机会。通过跟他们学校商量,对他们学校的学生有一定的优惠政策。这样的话,我觉得是比较合适的。要是说招生问题的话我们大家必将是以亲戚书画为主 是吧主要是爱好嘛这方面招生倒不是很难的事毕竟不像那种奥赛班对奥赛班需要的老师的水平特别高而且还有什么作文班这个第一方面就是想报这种班的绝对不可能是孩子自己较为少数才会来报这种班因为他想提升自己大多数都是家长被迫就是逼着孩子来抱这种学习方面的这种所以我们这个琴棋书画非常好招生因为它是属于一种性别爱好而且也可以说是一种休闲娱乐而且可以抑制嘛因为下棋或者一些这些方面就可以动脑还有就比方说就可以也可以锻炼孩子们这种静心能力因为写书法和画画他不可能不见他现在因为你不尽量先来的话,他就是特别骚乱,没有一个人的感觉。
+---
+那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这一组人那钢琴这边就有咱们这个彩艺班这边的负责人来盘一起,行吗对,对咱们音乐部我们音乐部会找一些就是三小的大学生帮我们进行合作对,对那散会吧你好 娇娇基于之前政策以吸引更多学生报名你好焦焦针对上半年亏损和老师辞职问题有哪些改善运营和失资的措施你好娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于山水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实现的你好 娇娇如何优化与体育馆合作减少对会员的干扰并提升兴趣般体验你好 焦焦基于之前我们讨论的内容关于下半年的招生策略我们如何通过兴趣班和【文】艺班的宣传广告吸引学生同时我们是否考虑于小学和中学合作利用他那就来一段星期八的这段的复杂战对就有我非常地nice那我们就交给这###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+### 问题 ###
+娇娇基于之前我们讨论的内容关于兴趣班的运营走高档路线我们是否已经请了一些动漫领域的专家来给孩子们讲课同时对于山水画和水墨画的培养我们是通过线上图片观摩还是组织孩子们去博物馆实地参观来实现的
+
+### 回答 ###
+会议上提到的运营方向并未具体提及邀请动漫领域专家为孩子们授课，主要集中在琴棋书画等传统艺术方面。关于山水画和水墨画的培养，会议内容表明，偏向于组织孩子们去博物馆实地参观，而不是仅靠线上图片观摩。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

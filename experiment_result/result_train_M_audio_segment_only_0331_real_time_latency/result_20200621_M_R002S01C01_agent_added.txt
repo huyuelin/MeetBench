@@ -1,0 +1,78 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 73
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.20s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.33it/s]Initializing KWS models...
+Loading Whisper model...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.41s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.36s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.17s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.14s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.78s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.97s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.78s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.72s/it]
+我002我是总经理006我是主播013我是副播010我是策划011我是运营行好的今天把大家叫过来他们几个这个咱们公司做的一些日常的问题是这样的运营这块咱们目前合作的家都有哪些呢目前我们这块的话是以这个食品还有这个那个电子产品为主因为我们这块的话主要是面对的一些年轻客户所以说我们这边是和目前的几个比较大型的一个厂商都有一个下谈合作然后包括一些厂商包括一些代理都有然后选品这一块的话我们部门现在也是在不断的就是进行一个产品的一个背景调查包括品质这一块一定要把握这一块的话就是说保证我们每天直播出来的这些产品都是大家口碑度比较高然后比较认可的产品嗯 行嗯近期咱们这个用不用增加一些咱们合作的厂家呢这个的话因为我们不断的都是在筛选然后的话是也不断的在和新的公司在进行一个洽谈合作然后因为我们这块也是不断的向往这个其他的一些行业可以再去多一些这种产品毕竟我们这块的话有更多的这个厂商然后我们这块才能做大在抓住廠商的同時要抓住品控好的好的還有就是目前咱們這個策劃這邊有什麼促銷活動可以回可以回樂咱們這個現場的氣氛這個目前因為這個受這個疫情影響一些線下的活動受到限制所以说咱目前推广的主要是线上直播这一块比如它这个比较便捷成本也低这个互动性比较强也是个能够很好的带动厂家和消费者与我们积极互动积极能够了解咱那个对市场对咱产品的一些反馈信息对咱销售还有这个扩大市场都有好处嗯最近准备搞一次直播一个建一个直播交易会就是欢迎咱们的代销商还有广大用户集体参与到咱这个活动中一个是投款系列的销售渠道还有一个就是也投款一下咱们的销售规模吧主播这边有什么意见我是建议跟咱们那个一些別的成員的網絡明星進行互動然後現在不是國家推動DX經濟咱們可以在繁華的DX搞咱們的直播搞一些協助吧要一些投資現在不是有豪車嗎對豪車直播這些吸引演說方式土豪是DX来推广咱们那个流量流利比较说在我们那个直播视频的时候投放红包因为这块现在这个价格是否可以再压低呢折扣力度是否可以提高呢我们的折扣力度目前来说已经是比较低了因为我们所有的活动都比线上他们的这个产品的价格都要低包括线上的一些促销活动包括一些店面就是说我们的价格肯定是有优势的目前不能再提高了对的目前的话可能就是不是很大但是我们这边的话也会尽力的去谈争取能加深合作然后拿到一个更优惠的价格还有咱们目前咱们在邀约艺人方面有什么有什么想要说的吗艺人这一块的话我们现在也是有和一些经纪公司现在去洽谈然后去准备去选择一些目前流量比较大的然后认可度比较高的一些艺人然后来我们的直播间进行直播因为最近的话这个可能是艺人失德艺人这一块的话影响比较严重现在考察艺人这一块也更加的谨慎目前咱们这个主播这方面有什么需要运营这边配合的可以现在跟我们院员商讨一下主要是刚才提到咱们要请明星配合咱们热度至于请哪些明星我们还是倾向于国际化找一些那个中美的脱口秀演员来做我们的邀约明星因为咱们国家脱口秀起源是源自美国的脱口秀明星什么女神了她是脱口秀女神一组来咱们这儿来做直播因为咱们现在往咱们直播的风格去推出我就是断了这些嗯 行那你应该问这边有什么不同意见吗其实我不太建议用国际性的明星然后第一个是可能我们大众对于国际方面的明星认可度不是特别高因为你除非要那种顶级的明星才可以这样的话我们费用会增加然后或者是说因为我们这一块还要涉及到一个语言问题咱们的观众他并不一定对这些语言这块那么精通所以可能会存在一个这个沟通障碍方面的问题这个是这个翻译问题现在咱们用字幕翻译现在这个因为我们现在的直播是实时的你要是说用字幕的话我们这边的难度会增加我建议也可以找一些外国的精通汉文化的留学生他們參與進來一个是走一下国际路线再说老多的国外人士现在都非常推崇汉文化他们加进来的话有利于提高咱这个品牌的美丽度另外就是说咱现在有食品这个向往我建议就是说咱推荐待人后可以选一些医务工作者一些医疗专家他们这个通过他们的这个出来在那个可能这个感性认可度会更高一点复国这个我不太建议找外国的一些主播来进行和他们进行合作因为国外主播他有一个是可能和咱们的方式不一样第二个就是刚才说的语言第三个因为现在大家都知道美国和中国的国际冲突印度最近有发生的中印冲突这个咱先不说这个,先说点别的。目前你这个在复播,当你都协助主播做一些这个商品的推荐,给他们的介绍,还有这个商品的展示,这方面你有什么想要在会上说的吗?对于咱们的商品介绍我觉得目前咱们可以和一些大主播合作但是咱们也不能完全依靠于他们,咱们也要有自己的风格另一个还是主要靠主播这点,有自己的风格当然作为副播的话也可能会配合主播去做他想做的一些事情副播这边目前在这个活动这方面你觉得想要策划,为你策划哪些比较重要活动比较能吸引吸引人的我们可以现在和自动化商讨一下首先我觉得我们可以用当下流行的方式比如一些喊麦或者或者唱歌至少要有一个才艺当然不能说我们不能不可能说要符合所有人的喜欢但是我们会跟跟进这就是现场气氛的调动所以要跟现场期待你们在促销活动方面你有什么想说的吗第一个我们要保证我们的产品质量第二个我们要尽可能给我们的粉丝最大的福利主播这边是什么不同的这个我还是倾向于找外国的那个我说的是脱口信演员但是不一定是就是我因为那个为什么咱们那个是我们主播风格是跟国外的不太一样国外它是比较真实或者是竞技比咱们国内要少多所以就是说一个是语言翻译问题语言翻译问题如果是在直播时候有困难咱们可以做一些短视频我们短视频平台可以给你们编辑这个很简单主要是互动的效果就是咱们跟国际接轨这个影响力造成的实际上我们只要是不找那些年纪很大的费用也不会太高策划这边有什么不同的这个建议我觉得还是可行的毕竟是咱这个产品还需要走向国际这些东西通过一个外国同学演员来说能办得到咱们的产品向外推荐一下因为毕竟咱国内一些主播什么的他们可能对国内市场并不是太了解所以说通过一个外国的一个透过学员来介绍咱的产品是一个很好的桥梁我觉得还是可行不过这些东西需要是一个中西结合就是中国的一个主播和外国的透过学员产生一下互动可能效果会更好一点这是我的一个想法嗯 行富伯是这样的目前咱们这个授权客户的咨询还有链接提前的更新这方面有什么想说的吗目前客户遇到了一个问题多么退换后怎么处理的老师首先我们这在物流上可能会产生一些问题因为运行的影响物流的更新速度可能会慢这个我们要提出跟物流去沟通客服的话我们要找一些有耐心的不能说就了解我们这些人就像现在淘宝一些客服就比较恶劣对对对找一些这个性格成熟的一点对性格必须成熟对可以继续说对于售前图片这些我们可以因为现在是主播嘛用主播去大洋溢主播和咱们所销售的这些东西比如合影或者干嘛的这样的话我觉得效果就更好一些行好的还有就是目前在这个复国这边还有什么难处吗可以说一说让大家都把你解决一下复国这边主要我主要还是配合主播的一些想法刚才主播还是说的和国际友人有没有一些想配合的我觉得咱们不一定要找特殊摄影咱们也可以找一些留学生国外的中国的一些留学生毕竟他们在中国留学他们也会一定的汉语这样我觉得就可以更好地来结合咱们的直播目前咱们运营这边畅家有哪些活动和通过策划促销活动来活跃现场气氛并提高销售厂家的话现在我们现在都是按年签的条约这边的话就是因为我们现在跟厂家一直是在谈这个价格这一块所以说我们现在是其实是需要这个我们扩大的因为我们可能我们现有的这个的话对于我们谈价格不是很有优势所以说我们现在可能需要增加更多的一个直播人员然后包括一个直播次数这样的话我们的销量上去我们就可以就是有跟他们去谈价格的一个更好的资本目前咱们是否需要增加自己的一个活动目前来说咱们的活动其实排的还算是可以的因为可能密度也算是比较大一个月差不多会有两次中型的一个活动这样的话但是可能就是说可能小型活动我们可以去增加一下然后去进行一些小突破或者是小刺激然后去吸引观众日常可以到我们这边直播间来可能会更好一些还有目前咱们这个下周或者下个月我们进行主播的商品都有哪些呢下周的话我们目前安排的是有10款的这个食品还有一些这个我们还有谈了一些这个手机合作然后包括还有一些这个日用的一些小商品小家电现在我们具体的主要是这些东西嗯行策划针对这方面都有什么样的活动呢针对这些目前现在一个是向国际化发展小家电小商品现在目前是国内发展非常迅速一些智能化的服务还有一些个性需求个性需求的制造也非常的突出所以说这个把这些产品都展示出来推荐给大家还有的食品食品主要还是讲健康推荐一些健康食品健康食品是找医疗专家来去推荐小家电可以找一些明星也可以找一些家庭主妇通过他们切身的使用体会来向大家介绍介绍一会儿根据咱这个大数据分析的话然后再确定咱的销售渠道我刚才讲到这个大数据大数据我想说说包括咱们在咱们这个平台购物以后还有商品还有一个线有一个沟通问题唯一沟通的一个咱们还有一个沟通团队直播的时候沟通团队咱们用的大数据就是切换如果是女粉丝来我们就是切换一个男的服务生去接这个事嗯接线如果是嗯如果是男的男的粉丝来了我们切换个女性但是我们得对他们的声音嗯嗯都是有要求的啊嗯就是也要做市场调查嗯大数据调查啊如果是喜欢哪种声音风格我们得制定标准对他们来进行要求或配合嗯达不到标准呢我们也是不让他们参与这种工作嗯行服务员这个嗯我觉得还是这个就跟我们现在所使用的高队地图一样它用户可以自己选择比如像有好几种声音用户自己想用什么声音就用什么声音一个是这个还有一个就是我们现在所带的产品一个是防止被成年人给我们刷礼物我们这里要做好一些防范一定要在直播间或者在一些短视频中打出一定要的字幕然后比如说如果真的有卫生业人给我们刷很多礼物的话我们也要和平台和我们的运营策划都商量好要凡比这个人家多少东西卫生业人不让刷礼物有这规定吗现在法治上有这规定吗你好 嬌嬌基
+[Text Detection] 在 1176.29 秒检测到关键词 '基于之前',current_time: 1178.00, 问题文本: 基于之前我们讨论的内容关于复播在直播中协助主播进行商品推荐和活动介绍方面你有什么具体的建议或想法吗你觉得如何调动现场气氛吸引观众参与互动提高直播的吸引力和影响力呢现在其实应该是有的然后包括前段时间的话新闻不是也有这个
+于之前我们讨论的内容关于复播在直播中协助主播进行商品推荐和活动介绍方面你有什么具体的建议或想法吗你觉得如何调动现场气氛吸引观众参与互动提高直播的吸引力和影响力呢现在其实应该是有的然后包括前段时间的话新闻不是也有这个我得意见那你呢?这块的话,因为我还是说我们需要法务这块的话把我们的条款列清楚因为只要有条款我们这边的话,主动签就在我们这边就算是我们可能会处理一些纠纷啊或者什么的,我们也不会落在下方这样的话,对于我们来说也是一种保障对对对 同意那个就像河里边那个禁止游泳牌子挂上了他都要跳进去游我们也没办法可以多加提醒是吧尽量减少一些并没必要的冲突在说刷礼物的时候你怎么判定他是为什么人呢对这个事是吧在能判定的情况下可以我们有提醒义务没有监管义务行那在这方面咱们一定要宣传要做到位这个提显了这个一定要做到还有就是这个月咱们这个哪些条上面这个销量比较低了哪些条量比较低这个我们不是代销那个光骨胶销量不高什么原因什么原因他们就是还是这个销售习惯问题他们愿意一般是销售习惯是愿意在那个线下口对网络上还是依赖度还是有一定怀疑还是因为效果没成体现出来那是什么好的解决方案这个的话我建议可以去请一些稍微有流量的一个男艺人过来帮我们带一下货因为我们可能看直播的更多可能是以女性为主然后虽然是女性但是他们一般会为自己的男朋友或者是父亲或者是兄弟这方面去购买因为女性的消费是很容易冲动的只要我们这边的话可能请一个认可度比较高的男明星然后女性的话这块消费会刺激到目前这个搜索率是多少目前的话我们现在搜索的还是排在前三位的这一块因为我们不可能就是说虽然说我们一直也在进步但是其实我们的这一边兄弟企业什么的他们也都是比较那个什么的所以说我们竞争还是比较大的是否能可以拒绝呢可以但是就是说我们现在是因为我们现在是属于一个轮流差不多置顶的一个因为我们如果要是长期我们资深置顶的话,费用这块可能会加大。主播这边想要哪个部分配合你的,现在再回想事实。刚才说那个刮胡刀那个找那个男女性配合,这是你另一类的找,因为咱们还有那个汉毛机,挖汉毛,女校挖汉毛的,有些这个产品啊,一块盖这个东西。还有现在那个家用理发器因为疫情原因,很多家里都在家里面提这个问题,与哪个品牌合作,这样有保证的,而且容易让粉丝好操作的品牌,我们需要各个部门认证考察,或者是竞标,让他们来参加我们公司的商品。这个的话可以考虑现在也是和几个经纪公司都有合约的这样吧就是说看大家现在就是说比较倾向于哪些艺人我们先对他进行一个备调然后确认这个艺人如果没有问题的话我们就马上就可以去谈合作了那你一个人就是没有发现那个热度他烧牛率比较高这个不太好我感觉要是这些产品首先这个家庭比较和睦这个艺人我觉得也属于这个你
+[Text Detection] 在 1547.64 秒检测到关键词 '焦焦',current_time: 1519.00, 问题文本: 你滴滴肉吧他没有干什么没有成价呢那蛤蟆滴那个成价了关系吗没有这个当然没有这方面你们我想你还有还有个费用问题呢复活还要考虑机器还要考虑一些大明星的档期大明星不可能说专门出出来一些时间和你去合作人家人家人家的档期人家你好焦焦如何提升商品销量
+滴滴肉吧他没有干什么没有成价呢那蛤蟆滴那个成价了关系吗没有这个当然没有这方面你们我想你还有还有个费用问题呢复活还要考虑机器还要考虑一些大明星的档期大明星不可能说专门出出来一些时间和你去合作人家人家人家的档期人家你好焦焦如何提升商品销量他们使用这个航班机的可能性更大一些是吧嗯咱们目前刚才说了这个物流配送较慢这边应该有什么解决什么去解决物流这块的话现在因为是618这块所以说现在的话整体的这个物流压力都是比较大的咱们这儿的话现在也是在积极的调配人手包括我们现在也在想在一些我们就是客户比较集中的地区是不是我们也可以有我们自己的一个物流部门这样的话就是说我们可以达到一个当天的一个快速配送这样虽然说成本比较高但是对于我们这个服务这一块可能客户信赖度会更高一些各位还有什么想说的吗?跟我们可以互相讨论一下现在把各个朋友都叫过来了各个朋友需要需要配合的都可以在会上说一下现在还是我比较倾向于主推一下家庭小家电产品这一块所以说给大家听一下老多祝福一些消费制作食品制作他喜欢在家里来搞你像刚才主播也说了家用的理发设备包括家用制造面条的蛋糕的食品的包括打扫卫生的这些小家电都特别热销并且一些厂家也试试研发了许多类似的产品正好是咱一个大力推广的机会我建議在最近的工作重点往这方面浅写一下以后下一步我非常赞同啊就是下路咱们就是在改经济呃在家庭里边的所有的自动化以后那我们可以策划一个这个相关的一个主题然后进行一个主题宣传活动就是摘经济吧我们就是讲的摘经济是嗯行目前目前咱们公司在直播平台购物上都面试哪些平台了?快手,抖音,微信实践平台,大头鱼,米乐,火山版很多主要是有人气的有潜力的或者是他让我们付费的我们都都采钱因为他们这个视频这个平台竞争的非常激烈都是现在往里边砸钱的咱们目前这个受众平体目前有什么优势吗这些平台各有各的优势吗现在还是抖音和快手名气大点快手主要是带货抖音它是现在很多政府部门或者大报他们都在快手上相对于快手就有点正统化了这块的话因为我们抖音和快手现在目前针对的一个消费群是不一样的然后我们会根据他们不同的一个用户习惯然后会进行不同的一个方案或者是一个产品的宣传因为比方说我们快手的话可能会北方人居多一些然后我们的那个中小型城市以下可能会相对来说人数会更多一些这样的话我们可能会去推一些比较实用的一些有优惠政策的一些产品这样的话他们现在的认可度还是蛮高的包括你像我们现在如果做年轻人的话也会去找一些就是说年轻人喜欢的平台就是我们现在是主要是因为我们和每个商家合作我们会要他们的一个用户的一个数据报告我们会根据他们的一个数据特点然后进行分类现在比较好B站经过后浪以后,热度也挺高的。B站这一套我们现在已经在洽谈合作了。小华,我会根据大家伙的这些想法,回去做一个策划方案。出播者还有什么想要,要求这个策划,关注你们的。我觉得B站这个主要是中青年搞得多B站主要是青年人因为现在B站好多青年人做一些短视频短视频制作像B站直播的话没有抖音和快手做得那么好当然B站比较属于那种游戏区比较多我们当然也可以考虑在B站做一些游戏聚播游戏娱乐聚播嘛我们更强要去卖一些自己的产品B站做一些视频投放B站毕竟是视频量,视频比较多我们就是做一些视频投放也为了代表我们的人气突出我们的中心T站这一块儿的话,因为它属于年轻人比较多虽然说它可能流量相对来说没有那么大但是它的一个小圈子文化是比较严重的他的顾客中程度方面会更高一些然后就是说如果我们维持住的一定的粉丝量然后我们对于我们来说可能这位粉丝就是我们的一个忠实粉丝了B站他算是创造热点这个平台我们应该继续关注跟进B站这个平台一开始的时候在13年开始推出这个平台的时候他主要是以二次元和动漫为主的开始走向大众化因为它也要生存了对所以我们也可以适当的做一些二次玩的一些比如说像现在抖音上有一些什么漫画脸它也属于一些二次玩的东西我们也可以把咱们的产品比如电子产品咱们也可以做一些二次玩的一些比如说我们可以把主播的把主播换成漫画脸也可以打印一些图案放进去不可以买那些好 请问是好 把一些导致您宣传我们公司嗯 行嗯 还有就是咱们这个各部门的一些这个问题 各部门目前都有哪些问题呢网络这个主要需要更新设备增加画面的清晰度我们虽然说是做的是手机这个平台的直播但是我们设备要我们的设备不能光用手机这类的小设备一些大的设备就行了复播站主要还是配合主播的一些活动就是帮主播的一些复播应该带主播及时就场或者及时提醒一些看法的對 對 接方面還还有网上的一些国家规定的规则之类的要及时的提醒主播因为主播经历毕竟有限了对行好 策划我觉得刚才大家伙说的都挺好反映的东西挺多但是说咱无法性推广的推销产品必须得选择一个重点回头我把这个策划做出来以后大家伙再讨论一下只能說咱選一個投資業
+[Audio Detection] 在 2150.00 秒检测到关键词 '好交交'。
+detection_time: 2150.00, current_time: 2139.00
+形象都是一种伤害所以说我们现在是在筹备网络疫情部门其他各部门还有问题吗没有问题的话咱本次会议就先开到这好的
+[Audio Detection] 在 2248.95 秒检测到关键词 '好交交'。
+detection_time: 2248.95, current_time: 2232.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/out_001-F_0.wav
+问题音频片段长度: 108544, dtype: float32, min: -0.0223236083984375, max: 0.02335357666015625
+问题音频时间长度: 6.784
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/out_001-F_1.wav
+问题音频片段长度: 108544, dtype: float32, min: -0.0223236083984375, max: 0.02335357666015625
+问题音频时间长度: 6.784
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/out_001-F_2.wav
+问题音频片段长度: 108544, dtype: float32, min: -0.0223236083984375, max: 0.02335357666015625
+问题音频时间长度: 6.784
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/out_001-F_3.wav
+问题音频片段长度: 108544, dtype: float32, min: -0.0223236083984375, max: 0.02335357666015625
+问题音频时间长度: 6.784
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200621_M_R002S01C01_agent_added/out_001-F_4.wav
+问题音频片段长度: 108544, dtype: float32, min: -0.0223236083984375, max: 0.02335357666015625
+问题音频时间长度: 6.784
+
+会议数据处理完成。

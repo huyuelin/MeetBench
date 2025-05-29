@@ -1,0 +1,896 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 70
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.18s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.23it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:03,  3.99s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.47s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.49s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.07s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:10<00:08,  4.17s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:14<00:04,  4.35s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:16<00:00,  3.38s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:16<00:00,  3.29s/it]
+那我來01975018老師005保育員請我們來開會哪個部門先說呢哪個部門我們保育部先說吧然後首先就是保卫科主要就是对孩子的安全进行一个保障现在的一个正法就是只有家长来接我们才会把孩子让他跟着家长走如何确定他是家长咱们的老师会在孩子第一天入学的时候对他们的电话进行一个记录咱们通过喊名字然后将家长的电话信息对他进行一个核对咱们孩子交给他就是假如说这一块现在咱是这种方法是吧其他其他部门有什么我们可以用卡我们就是一般的就是对就是这个卡上都有相片如果是经常谁来基本上都是这个人如果他换人的话就提前跟老师说我记得好像是但是他們有這個卡是临走之前是孩子带着这卡来了之后再把卡交给老师来然后接着是带着卡来接孩子对对对是然后再出这张卡然后才能接走孩子对没有这卡不让领让孩子去然后孩子会认识家长因为要关注家长要带卡一般就跟老师老师孩子送出来对对老师认识这个确认一下,要不然孟生人弄走就跑了而且孩子还得认识他,对吧这是双重的一个保障毕竟这个是大事嗯各位朋友给你提了这个建议是不是有改正嗯这个方法就不行了现在就行了嗯行那进去然后我们还有一个任务就是保护那个幼儿园的财产嗯咱们的话就是每天准备饭三队分别进行一个巡逻检查对于一些晚上咱们也有宿舍人员就是有宿舍人员防止他们有一些想要进入咱们幼儿园偷窃的咱们安保人员会进行巡逻检查现在家长对孩子比较重视原来的一些设施对孩子的安全对对对对于儿园的财产进行保护因为现在家长对孩子们的安全问题考虑比较多然后散弹这块的话就是打算多招收几个保育人员加入到咱们的学国队伍当中就是收到五四九号那我先不说了保育二郎保育这边说完了对说完了刚才郭某您提建议这一块您要及时地去改正对我们会进行就是就是连入新设备然后按照刚才所提的意见咱们就是把他们的安全方面再提高一下嗯然后每天咱们现在安保这个护具多吗这一块哦安保的话咱们护具的话就是有警棍嗯呃别的或者是这个警棍对警棍插子这一块有吗插有嗯有有拉门那插有那个是有的嗯就是呃咱们有拜拜就是有备用的,也就是正在使用的每天写生,开写放写的,要保卫人员保卫人员也是有专门的衣服的,上面写着他们的编号以及他们的姓名在这方面就会做一个专业的专一主要就是上下学孩子上学的时候我们学校的门口还有墙里边都要巡视的怕孩子自己跑出去我们学校现在都是这种炸弹式的炸弹就怕他跑出去有的孩子比较强强啊什么的咱们保卫人员是咱们总的这个每个屋子监控也都要都赶上每个屋子坐在那里就是这条咱们就是各个监控的一个东去五四角这一块监控设备要换到最西条这一块基本上就是四个带点以及就是就是铁带按锁都会有伤口进行一个监控我们保育员这边就是反正主要的就是保育员就是说得热爱这个工作是吧因为他就是他就是得必须得保育员他得爱孩子对还有就是这个卫生就是本地的教室啊孩子睡觉这个地方卫生清洁一定要做好严格执行卫生消毒还有孩子吃饭的饭盒餐袍还有喝水的水杯每天晚上我们就是说在教室里头有一个桌子上面都写着一个格一个格写着谁的名字那个水杯都在里边放着因为它都是统一的水杯白天的时候一个人用一个但到晚上我们拿走就全消毒,因为我们这边现在都有消毒柜全部消毒以后,然后白天我们再放进去毛巾也是,水杯啊,毛巾都得消毒然后卫生,毛巾就是这个,卫生间,清洁也得消毒就是保证孩子洗手的地方都有洗手液啊现在这个洗手一定要干净啊孩子吃饭,因为他每天洗好几次手比如说吃饭饭
+[Text Detection] 在 519.69 秒检测到关键词 '娇娇',current_time: 496.00, 问题文本: 饭前洗手 吃水果洗手一天得洗三四次手然后有时候我们还去操场运动运动回来也得洗手必须有这个洗手液然后还有就是每天晚上我们就是下班以后呢都得进行这个擦地擦地都用巴士的方式全是用巴士的方式你好娇娇如何确保家长接送孩子时的身份验证流程更加安全高效还有消毒
+前洗手 吃水果洗手一天得洗三四次手然后有时候我们还去操场运动运动回来也得洗手必须有这个洗手液然后还有就是每天晚上我们就是下班以后呢都得进行这个擦地擦地都用巴士的方式全是用巴士的方式你好娇娇如何确保家长接送孩子时的身份验证流程更加安全高效还有消毒孩子都接走之后,我们进行消毒消毒以后,人们八四日吸的味道不是很大擦完以后第二天早上,他都来了都会通风因为老师都得七点多就得来一天到了吸食物,鼻液要我们严格按照说明精英消毒晚上走的时候,我们都有消毒灯紫外线灯都会开的生育院的样子就在这一块孩子的玩具每天也得消毒随时开窗换气每天开好几次虽然我们也开了冬天但是也得开窗还有孩子这些吃饭有的孩子吃饭多老师都会添饭比如说我们小班的时候孩子有时候不会吃饭早就每个孩子接餐了还有饮水一个小时喝一杯这些饮水要充足这样才不会生病饭要吃饱饮水这方面我们家长说一送孩子上学我要孩子上伙然后就一星期就送不了了你看我们班我们班喝水每个小时不喝一回吗如果运动回来必须加水喝水的话一般就是说第一杯水老师都会看着他我们就是保育员就怕喝有的孩子喝水多要第二杯吃饭也是饭第一碗都得保育员喂进去但是如果第二碗的话有的孩子确实他就不想吃因为孩子发量小也不会再强迫也不能说孩子吃太多也会出言不及孩子会吐床铺一定要反正收拾干净可以那样还是自己整理床头大伙都可以就是协助我们的老师主办老师就是孩子们每天都有一个户外活动嘛都会协助他对寻旧的孩子得照顾还有注意安全还有孩子比如说小时候刚刚参加上班学小班的话还尿裤子什么我们都得会带上换一下被子得晒一下因为我们学校都有备用的这个被褥监督孩子就是洗手就是洗手擦先擦后 洗手别的就是没有什么反正主要的就是这些主要是在热爱这个工作喜欢孩子其实他跟我们幼儿老师一样最起码就喜欢孩子我们这个保育儿工作因为小孩会就没有耐心了就觉得而且日复一日的年年都在做这一样的工作把孩子這些吃饭喝水,我们都是晾一下到一定的温度但是不能很凉,要不然孩子会烫着了现在我们不是有手工课,刀剪什么的也都得要保管好像我们老师这个,之前没有保育员的话,我们工作确实挺累有了保育员,工作相对来说好很多分擔了一點因为毕竟我们跟学生打交道是最长有时候小学生有些小孩子有人特别听话还有省心点有的孩子就特别调皮然后就是有时候是挺不好管理的因为现在孩子都比较娇气打也不能打你妈也不能骂是吧当然咱不认可咱是不会采取这种方式的但相对来说你对于一些小孩他又特别没规矩的话必须得采取一些研究就像之前来个小男孩,特别调皮他就被家里宠坏了,家里人唯一怕的就是他爸爸只要他不高兴,他就抓别人脸,然后还抓破了这种小孩就是最调皮,也是不好管的后来跟家长沟通之后,才发现家里宠坏了你捅坏了,爷爷奶奶都让着他小爸了,鼓里哼哼有的家长沟通人家觉得他不够用人就觉得我还交给你就是你原理的责任出啥事就是你原理的事跟我们家长没关系其实这个有时候我们工作确实有时候也不好展开但是这个该给家长就是开一个比拒吗也不光是学校的事对家长的心理配合也不用原来小学听学都是一样的一般的老师就是说今天犯什么错误他不会留家长来跟家长沟通对另外咱们都有微信群到时候孩子今天什么情况或者一些精彩的表现我们也会发给群里头家长也都会看见有些可能他就是说可能就是自己喜欢写的刚才出现的问题怎么解决的刚才出现的问题通知家长可以这样沟通交流之后发现就是宠官就是一个小爸爸然后就是对孩子进行教育然后就也是希望家长能够配合然后就是家长也是保证如果孩子再出现这个情况的话就是说因为毕竟抓上那小孩对方家长也很心疼对不对那肯定会对孩子进行一些补偿什么的虽然不大但是也确实得表明态度啊对吧表明自己认错一个态度他会就是说首先就是对小孩家长进行道歉另外的话如果说再出现这个情况如果是对自己的情况的话,建议他回家待几个月。让他如果不那么霸道,不再欺负别的小孩了,才会再送过来。主要跟家长沟通好,家长教教育,但是我们不会打不会骂,有些方法也得用。但是会被排斥会被排斥你可以告诉他的父母如果孩子继续这样的话可能没有小朋友了对,那你的孩子就很不舒服,就是你愿意看到的情况对,是主办人是什么类的是家长,是亲戚孩子特别就是,如果教育不好,他们家长也不管对那这个方面的话有的要求退学的就要求退学只能要求退员了不能因为一个影响到别人有很多人但是有的比如说家长配合我们也会用心的特别是孩子不配合,家长也不配合真的 我们这种玩意儿不像主要是孩
+[Text Detection] 在 1009.88 秒检测到关键词 '好教教',current_time: 992.00, 问题文本: 孩子不会和家长,不可以,基本上不用直接,不用跟我们说话,咱直接就劝退就行了,对,咱就不管,不管他是什么样子。主办老师其实挺快的上课,现在就是孩子都很好教教。基于之前我们讨论的内容关于幼儿园消毒夜吸适合通风的问题我们如何确保消毒夜吸是比例符和规定并且每天开窗通风
+子不会和家长,不可以,基本上不用直接,不用跟我们说话,咱直接就劝退就行了,对,咱就不管,不管他是什么样子。主办老师其实挺快的上课,现在就是孩子都很好教教。基于之前我们讨论的内容关于幼儿园消毒夜吸适合通风的问题我们如何确保消毒夜吸是比例符和规定并且每天开窗通风因为这项约定你看这样的人太费精力了对因为咱老师毕竟是有限的不能光看他一个孩子然后另外就是说我们这个教学这方面就比如说因为毕竟他也是为小学做准备而且就是说孩子这个其实从出生一直到六周之前是一个关键的时期如果引导好的话他可能就会长大之后就可能会为你社会做很大贡献主要是在习惯这方面养成我们必须让孩子养成一个良好的习惯还有另外就是说学习这方面的因为我们也不提倡我们提倡的是寓教于乐在娱乐中得到自己的学识经验什么的比如说我们像咱们的形体课比如舞蹈课每天不都在会做操吗也是增加孩子那种律动感还有音乐节奏对然后另外就是咱们有各种各样的那个课那个就是特色那个手工课美术课舞蹈课音乐课这些都会而且我们会有不同的那个就比如说这节课我们是那个手工课可以教大家剪个小鸭子呀下节课我们可能就叫做折纸课就锻炼手指的灵活度然后就是说另外就像那些像大班的一些小朋友就开始写字了对他们已经已经知道绿耳园的而且也是正方为小学做准备嘛所以我们就可以教授一些就是比较就是小学的一些内容就比如说一到十然后来加减 简单的加减法就让他们就是因为好多小学他可能就是有些不负责小学他可能都认为你幼儿园学过了其实国家是不提倡孩子就是幼儿园期间学东西的但是有些他们小学他们可能就省事就为了减轻老师可能涂上汗学校出生事就不愿意再教授了课幼儿园现在都不教生母孕母就在学前班教了对,所以我们可以简单的教授一些简单的实术,因为毕竟生活中也会用到对因为咱们孩子的情商、智商还有一些美商、才商咱们学校都是为孩子这方面努力像那个智商跟那个财富情商我们都经常是进行培训的因为毕竟就是说通过一些课孩子们可能会感觉到还有些是教孩子们守一些规矩他们可能对人情世故就稍微有一点了解对咱社会就可能就说知道是社会原来不是说这个世界不是说我的天下我想怎么着就怎么着我是要听从对我是要有我得符合一定规则然后我才能得到我想要的情商是很重要的是不是比学习好还要重要还有就是现在孩子他像个三四岁五六岁他已经这方面已经有有思维了他应该懂事了所以咱们老师要引导他对引导他是非什么是对什么是错他应该对这个有概念而不是我那就是对的他们那都是错的打人一下你说这是对的 这是错的别人这就错了咱就要教育他所以就是说对咱们那个老师的素质就要求就比较高然后另外就是说因为咱这不是像那个财商这也算是咱一个特色嘛其实就好多小孩嘛其实像你观察一些像那个教育比较发达的国家欧美国家他们就是说孩子就很小就认识金钱知道金钱是一种重要的流通的一种货币然后可以让他们买卖东西交换的东西之类的其实我们这也会开展一些这些你不要说这么小给孩子谈钱不好其实不是这样的因为咱中国肯定以后也会经济越来越发展对吧他那个有财商财商也是很有必要的这是说咱打了一个特色然后另外就是说在老师这方面因为就是说还有些就是咱们这个英语因为有小孩学英语他们这个时期也是非常好的就是说咱们外教目前只有两名就是说根据咱这情况吧原来情况的话咱其实还可以再增加一名这样的话一般人应该是听一节外教课然后这样的话家长也更愿意幼儿园更愿意把孩子送到咱这因为他觉得就是说上英语课有专门的外教来教的话都是比较喜欢的他是觉得要提倡幼儿园海樂學 國學比如说一些三次电话整个传统文化因为咱这个也有这个课程咱就也有英语也有这些课程中英双结合嘛但是不会强加于他们因为就这好多是双语二人不会做他们的游戏其實他這個部分其实幼儿园他不是说让你学这些英语,不是非得背下来,是那个耳目染,感受一下这个。他们后面就是经常说英语教学的时候,就会反应给他们。嗯,这个不是的,因为咱们是有专门的外教,他们的思维方式,跟咱中国人的思维方式,他们是会用美式的,欧美式他们那种思维给孩子教授的。而且是说的边唱歌边跳舞简单的学习不会说特别热的简一点小学那种还有游戏特别简单可能孩子模模糊糊有一种这样的概念可能就算到了初中高中突然发现原来是这样的我小时候其实有学过这样的因为好多科学研修发现吧其实有好多就是些人他们都是小时候教育确实很重要感觉不到但是长大之后才发现对自己其实有深刻影响的也不会担心双语教学的话会对孩子造成斯文混乱语言混乱这个是不会的因为男的都是有保障的就像男的外教一周就一节平常咱大部分也都是中文教授像国学也是这样的话像三十经一几个月这些孩子被送入国之后他會懂得比如說笑道啊對他心里会有这种概念他会学到哪些我要做哪些我不会做他都会有怎样对待父母阿姨奶奶对因为现在幼儿园情商教育也特别高因为现在有些孩子就是说为什么第一名他经常考第一名但是他为什么没有第二名当中在社会上发展得好因为他第一名就是死学习了什么都不懂这不行我们就是说全方位的学生其实他优越一点对什么都是理所当然的而且他朋友也不多还有就是咱们那些还
+[Text Detection] 在 1542.79 秒检测到关键词 '娇娇',current_time: 1519.00, 问题文本: 还有像那个失败教育因为好多咱们都光讲了一些就做得好的同学就有些可能他努力了但他却是失败了可能就说但是我们也要及时鼓励因为有可能他就因为我这次失败了我感觉挺丢人的我就不敢尝试了这个就是多鼓励孩子你好娇娇如何平衡双语教学与国学教育以培养孩子全面发展嗯 怎么去面对
+有像那个失败教育因为好多咱们都光讲了一些就做得好的同学就有些可能他努力了但他却是失败了可能就说但是我们也要及时鼓励因为有可能他就因为我这次失败了我感觉挺丢人的我就不敢尝试了这个就是多鼓励孩子你好娇娇如何平衡双语教学与国学教育以培养孩子全面发展嗯 怎么去面对到幼儿园吃乌宝啊或者一些现象所以我们制作了非常精美的食谱比如说我们这个中类呢光粥我们就有玉米粥蛋米粥小米粥八宝粥鸡蛋汤鸽子汤但是鸽子汤我们不要鸽子汤太酥了对于小孩来说我们叫翡翠珍珠汤为什么这么叫呢因为我们那个小面把它拌得特别的小就像小珍珠一样我们的肥脆是做的一些脆的菜叶比如说韭菜菠菜做的脆脆的一些菜叶然后加一点点的西红柿也是做的比较脆所以非常的从外面上看非常的漂亮就是很有美感一看这个色泽小孩子就喜欢放在一个小白碗里面一个小白勺然后有这样的所以我们这个汤叫肥脆珍珠汤这是我们的汤类主食有小花卷我为什么特别强调这个小字因为平常我们在外面买的花卷比如说二奶一个对吧或者说馒头二奶一个对于小孩子太大对不对所以我们这个是排取原始嗯对比较比较小的但是比较有实力比较有小孩子的食量我们做这些小馒头小馒头小花卷小糖包还有这个米饭彩色饺子对还有这个米饭还有彩色的面条我们用这个蔬菜汁我们自己压着面条用灰霜还有这个彩色的饺子五彩饺子我们是每个星期保证孩子们能吃一次饺子能吃一次包子然后这种馒头花卷还有米饭我们也是搭配着包括这个菜我们也做到了荤素搭配凉热煎油基本上一天不重量然后一个星期给孩子们调开这个花样在保证孩子的这种口感同时保证了孩子的营养在这一点我们还是下很大的工作而且现在不都有这个微信群吗我们会把这个菜谱一个星期我们制定了一个下个星期的菜谱在中午下午的时候我们就会报到办公室然后发到这个群里面让家长做一个监督家长回去之后会问孩子呀对不对比如说孩子有家长提议就是在营养搭配上比如说肉类我们不能少鸡蛋肉类比如早上我们会让孩子有奶有鸡蛋或者说中午晚上我们会给这个孩子就是有这个肉类的对吧那个排骨呢我们都是选择那种软排做成小块因为都是小孩子不能弄一大块那种排骨头绝对它不适合孩子吃都是小块的软排排骨用的都是那样的料然后鸡翅一人一个这样我们就是做的当然是很精致的所有的饭菜都是非常的精致很小心的我们去做其实就是看我们幼儿园的饭菜的时候大人看着都馋就是我上幼儿园的时候我没有吃过这么好你们现在为什么孩子回到家的时候不加餐呢因为家里没有幼儿园吃的好包括星期六星期天父母有时候星期六星期天他们也不休息呀把他送到爷爷奶奶家爷爷奶奶会做呀他们这孩子们都盼着上幼儿园星期一特别高兴这也是三餐还有两餐俯视这个中间我们会给他们一些水果一人四分之一一人四分之一每个人一个桃子我们就可以把中间的核给他去掉给孩子们分着吃孩子们在这种分享过程中也会得到一些快乐包括水果的认识我们今天吃桃子可能原先在家里只是给他们吃没有给他们讲解桃子的营养有的孩子真的记忆力非常的好这个阿姨给的她是保育员给的她回家之后会跟父母说什么味道的我吃了多少今天我吃的什么告诉父母其实有一些食品水果比如说草莓当然就是15块钱一斤的时候我们就已经买了父母是舍不得买的这一点家长对我们的后勤的这一块还是非常的认可的然后就是包括鱼其实很多家长也在说愿意让孩子吃鱼因为不过人都说至于还聪明但是考虑到安全问题,比如说,不管是鲤鱼、带鱼、草鱼、没有刺啊,各种蛋啊,我们就是进了龙鲤鱼,龙鲤鱼是没有刺的。又有鱼的味道,鱼的营养,又没有刺,这也比较安全。所以我们每个星期五呢,是中午做一次龙鲤鱼,搭配一些蔬菜给孩子们吃。这样呢,也减轻了保育员的负担,不用去给摘刺。其实这个摘刺,哎呀,真的非常麻烦。而且有三个孩子不单单是麻烦安全真的大家是一到吃鱼这一天大家都非常惨生态就是卡串了所以我们现在开始进这个龙尾鱼它又滑嫩爽口而且又没有刺儿这个孩子们也比较欢迎是这样做的另外就是在食品安全方面我们严格保护这个采购制作然后包括保健这边我们就是层层把关财务这方面一定要保证食材的新鲜不管是鱼类不管是肉类不管是菜类一定要是新鲜的我们进来的蔬菜可能是带着肉猪的包括是带刺的因为我们要保证祖国的保护有一个家庭的未来这都是孩子所以家长的宝贝也是我们的宝贝寶貝在食品安全上另外就是因为我们食堂会有明火所以对消防这一块我们也是抓得比较紧张包括每一个食堂的服务人员对没有火器的使用我们会对没有火器定期的做一个检查定期的更换然后每一个人都要对消防知识要有一定的了解每一个人包括每个人都要求混用万
+[Text Detection] 在 2039.86 秒检测到关键词 '娇娇',current_time: 2015.00, 问题文本: 万一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论
+一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论同一的服装同一被管理或者是我们带孩子一块出去郊游这也是很当面的带孩子可以去超市转一下这个幼儿园就是说他去超市为什么他就是了解一些这些事物看一下人对对对有些人他连什么是小麦什么都不知道对找一个最近的也不必很大可
+[Text Detection] 在 2127.43 秒检测到关键词 '焦焦',current_time: 2108.00, 问题文本: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/out_002-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 497003, dtype: float32, min: -0.2088623046875, max: 0.20721435546875
+问题音频时间长度: 31.0626875
+
+
+[Agent] 接收到问题: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+, 1743409852.0489712
+问题音频STT前的时刻: 1743409852.0491493
+问题音频STT后的时刻: 1743409852.554262
+问题音频STT时间: 0.5051126480102539
+
+
+[Agent] 最终接收到问题: 你好娇娇,如何确保家长接送孩子时的身份验证流程更加安全高效?
+, 1743409852.5546002
+问题音频送入Planner的时刻: 1743409852.5549638
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743409853.181443
+planner new_token time: 1743409853.5771203
+planner new_token time: 1743409853.577679
+First token received: 1, time: 1743409853.5784688
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409853.6340334
+talker first token time: 1743409854.2444446
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743409854.2783196
+talker first token time: 1743409854.3045132
+talker first token time: 1743409854.3305526
+talker first token time: 1743409854.3563445
+talker first token time: 1743409854.382088
+talker first token time: 1743409854.4076068
+talker first token time: 1743409854.433315
+talker first token time: 1743409854.4596756
+talker first token time: 1743409854.4856231
+talker first token time: 1743409854.5113134
+talker first token time: 1743409854.5369701
+talker first token time: 1743409854.5629954
+talker first token time: 1743409854.588842
+talker first token time: 1743409854.6716487
+talker first token time: 1743409854.6972592
+talker first token time: 1743409854.7247524
+talker first token time: 1743409854.7505324
+talker first token time: 1743409854.7764919
+talker first token time: 1743409854.827804
+talker first token time: 1743409854.8536084
+talker first token time: 1743409854.8796072
+talker first token time: 1743409854.9054217
+talker first token time: 1743409854.9313836
+talker first token time: 1743409854.9573665
+talker first token time: 1743409854.983407
+talker first token time: 1743409855.0096822
+talker first token time: 1743409855.0356207
+talker first token time: 1743409855.061468
+talker first token time: 1743409855.0874107
+talker first token time: 1743409855.1135578
+talker first token time: 1743409855.1650178
+talker first token time: 1743409855.1908333
+talker first token time: 1743409855.216918
+talker first token time: 1743409855.2427683
+talker first token time: 1743409855.3190532
+talker first token time: 1743409855.346233
+talker first token time: 1743409855.3723345
+talker first token time: 1743409855.398144
+talker first token time: 1743409855.423824
+talker first token time: 1743409855.5018125
+talker first token time: 1743409855.5542424
+talker first token time: 1743409855.580401
+talker first token time: 1743409855.6065211
+talker first token time: 1743409855.6325874
+talker first token time: 1743409855.6587112
+talker first token time: 1743409855.6848297
+talker first token time: 1743409855.7108054
+talker first token time: 1743409855.736831
+talker first token time: 1743409855.7634263
+talker first token time: 1743409855.841944
+talker first token time: 1743409855.8939545
+talker first token time: 1743409855.920164
+talker first token time: 1743409855.9462352
+talker first token time: 1743409855.9726477
+talker first token time: 1743409855.9989178
+talker first token time: 1743409856.0253465
+talker first token time: 1743409856.0777574
+talker first token time: 1743409856.1042094
+talker first token time: 1743409856.1304467
+talker first token time: 1743409856.1568182
+talker first token time: 1743409856.1832232
+talker first token time: 1743409856.209649
+talker first token time: 1743409856.2360225
+talker first token time: 1743409856.2622623
+talker first token time: 1743409856.3393736
+talker first token time: 1743409856.36576
+talker first token time: 1743409856.3918383
+talker first token time: 1743409856.4434876
+talker first token time: 1743409856.4696333
+talker first token time: 1743409856.4957314
+talker first token time: 1743409856.5217245
+talker first token time: 1743409856.5733278
+talker first token time: 1743409856.5993545
+talker first token time: 1743409856.6255405
+talker first token time: 1743409856.6516576
+talker first token time: 1743409856.6777854
+talker first token time: 1743409856.7038398
+talker first token time: 1743409856.7298899
+talker first token time: 1743409856.7560515
+talker first token time: 1743409856.7820992
+talker first token time: 1743409856.808319
+talker first token time: 1743409856.8345757
+talker first token time: 1743409856.8609164
+talker first token time: 1743409856.8872106
+talker first token time: 1743409856.9647646
+talker first token time: 1743409856.990801
+talker first token time: 1743409857.0168579
+talker first token time: 1743409857.0428958
+talker first token time: 1743409857.0695624
+talker first token time: 1743409857.0958352
+talker first token time: 1743409857.147785
+talker first token time: 1743409857.1740983
+talker first token time: 1743409857.2003155
+talker first token time: 1743409857.226541
+talker first token time: 1743409857.2527862
+talker first token time: 1743409857.2788498
+talker first token time: 1743409857.304903
+talker first token time: 1743409857.3310604
+talker first token time: 1743409857.357188
+talker first token time: 1743409857.3833582
+talker first token time: 1743409857.435573
+talker first token time: 1743409857.4617577
+talker first token time: 1743409857.4880586
+talker first token time: 1743409857.5142617
+talker first token time: 1743409857.5405939
+talker first token time: 1743409857.566842
+talker first token time: 1743409857.5931222
+talker first token time: 1743409857.6453323
+talker first token time: 1743409857.6716032
+talker first token time: 1743409857.6979535
+talker first token time: 1743409857.724219
+talker first token time: 1743409857.7505581
+talker first token time: 1743409857.8280177
+talker first token time: 1743409857.881106
+talker first token time: 1743409857.907523
+talker first token time: 1743409857.934847
+talker first token time: 1743409857.9610598
+talker first token time: 1743409858.013247
+talker first token time: 1743409858.0395713
+talker first token time: 1743409858.065801
+talker first token time: 1743409858.0920324
+talker first token time: 1743409858.118103
+talker first token time: 1743409858.1442287
+talker first token time: 1743409858.1705964
+talker first token time: 1743409858.1967344
+talker first token time: 1743409858.2228868
+talker first token time: 1743409858.2491357
+talker first token time: 1743409858.2753963
+talker first token time: 1743409858.3022609
+talker first token time: 1743409858.3286777
+talker first token time: 1743409858.3552585
+talker first token time: 1743409858.3816643
+talker first token time: 1743409858.4341269
+talker first token time: 1743409858.4604144
+talker first token time: 1743409858.4869294
+talker first token time: 1743409858.5129151
+talker first token time: 1743409858.538904
+talker first token time: 1743409858.5649552
+talker first token time: 1743409858.5912018
+talker first token time: 1743409858.6175303
+talker first token time: 1743409858.643689
+talker first token time: 1743409858.6698081
+talker first token time: 1743409858.6958673
+talker first token time: 1743409858.7219946
+talker first token time: 1743409858.749457
+talker first token time: 1743409858.7758331
+talker first token time: 1743409858.8278408
+talker first token time: 1743409858.8540182
+talker first token time: 1743409858.88031
+talker first token time: 1743409858.9067957
+talker first token time: 1743409858.9329839
+talker first token time: 1743409858.9592152
+talker first token time: 1743409858.9853785
+talker first token time: 1743409859.0390737
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+确保家长接送孩子时的身份验证流程更加安全高效的方法有：
+
+1. 引入人脸识别技术：通过对比家长在注册时上传的照片与现场的人脸，快速确认身份。
+
+2. 使用智能手环或RFID识别：为学生和家长配备智能手环或RFID标签，当家长靠近校园门时，系统会自动识别并验证身份。
+
+3. 设置手机验证码：在接送孩子时，家长需要输入手机接收到的验证码才能完成身份验证。
+
+4. 安全密钥卡：发放给家长一张带有芯片的安全密钥卡，只需将卡插入读卡器，即可完成身份验证。
+
+5. 车牌识别系统：安装在学校门口的高清摄像头可以实时拍摄并识别家长的车辆信息，验证身份。
+
+这些方法可以有效提高身份验证的准确性和效率，同时也能保护学生的隐私和安全。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/out_002-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 497003, dtype: float32, min: -0.2088623046875, max: 0.20721435546875
+问题音频时间长度: 31.0626875
+
+
+[Agent] 接收到问题: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+, 1743409860.833876
+问题音频STT前的时刻: 1743409860.8340843
+问题音频STT后的时刻: 1743409862.3942065
+问题音频STT时间: 1.5601222515106201
+
+
+[Agent] 最终接收到问题: 你好,娇娇。基于之前我们讨论的内容,关于幼儿园消毒夜袭是和通风的问题,我们如何确保消毒夜袭是比例符和规定,并且每天开窗通风的次数和时间是否足够?同时,针对孩子不配合和家长不配合的情况,我们有哪些具体的应对措施?
+, 1743409862.3944008
+问题音频送入Planner的时刻: 1743409862.3947752
+planner new_token time: 1743409863.052326
+planner new_token time: 1743409863.4437633
+First token received: 0, time: 1743409863.4438868
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409863.8354187
+planner new_token time: 1743409864.2267392
+planner new_token time: 1743409864.6187344
+planner new_token time: 1743409865.0105984
+planner new_token time: 1743409865.4022639
+planner new_token time: 1743409865.794105
+planner new_token time: 1743409866.1859236
+planner new_token time: 1743409866.5779972
+planner new_token time: 1743409866.9704087
+planner new_token time: 1743409867.3616247
+planner new_token time: 1743409867.7548065
+planner new_token time: 1743409868.1468985
+planner new_token time: 1743409868.5384007
+planner new_token time: 1743409868.9307737
+planner new_token time: 1743409869.3231745
+planner new_token time: 1743409869.7153273
+planner new_token time: 1743409870.1074896
+planner new_token time: 1743409870.499385
+planner new_token time: 1743409870.8917956
+planner new_token time: 1743409871.2842433
+planner new_token time: 1743409871.6761074
+planner new_token time: 1743409872.0685875
+planner new_token time: 1743409872.4609053
+planner new_token time: 1743409872.8530185
+planner new_token time: 1743409873.2454271
+planner new_token time: 1743409873.6375062
+planner new_token time: 1743409874.030268
+planner new_token time: 1743409874.422475
+planner new_token time: 1743409874.8154216
+planner new_token time: 1743409875.2081728
+planner new_token time: 1743409875.6007242
+planner new_token time: 1743409875.993492
+planner new_token time: 1743409876.3862178
+planner new_token time: 1743409876.778683
+planner new_token time: 1743409877.1711314
+planner new_token time: 1743409877.5637414
+planner new_token time: 1743409877.9560905
+planner new_token time: 1743409878.3487363
+planner new_token time: 1743409878.741234
+planner new_token time: 1743409879.133479
+planner new_token time: 1743409879.5262303
+planner new_token time: 1743409879.9190736
+planner new_token time: 1743409880.3120246
+planner new_token time: 1743409880.705327
+planner new_token time: 1743409881.0984256
+planner new_token time: 1743409881.4915674
+planner new_token time: 1743409881.8848193
+planner new_token time: 1743409881.8857296
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：消毒夜袭比例 规定 开窗通风次数 时间 孩子不配合 家长不配合 应对措施
+
+
+提取的关键词: ['消毒夜袭比例', '规定', '开窗通风次数', '时间', '孩子不配合', '家长不配合', '应对措施']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743409883.1109054
+one token time in planner tools: 1743409883.506871
+one token time in planner tools: 1743409883.902447
+one token time in planner tools: 1743409884.298763
+one token time in planner tools: 1743409884.694039
+one token time in planner tools: 1743409885.0898652
+one token time in planner tools: 1743409885.485676
+one token time in planner tools: 1743409885.8818586
+one token time in planner tools: 1743409886.2773795
+one token time in planner tools: 1743409886.6730018
+one token time in planner tools: 1743409887.0686579
+one token time in planner tools: 1743409887.4644809
+one token time in planner tools: 1743409887.8604214
+one token time in planner tools: 1743409888.255915
+one token time in planner tools: 1743409888.65179
+one token time in planner tools: 1743409889.0478175
+one token time in planner tools: 1743409889.4436855
+one token time in planner tools: 1743409889.8392482
+one token time in planner tools: 1743409890.2350743
+one token time in planner tools: 1743409890.631271
+one token time in planner tools: 1743409891.0274775
+one token time in planner tools: 1743409891.4235666
+one token time in planner tools: 1743409891.8204978
+one token time in planner tools: 1743409892.216925
+one token time in planner tools: 1743409892.6126463
+one token time in planner tools: 1743409893.0087895
+one token time in planner tools: 1743409893.4050934
+one token time in planner tools: 1743409893.801306
+one token time in planner tools: 1743409894.1981997
+one token time in planner tools: 1743409894.5937994
+one token time in planner tools: 1743409894.9898915
+one token time in planner tools: 1743409895.3860621
+one token time in planner tools: 1743409895.7819612
+one token time in planner tools: 1743409896.178041
+one token time in planner tools: 1743409896.574877
+one token time in planner tools: 1743409896.970658
+one token time in planner tools: 1743409897.366697
+one token time in planner tools: 1743409897.7628326
+one token time in planner tools: 1743409898.1586475
+one token time in planner tools: 1743409898.5550537
+one token time in planner tools: 1743409898.951553
+one token time in planner tools: 1743409899.3483858
+one token time in planner tools: 1743409899.7445483
+one token time in planner tools: 1743409900.1405637
+one token time in planner tools: 1743409900.5367062
+one token time in planner tools: 1743409900.9334688
+one token time in planner tools: 1743409901.3295755
+one token time in planner tools: 1743409901.726908
+one token time in planner tools: 1743409902.1234844
+one token time in planner tools: 1743409902.5199144
+one token time in planner tools: 1743409902.9165225
+one token time in planner tools: 1743409903.31394
+one token time in planner tools: 1743409903.7099872
+one token time in planner tools: 1743409904.1073024
+one token time in planner tools: 1743409904.5047731
+one token time in planner tools: 1743409904.901983
+one token time in planner tools: 1743409905.299244
+one token time in planner tools: 1743409905.696071
+one token time in planner tools: 1743409906.093011
+one token time in planner tools: 1743409906.4900866
+one token time in planner tools: 1743409906.8871784
+one token time in planner tools: 1743409907.284807
+one token time in planner tools: 1743409907.6821766
+one token time in planner tools: 1743409908.0796332
+one token time in planner tools: 1743409908.4771204
+one token time in planner tools: 1743409908.8745136
+one token time in planner tools: 1743409909.2718053
+one token time in planner tools: 1743409909.669071
+one token time in planner tools: 1743409910.065753
+one token time in planner tools: 1743409910.463034
+one token time in planner tools: 1743409910.860557
+one token time in planner tools: 1743409911.258214
+one token time in planner tools: 1743409911.6555402
+one token time in planner tools: 1743409912.0529826
+one token time in planner tools: 1743409912.450455
+one token time in planner tools: 1743409912.8480074
+one token time in planner tools: 1743409913.2458189
+one token time in planner tools: 1743409913.6436787
+one token time in planner tools: 1743409914.0418918
+one token time in planner tools: 1743409914.4395745
+one token time in planner tools: 1743409914.8370016
+one token time in planner tools: 1743409915.2346215
+one token time in planner tools: 1743409915.6322713
+one token time in planner tools: 1743409916.029968
+one token time in planner tools: 1743409916.4271595
+one token time in planner tools: 1743409916.8245504
+one token time in planner tools: 1743409917.2223456
+one token time in planner tools: 1743409917.6204095
+one token time in planner tools: 1743409918.0189788
+one token time in planner tools: 1743409918.4168003
+one token time in planner tools: 1743409918.8147562
+one token time in planner tools: 1743409919.2125757
+one token time in planner tools: 1743409919.6105864
+one token time in planner tools: 1743409920.0081716
+one token time in planner tools: 1743409920.4062467
+one token time in planner tools: 1743409920.804252
+one token time in planner tools: 1743409921.2022278
+one token time in planner tools: 1743409921.600366
+one token time in planner tools: 1743409921.9986422
+one token time in planner tools: 1743409922.3968172
+one token time in planner tools: 1743409922.7946415
+one token time in planner tools: 1743409922.7960484
+
+Token count: 102, Total time: 40.7295 seconds, One token time: 0.3993 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：消毒', '夜', '袭', '比例', ' ', '规', '定', ' 开', '窗', '通风', '次数', ' 时间', ' ', '孩', '子', '不', '配合', ' ', '家', '长', '不', '配合', ' ', '应', '对', '措施', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###基于之前我们讨论的内容关于幼儿园消毒夜吸适合通风的问题我们如何确保消毒夜吸是比例符和规定并且每天开窗通风因为这项约定你看这样的人太费精力了对因为咱老师毕竟是有限的不能光看他一个孩子然后另外就是说我们这个教学这方面就比如说因为毕竟他也是为小学做准备而且就是说孩子这个其实从出生一直到六周之前是一个关键的时期如果引导好的话他可能就会长大之后就可能会为你社会做很大贡献主要是在习惯这方面养成我们必须让孩子养成一个良好的习惯还有另外就是说学习这方面的因为我们也不提倡我们提倡的是寓教于乐在娱乐中得到自己的学识经验什么的比如说我们像咱们的形体课比如舞蹈课每天不都在会做操吗也是增加孩子那种律动感还有音乐节奏对然后另外就是咱们有各种各样的那个课那个就是特色那个手工课美术课舞蹈课音乐课这些都会而且我们会有不同的那个就比如说这节课我们是那个手工课可以教大家剪个小鸭子呀下节课我们可能就叫做折纸课就锻炼手指的灵活度然后就是说另外就像那些像大班的一些小朋友就开始写字了对他们已经已经知道绿耳园的而且也是正方为小学做准备嘛所以我们就可以教授一些就是比较就是小学的一些内容就比如说一到十然后来加减 简单的加减法就让他们就是因为好多小学他可能就是有些不负责小学他可能都认为你幼儿园学过了其实国家是不提倡孩子就是幼儿园期间学东西的但是有些他们小学他们可能就省事就为了减轻老师可能涂上汗学校出生事就不愿意再教授了课幼儿园现在都不教生母孕母就在学前班教了对,所以我们可以简单的教授一些简单的实术,因为毕竟生活中也会用到对因为咱们孩子的情商、智商还有一些美商、才商咱们学校都是为孩子这方面努力像那个智商跟那个财富情商我们都经常是进行培训的因为毕竟就是说通过一些课孩子们可能会感觉到还有些是教孩子们守一些规矩他们可能对人情世故就稍微有一点了解对咱社会就可能就说知道是社会原来不是说这个世界不是说我的天下我想怎么着就怎么着我是要听从对我是要有我得符合一【定】规则然后我才能得到我想要的情商是很重要的是不是比学习好还要重要还有就是现在孩子他像个三四岁五六岁他已经这方面已经有有思维了他应该懂事了所以咱们老师要引导他对引导他是非什么是对什么是错他应该对这个有概念而不是我那就是对的他们那都是错的打人一下你说这是对的 这是错的别人这就错了咱就要教育他所以就是说对咱们那个老师的素质就要求就比较高然后另外就是说因为咱这不是像那个财商这也算是咱一个特色嘛其实就好多小孩嘛其实像你观察一些像那个教育比较发达的国家欧美国家他们就是说孩子就很小就认识金钱知道金钱是一种重要的流通的一种货币然后可以让他们买卖东西交换的东西之类的其实我们这也会开展一些这些你不要说这么小给孩子谈钱不好其实不是这样的因为咱中国肯定以后也会经济越来越发展对吧他那个有财商财商也是很有必要的这是说咱打了一个特色然后另外就是说在老师这方面因为就是说还有些就是咱们这个英语因为有小孩学英语他们这个时期也是非常好的就是说咱们外教目前只有两名就是说根据咱这情况吧原来情况的话咱其实还可以再增加一名这样的话一般人应该是听一节外教课然后这样的话家长也更愿意幼儿园更愿意把孩子送到咱这因为他觉得就是说上英语课有专门的外教来教的话都是比较喜欢的他是觉得要提倡幼儿园海樂學 國學比如说一些三次电话整个传统文化因为咱这个也有这个课程咱就也有英语也有这些课程中英双结合嘛但是不会强加于他们因为就这好多是双语二人不会做他们的游戏其實他這個部分其实幼儿园他不是说让你学这些英语,不是非得背下来,是那个耳目染,感受一下这个。\n---\n而且有三个孩子不单单是麻烦安全真的大家是一到吃鱼这一天大家都非常惨生态就是卡串了所以我们现在开始进这个龙尾鱼它又滑嫩爽口而且又没有刺儿这个孩子们也比较欢迎是这样做的另外就是在食品安全方面我们严格保护这个采购制作然后包括保健这边我们就是层层把关财务这方面一定要保证食材的新鲜不管是鱼类不管是肉类不管是菜类一定要是新鲜的我们进来的蔬菜可能是带着肉猪的包括是带刺的因为我们要保证祖国的保护有一个家庭的未来这都是孩子所以家长的宝贝也是我们的宝贝寶貝在食品安全上另外就是因为我们食堂会有明火所以对消防这一块我们也是抓得比较紧张包括每一个食堂的服务人员对没有火器的使用我们会对没有火器定期的做一个检查定期的更换然后每一个人都要对消防知识要有一定的了解每一个人包括每个人都要求混用万一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论同一的服装同一被管理或者是我们带孩子一块出去郊游这也是很当面的带孩子可以去超市转一下这个幼儿园就是说他去超市为什么他就是了解一些这些事物看一下人对对对有些人他连什么是小麦什么都不知道对找一个最近的也不必很大可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识你好娇娇,如何确保家长接送孩子时的身份验证流程更加安全高效?你好,娇娇。###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n针对如何确保家长接送孩子时的身份验证流程更加安全高效的问题，在会议中并未直接提及具体措施，但可参考其他安全措施进行推断。首先，加强身份验证可以通过采用现代化的身份识别技术如身份证扫描、人脸识别等方法确认家长身份；其次，设立固定接送区域并安排专人核验身份以减少混乱，提高效率；最后，建立家长信息数据库，确保每次接送信息记录完整，便于追踪管理。这些措施有助于提升幼儿园的安全管理水平。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###基于之前我们讨论的内容关于幼儿园消毒夜吸适合通风的问题我们如何确保消毒夜吸是比例符和规定并且每天开窗通风因为这项约定你看这样的人太费精力了对因为咱老师毕竟是有限的不能光看他一个孩子然后另外就是说我们这个教学这方面就比如说因为毕竟他也是为小学做准备而且就是说孩子这个其实从出生一直到六周之前是一个关键的时期如果引导好的话他可能就会长大之后就可能会为你社会做很大贡献主要是在习惯这方面养成我们必须让孩子养成一个良好的习惯还有另外就是说学习这方面的因为我们也不提倡我们提倡的是寓教于乐在娱乐中得到自己的学识经验什么的比如说我们像咱们的形体课比如舞蹈课每天不都在会做操吗也是增加孩子那种律动感还有音乐节奏对然后另外就是咱们有各种各样的那个课那个就是特色那个手工课美术课舞蹈课音乐课这些都会而且我们会有不同的那个就比如说这节课我们是那个手工课可以教大家剪个小鸭子呀下节课我们可能就叫做折纸课就锻炼手指的灵活度然后就是说另外就像那些像大班的一些小朋友就开始写字了对他们已经已经知道绿耳园的而且也是正方为小学做准备嘛所以我们就可以教授一些就是比较就是小学的一些内容就比如说一到十然后来加减 简单的加减法就让他们就是因为好多小学他可能就是有些不负责小学他可能都认为你幼儿园学过了其实国家是不提倡孩子就是幼儿园期间学东西的但是有些他们小学他们可能就省事就为了减轻老师可能涂上汗学校出生事就不愿意再教授了课幼儿园现在都不教生母孕母就在学前班教了对,所以我们可以简单的教授一些简单的实术,因为毕竟生活中也会用到对因为咱们孩子的情商、智商还有一些美商、才商咱们学校都是为孩子这方面努力像那个智商跟那个财富情商我们都经常是进行培训的因为毕竟就是说通过一些课孩子们可能会感觉到还有些是教孩子们守一些规矩他们可能对人情世故就稍微有一点了解对咱社会就可能就说知道是社会原来不是说这个世界不是说我的天下我想怎么着就怎么着我是要听从对我是要有我得符合一【定】规则然后我才能得到我想要的情商是很重要的是不是比学习好还要重要还有就是现在孩子他像个三四岁五六岁他已经这方面已经有有思维了他应该懂事了所以咱们老师要引导他对引导他是非什么是对什么是错他应该对这个有概念而不是我那就是对的他们那都是错的打人一下你说这是对的 这是错的别人这就错了咱就要教育他所以就是说对咱们那个老师的素质就要求就比较高然后另外就是说因为咱这不是像那个财商这也算是咱一个特色嘛其实就好多小孩嘛其实像你观察一些像那个教育比较发达的国家欧美国家他们就是说孩子就很小就认识金钱知道金钱是一种重要的流通的一种货币然后可以让他们买卖东西交换的东西之类的其实我们这也会开展一些这些你不要说这么小给孩子谈钱不好其实不是这样的因为咱中国肯定以后也会经济越来越发展对吧他那个有财商财商也是很有必要的这是说咱打了一个特色然后另外就是说在老师这方面因为就是说还有些就是咱们这个英语因为有小孩学英语他们这个时期也是非常好的就是说咱们外教目前只有两名就是说根据咱这情况吧原来情况的话咱其实还可以再增加一名这样的话一般人应该是听一节外教课然后这样的话家长也更愿意幼儿园更愿意把孩子送到咱这因为他觉得就是说上英语课有专门的外教来教的话都是比较喜欢的他是觉得要提倡幼儿园海樂學 國學比如说一些三次电话整个传统文化因为咱这个也有这个课程咱就也有英语也有这些课程中英双结合嘛但是不会强加于他们因为就这好多是双语二人不会做他们的游戏其實他這個部分其实幼儿园他不是说让你学这些英语,不是非得背下来,是那个耳目染,感受一下这个。
+---
+而且有三个孩子不单单是麻烦安全真的大家是一到吃鱼这一天大家都非常惨生态就是卡串了所以我们现在开始进这个龙尾鱼它又滑嫩爽口而且又没有刺儿这个孩子们也比较欢迎是这样做的另外就是在食品安全方面我们严格保护这个采购制作然后包括保健这边我们就是层层把关财务这方面一定要保证食材的新鲜不管是鱼类不管是肉类不管是菜类一定要是新鲜的我们进来的蔬菜可能是带着肉猪的包括是带刺的因为我们要保证祖国的保护有一个家庭的未来这都是孩子所以家长的宝贝也是我们的宝贝寶貝在食品安全上另外就是因为我们食堂会有明火所以对消防这一块我们也是抓得比较紧张包括每一个食堂的服务人员对没有火器的使用我们会对没有火器定期的做一个检查定期的更换然后每一个人都要对消防知识要有一定的了解每一个人包括每个人都要求混用万一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论同一的服装同一被管理或者是我们带孩子一块出去郊游这也是很当面的带孩子可以去超市转一下这个幼儿园就是说他去超市为什么他就是了解一些这些事物看一下人对对对有些人他连什么是小麦什么都不知道对找一个最近的也不必很大可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识你好娇娇,如何确保家长接送孩子时的身份验证流程更加安全高效?你好,娇娇。###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+针对如何确保家长接送孩子时的身份验证流程更加安全高效的问题，在会议中并未直接提及具体措施，但可参考其他安全措施进行推断。首先，加强身份验证可以通过采用现代化的身份识别技术如身份证扫描、人脸识别等方法确认家长身份；其次，设立固定接送区域并安排专人核验身份以减少混乱，提高效率；最后，建立家长信息数据库，确保每次接送信息记录完整，便于追踪管理。这些措施有助于提升幼儿园的安全管理水平。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/out_002-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 497003, dtype: float32, min: -0.2088623046875, max: 0.20721435546875
+问题音频时间长度: 31.0626875
+
+
+[Agent] 接收到问题: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+, 1743409924.426876
+问题音频STT前的时刻: 1743409924.4272726
+问题音频STT后的时刻: 1743409924.9961863
+问题音频STT时间: 0.5689136981964111
+
+
+[Agent] 最终接收到问题: 你好娇娇如何平衡双语教学与国学教育以培养孩子全面发展
+, 1743409924.996339
+问题音频送入Planner的时刻: 1743409924.9969206
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409925.6022816
+planner new_token time: 1743409925.995292
+planner new_token time: 1743409925.995655
+First token received: 1, time: 1743409925.9957469
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409926.0079215
+talker first token time: 1743409926.2412367
+talker first token time: 1743409926.2677066
+talker first token time: 1743409926.2934492
+talker first token time: 1743409926.3193104
+talker first token time: 1743409926.3452387
+talker first token time: 1743409926.3714118
+talker first token time: 1743409926.397311
+talker first token time: 1743409926.4230974
+talker first token time: 1743409926.4490201
+talker first token time: 1743409926.4746606
+talker first token time: 1743409926.5259073
+talker first token time: 1743409926.556612
+talker first token time: 1743409926.5824885
+talker first token time: 1743409926.6084387
+talker first token time: 1743409926.6380126
+talker first token time: 1743409926.7143812
+talker first token time: 1743409926.7412074
+talker first token time: 1743409926.7669597
+talker first token time: 1743409926.7927845
+talker first token time: 1743409926.8185198
+talker first token time: 1743409926.844228
+talker first token time: 1743409926.8699882
+talker first token time: 1743409926.9212475
+talker first token time: 1743409926.9472883
+talker first token time: 1743409926.9733846
+talker first token time: 1743409926.9997044
+talker first token time: 1743409927.025715
+talker first token time: 1743409927.0773685
+talker first token time: 1743409927.1036677
+talker first token time: 1743409927.1296086
+talker first token time: 1743409927.1555185
+talker first token time: 1743409927.1815321
+talker first token time: 1743409927.2076373
+talker first token time: 1743409927.2336185
+talker first token time: 1743409927.2598033
+talker first token time: 1743409927.2860382
+talker first token time: 1743409927.3124025
+talker first token time: 1743409927.3902571
+talker first token time: 1743409927.4163494
+talker first token time: 1743409927.442165
+talker first token time: 1743409927.467987
+talker first token time: 1743409927.4940717
+talker first token time: 1743409927.5456972
+talker first token time: 1743409927.5716624
+talker first token time: 1743409927.5976725
+talker first token time: 1743409927.623513
+talker first token time: 1743409927.6495261
+talker first token time: 1743409927.675398
+talker first token time: 1743409927.701709
+talker first token time: 1743409927.7278311
+talker first token time: 1743409927.7798023
+talker first token time: 1743409927.8061903
+talker first token time: 1743409927.8325508
+talker first token time: 1743409927.8587592
+talker first token time: 1743409927.884762
+talker first token time: 1743409927.9615648
+talker first token time: 1743409927.9873917
+talker first token time: 1743409928.0138652
+talker first token time: 1743409928.0401134
+talker first token time: 1743409928.066719
+talker first token time: 1743409928.09274
+talker first token time: 1743409928.118854
+talker first token time: 1743409928.1449275
+talker first token time: 1743409928.170918
+talker first token time: 1743409928.2226262
+talker first token time: 1743409928.2486753
+talker first token time: 1743409928.274775
+talker first token time: 1743409928.3010502
+talker first token time: 1743409928.327391
+talker first token time: 1743409928.3536696
+talker first token time: 1743409928.379763
+talker first token time: 1743409928.4057703
+talker first token time: 1743409928.4318347
+talker first token time: 1743409928.4579043
+talker first token time: 1743409928.5097914
+talker first token time: 1743409928.5357988
+talker first token time: 1743409928.561929
+talker first token time: 1743409928.587998
+talker first token time: 1743409928.6140003
+talker first token time: 1743409928.6401284
+talker first token time: 1743409928.7174451
+talker first token time: 1743409928.7434614
+talker first token time: 1743409928.7693846
+talker first token time: 1743409928.7955654
+talker first token time: 1743409928.8216813
+talker first token time: 1743409928.847911
+talker first token time: 1743409928.8999
+talker first token time: 1743409928.925917
+talker first token time: 1743409928.9520757
+talker first token time: 1743409929.0040994
+talker first token time: 1743409929.030323
+talker first token time: 1743409929.0825603
+talker first token time: 1743409929.1085873
+talker first token time: 1743409929.134843
+talker first token time: 1743409929.1868942
+talker first token time: 1743409929.2129602
+talker first token time: 1743409929.2391198
+talker first token time: 1743409929.265279
+talker first token time: 1743409929.3430429
+talker first token time: 1743409929.3698454
+talker first token time: 1743409929.3960817
+talker first token time: 1743409929.4226983
+talker first token time: 1743409929.449808
+talker first token time: 1743409929.4759252
+talker first token time: 1743409929.503669
+talker first token time: 1743409929.555445
+talker first token time: 1743409929.581838
+talker first token time: 1743409929.6080244
+talker first token time: 1743409929.6341004
+talker first token time: 1743409929.686107
+talker first token time: 1743409929.7124066
+talker first token time: 1743409929.7385316
+talker first token time: 1743409929.7909994
+
+talker输出：
+
+Token count: 156, Total time: 5.4305 seconds, One token time: 0.0348 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在平衡双语教学与国学教育时，可以从以下几个方面着手：
+
+1. 制定全面的课程计划，确保孩子在语言学习、文化传承和综合素质培养上得到均衡发展。
+
+2. 注重孩子的兴趣引导，让孩子们在轻松愉快的环境中学习，激发他们的学习热情。
+
+3. 教师要具备跨学科的教学能力，能够将双语教学与国学教育有机结合，使两者相得益彰。
+
+4. 利用现代科技手段，如网络资源、多媒体等，丰富教学方式，提高教学效果。
+
+5. 家长应积极配合学校教育，营造良好的家庭教育环境，帮助孩子全面发展。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/out_002-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 497003, dtype: float32, min: -0.2088623046875, max: 0.20721435546875
+问题音频时间长度: 31.0626875
+
+
+[Agent] 接收到问题: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+, 1743409931.5412219
+问题音频STT前的时刻: 1743409931.5414603
+问题音频STT后的时刻: 1743409933.1006083
+问题音频STT时间: 1.5591480731964111
+
+
+[Agent] 最终接收到问题: 你好,娇娇。基于之前我们讨论的内容,关于幼儿园餐饮服务,家长非常关心孩子的饮食安全和营养搭配。我想请问一下,幼儿园在食材采购和制作过程中是如何严格把控食品安全,确保食材新鲜和孩子们的饮食健康的?
+, 1743409933.1009467
+问题音频送入Planner的时刻: 1743409933.101481
+planner new_token time: 1743409933.7545483
+planner new_token time: 1743409934.14882
+First token received: 0, time: 1743409934.1489697
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743409934.542136
+planner new_token time: 1743409934.934962
+planner new_token time: 1743409935.3278577
+planner new_token time: 1743409935.7212834
+planner new_token time: 1743409936.1143627
+planner new_token time: 1743409936.5078416
+planner new_token time: 1743409936.9012778
+planner new_token time: 1743409937.2941964
+planner new_token time: 1743409937.6884842
+planner new_token time: 1743409938.0814393
+planner new_token time: 1743409938.475164
+planner new_token time: 1743409938.8696036
+planner new_token time: 1743409939.262545
+planner new_token time: 1743409939.655592
+planner new_token time: 1743409940.048836
+planner new_token time: 1743409940.4430673
+planner new_token time: 1743409940.8369112
+planner new_token time: 1743409941.2302098
+planner new_token time: 1743409941.6242
+planner new_token time: 1743409942.0182114
+planner new_token time: 1743409942.411768
+planner new_token time: 1743409942.806046
+planner new_token time: 1743409943.2004483
+planner new_token time: 1743409943.5943985
+planner new_token time: 1743409943.988524
+planner new_token time: 1743409944.382661
+planner new_token time: 1743409944.7769523
+planner new_token time: 1743409945.1714125
+planner new_token time: 1743409945.5657575
+planner new_token time: 1743409945.9590018
+planner new_token time: 1743409946.3531466
+planner new_token time: 1743409946.7473001
+planner new_token time: 1743409947.1416438
+planner new_token time: 1743409947.5354915
+planner new_token time: 1743409947.9300182
+planner new_token time: 1743409948.324551
+planner new_token time: 1743409948.7187908
+planner new_token time: 1743409949.112515
+planner new_token time: 1743409949.5069437
+planner new_token time: 1743409949.901242
+planner new_token time: 1743409950.2949512
+planner new_token time: 1743409950.6889598
+planner new_token time: 1743409950.6895978
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：食品安全 食材采购 制作过程 饮食健康 安全把控 新鲜
+
+
+提取的关键词: ['食品安全', '食材采购', '制作过程', '饮食健康', '安全把控', '新鲜']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743409951.4900613
+one token time in planner tools: 1743409951.8845992
+one token time in planner tools: 1743409952.2786663
+one token time in planner tools: 1743409952.672862
+one token time in planner tools: 1743409953.0673528
+one token time in planner tools: 1743409953.4620292
+one token time in planner tools: 1743409953.856815
+one token time in planner tools: 1743409954.2508528
+one token time in planner tools: 1743409954.6452577
+one token time in planner tools: 1743409955.03967
+one token time in planner tools: 1743409955.4339256
+one token time in planner tools: 1743409955.8282955
+one token time in planner tools: 1743409956.2227838
+one token time in planner tools: 1743409956.6175642
+one token time in planner tools: 1743409957.0118687
+one token time in planner tools: 1743409957.406575
+one token time in planner tools: 1743409957.8014247
+one token time in planner tools: 1743409958.1967618
+one token time in planner tools: 1743409958.5914302
+one token time in planner tools: 1743409958.9863124
+one token time in planner tools: 1743409959.3807929
+one token time in planner tools: 1743409959.7758138
+one token time in planner tools: 1743409960.1701875
+one token time in planner tools: 1743409960.5652726
+one token time in planner tools: 1743409960.9603631
+one token time in planner tools: 1743409961.3552384
+one token time in planner tools: 1743409961.7494597
+one token time in planner tools: 1743409962.1444857
+one token time in planner tools: 1743409962.5390658
+one token time in planner tools: 1743409962.9347095
+one token time in planner tools: 1743409963.3297687
+one token time in planner tools: 1743409963.7249594
+one token time in planner tools: 1743409964.1199887
+one token time in planner tools: 1743409964.5148733
+one token time in planner tools: 1743409964.9097602
+one token time in planner tools: 1743409965.304807
+one token time in planner tools: 1743409965.6994824
+one token time in planner tools: 1743409966.09491
+one token time in planner tools: 1743409966.4897954
+one token time in planner tools: 1743409966.8855963
+one token time in planner tools: 1743409967.2803507
+one token time in planner tools: 1743409967.6751971
+one token time in planner tools: 1743409968.0719206
+one token time in planner tools: 1743409968.467034
+one token time in planner tools: 1743409968.8626385
+one token time in planner tools: 1743409969.257484
+one token time in planner tools: 1743409969.6522486
+one token time in planner tools: 1743409970.047151
+one token time in planner tools: 1743409970.4426847
+one token time in planner tools: 1743409970.8375754
+one token time in planner tools: 1743409971.2326825
+one token time in planner tools: 1743409971.6277263
+one token time in planner tools: 1743409972.023065
+one token time in planner tools: 1743409972.418206
+one token time in planner tools: 1743409972.8136065
+one token time in planner tools: 1743409973.2087035
+one token time in planner tools: 1743409973.6039748
+one token time in planner tools: 1743409973.9994128
+one token time in planner tools: 1743409974.3951678
+one token time in planner tools: 1743409974.7904906
+one token time in planner tools: 1743409975.187058
+one token time in planner tools: 1743409975.5831537
+one token time in planner tools: 1743409975.9785082
+one token time in planner tools: 1743409976.3748527
+one token time in planner tools: 1743409976.7703774
+one token time in planner tools: 1743409977.165739
+one token time in planner tools: 1743409977.563097
+one token time in planner tools: 1743409977.958927
+one token time in planner tools: 1743409978.3543735
+one token time in planner tools: 1743409978.7499797
+one token time in planner tools: 1743409979.1451719
+one token time in planner tools: 1743409979.5406115
+one token time in planner tools: 1743409979.9359355
+one token time in planner tools: 1743409980.334192
+one token time in planner tools: 1743409980.7297812
+one token time in planner tools: 1743409981.1251569
+one token time in planner tools: 1743409981.520632
+one token time in planner tools: 1743409981.9161992
+one token time in planner tools: 1743409982.312777
+one token time in planner tools: 1743409982.7083833
+one token time in planner tools: 1743409983.104336
+one token time in planner tools: 1743409983.500982
+one token time in planner tools: 1743409983.8976402
+one token time in planner tools: 1743409984.2930436
+one token time in planner tools: 1743409984.689613
+one token time in planner tools: 1743409985.0858634
+one token time in planner tools: 1743409985.4816792
+one token time in planner tools: 1743409985.8782713
+one token time in planner tools: 1743409986.273956
+one token time in planner tools: 1743409986.6692748
+one token time in planner tools: 1743409987.06462
+one token time in planner tools: 1743409987.461304
+one token time in planner tools: 1743409987.8571267
+one token time in planner tools: 1743409988.2538455
+one token time in planner tools: 1743409988.6502545
+one token time in planner tools: 1743409989.0456626
+one token time in planner tools: 1743409989.0470634
+
+Token count: 97, Total time: 38.2159 seconds, One token time: 0.3940 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：食品安全', ' ', '食', '材', '采购', ' ', '制', '作', '过程', ' ', '饮', '食', '健康', ' ', '安', '全', '把控', ' 新', '鲜', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###而且有三个孩子不单单是麻烦安全真的大家是一到吃鱼这一天大家都非常惨生态就是卡串了所以我们现在开始进这个龙尾鱼它又滑嫩爽口而且又没有刺儿这个孩子们也比较欢迎是这样做的另外就是在食品安全方面我们严格保护这个采购制作然后包括保健这边我们就是层层把关财务这方面一定要保证食材的新鲜不管是鱼类不管是肉类不管是菜类一定要是新鲜的我们进来的蔬菜可能是带着肉猪的包括是带刺的因为我们要保证祖国的保护有一个家庭的未来这都是孩子所以家长的宝贝也是我们的宝贝寶貝在食品安全上另外就是因为我们食堂会有明火所以对消防这一块我们也是抓得比较紧张包括每一个食堂的服务人员对没有火器的使用我们会对没有火器定期的做一个检查定期的更换然后每一个人都要对消防知识要有一定的了解每一个人包括每个人都要求混用万一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论同一的服装同一被管理或者是我们带孩子一块出去郊游这也是很当面的带孩子可以去超市转一下这个幼儿园就是说他去超市为什么他就是了解一些这些事物看一下人对对对有些人他连什么是小麦什么都不知道对找一个最近的也不必很大可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识你好娇娇,如何确保家长接送孩子时的身份验证流程更加安全高效?你好,娇娇。基于之前我们讨论的内容,关于幼儿园消毒夜袭是和通风的问题,我们如何确保消毒夜袭是比例符和规定,并且每天开窗通风的次数和时间是否足够?同时,针对孩子不配合和家长不配合的情况,我们有哪些具体的应对措施?你好娇娇如何平衡双语教学与国学教育以培养孩子全面发展你好,娇娇。基于之前我们讨论的内容,关于幼儿园餐饮服务,家长非常关心孩子的饮食安全和营养搭配。我想请问一下,幼儿园在食材采购和制作过程中是如何严格把控食品安全,确保食材【新】鲜和孩子们的饮食健康的?###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n在食材采购和制作过程中，幼儿园严格把控食品安全，确保食材新鲜和孩子们的饮食健康。具体来说，幼儿园对食材采购、制作以及保健环节进行层层把关，并且定期检查和更换食堂设备，确保食材新鲜无污染。无论是鱼类、肉类还是蔬菜，都必须保证最新鲜的状态。此外，对于食堂的安全管理也非常重视，定期对服务人员进行消防培训和知识普及，确保在紧急情况下能够及时控制局面。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###而且有三个孩子不单单是麻烦安全真的大家是一到吃鱼这一天大家都非常惨生态就是卡串了所以我们现在开始进这个龙尾鱼它又滑嫩爽口而且又没有刺儿这个孩子们也比较欢迎是这样做的另外就是在食品安全方面我们严格保护这个采购制作然后包括保健这边我们就是层层把关财务这方面一定要保证食材的新鲜不管是鱼类不管是肉类不管是菜类一定要是新鲜的我们进来的蔬菜可能是带着肉猪的包括是带刺的因为我们要保证祖国的保护有一个家庭的未来这都是孩子所以家长的宝贝也是我们的宝贝寶貝在食品安全上另外就是因为我们食堂会有明火所以对消防这一块我们也是抓得比较紧张包括每一个食堂的服务人员对没有火器的使用我们会对没有火器定期的做一个检查定期的更换然后每一个人都要对消防知识要有一定的了解每一个人包括每个人都要求混用万一有问题的话要及时的在第一时间把它控制住这个是我们食堂参与这一块的工作好 这就是我这边说马上下学期了这一块要进行一个服装的定制这一块老师跟家长去沟通一下你好 娇娇基于之前我们讨论的内容关于幼儿园的讨论同一的服装同一被管理或者是我们带孩子一块出去郊游这也是很当面的带孩子可以去超市转一下这个幼儿园就是说他去超市为什么他就是了解一些这些事物看一下人对对对有些人他连什么是小麦什么都不知道对找一个最近的也不必很大可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识你好娇娇,如何确保家长接送孩子时的身份验证流程更加安全高效?你好,娇娇。基于之前我们讨论的内容,关于幼儿园消毒夜袭是和通风的问题,我们如何确保消毒夜袭是比例符和规定,并且每天开窗通风的次数和时间是否足够?同时,针对孩子不配合和家长不配合的情况,我们有哪些具体的应对措施?你好娇娇如何平衡双语教学与国学教育以培养孩子全面发展你好,娇娇。基于之前我们讨论的内容,关于幼儿园餐饮服务,家长非常关心孩子的饮食安全和营养搭配。我想请问一下,幼儿园在食材采购和制作过程中是如何严格把控食品安全,确保食材【新】鲜和孩子们的饮食健康的?###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+在食材采购和制作过程中，幼儿园严格把控食品安全，确保食材新鲜和孩子们的饮食健康。具体来说，幼儿园对食材采购、制作以及保健环节进行层层把关，并且定期检查和更换食堂设备，确保食材新鲜无污染。无论是鱼类、肉类还是蔬菜，都必须保证最新鲜的状态。此外，对于食堂的安全管理也非常重视，定期对服务人员进行消防培训和知识普及，确保在紧急情况下能够及时控制局面。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S08C01_agent_added/out_002-F_4.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 497003, dtype: float32, min: -0.2088623046875, max: 0.20721435546875
+问题音频时间长度: 31.0626875
+
+
+[Agent] 接收到问题: 可以去看中之机密对那这些可以辛苦行到时候老师这个跟家长多通讯一下行吧本场会议到此结束散会你好焦焦如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识
+, 1743409990.668401
+问题音频STT前的时刻: 1743409990.6685169
+问题音频STT后的时刻: 1743409991.2860022
+问题音频STT时间: 0.6174852848052979
+
+
+[Agent] 最终接收到问题: 你好,娇娇,如何通过调查问卷和实践活动提高孩子对粮食来之不易的认识?
+, 1743409991.2862282
+问题音频送入Planner的时刻: 1743409991.2866573
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743409991.893339
+planner new_token time: 1743409992.287752
+planner new_token time: 1743409992.288122
+First token received: 1, time: 1743409992.2882314
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743409992.3049927
+talker first token time: 1743409992.5472333
+talker first token time: 1743409992.5735397
+talker first token time: 1743409992.5995672
+talker first token time: 1743409992.6257708
+talker first token time: 1743409992.6770327
+talker first token time: 1743409992.702917
+talker first token time: 1743409992.7287562
+talker first token time: 1743409992.7546294
+talker first token time: 1743409992.7804449
+talker first token time: 1743409992.8065095
+talker first token time: 1743409992.8579023
+talker first token time: 1743409992.8839118
+talker first token time: 1743409992.9353304
+talker first token time: 1743409992.9614394
+talker first token time: 1743409992.9873974
+talker first token time: 1743409993.0393822
+talker first token time: 1743409993.0654004
+talker first token time: 1743409993.117192
+talker first token time: 1743409993.1434424
+talker first token time: 1743409993.169586
+talker first token time: 1743409993.196167
+talker first token time: 1743409993.222478
+talker first token time: 1743409993.2491655
+talker first token time: 1743409993.2754672
+talker first token time: 1743409993.3018467
+talker first token time: 1743409993.353972
+talker first token time: 1743409993.3802223
+talker first token time: 1743409993.4064848
+talker first token time: 1743409993.4326603
+talker first token time: 1743409993.4587271
+talker first token time: 1743409993.4849396
+talker first token time: 1743409993.5110905
+talker first token time: 1743409993.537282
+talker first token time: 1743409993.5634801
+talker first token time: 1743409993.6156805
+talker first token time: 1743409993.667779
+talker first token time: 1743409993.694003
+talker first token time: 1743409993.7202222
+talker first token time: 1743409993.7464483
+talker first token time: 1743409993.798803
+talker first token time: 1743409993.8251262
+talker first token time: 1743409993.8514593
+talker first token time: 1743409993.9038606
+talker first token time: 1743409993.9302945
+talker first token time: 1743409993.956855
+talker first token time: 1743409993.9833508
+talker first token time: 1743409994.00986
+talker first token time: 1743409994.0634148
+
+talker输出：
+
+Token count: 114, Total time: 3.7850 seconds, One token time: 0.0332 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+可以通过设计调查问卷，收集孩子对粮食的认知情况，通过实践活动，如种植水稻、小麦等，让孩子亲手体验从播种到收获的过程，从而深刻理解到粮食的来之不易。同时，可以通过讲解历史故事、观看纪录片等方式，增强孩子的认知和感悟。
+talker 输出结束
+
+会议数据处理完成。

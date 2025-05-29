@@ -1,0 +1,636 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200616_M_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 61
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.21s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.22it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.42s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.96s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  5.02s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.63s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.95s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.84s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.69s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.63s/it]
+002005003004好的 今天如意请到了各方各业的教主来参加我们的一个课谢谢大家是这样的,你们在公司都是负责什么管理的呢?负责什么?财务我是人事长市场还是负责不同的对那你们可以给我具体介绍一下你们负责的人事啊财务啊我们市场部的话,就是在充分理解公司的战略意图的情况下,然后找准机会嘛,确定进行市场调研,然后做一些营销战略,帮助公司,或者是先进入业,帮助客户实现需求。哦,对财务就是工资的项目投资支出还有收入原生的工资就钱对我这个就是人事的就是跟人力资源就是公司的这个人员的选拔使用培养考核奖发就是一系列的管理活动你们对于各行业你们觉得有什么发展前景市场是如何吗?每个公司主要是销售商品,或者是做一些什么创业之类的?各位都在自己行业工作了多少年?我这个十几年了。我的话,也是刚过了四年。三四年。有问男生吗有啊,肯定会有。有什么可以跟我们分享一下,咱们就是简单的交流位置,放松,咱们就可以放松。工作的话,找工作肯定是选自己喜欢的嘛,也是不断的在接触不同的行业,看看自己喜欢什么。做了市场这一部分的话,也是刚开始也比较努力毕竟人家那些有很多强的后长辈啊,人家都很实力的讲,前辈,教他们学习之类的,就是还得自己不断的努力吧,自己有一个要求,才能到现在的这个地步。我们人事吧,就是怎么说,刚开始因为年龄比较小,开始就管几个人,然后后来慢慢的就是说什么然后因为有老员工嘛然后挺不服管教的吧挺难管的还有一些就是特别这个调皮的还有特别有的男的就是特别就是怎么说来着爱闹事的还都比较我们也得调解一下其实这个人事吧就跟以前来说跟工会啊好像事儿也是挺杂的财务的话就是刚开始会出现一种弄错账,还有就这个问题。财务是,反正刚开始都是。各部门交,交了多少个部门?我们这几个部门,都应该有联系吧。比如说我认识吧,我们可能会跟他比较接触。他兩個都因为当时比如说招工啊什么的,有可能都见过是吧,然后安排啊什么的。像在一个公司里面,像人事啊,市场部啊,就有交接工作的,这些都是挺重要的。嗯。行,接下来我们问点生活上的一些事情。话题叫轻松一点,大家都喜欢旅游吗?嗯,喜欢旅游。喜欢旅游。你来到去哪里了?我比較喜歡海邊吧青岛比较近吧,海南都喜欢,海的地方我特别喜欢,踩到沙滩上,捡点贝壳什么的。要去喜欢海边的话,经济实惠点的可以去青黄岛,青岛,是想看更大眼的海感受一下地域风情的话不嫌的话你可以出国出国还是自己没有这个打算就是我觉得中国的风险也挺好的先把附近的都我就喜欢我喜欢四川重庆的地方就那种对我也打算想去成都了因为要是从然后到淡季的时候买个打折飞机票挺便宜成都可以尝尝他们的特色,四川的也可以去湖南长沙看个小市成都就是小市多,大理也挺好的就是去那里体验生活,慢生活,环境什么的我喜欢去南方体验一下慢生活但是前提是假期要不过长我还喜欢一些古建筑以前去过山西啊看那个桥桥大院都喜欢去旅游,可以在工作之余,先放松一下,先下到水平,让大家去工作,本来就很累的,不能来工作,上班的时候,下班的时候才想来。是这样的你们觉得你们个人的性格你们是否在这个行业工作了好多年了?你们觉得你们是否有不同的性格?我吧,我觉得我脾气比较好因为我同事做人是蛮好的其实脾气挺好的我同事基本上都是这样说的开了就是才能管理别人对盖立盘的时候对对你们是用什么财务方面对 就细心的那种我的话市场嘛它就是需要能和别人交流
+[Audio Detection] 在 502.74 秒检测到关键词 '好交交'。
+detection_time: 502.74, current_time: 496.00
+尖锐的一点问题行吗你们在都两岁上的三四年来在公司在企业共同发展过什么难题吗我们人事办法就是比如说用对人比较好比如说他市场我爸放过去他才有的时候可能也会放手然后他就不太适合那个工作然后还得看人有的人的脾气什么你看同事之间我觉得相互的得友好吧也不能说跟小孩打架一样是吧就是他对他专业什么各个方面的对抗还有他喜欢的反正比较难抉择吧那就说看他们这个工作的事样,我们希望留住人才嘛财务吧,每天得处理那个什么凭证啊还得记账凭证,就是有可能会出现遗漏市场这部分就是,它是很需要人力的支持他們是需要一些想像力的做一些好的營銷方案要听我们公司的需求要看一下客户的大众方面的意见做一个好的做一些市场营销做一些方案策划案之类的就是可能会大家的意见不是很相同毕竟每个人有自己的想法但是调节一下最终我们还是最终的话意见可以同意的是这样谢谢大家你对自己都有上司是吧?你对你的上司有什么样的看法?怎么处理上司或者下司?或者通道的问题对上级来说就是布置的任务要认真地完成然后公正一点就是上次嘛跟家长一样她要说的对就听她的她要说的错的话可以给她提出来那种意见有时候吧你不能只乐气对于下级吧你得热情亲切当然她犯错误的时候该言理但是你现在这个人事关系你不能说狠什么就看她什么错误大事该讲话之多的话就该什么我觉得吧就是这个上司跟下属之类的上司是能力高的人他才能是我们的上司所以说就是因为他的能力高他会向他学习一些什么比他为榜样对比他为榜样然后大家互相吸取教训互相努力都是为咱们公司发展做的贡献如果有了矛盾的話就是打开谁在点谁不在点其实通常是这样对事不对人对对事不对人那咱就接下来这些问题呢就比较简单了生活中让您感到快乐的事情是什么感到非常快乐高兴放假休息放假休息加薪跟孩子啊,家人啊,出去玩啊,都比较开心。其实就是在生活中,在工作中,只要你找到一个你自己喜欢做的事情,努力的去做,其实这些都是挺开心的。嗯很好太幸福了就开始沮丧 不高兴不高兴我觉得有时候做得挺好的然后上次还就是说我觉得做得然后我感觉努力了然后偶尔有一些事但是没有做好自己也比较沮丧肯定是很重要的應該職場都有過這瓶口沫就是努力了但是被看不到那种对 有的时候看不到有时候其实自己也有时候就说努力了但是最后结果不太好 是吧自己心情也比较沮丧其实自信最重要相信自己有能力咱们慢慢地来嘛我记得我刚才参加工作的时候其实老总就是其实要是现在来之后我现在这个年他要收我一筹我就无所谓那会儿就刚参加工作然后在家里就也都跟公主 是吧突然让人家扔到屁股哎呀我都哭了,刚在家工作的时候。她对你很羡慕。反正领导有时候你看见什么领导,有的领导其实不是个坏人,有时候说话比较直。他们既然做到领导,他们肯定有这种能力,他不说你的话,他怎么做领导,管理能力吧。其实就是这样的,用力越走越长。其实我们那岛也都挺好的比如说他批评了你,但是在下边就是个人之间聊天的时候,他就说我也不是真的你,这种情况。嗯,行,这就是一个领导员一个领导员的风格。嗯,方式。那我現在接下來我想跟大家一些比较有意义的、有意思的一些问题在世界和你的生活中什么样的问题、观念比如说还有国籍的思想对你最有最重要你愿意为它做些什么是否愿意奉献你的一生为什么感谢观看什
+[Text Detection] 在 1009.99 秒检测到关键词 '焦焦',current_time: 992.00, 问题文本: 什么样的方式行动来维护你的性格你说事业跟家庭就是如果选择的话哪个是最重要的吗对可以先这样你好焦焦基于之前我们讨论的内容关于如何处理与上司下司下级以及同事之间的关系
+么样的方式行动来维护你的性格你说事业跟家庭就是如果选择的话哪个是最重要的吗对可以先这样你好焦焦基于之前我们讨论的内容关于如何处理与上司下司下级以及同事之间的关系她的视野是重要,但是家庭也很重要。就是因为你有自己的爸爸妈妈,想要去照顾他们,想要给他们更好的生活,所以她会努力地工作。是家庭的一心念。但是选的话肯定会先选家庭。女性对于这个角色对男性比较难为难。先成事业再成家对 他现在就是说男生的就是女的吧反正怎么着有个产家有个什么的然后男的他都不需要这些然后女的可能会如果你休的话你这个比如说你这个事业是吧你这个工作就可能就会现实就是这样现实不上班的时候干什么干什么就是像我爸就是休息休息假然后出去逛逛街采购一下逛逛街采购如果大假的话那就出去玩或者穿上轻心小假的话一般就是这样歇一天绿绿油啊 看看书啊风雨然后可以聚聚会啊我喜欢在家待着有时候有些人喜欢在家待着我喜欢在家从我那会儿没有结婚的时候我就喜欢在家然后就喜欢去给我购点物然后逛逛街就是这样有时候自己一个人在家也挺好的安安静静的对有时候朋友聚个会有时候朋友聚个会有时候朋友聚个会有时候朋友记个会其实很棒的我觉得就是要是自己一个人在家的话就是忙了一周了吧然后周天咱放假自己一个人在家总感觉有点不足出去玩一会儿就是很好和别人交流交流其实性格不一样就是接下来我想问一下再转一个空的你们都是怎么找到自己的工作比如说毕业,这是你们第一几分的工作我的话,我的专业学的不是市场方面的但是我觉得,也是找了好几分吧,找了三四分工作最后才觉得自己感谢自己的方面是最重要的然後你也會有那個動力去做一些超過做一些让别人满意的策划案,为公司赢一些福利,一大伙人一起为同一个目标努力,感觉很好。我这个就是第一份吧然后先开始的时候刚进公司的时候就是做过就是在这一个公司啊然后做过好多因为刚毕业嘛那老有点看看你适合做什么做过好多份就工种吧怎么说来着后来就做到这个管理了公司也有好多的职位对我都做过然后就是因为刚毕业然后因为我学的也不是这个然后各种都干了我这是第二个事吧就感觉我能管理好然后就比较心细嘛然后感觉能上任然后也会努力做好这个然后就做的这个嗯财务方面也得心细就是财务方面也得心细接下来我想问一下接下来我们想问一下大家就一般就你的工作而言就比如说财务方面你最喜欢的最不喜欢的就工作而言有吗?有吗?其余两位呢?有吗?我,你先说我反正就是,挺喜欢笑的吧,然后挺喜欢跟女人打交道不喜欢就是,坐着然后老往上就在那坐着就是工作了就更快,就才快这种我就觉得不太适合就是老是做人物这个人是不是有时候也得来回跑嘛然后看看这个还得考核心看你们就是这些做得怎么样啊每个部门都得转像我们市场的话它有很多角色它有规划者 管理者 策划者 执行者它还有分析者和公关者我不喜欢的话就不选公关吧就是为了缓解危机做一些那些处理案啊什么之类的跟别人打架之类的1,4,5,6,7,8,9,10我喜欢的话就是策划者,就是针对咱们那个市场理念,咱们那个产品理念吧,做一些策划案呀,做一些创意活动,传播咱们这个产品之类的。这个的话就感觉咱们在一起,一起开动大脑,也会思维上找到一个端点吧。思维上找到一个端点,是吧?嗯那各位每天都做什么工作方面的有哪些工作是必须要做的我主要就是人员招聘然后员工经商然后这个劳动关系合同的管理还有这个考钱福利这类的我们就是市场调研嘛市场调研 累积公关然后做一些策划案跑到这儿跑到那儿做一些产品的调研然后有时候还需要去问一下群众的做一下市场问卷之类的市场问卷对比如说就是预算资金就是流动的资金还有核对资金什么的嗯 这方面平常是烦吗
+[Audio Detection] 在 1538.91 秒检测到关键词 '好交交'。
+detection_time: 1538.91, current_time: 1519.00
+这几百号人吧嗯,就是分不同部门有不同的管理员吗?因为它总组组的吧,全部都管吧你像你这个,比如说一个公司你看多少部门,像你们这个部门然后财快啊,还有那个就是市场啊什么,好多部门是吧所以每个都得可能我们就是每个人可能分一个部门或者说是当做一起的比如说照顾的时候可能会一起开放我觉得每个部门要把每一项任务坚持到每个人头上但是大家也不要光顾着自己的任务一个公司是个整体对 也是一个整体但是每个人的任务是要完成的市场会也是这样的创意的话也是大家一起想但是也分个主要的创意做策划案做之类的对 你们这个咱们留神的话就是工课留神一下方便他就是分工合理然后自己管好自己嗯这儿的就乱不了才快吧反正也是那边不是也分出纳呀会计呀还有总监啊挺多的他们还有不是也得发考亲还得开工资考亲又得给他们都得上嗯這方面打理起來也就比較快了有时候部门里面有个人,他们工资发错了,或者是税收有问题,他们都得找财务管理。财务这个反正就是从工资到考勤到这个,有时候还得就你们这市场跑市场这些卖出的东西啊,或者是你们出差,差旅费。他们管得也挺多的还有就是公杀税务啊都得其实有时候挺喜欢去开的嗯因为就是自己可以逛逛然后车费的话也比较小对就当理由了怎么也得抽出半个时间赚呢对啊小再问一个问题对友谊有什么问题是公司里的这个合作吗?还是自己的生活就好?生活友谊,同学朋友现在有时候不是就这样说一句话如果要是谁肯借给你钱就是最最真的友谊了然后就是朋友嘛就是当然我觉得反正上学的同学朋友最纯洁的玩意儿参加工作以后会有一些利益,特别是同事之间。如果你真的有利益的话,可能会出现竞争啊。商场无朋友。不用那咱今天對各位講了這麼多各位還有什麼想要說的知道吗那是个想跟大家分享的如果没有的话那在本期这个教育会咱们先开了行吗 行行 好吧
+[Audio Detection] 在 1850.90 秒检测到关键词 '好交交'。
+detection_time: 1850.90, current_time: 1829.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200616_M_R001S04C01_agent_added/out_002-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 667205, dtype: float32, min: -0.160491943359375, max: 0.196197509765625
+问题音频时间长度: 41.7003125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和效率
+, 1743410762.633563
+问题音频STT前的时刻: 1743410762.6337464
+问题音频STT后的时刻: 1743410763.1351378
+问题音频STT时间: 0.5013914108276367
+
+
+[Agent] 最终接收到问题: 你好,焦焦,如何平衡工作与旅游爱好,提高工作效率?
+, 1743410763.1352925
+问题音频送入Planner的时刻: 1743410763.1359823
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743410763.790647
+planner new_token time: 1743410764.1855986
+planner new_token time: 1743410764.1860497
+First token received: 1, time: 1743410764.1869352
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743410764.2400343
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743410764.8684516
+talker first token time: 1743410764.8942897
+talker first token time: 1743410764.9200082
+talker first token time: 1743410764.9458282
+talker first token time: 1743410764.971593
+talker first token time: 1743410765.0230243
+talker first token time: 1743410765.0487814
+talker first token time: 1743410765.074479
+talker first token time: 1743410765.100111
+talker first token time: 1743410765.1257486
+talker first token time: 1743410765.151636
+talker first token time: 1743410765.1773736
+talker first token time: 1743410765.2031054
+talker first token time: 1743410765.2543564
+talker first token time: 1743410765.2801595
+talker first token time: 1743410765.3059452
+talker first token time: 1743410765.3316233
+talker first token time: 1743410765.3574526
+talker first token time: 1743410765.4337559
+talker first token time: 1743410765.459366
+talker first token time: 1743410765.48497
+talker first token time: 1743410765.5105808
+talker first token time: 1743410765.5618768
+talker first token time: 1743410765.5875995
+talker first token time: 1743410765.6133568
+talker first token time: 1743410765.6391695
+talker first token time: 1743410765.665163
+talker first token time: 1743410765.6910994
+talker first token time: 1743410765.7170782
+talker first token time: 1743410765.7683547
+talker first token time: 1743410765.7942753
+talker first token time: 1743410765.8199384
+talker first token time: 1743410765.8457592
+talker first token time: 1743410765.8717945
+talker first token time: 1743410765.8979778
+talker first token time: 1743410765.949925
+talker first token time: 1743410766.0017135
+talker first token time: 1743410766.078922
+talker first token time: 1743410766.104832
+talker first token time: 1743410766.130856
+talker first token time: 1743410766.1822126
+talker first token time: 1743410766.2081068
+talker first token time: 1743410766.2338893
+talker first token time: 1743410766.285478
+talker first token time: 1743410766.311213
+talker first token time: 1743410766.3373885
+talker first token time: 1743410766.3635225
+talker first token time: 1743410766.389539
+talker first token time: 1743410766.4154556
+talker first token time: 1743410766.4416401
+talker first token time: 1743410766.4676528
+talker first token time: 1743410766.4935975
+talker first token time: 1743410766.5196304
+talker first token time: 1743410766.5457377
+talker first token time: 1743410766.5717404
+talker first token time: 1743410766.5978775
+talker first token time: 1743410766.676024
+talker first token time: 1743410766.7288072
+talker first token time: 1743410766.7552607
+talker first token time: 1743410766.7821994
+talker first token time: 1743410766.8087683
+talker first token time: 1743410766.8606546
+talker first token time: 1743410766.8868554
+talker first token time: 1743410766.9129055
+talker first token time: 1743410766.9391298
+talker first token time: 1743410766.9652066
+talker first token time: 1743410766.991638
+talker first token time: 1743410767.0176003
+talker first token time: 1743410767.0435796
+talker first token time: 1743410767.0697513
+talker first token time: 1743410767.0960848
+talker first token time: 1743410767.1221185
+talker first token time: 1743410767.1482887
+talker first token time: 1743410767.2005274
+talker first token time: 1743410767.226755
+talker first token time: 1743410767.2530441
+talker first token time: 1743410767.2793791
+talker first token time: 1743410767.3056984
+talker first token time: 1743410767.3585532
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 制定详细计划：制定一份工作和旅游的平衡计划，明确时间和优先级。
+2. 学会拒绝：不要承担过多的工作或旅行计划，学会对不重要的事情说“不”。
+3. 提升工作效率：提高自身工作效率，利用空闲时间进行短途旅行或学习新技能。
+4. 善于时间管理：学会合理安排时间，在工作之余充分休息和放松身心，以保持高效工作状态。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200616_M_R001S04C01_agent_added/out_002-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 667205, dtype: float32, min: -0.160491943359375, max: 0.196197509765625
+问题音频时间长度: 41.7003125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和效率
+, 1743410768.884354
+问题音频STT前的时刻: 1743410768.8847816
+问题音频STT后的时刻: 1743410770.3256886
+问题音频STT时间: 1.4409070014953613
+
+
+[Agent] 最终接收到问题: 你好焦焦,基于之前我们讨论的内容,关于如何处理与上司、下司、下级以及同事之间的关系,你能否分享一下自己的经验?在实际工作,你实际工作中,你是如何平衡对事不对人的原则,同时又能保持团队的和谐氛围的呢?
+, 1743410770.3259304
+问题音频送入Planner的时刻: 1743410770.3263857
+planner new_token time: 1743410770.9816558
+planner new_token time: 1743410771.3738446
+First token received: 0, time: 1743410771.3740232
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743410771.7654684
+planner new_token time: 1743410772.1568258
+planner new_token time: 1743410772.5481079
+planner new_token time: 1743410772.939726
+planner new_token time: 1743410773.3323426
+planner new_token time: 1743410773.7246537
+planner new_token time: 1743410774.1164691
+planner new_token time: 1743410774.5085545
+planner new_token time: 1743410774.9009626
+planner new_token time: 1743410775.2921188
+planner new_token time: 1743410775.6836865
+planner new_token time: 1743410776.0759163
+planner new_token time: 1743410776.467655
+planner new_token time: 1743410776.8598962
+planner new_token time: 1743410777.252398
+planner new_token time: 1743410777.6438715
+planner new_token time: 1743410778.0367334
+planner new_token time: 1743410778.4286697
+planner new_token time: 1743410778.8203058
+planner new_token time: 1743410779.212656
+planner new_token time: 1743410779.6043026
+planner new_token time: 1743410779.9966254
+planner new_token time: 1743410780.3886454
+planner new_token time: 1743410780.780796
+planner new_token time: 1743410781.172989
+planner new_token time: 1743410781.5650604
+planner new_token time: 1743410781.9572408
+planner new_token time: 1743410782.3493118
+planner new_token time: 1743410782.7424195
+planner new_token time: 1743410783.1348574
+planner new_token time: 1743410783.5269394
+planner new_token time: 1743410783.920008
+planner new_token time: 1743410784.3132055
+planner new_token time: 1743410784.706396
+planner new_token time: 1743410785.0988247
+planner new_token time: 1743410785.491988
+planner new_token time: 1743410785.492649
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：处理上下级关系 平衡对事不对人 团队和谐
+
+
+提取的关键词: ['处理上下级关系', '平衡对事不对人', '团队和谐']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743410786.4645581
+one token time in planner tools: 1743410786.8591375
+one token time in planner tools: 1743410787.2539134
+one token time in planner tools: 1743410787.6487248
+one token time in planner tools: 1743410788.0436385
+one token time in planner tools: 1743410788.4382331
+one token time in planner tools: 1743410788.8332593
+one token time in planner tools: 1743410789.2284758
+one token time in planner tools: 1743410789.6232228
+one token time in planner tools: 1743410790.018187
+one token time in planner tools: 1743410790.4130442
+one token time in planner tools: 1743410790.808195
+one token time in planner tools: 1743410791.2028327
+one token time in planner tools: 1743410791.597997
+one token time in planner tools: 1743410791.9929993
+one token time in planner tools: 1743410792.3886864
+one token time in planner tools: 1743410792.7836766
+one token time in planner tools: 1743410793.1789954
+one token time in planner tools: 1743410793.5744824
+one token time in planner tools: 1743410793.9699674
+one token time in planner tools: 1743410794.365095
+one token time in planner tools: 1743410794.7600822
+one token time in planner tools: 1743410795.1555355
+one token time in planner tools: 1743410795.5509164
+one token time in planner tools: 1743410795.9463918
+one token time in planner tools: 1743410796.3417113
+one token time in planner tools: 1743410796.7370343
+one token time in planner tools: 1743410797.13234
+one token time in planner tools: 1743410797.5279045
+one token time in planner tools: 1743410797.9228625
+one token time in planner tools: 1743410798.3181143
+one token time in planner tools: 1743410798.713931
+one token time in planner tools: 1743410799.1095016
+one token time in planner tools: 1743410799.505207
+one token time in planner tools: 1743410799.900243
+one token time in planner tools: 1743410800.2960606
+one token time in planner tools: 1743410800.6918972
+one token time in planner tools: 1743410801.087254
+one token time in planner tools: 1743410801.483027
+one token time in planner tools: 1743410801.8782473
+one token time in planner tools: 1743410802.2742352
+one token time in planner tools: 1743410802.6696155
+one token time in planner tools: 1743410803.0653765
+one token time in planner tools: 1743410803.46098
+one token time in planner tools: 1743410803.8566055
+one token time in planner tools: 1743410804.252004
+one token time in planner tools: 1743410804.6475108
+one token time in planner tools: 1743410805.0430217
+one token time in planner tools: 1743410805.4386697
+one token time in planner tools: 1743410805.8345122
+one token time in planner tools: 1743410806.2302842
+one token time in planner tools: 1743410806.626098
+one token time in planner tools: 1743410807.0218801
+one token time in planner tools: 1743410807.4177923
+one token time in planner tools: 1743410807.8134208
+one token time in planner tools: 1743410808.2089975
+one token time in planner tools: 1743410808.6046183
+one token time in planner tools: 1743410809.0008738
+one token time in planner tools: 1743410809.3963108
+one token time in planner tools: 1743410809.7925377
+one token time in planner tools: 1743410810.1894372
+one token time in planner tools: 1743410810.5855293
+one token time in planner tools: 1743410810.9812508
+one token time in planner tools: 1743410811.3770015
+one token time in planner tools: 1743410811.7728462
+one token time in planner tools: 1743410812.1686566
+one token time in planner tools: 1743410812.5644922
+one token time in planner tools: 1743410812.960113
+one token time in planner tools: 1743410813.355801
+one token time in planner tools: 1743410813.7523239
+one token time in planner tools: 1743410814.1496863
+one token time in planner tools: 1743410814.546839
+one token time in planner tools: 1743410814.943619
+one token time in planner tools: 1743410815.3392963
+one token time in planner tools: 1743410815.735626
+one token time in planner tools: 1743410816.1324139
+one token time in planner tools: 1743410816.5286784
+one token time in planner tools: 1743410816.926639
+one token time in planner tools: 1743410817.3229263
+one token time in planner tools: 1743410817.7195816
+one token time in planner tools: 1743410818.1159723
+one token time in planner tools: 1743410818.51289
+one token time in planner tools: 1743410818.9102812
+one token time in planner tools: 1743410819.3069916
+one token time in planner tools: 1743410819.704279
+one token time in planner tools: 1743410820.1014228
+one token time in planner tools: 1743410820.4978995
+one token time in planner tools: 1743410820.894737
+one token time in planner tools: 1743410821.291528
+one token time in planner tools: 1743410821.6883788
+one token time in planner tools: 1743410822.0854602
+one token time in planner tools: 1743410822.4828866
+one token time in planner tools: 1743410822.879169
+one token time in planner tools: 1743410823.2759392
+one token time in planner tools: 1743410823.6726773
+one token time in planner tools: 1743410824.0698764
+one token time in planner tools: 1743410824.4668195
+one token time in planner tools: 1743410824.863906
+one token time in planner tools: 1743410825.260657
+one token time in planner tools: 1743410825.2619805
+
+Token count: 100, Total time: 39.7066 seconds, One token time: 0.3971 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：处理', '上下', '级', '关系', ' ', '平', '衡', '对', '事', '不对', '人', ' ', '团', '队', '和谐', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###是这样的你们觉得你们个人的性格你们是否在这个行业工作了好多年了?你们觉得你们是否有不同的性格?我吧,我觉得我脾气比较好因为我同事做人是蛮好的其实脾气挺好的我同事基本上都是这样说的开了就是才能管理别人对盖立盘的时候对对你们是用什么财务方面对 就细心的那种我的话市场嘛它就是需要能和别人交流尖锐的一点问题行吗你们在都两岁上的三四年来在公司在企业共同发展过什么难题吗我们人事办法就是比如说用对人比较好比如说他市场我爸放过去他才有的时候可能也会放手然后他就不太适合那个工作然后还得看人有的人的脾气什么你看同事之间我觉得相互的得友好吧也不能说跟小孩打架一样是吧就是他对他专业什么各个方面的对抗还有他喜欢的反正比较难抉择吧那就说看他们这个工作的事样,我们希望留住人才嘛财务吧,每天得处理那个什么凭证啊还得记账凭证,就是有可能会出现遗漏市场这部分就是,它是很需要人力的支持他們是需要一些想像力的做一些好的營銷方案要听我们公司的需求要看一下客户的大众方面的意见做一个好的做一些市场营销做一些方案策划案之类的就是可能会大家的意见不是很相同毕竟每个人有自己的想法但是调节一下最终我们还是最终的话意见可以同意的是这样谢谢大家你对自己都有上司是吧?你对你的上司有什么样的看法?怎么处理上司或者下司?或者通道的问题对上级来说就是布置的任务要认真地完成然后公正一点就是上次嘛跟家长一样她要说的对就听她的她要说的错的话可以给她提出来那种意见有时候吧你不能只乐气对于下级吧你得热情亲切当然她犯错误的时候该言理但是你现在这个人事关系你不能说狠什么就看她什么错误大事该讲话之多的话就该什么我觉得吧就是这个上司跟下属之类的上司是能力高的人他才能是我们的上司所以说就是因为他的能力高他会向他学习一些什么比他为榜样对比他为榜样然后大家互相吸取教训互相努力都是为咱们公司发展做的贡献如果有了矛盾的話就是打开谁在点谁不在点其实通常是【这】样对事不对人对对事不对人那咱就接下来这些问题呢就比较简单了生活中让您感到快乐的事情是什么感到非常快乐高兴放假休息放假休息加薪跟孩子啊,家人啊,出去玩啊,都比较开心。其实就是在生活中,在工作中,只要你找到一个你自己喜欢做的事情,努力的去做,其实这些都是挺开心的。嗯很好太幸福了就开始沮丧 不高兴不高兴我觉得有时候做得挺好的然后上次还就是说我觉得做得然后我感觉努力了然后偶尔有一些事但是没有做好自己也比较沮丧肯定是很重要的應該職場都有過這瓶口沫就是努力了但是被看不到那种对 有的时候看不到有时候其实自己也有时候就说努力了但是最后结果不太好 是吧自己心情也比较沮丧其实自信最重要相信自己有能力咱们慢慢地来嘛我记得我刚才参加工作的时候其实老总就是其实要是现在来之后我现在这个年他要收我一筹我就无所谓那会儿就刚参加工作然后在家里就也都跟公主 是吧突然让人家扔到屁股哎呀我都哭了,刚在家工作的时\n---\n他们管得也挺多的还有就是公杀税务啊都得其实有时候挺喜欢去开的嗯因为就是自己可以逛逛然后车费的话也比较小对就当理由了怎么也得抽出半个时间赚呢对啊小再问一个问题对友谊有什么问题是公司里的这个合作吗?还是自己的生活就好?生活友谊,同学朋友现在有时候不是就这样说一句话如果要是谁肯借给你钱就是最最真的友谊了然后就是朋友嘛就是当然我觉得反正上学的同学朋友最纯洁的玩意儿参加工作以后会有一些利益,特别是同事之间。如果你真的有利益的话,可能会出现竞争啊。商场无朋友。不用那咱今天對各位講了這麼多各位還有什麼想要說的知道吗那是个想跟大家分享的如果没有的话那在本期这个教育会咱们先开了行吗 行行 好吧你好,焦焦,如何平衡工作与旅游爱好,提高工作效率?你好焦焦,基于之前我们讨论的内容,关于如何处理与上司、下司、下级以及同事之间的关系,你能否分享一下自己的经验?在实际工作,你实际工作中,你是如何【平】衡对事不对人的原则,同时又能保持团队的和谐氛围的###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n在这次会议中，关于平衡工作与旅游爱好以提高工作效率的问题，参与者们提到要注重生活与工作的结合，找到自己喜欢并愿意投入的事情，并保持积极的态度。至于处理人际关系，建议采取“对事不对人”的态度，公正对待上司布置的任务，同时也要关心下级的感受，通过沟通解决问题，保持团队和谐。此外，会议也强调了个人成长的重要性，通过向能力出众的上司学习，不断进步，从而更好地应对职场挑战。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###是这样的你们觉得你们个人的性格你们是否在这个行业工作了好多年了?你们觉得你们是否有不同的性格?我吧,我觉得我脾气比较好因为我同事做人是蛮好的其实脾气挺好的我同事基本上都是这样说的开了就是才能管理别人对盖立盘的时候对对你们是用什么财务方面对 就细心的那种我的话市场嘛它就是需要能和别人交流尖锐的一点问题行吗你们在都两岁上的三四年来在公司在企业共同发展过什么难题吗我们人事办法就是比如说用对人比较好比如说他市场我爸放过去他才有的时候可能也会放手然后他就不太适合那个工作然后还得看人有的人的脾气什么你看同事之间我觉得相互的得友好吧也不能说跟小孩打架一样是吧就是他对他专业什么各个方面的对抗还有他喜欢的反正比较难抉择吧那就说看他们这个工作的事样,我们希望留住人才嘛财务吧,每天得处理那个什么凭证啊还得记账凭证,就是有可能会出现遗漏市场这部分就是,它是很需要人力的支持他們是需要一些想像力的做一些好的營銷方案要听我们公司的需求要看一下客户的大众方面的意见做一个好的做一些市场营销做一些方案策划案之类的就是可能会大家的意见不是很相同毕竟每个人有自己的想法但是调节一下最终我们还是最终的话意见可以同意的是这样谢谢大家你对自己都有上司是吧?你对你的上司有什么样的看法?怎么处理上司或者下司?或者通道的问题对上级来说就是布置的任务要认真地完成然后公正一点就是上次嘛跟家长一样她要说的对就听她的她要说的错的话可以给她提出来那种意见有时候吧你不能只乐气对于下级吧你得热情亲切当然她犯错误的时候该言理但是你现在这个人事关系你不能说狠什么就看她什么错误大事该讲话之多的话就该什么我觉得吧就是这个上司跟下属之类的上司是能力高的人他才能是我们的上司所以说就是因为他的能力高他会向他学习一些什么比他为榜样对比他为榜样然后大家互相吸取教训互相努力都是为咱们公司发展做的贡献如果有了矛盾的話就是打开谁在点谁不在点其实通常是【这】样对事不对人对对事不对人那咱就接下来这些问题呢就比较简单了生活中让您感到快乐的事情是什么感到非常快乐高兴放假休息放假休息加薪跟孩子啊,家人啊,出去玩啊,都比较开心。其实就是在生活中,在工作中,只要你找到一个你自己喜欢做的事情,努力的去做,其实这些都是挺开心的。嗯很好太幸福了就开始沮丧 不高兴不高兴我觉得有时候做得挺好的然后上次还就是说我觉得做得然后我感觉努力了然后偶尔有一些事但是没有做好自己也比较沮丧肯定是很重要的應該職場都有過這瓶口沫就是努力了但是被看不到那种对 有的时候看不到有时候其实自己也有时候就说努力了但是最后结果不太好 是吧自己心情也比较沮丧其实自信最重要相信自己有能力咱们慢慢地来嘛我记得我刚才参加工作的时候其实老总就是其实要是现在来之后我现在这个年他要收我一筹我就无所谓那会儿就刚参加工作然后在家里就也都跟公主 是吧突然让人家扔到屁股哎呀我都哭了,刚在家工作的时
+---
+他们管得也挺多的还有就是公杀税务啊都得其实有时候挺喜欢去开的嗯因为就是自己可以逛逛然后车费的话也比较小对就当理由了怎么也得抽出半个时间赚呢对啊小再问一个问题对友谊有什么问题是公司里的这个合作吗?还是自己的生活就好?生活友谊,同学朋友现在有时候不是就这样说一句话如果要是谁肯借给你钱就是最最真的友谊了然后就是朋友嘛就是当然我觉得反正上学的同学朋友最纯洁的玩意儿参加工作以后会有一些利益,特别是同事之间。如果你真的有利益的话,可能会出现竞争啊。商场无朋友。不用那咱今天對各位講了這麼多各位還有什麼想要說的知道吗那是个想跟大家分享的如果没有的话那在本期这个教育会咱们先开了行吗 行行 好吧你好,焦焦,如何平衡工作与旅游爱好,提高工作效率?你好焦焦,基于之前我们讨论的内容,关于如何处理与上司、下司、下级以及同事之间的关系,你能否分享一下自己的经验?在实际工作,你实际工作中,你是如何【平】衡对事不对人的原则,同时又能保持团队的和谐氛围的###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+在这次会议中，关于平衡工作与旅游爱好以提高工作效率的问题，参与者们提到要注重生活与工作的结合，找到自己喜欢并愿意投入的事情，并保持积极的态度。至于处理人际关系，建议采取“对事不对人”的态度，公正对待上司布置的任务，同时也要关心下级的感受，通过沟通解决问题，保持团队和谐。此外，会议也强调了个人成长的重要性，通过向能力出众的上司学习，不断进步，从而更好地应对职场挑战。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200616_M_R001S04C01_agent_added/out_002-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 667205, dtype: float32, min: -0.160491943359375, max: 0.196197509765625
+问题音频时间长度: 41.7003125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和效率
+, 1743410826.6639795
+问题音频STT前的时刻: 1743410826.6641726
+问题音频STT后的时刻: 1743410827.1799567
+问题音频STT时间: 0.5157840251922607
+
+
+[Agent] 最终接收到问题: 您好,焦焦,大家在工作和家庭之间如何平衡?有哪些具体做法?
+, 1743410827.1801143
+问题音频送入Planner的时刻: 1743410827.180531
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743410827.785436
+planner new_token time: 1743410828.180629
+planner new_token time: 1743410828.1810741
+First token received: 1, time: 1743410828.181194
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743410828.196279
+talker first token time: 1743410828.4419897
+talker first token time: 1743410828.4683616
+talker first token time: 1743410828.4943419
+talker first token time: 1743410828.5202692
+talker first token time: 1743410828.5459678
+talker first token time: 1743410828.5718648
+talker first token time: 1743410828.597536
+talker first token time: 1743410828.6235209
+talker first token time: 1743410828.649542
+talker first token time: 1743410828.6752732
+talker first token time: 1743410828.7247674
+talker first token time: 1743410828.7762997
+talker first token time: 1743410828.8022387
+talker first token time: 1743410828.8288016
+talker first token time: 1743410828.85503
+talker first token time: 1743410828.8813207
+talker first token time: 1743410828.907556
+talker first token time: 1743410828.9334438
+talker first token time: 1743410828.9592903
+talker first token time: 1743410829.0195045
+talker first token time: 1743410829.046092
+talker first token time: 1743410829.0978563
+talker first token time: 1743410829.1238463
+talker first token time: 1743410829.1498935
+talker first token time: 1743410829.2018614
+talker first token time: 1743410829.2280068
+talker first token time: 1743410829.2542434
+talker first token time: 1743410829.280361
+talker first token time: 1743410829.33243
+talker first token time: 1743410829.358722
+talker first token time: 1743410829.3850176
+talker first token time: 1743410829.411165
+talker first token time: 1743410829.4633787
+talker first token time: 1743410829.4907022
+talker first token time: 1743410829.5170805
+talker first token time: 1743410829.5434089
+talker first token time: 1743410829.5698175
+talker first token time: 1743410829.5960412
+talker first token time: 1743410829.622316
+talker first token time: 1743410829.6748
+talker first token time: 1743410829.7271495
+talker first token time: 1743410829.7535753
+talker first token time: 1743410829.7800121
+talker first token time: 1743410829.8327003
+talker first token time: 1743410829.8596797
+talker first token time: 1743410829.886459
+talker first token time: 1743410829.939641
+talker first token time: 1743410829.966108
+talker first token time: 1743410829.992581
+talker first token time: 1743410830.046033
+
+talker输出：
+
+Token count: 80, Total time: 3.1436 seconds, One token time: 0.0393 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在工作和家庭之间取得平衡对于身心健康都非常重要。具体做法可以包括制定合理的工作计划，避免加班；保持良好的生活习惯，注重锻炼和休息；设置明确的家庭时间，确保与家人有足够的时间相处。同时，学会放松自己，不要过度压力，保持积极的心态。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200616_M_R001S04C01_agent_added/out_002-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 667205, dtype: float32, min: -0.160491943359375, max: 0.196197509765625
+问题音频时间长度: 41.7003125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和效率
+, 1743410831.5471842
+问题音频STT前的时刻: 1743410831.547324
+问题音频STT后的时刻: 1743410832.8005466
+问题音频STT时间: 1.2532227039337158
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和效率
+, 1743410832.8007278
+问题音频送入Planner的时刻: 1743410832.8014705
+planner new_token time: 1743410833.4540908
+planner new_token time: 1743410833.8470228
+First token received: 0, time: 1743410833.847199
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743410834.2406995
+planner new_token time: 1743410834.63373
+planner new_token time: 1743410835.0264974
+planner new_token time: 1743410835.4214506
+planner new_token time: 1743410835.8155625
+planner new_token time: 1743410836.2093806
+planner new_token time: 1743410836.6032686
+planner new_token time: 1743410836.9971035
+planner new_token time: 1743410837.3909836
+planner new_token time: 1743410837.784368
+planner new_token time: 1743410838.1780705
+planner new_token time: 1743410838.571855
+planner new_token time: 1743410838.965187
+planner new_token time: 1743410839.3590496
+planner new_token time: 1743410839.7527966
+planner new_token time: 1743410840.146306
+planner new_token time: 1743410840.540738
+planner new_token time: 1743410840.934743
+planner new_token time: 1743410841.3287663
+planner new_token time: 1743410841.7227209
+planner new_token time: 1743410842.116761
+planner new_token time: 1743410842.5115457
+planner new_token time: 1743410842.9052095
+planner new_token time: 1743410843.2995646
+planner new_token time: 1743410843.6942341
+planner new_token time: 1743410844.0884385
+planner new_token time: 1743410844.482408
+planner new_token time: 1743410844.8765414
+planner new_token time: 1743410845.270661
+planner new_token time: 1743410845.6644402
+planner new_token time: 1743410846.0587528
+planner new_token time: 1743410846.4532323
+planner new_token time: 1743410846.8478038
+planner new_token time: 1743410847.241907
+planner new_token time: 1743410847.6362727
+planner new_token time: 1743410848.0303476
+planner new_token time: 1743410848.4244683
+planner new_token time: 1743410848.8188093
+planner new_token time: 1743410849.2134
+planner new_token time: 1743410849.6077883
+planner new_token time: 1743410850.002028
+planner new_token time: 1743410850.3960207
+planner new_token time: 1743410850.790204
+planner new_token time: 1743410850.7910411
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：友谊合同 利益冲突 处理竞争 平衡工作友谊 团队和谐 效率
+
+
+提取的关键词: ['友谊合同', '利益冲突', '处理竞争', '平衡工作友谊', '团队和谐', '效率']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743410851.4307942
+one token time in planner tools: 1743410851.823946
+one token time in planner tools: 1743410852.2173693
+one token time in planner tools: 1743410852.6109352
+one token time in planner tools: 1743410853.0041928
+one token time in planner tools: 1743410853.3976476
+one token time in planner tools: 1743410853.7909756
+one token time in planner tools: 1743410854.183915
+one token time in planner tools: 1743410854.5770018
+one token time in planner tools: 1743410854.9704373
+one token time in planner tools: 1743410855.3635015
+one token time in planner tools: 1743410855.7575672
+one token time in planner tools: 1743410856.1521368
+one token time in planner tools: 1743410856.5453138
+one token time in planner tools: 1743410856.9383485
+one token time in planner tools: 1743410857.332793
+one token time in planner tools: 1743410857.7258675
+one token time in planner tools: 1743410858.1188285
+one token time in planner tools: 1743410858.5124087
+one token time in planner tools: 1743410858.9058886
+one token time in planner tools: 1743410859.2991645
+one token time in planner tools: 1743410859.69308
+one token time in planner tools: 1743410860.0866911
+one token time in planner tools: 1743410860.4801724
+one token time in planner tools: 1743410860.87412
+one token time in planner tools: 1743410861.2679462
+one token time in planner tools: 1743410861.6610656
+one token time in planner tools: 1743410862.0548737
+one token time in planner tools: 1743410862.4494991
+one token time in planner tools: 1743410862.8441713
+one token time in planner tools: 1743410863.2376916
+one token time in planner tools: 1743410863.6322832
+one token time in planner tools: 1743410864.0269923
+one token time in planner tools: 1743410864.4216614
+one token time in planner tools: 1743410864.8151193
+one token time in planner tools: 1743410865.2087145
+one token time in planner tools: 1743410865.6030982
+one token time in planner tools: 1743410865.9964929
+one token time in planner tools: 1743410866.3908756
+one token time in planner tools: 1743410866.7843022
+one token time in planner tools: 1743410867.1780615
+one token time in planner tools: 1743410867.5725267
+one token time in planner tools: 1743410867.966294
+one token time in planner tools: 1743410868.3598783
+one token time in planner tools: 1743410868.753623
+one token time in planner tools: 1743410869.1482596
+one token time in planner tools: 1743410869.5426068
+one token time in planner tools: 1743410869.936403
+one token time in planner tools: 1743410870.3303652
+one token time in planner tools: 1743410870.7242308
+one token time in planner tools: 1743410871.1186647
+one token time in planner tools: 1743410871.5134916
+one token time in planner tools: 1743410871.907243
+one token time in planner tools: 1743410872.3023388
+one token time in planner tools: 1743410872.697052
+one token time in planner tools: 1743410873.0916913
+one token time in planner tools: 1743410873.486375
+one token time in planner tools: 1743410873.8808384
+one token time in planner tools: 1743410874.2754633
+one token time in planner tools: 1743410874.6701732
+one token time in planner tools: 1743410875.0645318
+one token time in planner tools: 1743410875.4591272
+one token time in planner tools: 1743410875.8532455
+one token time in planner tools: 1743410876.2477195
+one token time in planner tools: 1743410876.6418972
+one token time in planner tools: 1743410877.0368104
+one token time in planner tools: 1743410877.4314866
+one token time in planner tools: 1743410877.8266785
+one token time in planner tools: 1743410878.221961
+one token time in planner tools: 1743410878.6167529
+one token time in planner tools: 1743410879.0117342
+one token time in planner tools: 1743410879.4073765
+one token time in planner tools: 1743410879.8022907
+one token time in planner tools: 1743410880.1967802
+one token time in planner tools: 1743410880.591778
+one token time in planner tools: 1743410880.9863076
+one token time in planner tools: 1743410881.3813262
+one token time in planner tools: 1743410881.7766151
+one token time in planner tools: 1743410882.17177
+one token time in planner tools: 1743410882.567046
+one token time in planner tools: 1743410882.9618773
+one token time in planner tools: 1743410883.3570833
+one token time in planner tools: 1743410883.7517936
+one token time in planner tools: 1743410884.1475687
+one token time in planner tools: 1743410884.5428076
+one token time in planner tools: 1743410884.9383812
+one token time in planner tools: 1743410885.3332167
+one token time in planner tools: 1743410885.7294936
+one token time in planner tools: 1743410886.1252232
+one token time in planner tools: 1743410886.5207846
+one token time in planner tools: 1743410886.9161065
+one token time in planner tools: 1743410887.3110006
+one token time in planner tools: 1743410887.7068062
+one token time in planner tools: 1743410888.1023154
+one token time in planner tools: 1743410888.4976606
+one token time in planner tools: 1743410888.892973
+one token time in planner tools: 1743410889.2877529
+one token time in planner tools: 1743410889.2890255
+
+Token count: 98, Total time: 38.4012 seconds, One token time: 0.3918 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：友谊', '合同', ' ', '利', '益', '冲突', ' ', '处', '理', '竞争', ' ', '平', '衡', '工作', '友谊', ' ', '团', '队', '和谐', ' ', '效', '率', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###如果你真的有利益的话,可能会出现竞争啊。商场无朋友。不用那咱今天對各位講了這麼多各位還有什麼想要說的知道吗那是个想跟大家分享的如果没有的话那在本期这个教育会咱们先开了行吗 行行 好吧你好,焦焦,如何平衡工作与旅游爱好,提高工作效率?你好焦焦,基于之前我们讨论的内容,关于如何处理与上司、下司、下级以及同事之间的关系,你能否分享一下自己的经验?在实际工作,你实际工作中,你是如何平衡对事不对人的原则,同时又能保持团队的和谐氛围的呢?您好,焦焦,大家在工作和家庭之间如何平衡?有哪些具体做法?你好,焦焦,基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和【效】率###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n在处理利益冲突和竞争时，保持工作和友谊的平衡至关重要。首先，明确区分个人关系与工作职责，遵守公司规定，公正处理事务；其次，开放沟通，及时表达观点和关切，避免误解和矛盾积累；再次，尊重他人，认可不同意见的价值，促进团队合作而非竞争；最后，若遇到难以调和的冲突，寻求上级或人力资源部门的帮助，确保公平合理地解决问题，维护团队和谐与效率。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###如果你真的有利益的话,可能会出现竞争啊。商场无朋友。不用那咱今天對各位講了這麼多各位還有什麼想要說的知道吗那是个想跟大家分享的如果没有的话那在本期这个教育会咱们先开了行吗 行行 好吧你好,焦焦,如何平衡工作与旅游爱好,提高工作效率?你好焦焦,基于之前我们讨论的内容,关于如何处理与上司、下司、下级以及同事之间的关系,你能否分享一下自己的经验?在实际工作,你实际工作中,你是如何平衡对事不对人的原则,同时又能保持团队的和谐氛围的呢?您好,焦焦,大家在工作和家庭之间如何平衡?有哪些具体做法?你好,焦焦,基于之前我们讨论的内容关于公司内部的友谊合同事件的关系你认为在处理利益冲突和竞争时我们应该如何平衡工作和友谊以保持团队的和谐和【效】率###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+在处理利益冲突和竞争时，保持工作和友谊的平衡至关重要。首先，明确区分个人关系与工作职责，遵守公司规定，公正处理事务；其次，开放沟通，及时表达观点和关切，避免误解和矛盾积累；再次，尊重他人，认可不同意见的价值，促进团队合作而非竞争；最后，若遇到难以调和的冲突，寻求上级或人力资源部门的帮助，确保公平合理地解决问题，维护团队和谐与效率。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

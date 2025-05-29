@@ -1,0 +1,725 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200703_M_R002S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 62
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.22s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Initializing KWS models...
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.23it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.41s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.08s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.70s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:10,  5.03s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.73s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.67s/it]
+002我是店长018后厨比高21前台好的,今天把各位叫过来简单的开一个这个月的月末总结这个大会总结一下咱们上个月的一个各部门的一个工作情况以及出现的一些问题咱们再会上讨论一下下去争取下来下个月不再出现这样的问题还有规划一下咱们下个月各部门的一个计划行,那咱们从后厨这边开始说后厨这边说一下上个月的一个工作情况我们后厨主要有三个区域一个是那个炸区然后另一个是汉堡区还有一个就是清洁区像我们那个炸食区它主要就是炸鸡块啊炸一些汉堡之类的就制作那些油炸食品都在我们这一块区域然后咱那个然后咱们都是流水线似的炸好了然后再给移交到汉堡区汉堡区然后做好了然后再用咱送餐人员送到客户面前然后像咱那个咱上个月咱们买的不错化妆卖了有1万个然后那个炸鸡卖了有50005000只然后那个薯条卖了有1万份然后不过咱那个其他的那个像那个汉堡炸鸡这些都是有这个剩量还是比较就那个储备量还是可以的满足咱们日常需求但那个薯条薯条就是有点欠缺它那个1万份是咱们销售量咱们剩剩余的量只剩500份相对来说剩余的量是不够的至少需要2000份的说明对薯条的储备量没有很好的预判我这有个问题薯条不可能一下储那么多因为新鲜的新炸出来的肯定好吃带着热乎劲肯定好吃所以咱可以把机器扩大一下一次性的多炸点出来因为你不能被放凉了也不好吃影响口感咱们是现炸的因为刚炸出来可能酥脆如果后期放凉再用某些容器加热的时候肯定会影响口感不会有刚炸出来的咱们都是现炸的多来点人手我说的储备主要是原材料原材料储备不够原材料的储备不够原材料就那个薯条这方面的多储备的原材料嗯 像原材料这方面咱们这个上上个月咱们这个原材料计计划和咱这个储备量咱计划储备了多少然后因为咱这个卖的比较多 所以储备量不够了 对想那可以在咱这个计划上增再增加个10%或20%哦 这好喝因为太多我觉得也不好,不新鲜。口感,影响口感。咱这种更需要新鲜。对对对。虽然是那个在加工吧,但是毕竟确实新鲜也很重要。嗯。继续。就是咱们的清洁区然后是每天四遍巡视然后确保每个死角的卫生另外的话,像我们有些保洁人员,像我们有些工作人员吧,他就是对这个大大咧咧惯了,对一些那个细节处不太上心。然后就是说检查的时候,就在那个机器底下都有灰尘,然后就是大巡检的时候被检查到了。这其实是一个大的问题因为其实感觉是一个小事吧整个门的影响是很大的不过就是说因为是咱自检了这其实咱内部人知道就可以了但是说还是需要把这事单独拎出来再说一下因为要让咱知道这卫生是必须保持干净整洁的因为咱这个做食品嘛必须干净卫生安全对吧像那个就是那个大姐不是没有上心吗然后也对她进行相应的处罚他也表示接受因为他觉得因为他毕竟在家都是习惯了就是说比较大胆没脸嘛是吗打扫在家里也是过得去就可以了就没有要求不像咱不像咱那个细节对是咱们现在好多餐饮店为什么咱能做图图啊主要就是细节对吧细节必须要求他做好了然后这就是我们上个月的问题一个就是对那个储备原料的储备量没有预测特别好另外就是说死角卫生还需要再强调一下是这样的咱们上个月目前我们的后厨的一个流程是怎么样的工艺流程是怎么样的咱们的工艺就是客户点好单之后我们把原材料准备好然后就用咱专门的机器去炸然后再制作不过就是说现在就有一个问题就是前台不是说了吗是吧就说说咱那个上货上菜比较慢嗯就是不是特别就有时候赶时间就老等食物做的比较慢嗯对就是给人的感觉不是特别好呵呵这个和这个机器有关系吗那个机器是老化了扣大哦对,这是有关系的,因为这个机器用的时间确实也不短了,然后是需要更新换代了。嗯,这方面市场现在这个这方面的机器有没有了解?我们去考察过,我们派专人考察过,也跟咱现在的机器比较贵。嗯,是贵,但是然而那个效率非常那个比咱这高了不少了。相对于它成本来说还是换了比较合适因为它提高咱们效率之后订单才会多就是说上菜快了客户也就会多了每个人对基本上就是一个星期就能回本了因为特别高效还是咱这个后厨这边因为我是刚调到咱们这儿来的对咱们这边的工作不太了解熟
+[Text Detection] 在 515.67 秒检测到关键词 '好教教',current_time: 496.00, 问题文本: 熟悉咱们这边的工作所以的话我想要问他更仔细一些咱们这边后勤这边上个月的一个就是这个人员的一个这个工作情况是怎么样的你好教教如何提高后出效率和原材料出费量以减少客户等待时间各人员的工作情况
+悉咱们这边的工作所以的话我想要问他更仔细一些咱们这边后勤这边上个月的一个就是这个人员的一个这个工作情况是怎么样的你好教教如何提高后出效率和原材料出费量以减少客户等待时间各人员的工作情况因为我们请了小时工了,有中点工然后另一个请假就请,有点人情了人情时工都有对因为老人确实岁数大了对,该照顾还要生孩子然后另外还有就是有个员工因为他快要结婚了他就是需要准备的东西比较多所以说它也是抢了三天假准备婚礼事业他定待这个月所以说这个月他还会继续再请假的到时候我们都去庆祝一下已经向人资报备了人资已经申请了有婚礼金有婚金有婚礼金已经申请上去了那到时候咱们就可以过去了嗯这边咱们后请这边有什么他请假了,当然向你们公司汇报,他请假了要利用,要有人去顶替他,工作不能耽误。那就是刚才八个人,这八个人的一个工作状态,可以跟我说一下吗?大家工作状态其实都挺好的不过就是因为就那个请假回家照顾爸妈那个他确实因为知道爸妈身体不太好嘛所以就是说状态没有以前这么好所以毕竟心里有事嘛是吧然后就是看他这次回来表现怎么样吧就相对来说他的表现不是没有以前那么饱满然后剩下的人表现都还可以还有就是咱们上星期这8位员工嗯工作状态要及时向我这边汇报因为咱们公司要进行一个裁员不算裁员新官算是这个一裁员 二就是不是裁员就是末位一个淘汰制然后会有新的然后会有新的有没有加入到的嗯,他如果工作状态不是很好的话,我建议他这个可以暂时的休息一下。嗯,行。还有就是咱们上个月,咱们这个,嗯,后厨这边,还有就是咱们这个,有些这个客户反映说咱们后厨这边,嗯,偷工减料,这怎么回事。偷工减料味道不一样还是怎么是因为这个天气原因吧柴油问题还是什么这个我们首先咱原来都是层层打官的它肯定不会出现质量问题后来我也了解过了有一个是因为外卖你想吧它外卖不止就是外面送的时间肯定会影响食物的口感咱们不都有那个铝纸箱吗能保的,但是他的家确实远而且,如果遇上高峰期的话肯定会影响的我们也向客户做了解释客户也表示理解另一个就是还有一个客户他就是别的门店做调查的那种是一样的,因为我们确实你也知道是吧咱们会搞一些客户调查什么的他们都也都说客户反应都还可以就是说然后就因为这个客户不是反映出的没有以前的不像以前那么足了对吧我们专门就去专门去看着就是向客户解释然后发现它是别的别的掌机店的别的快开店的是这么一回事嗯行Good那咱们这边后厨先暂时的汇报这些还有前台打听这边的事务汇报一下打听这边因为现在咱们店里都是自动点餐机大家也都会用所以来我这现场点的人员稍微少一点了也不用排那么长的队了这边有几个人前台有四个然后两个可以点餐然后加上自助点餐机可以同时六个人一块点餐这样排队时间也减少了客户等的也不着急了顾客对自动点餐机有什么会出现问题吗出现过问题吗肯定会有bug但是每天都会有技术部排查对会检查一下因为有时候会遇到外国人,外国有人,他们更喜欢用自助机,自助机还可以中英文识别那挺高级的,挺智能的对,而且也是微信支付也比较快那你汇报一下上个月前台大厅的一个工作情况工作情况做得都挺到位,但是后边来几个实习生我不是带他们那几个兼职的吗比如说我教他们做饮料我说放冰块我让他们放冰块,稍微多放一点,老板你懂吗?就是为了可以省这个省一杯,这个省一杯,可以多出来一杯,咱们就是赚一杯的钱,就稍微的多放一点那个什么,而且顾客也是快餐嘛,也是会立马喝的,然后多放点冰块。口感更好,对,当时就喝完了,就也没什么,没什么,但就有个实习生吧,他就是想读到哪里对,多给他多放点饮料就是想这样,我说他紧张也不敢后来吧后来我就让他去去说他,然后让他去去那个厕所杀厕所了,是吧不过他杀厕所确实挺带劲的对对,杀厕所然后人家就说哎
+[Text Detection] 在 1016.25 秒检测到关键词 '娇娇',current_time: 992.00, 问题文本: 哎呀,那个小姑娘哪有什么用啊对,小姑娘也没啥社会经验可能就是经验不足,不懂,就是胆着套路刷一周厕所回来然后毕竟但是形象好,是吧大学生们朝夕同伯的当时就是你好娇娇鉴于之前我们讨论的内容关于后勤部门上个月的
+呀,那个小姑娘哪有什么用啊对,小姑娘也没啥社会经验可能就是经验不足,不懂,就是胆着套路刷一周厕所回来然后毕竟但是形象好,是吧大学生们朝夕同伯的当时就是你好娇娇鉴于之前我们讨论的内容关于后勤部门上个月的饮料和冰淇淋都有这种情况,给的太多,亏本了,长期下去。对吧,就是兼职的那些。那这些咱们可以对他进行这方面的培训,这方面咱们兼职的有过培训吗?兼职有那个施工时间,施工4个小时,如果你要是能干,然后我他在施工的状态是个什么样的状态呢?我一般的状态是不错的但是我一旦让他调配区有时候那他这个就是做这个冰淇淋冰淇淋做冰淇淋的时候是个什么样的状态呢冰淇淋的话刚开始的时候是半卷给人家灌的水你看见灌那么多还是说还是说每次都灌那么多吗?对,它过得很实咱们一般的点稍微留一个小口留一点这个娃娃每次就捐点把它弄实了是吧?对这个就是确认底底的确认底底的就一点灌然后再慢慢往上你一个两个没啥事对弄五十个你想想这就多少个了对对,咱们这个材料也要嗯怎么说呢,也要这个,基础的,对,也要这方面有成本的,因为总公司对对咱们定每个店,咱们每个店都定定了这个,一个这个材料这边定了一个,就是这个,你不能过分的浪费这个,确实是,因为你想想他动了,吃也不好,不咋好吃,就是说吃起来也比较费事啊,是吧,你看都剩一个蛋了吃点,你要是奶油跟蛋白不好对,咱上个月咱们这个汉堡这个销量怎么样呢汉堡前台的话咱们的热门款比较热门哪个热门款销售的比较多呢那个双牛肉汉堡双牛肉汉堡对这个店咱们这个汉堡咱们店定定价多少呢?定价是19.9一个19.9,外卖是多少呢?外卖还有,咱们有外卖费哦,有外卖费对,配送费,它满多少咱就给你定价必须得满9.9才能配送如果你要是只定一个的话就不行必须9.9起配送还有奥尔良鸡腿包也比较出名也比较热门,热门款卖的比较好这个就刚才说的这套餐也比较卖了套餐卖多套餐对要合算对套餐多什么都包括了其实你单点的话挺多套餐更合适他们也都知道那这个咱们目前在这个店里面可以再增加一些套餐吗对套餐多组合一下因为不同人不同需要可能我喜欢吃薯片多可能我喝的话我不想要喝我想要奶茶我想要橙汁顾客对这个有过反应吗对给你钱他这边有过反应吗顾客有都是怎么说的呢有过投诉投诉就是说上餐太慢上餐太慢对就是我们关系到我们后背那个更新问题了对这有投诉过这是客观上餐时间太长新设备到之后可能也能改上了那就行对咱套餐有什么意义吗?套餐没有,他们就是希望选择性更大一点比如说,这个套餐里面有可乐可乐可以有橙汁,也可以有奶茶也可以有皮蛋瘦肉粥这些换着来,四种选择或者可乐,我加冰也好,不加冰也好,常温也好都可以让他们选择你对这个有什么吃什么态度?对套餐?嗯,我感覺是但是选择多一点会更好选择多一点会更好给他们点选择会更好嗯还有就是咱们下个月咱们主公司要进行对各店的一个业务进行一个这个比拼咱们店要进行这个下个月要增加咱们的业务量吸引更多人来咱到那裡買這些產品所以我们要进行一个下个月要有一个计划这个月咱们这个销量下个月销量要比这个月这个销量翻上一番那这个很优惠如果这样我觉得咱们才能在这么多店里面拖一步如果不这样的话我觉得很难,因为现在据我了解很多店已经开始了,这方面。已经比较提前啊。对,已经开始了。那这里再加紧,赶紧退出一下。这个下个月准备这边有什么好的活动吗?这个,你们两位。你像我们后厨吧,我们可以想办法再,你觉得设计一个新的菜坊怎么样?出去一个新的那个汉堡有用吗?还是先用现在的,多弄几个别的套餐?我感觉汉堡特色也做出来了,有那么多快餐店,为什么想吃咱们家呢?是因为咱们家好吃,别的店模仿不来,别的店跟咱们味儿永远不一样,咱们才是正品,别的都是模仿咱们的,可以说是盗版的。所以咱们一定要把正版的做好其实就把它本身的做好就可以了本身做好然后花样的话可以适当的添加一点像冰淇淋这一块麦芽丰可以做点花样口味再多一点汉堡这一类有没有做一些新口味的汉堡的话嗯汉堡的话嗯也不用就是蛋糍先不用因为要换新口味的话就是一些可能接受不了好多人都其实都冲了男女对,咱们家最擅长的牛肉,把它的特色原味保持住对,这个原汁原味保持好然后其他的,像冰淇淋这方面,种类可以多一点,口味也可以多一点新口味,比如芒果呀,蔓越莓呀,口味可以增加一点甜品这方面可以多一点但是主食大的方面,像汉堡这些最好不要大动对咱们要有自己的特色不
+[Text Detection] 在 1543.57 秒检测到关键词 '娇娇',current_time: 1519.00, 问题文本: 不能跟他们保持一样对然后另外就像我们也会就是说增加两个那个闸的那个人员因为他确实到时候为了肯定是销售忘记了是吧咱们必须做好准备要不然省得让客户等时间长了或者怎么着你好娇娇如何通过培训和优化流程提高兼职员工工作效率
+能跟他们保持一样对然后另外就像我们也会就是说增加两个那个闸的那个人员因为他确实到时候为了肯定是销售忘记了是吧咱们必须做好准备要不然省得让客户等时间长了或者怎么着你好娇娇如何通过培训和优化流程提高兼职员工工作效率喝的这方面也可以冷饮也可以增加几个口味就是饮料过滞这一方面但是可乐配汉堡炸鸡这个是必须的可乐是正宗的其他的可以适当增加他就刚才说到这个就是这个对于这个食物上在这个可以你现在是做什么样的活动比如说买多少,赠多少,你觉得可以吗?可以发优惠券,对,优惠券就是满减吧或者你这个套餐,比如说这个套餐咱们滞销了,太多了然后咱们可以给他发个9块钱优惠券或者打个指数扣,或者稍微贵一点的套餐比如说这个套餐199亲自私人套餐吧199可以给他送一个杯子送个马克杯送个小玩具然后就给他送一个那种限量版的小玩具可以买点这个小黄人啊什么的当下流行的玩偶也可以这样就让他们转发朋友圈是吧机构多少嗯机构多少赞可以不过这个也需要审核感觉还是优惠券比较的啊哦,即战的话可能会有作弊现象,可以修图什么的哦还有就是咱们这个要在这个店里面这个整个这个整个这个广告牌项目的地方等广告牌对海报大海报对把他的新套餐啊加上去嗯主推套餐今年套餐有那种表现有些,比如咱们家的经典汉堡,第二个可以半价搞一些优惠活动对就这些吧还有需要补充吗?没有别的没有到时候我们第二次进行一定要力争在下个月销量榜No.1对,在同类型的店当中,我们要本居第一。嗯,立正上游。对,还有就是我们这个各部门,尤其是后厨这边,一定要做的时候速度快一点。對視頻的安全為相對化一定严格要求,让他们做到最好对,对这一块进行严格要求的进行把关还有就是咱们这个现在这个服务这个费用也要提高最后一个问题就是我们这个店铺这个这个像像是咱们这个我们要装贴一些东西那些气球啊一些到时候先来采购一下是吗准备一下想装饰一下便利对行好的特别的话主要一些这个气球啊一些就行到店长好的小话题
+[Audio Detection] 在 1874.41 秒检测到关键词 '好交交'。
+detection_time: 1874.41, current_time: 1860.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200703_M_R002S05C01_agent_added/out_003-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 679861, dtype: float32, min: -0.258575439453125, max: 0.229583740234375
+问题音频时间长度: 42.4913125
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于店铺即将开展的优惠活动你有什么建议吗比如买多少赠多少发放优惠券等你怎么看待这些促销策略同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗
+, 1743412405.622152
+问题音频STT前的时刻: 1743412405.6222868
+问题音频STT后的时刻: 1743412406.1511168
+问题音频STT时间: 0.5288300514221191
+
+
+[Agent] 最终接收到问题: 你好,教教如何提高后厨效率和原材料储备量以减少客户等待时间。
+, 1743412406.1513388
+问题音频送入Planner的时刻: 1743412406.1517951
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743412406.777392
+planner new_token time: 1743412407.171844
+planner new_token time: 1743412407.172359
+First token received: 1, time: 1743412407.1735363
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412407.2348454
+talker first token time: 1743412407.8463132
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743412407.8804967
+talker first token time: 1743412407.906671
+talker first token time: 1743412407.9326122
+talker first token time: 1743412407.9584508
+talker first token time: 1743412407.9843454
+talker first token time: 1743412408.0103426
+talker first token time: 1743412408.0364058
+talker first token time: 1743412408.0622327
+talker first token time: 1743412408.0881927
+talker first token time: 1743412408.1141758
+talker first token time: 1743412408.191539
+talker first token time: 1743412408.2177992
+talker first token time: 1743412408.2439444
+talker first token time: 1743412408.2700589
+talker first token time: 1743412408.321941
+talker first token time: 1743412408.3480155
+talker first token time: 1743412408.3740265
+talker first token time: 1743412408.4000733
+talker first token time: 1743412408.4260914
+talker first token time: 1743412408.452222
+talker first token time: 1743412408.504218
+talker first token time: 1743412408.5305436
+talker first token time: 1743412408.5565827
+talker first token time: 1743412408.6085184
+talker first token time: 1743412408.6346555
+talker first token time: 1743412408.6607378
+talker first token time: 1743412408.6869347
+talker first token time: 1743412408.7131808
+talker first token time: 1743412408.7396748
+talker first token time: 1743412408.8171082
+talker first token time: 1743412408.8692534
+talker first token time: 1743412408.8952372
+talker first token time: 1743412408.921341
+talker first token time: 1743412408.9733024
+talker first token time: 1743412409.0005493
+talker first token time: 1743412409.0272264
+talker first token time: 1743412409.0789096
+talker first token time: 1743412409.1050727
+talker first token time: 1743412409.1311364
+talker first token time: 1743412409.1572244
+talker first token time: 1743412409.1833699
+talker first token time: 1743412409.2354555
+talker first token time: 1743412409.2615902
+talker first token time: 1743412409.2876472
+talker first token time: 1743412409.3137226
+talker first token time: 1743412409.365906
+talker first token time: 1743412409.39202
+talker first token time: 1743412409.4181626
+talker first token time: 1743412409.4703531
+talker first token time: 1743412409.4965796
+talker first token time: 1743412409.5227716
+talker first token time: 1743412409.549023
+talker first token time: 1743412409.6266408
+talker first token time: 1743412409.6525836
+talker first token time: 1743412409.6785984
+talker first token time: 1743412409.7047718
+talker first token time: 1743412409.7570255
+talker first token time: 1743412409.783246
+talker first token time: 1743412409.8093462
+talker first token time: 1743412409.8354402
+talker first token time: 1743412409.8618746
+talker first token time: 1743412409.8883338
+talker first token time: 1743412409.9147995
+talker first token time: 1743412409.9668736
+talker first token time: 1743412409.9929793
+talker first token time: 1743412410.019128
+talker first token time: 1743412410.0454369
+talker first token time: 1743412410.0718641
+talker first token time: 1743412410.0981247
+talker first token time: 1743412410.1503506
+talker first token time: 1743412410.1767998
+talker first token time: 1743412410.2031226
+talker first token time: 1743412410.2295654
+talker first token time: 1743412410.256284
+talker first token time: 1743412410.2825685
+talker first token time: 1743412410.3090932
+talker first token time: 1743412410.3356328
+talker first token time: 1743412410.413619
+talker first token time: 1743412410.4655867
+talker first token time: 1743412410.4919271
+talker first token time: 1743412410.5181146
+talker first token time: 1743412410.5442507
+talker first token time: 1743412410.5965297
+talker first token time: 1743412410.62292
+talker first token time: 1743412410.64915
+talker first token time: 1743412410.6752627
+talker first token time: 1743412410.7018278
+talker first token time: 1743412410.7538989
+talker first token time: 1743412410.780267
+talker first token time: 1743412410.8067133
+talker first token time: 1743412410.832985
+talker first token time: 1743412410.8592925
+talker first token time: 1743412410.885562
+talker first token time: 1743412410.912053
+talker first token time: 1743412410.964764
+talker first token time: 1743412410.99102
+talker first token time: 1743412411.0173588
+talker first token time: 1743412411.0698318
+talker first token time: 1743412411.0964355
+talker first token time: 1743412411.1230848
+talker first token time: 1743412411.1494002
+talker first token time: 1743412411.1758883
+talker first token time: 1743412411.2025902
+talker first token time: 1743412411.2291598
+talker first token time: 1743412411.3067443
+talker first token time: 1743412411.3329978
+talker first token time: 1743412411.3591754
+talker first token time: 1743412411.3860211
+talker first token time: 1743412411.4382038
+talker first token time: 1743412411.4645553
+talker first token time: 1743412411.4907646
+talker first token time: 1743412411.5429664
+talker first token time: 1743412411.569159
+talker first token time: 1743412411.59554
+talker first token time: 1743412411.6218338
+talker first token time: 1743412411.6480355
+talker first token time: 1743412411.6742935
+talker first token time: 1743412411.7006068
+talker first token time: 1743412411.7269669
+talker first token time: 1743412411.779449
+talker first token time: 1743412411.8060863
+talker first token time: 1743412411.8329523
+talker first token time: 1743412411.8593867
+talker first token time: 1743412411.8859107
+talker first token time: 1743412411.9123151
+talker first token time: 1743412411.9648507
+talker first token time: 1743412411.9914854
+talker first token time: 1743412412.0180187
+talker first token time: 1743412412.0443401
+talker first token time: 1743412412.0707824
+talker first token time: 1743412412.149022
+talker first token time: 1743412412.175537
+talker first token time: 1743412412.2021258
+talker first token time: 1743412412.2283204
+talker first token time: 1743412412.254934
+talker first token time: 1743412412.3075383
+talker first token time: 1743412412.3341112
+talker first token time: 1743412412.362233
+talker first token time: 1743412412.4236887
+talker first token time: 1743412412.4591806
+talker first token time: 1743412412.485604
+talker first token time: 1743412412.5121138
+talker first token time: 1743412412.5384173
+talker first token time: 1743412412.5913846
+talker first token time: 1743412412.6180341
+talker first token time: 1743412412.644402
+talker first token time: 1743412412.6708066
+talker first token time: 1743412412.6971276
+talker first token time: 1743412412.7498555
+talker first token time: 1743412412.7765791
+talker first token time: 1743412412.8033535
+talker first token time: 1743412412.8816688
+talker first token time: 1743412412.9079533
+talker first token time: 1743412412.934325
+talker first token time: 1743412412.9608514
+talker first token time: 1743412413.0130408
+talker first token time: 1743412413.0392632
+talker first token time: 1743412413.065738
+talker first token time: 1743412413.092251
+talker first token time: 1743412413.118808
+talker first token time: 1743412413.145179
+talker first token time: 1743412413.1714182
+talker first token time: 1743412413.1980503
+talker first token time: 1743412413.2506552
+talker first token time: 1743412413.2772057
+talker first token time: 1743412413.3038943
+talker first token time: 1743412413.3305142
+talker first token time: 1743412413.357008
+talker first token time: 1743412413.3841524
+talker first token time: 1743412413.4112172
+talker first token time: 1743412413.4642742
+talker first token time: 1743412413.4908252
+talker first token time: 1743412413.5175393
+talker first token time: 1743412413.5441172
+talker first token time: 1743412413.5707655
+talker first token time: 1743412413.624172
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+提高后厨效率和原材料储备量的方法有很多：
+
+1. 优化厨房流程：对厨房工作流程进行再造，减少不必要的环节，提高各个环节的运作效率。
+
+2. 增加设备：适当增加高效、自动化程度高的厨房设备，如切菜机、炒炉等，可以大大提高工作效率。
+
+3. 提升员工技能：定期对厨师和服务员进行培训，提升他们的专业技能和服务水平，减少服务过程中的错误和延误。
+
+4. 食材采购管理：建立科学的采购体系，预测需求并合理安排采购计划，避免食材浪费，同时保证食材的供应充足。
+
+5. 库存管理：严格控制库存，避免过度库存或缺货的情况发生，这样既可以保证食材的供应，又不会造成浪费。
+
+6. 利用科技工具：使用预约系统、库存管理系统等科技工具，可以更好地管理厨房运营，提高工作效率。
+
+7. 定期评估：定期对厨房的运作效率进行评估，找出问题并及时采取改进措施，持续提高厨房的工作效率。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200703_M_R002S05C01_agent_added/out_003-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 679861, dtype: float32, min: -0.258575439453125, max: 0.229583740234375
+问题音频时间长度: 42.4913125
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于店铺即将开展的优惠活动你有什么建议吗比如买多少赠多少发放优惠券等你怎么看待这些促销策略同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗
+, 1743412415.5178394
+问题音频STT前的时刻: 1743412415.5179577
+问题音频STT后的时刻: 1743412416.9425774
+问题音频STT时间: 1.4246196746826172
+
+
+[Agent] 最终接收到问题: 您好焦焦,基于之前我们讨论的内容,关于后勤部门上个月的工作情况,特别是员工请假,对工作的影响以及应对措施,您能详细说明一下吗?另外,对于客户反应的后厨偷工减料问题,您是如何调查和处理的?
+, 1743412416.9428625
+问题音频送入Planner的时刻: 1743412416.943346
+planner new_token time: 1743412417.5938334
+planner new_token time: 1743412417.98533
+First token received: 0, time: 1743412417.985471
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743412418.3768618
+planner new_token time: 1743412418.7692766
+planner new_token time: 1743412419.1611934
+planner new_token time: 1743412419.5536923
+planner new_token time: 1743412419.9455297
+planner new_token time: 1743412420.337139
+planner new_token time: 1743412420.7292519
+planner new_token time: 1743412421.1213806
+planner new_token time: 1743412421.513723
+planner new_token time: 1743412421.9060745
+planner new_token time: 1743412422.2978919
+planner new_token time: 1743412422.6900706
+planner new_token time: 1743412423.0819452
+planner new_token time: 1743412423.473929
+planner new_token time: 1743412423.866455
+planner new_token time: 1743412424.258591
+planner new_token time: 1743412424.651319
+planner new_token time: 1743412425.0439446
+planner new_token time: 1743412425.435921
+planner new_token time: 1743412425.8284528
+planner new_token time: 1743412426.22046
+planner new_token time: 1743412426.6129153
+planner new_token time: 1743412427.0055475
+planner new_token time: 1743412427.3978343
+planner new_token time: 1743412427.7902763
+planner new_token time: 1743412428.1828144
+planner new_token time: 1743412428.5760524
+planner new_token time: 1743412428.9688468
+planner new_token time: 1743412429.361422
+planner new_token time: 1743412429.7545865
+planner new_token time: 1743412430.1470566
+planner new_token time: 1743412430.5392632
+planner new_token time: 1743412430.9320693
+planner new_token time: 1743412431.3255243
+planner new_token time: 1743412431.718418
+planner new_token time: 1743412432.1119192
+planner new_token time: 1743412432.506338
+planner new_token time: 1743412432.9018798
+planner new_token time: 1743412433.2941244
+planner new_token time: 1743412433.6879172
+planner new_token time: 1743412434.0808666
+planner new_token time: 1743412434.4736948
+planner new_token time: 1743412434.8671699
+planner new_token time: 1743412435.2608564
+planner new_token time: 1743412435.6535256
+planner new_token time: 1743412436.046819
+planner new_token time: 1743412436.0475445
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：员工请假 后勤部门工作情况 客户反应 偷工减料问题 调查处理措施
+
+
+提取的关键词: ['员工请假', '后勤部门工作情况', '客户反应', '偷工减料问题', '调查处理措施']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743412437.0105948
+one token time in planner tools: 1743412437.406761
+one token time in planner tools: 1743412437.8013775
+one token time in planner tools: 1743412438.1958911
+one token time in planner tools: 1743412438.5904133
+one token time in planner tools: 1743412438.9853957
+one token time in planner tools: 1743412439.3795624
+one token time in planner tools: 1743412439.7742815
+one token time in planner tools: 1743412440.1689827
+one token time in planner tools: 1743412440.5635154
+one token time in planner tools: 1743412440.9579403
+one token time in planner tools: 1743412441.3527112
+one token time in planner tools: 1743412441.7472637
+one token time in planner tools: 1743412442.141957
+one token time in planner tools: 1743412442.5364249
+one token time in planner tools: 1743412442.9311345
+one token time in planner tools: 1743412443.326269
+one token time in planner tools: 1743412443.7216036
+one token time in planner tools: 1743412444.1160142
+one token time in planner tools: 1743412444.5109015
+one token time in planner tools: 1743412444.9059937
+one token time in planner tools: 1743412445.3014164
+one token time in planner tools: 1743412445.6964917
+one token time in planner tools: 1743412446.091449
+one token time in planner tools: 1743412446.4865086
+one token time in planner tools: 1743412446.8810897
+one token time in planner tools: 1743412447.2755535
+one token time in planner tools: 1743412447.6708052
+one token time in planner tools: 1743412448.0656557
+one token time in planner tools: 1743412448.4605687
+one token time in planner tools: 1743412448.8555715
+one token time in planner tools: 1743412449.2505884
+one token time in planner tools: 1743412449.6456316
+one token time in planner tools: 1743412450.0408254
+one token time in planner tools: 1743412450.4355586
+one token time in planner tools: 1743412450.8305237
+one token time in planner tools: 1743412451.2255268
+one token time in planner tools: 1743412451.6206682
+one token time in planner tools: 1743412452.0155087
+one token time in planner tools: 1743412452.4105225
+one token time in planner tools: 1743412452.805981
+one token time in planner tools: 1743412453.2012908
+one token time in planner tools: 1743412453.5965226
+one token time in planner tools: 1743412453.9920382
+one token time in planner tools: 1743412454.3867648
+one token time in planner tools: 1743412454.781891
+one token time in planner tools: 1743412455.177242
+one token time in planner tools: 1743412455.5724277
+one token time in planner tools: 1743412455.967777
+one token time in planner tools: 1743412456.3641553
+one token time in planner tools: 1743412456.7594094
+one token time in planner tools: 1743412457.1549006
+one token time in planner tools: 1743412457.5500019
+one token time in planner tools: 1743412457.9452958
+one token time in planner tools: 1743412458.3406672
+one token time in planner tools: 1743412458.736022
+one token time in planner tools: 1743412459.1315742
+one token time in planner tools: 1743412459.5266755
+one token time in planner tools: 1743412459.9223793
+one token time in planner tools: 1743412460.3187532
+one token time in planner tools: 1743412460.713947
+one token time in planner tools: 1743412461.1098633
+one token time in planner tools: 1743412461.5053952
+one token time in planner tools: 1743412461.9016075
+one token time in planner tools: 1743412462.2983544
+one token time in planner tools: 1743412462.6944244
+one token time in planner tools: 1743412463.0896034
+one token time in planner tools: 1743412463.4859052
+one token time in planner tools: 1743412463.8820095
+one token time in planner tools: 1743412464.2782044
+one token time in planner tools: 1743412464.674321
+one token time in planner tools: 1743412465.0702357
+one token time in planner tools: 1743412465.4653702
+one token time in planner tools: 1743412465.466555
+
+Token count: 74, Total time: 29.3142 seconds, One token time: 0.3961 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：员工', '请假', ' ', '后', '勤', '部门', '工作', '情况', ' ', '客', '户', '反应', ' ', '偷', '工', '减', '料', '问题', ' ', '调', '查', '处理', '措施', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###那就是刚才八个人,这八个人的一个工作状态,可以跟我说一下吗?大家工作状态其实都挺好的不过就是因为就那个请假回家照顾爸妈那个他确实因为知道爸妈身体不太好嘛所以就是说状态没有以前这么好所以毕竟心里有事嘛是吧然后就是看他这次回来表现怎么样吧就相对来说他的表现不是没有以前那么饱满然后剩下的人表现都还可以还有就是咱们上星期这8位员工嗯工作状态要及时向我这边汇报因为咱们公司要进行一个裁员不算裁员新官算是这个一裁员 二就是不是裁员就是末位一个淘汰制然后会有新的然后会有新的有没有加入到的嗯,他如果工作状态不是很好的话,我建议他这个可以暂时的休息一下。嗯,行。还有就是咱们上个月,咱们这个,嗯,后厨这边,还有就是咱们这个,有些这个客户反映说咱们后厨这边,嗯,偷工减料,这怎么回事。偷工减料味道不一样还是怎么是因为这个天气原因吧柴油问题还是什么这个我们首先咱原来都是层层打官的它肯定不会出现质量问题后来我也了解过了有一个是因为外卖你想吧它外卖不止就是外面送的时间肯定会影响食物的口感咱们不都有那个铝纸箱吗能保的,但是他的家确实远而且,如果遇上高峰期的话肯定会影响的我们也向客户做了解释客户也表示理解另一个就是还有一个客户他就是别的门店做调查的那种是一样的,因为我们确实你也知道是吧咱们会搞一些客户调查什么的他们都也都说【客】户反应都还可以就是说然后就因为这个客户不是反映出的没有以前的不像以前那么足了对吧我们专门就去专门去看着就是向客户解释然后发现它是别的别的掌机店的别的快开店的是这么一回事嗯行Good那咱们这边后厨先暂时的汇报这些还有前台打听这边的事务汇报一下打听这边因为现在咱们店里都是自动点餐机大家也都会用所以来我这现场点的人员稍微少一点了也不用排那么长的队了这边有几个人前台有四个然后两个可以点餐然后加上自助点餐机可以同时六个人一块点餐这样排队时间也减少了客户等的也不着急了顾客对自动点餐机有什么会出现问题吗出现过问题吗肯定会有bug但是每天都会有技术部排查对会检查一下因为有时候会遇到外国人,外国有人,他们更喜欢用自助机,自助机还可以中英文识别那挺高级的,挺智能的对,而且也是微信支付也比较快那你汇报一下上个月前台大厅的一个工作情况工作情况做得都挺到位,但是后边来几个实习生我不是带他们那几个兼职的吗比如说我教他们做饮料我说放冰块我让他们放冰块,稍微多放一点,老板你懂吗?就是为了可以省这个省一杯,这个省一杯,可以多出来一杯,咱们就是赚一杯的钱,就稍微的多放一点那个什么,而且顾客也是快餐嘛,也是会立马喝的,然后多放点冰\n---\n嗯,立正上游。对,还有就是我们这个各部门,尤其是后厨这边,一定要做的时候速度快一点。對視頻的安全為相對化一定严格要求,让他们做到最好对,对这一块进行严格要求的进行把关还有就是咱们这个现在这个服务这个费用也要提高最后一个问题就是我们这个店铺这个这个像像是咱们这个我们要装贴一些东西那些气球啊一些到时候先来采购一下是吗准备一下想装饰一下便利对行好的特别的话主要一些这个气球啊一些就行到店长好的小话题你好,教教如何提高后厨效率和原材料储备量以减少客户等待时间。您好焦焦,基于之前我们讨论的内容,关于后勤部门上个月的工作情况,特别是员工请假,对工作的影响以及应对措施,您能详细说明一下吗?另外,对于客户反应的后厨偷【工】减料问题,您是如何调查和处理的?###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议上提到一位员工因请假回家照顾父母导致其工作状态不如以往积极。此外，公司即将实施淘汰制，员工需要保持良好的工作状态。针对客户反馈的后厨“偷工减料”问题，经过调查发现，主要是外卖配送时间影响食物口感的问题，并非质量本身有问题，已向客户解释并得到了理解。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###那就是刚才八个人,这八个人的一个工作状态,可以跟我说一下吗?大家工作状态其实都挺好的不过就是因为就那个请假回家照顾爸妈那个他确实因为知道爸妈身体不太好嘛所以就是说状态没有以前这么好所以毕竟心里有事嘛是吧然后就是看他这次回来表现怎么样吧就相对来说他的表现不是没有以前那么饱满然后剩下的人表现都还可以还有就是咱们上星期这8位员工嗯工作状态要及时向我这边汇报因为咱们公司要进行一个裁员不算裁员新官算是这个一裁员 二就是不是裁员就是末位一个淘汰制然后会有新的然后会有新的有没有加入到的嗯,他如果工作状态不是很好的话,我建议他这个可以暂时的休息一下。嗯,行。还有就是咱们上个月,咱们这个,嗯,后厨这边,还有就是咱们这个,有些这个客户反映说咱们后厨这边,嗯,偷工减料,这怎么回事。偷工减料味道不一样还是怎么是因为这个天气原因吧柴油问题还是什么这个我们首先咱原来都是层层打官的它肯定不会出现质量问题后来我也了解过了有一个是因为外卖你想吧它外卖不止就是外面送的时间肯定会影响食物的口感咱们不都有那个铝纸箱吗能保的,但是他的家确实远而且,如果遇上高峰期的话肯定会影响的我们也向客户做了解释客户也表示理解另一个就是还有一个客户他就是别的门店做调查的那种是一样的,因为我们确实你也知道是吧咱们会搞一些客户调查什么的他们都也都说【客】户反应都还可以就是说然后就因为这个客户不是反映出的没有以前的不像以前那么足了对吧我们专门就去专门去看着就是向客户解释然后发现它是别的别的掌机店的别的快开店的是这么一回事嗯行Good那咱们这边后厨先暂时的汇报这些还有前台打听这边的事务汇报一下打听这边因为现在咱们店里都是自动点餐机大家也都会用所以来我这现场点的人员稍微少一点了也不用排那么长的队了这边有几个人前台有四个然后两个可以点餐然后加上自助点餐机可以同时六个人一块点餐这样排队时间也减少了客户等的也不着急了顾客对自动点餐机有什么会出现问题吗出现过问题吗肯定会有bug但是每天都会有技术部排查对会检查一下因为有时候会遇到外国人,外国有人,他们更喜欢用自助机,自助机还可以中英文识别那挺高级的,挺智能的对,而且也是微信支付也比较快那你汇报一下上个月前台大厅的一个工作情况工作情况做得都挺到位,但是后边来几个实习生我不是带他们那几个兼职的吗比如说我教他们做饮料我说放冰块我让他们放冰块,稍微多放一点,老板你懂吗?就是为了可以省这个省一杯,这个省一杯,可以多出来一杯,咱们就是赚一杯的钱,就稍微的多放一点那个什么,而且顾客也是快餐嘛,也是会立马喝的,然后多放点冰
+---
+嗯,立正上游。对,还有就是我们这个各部门,尤其是后厨这边,一定要做的时候速度快一点。對視頻的安全為相對化一定严格要求,让他们做到最好对,对这一块进行严格要求的进行把关还有就是咱们这个现在这个服务这个费用也要提高最后一个问题就是我们这个店铺这个这个像像是咱们这个我们要装贴一些东西那些气球啊一些到时候先来采购一下是吗准备一下想装饰一下便利对行好的特别的话主要一些这个气球啊一些就行到店长好的小话题你好,教教如何提高后厨效率和原材料储备量以减少客户等待时间。您好焦焦,基于之前我们讨论的内容,关于后勤部门上个月的工作情况,特别是员工请假,对工作的影响以及应对措施,您能详细说明一下吗?另外,对于客户反应的后厨偷【工】减料问题,您是如何调查和处理的?###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议上提到一位员工因请假回家照顾父母导致其工作状态不如以往积极。此外，公司即将实施淘汰制，员工需要保持良好的工作状态。针对客户反馈的后厨“偷工减料”问题，经过调查发现，主要是外卖配送时间影响食物口感的问题，并非质量本身有问题，已向客户解释并得到了理解。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200703_M_R002S05C01_agent_added/out_003-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 679861, dtype: float32, min: -0.258575439453125, max: 0.229583740234375
+问题音频时间长度: 42.4913125
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于店铺即将开展的优惠活动你有什么建议吗比如买多少赠多少发放优惠券等你怎么看待这些促销策略同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗
+, 1743412467.239839
+问题音频STT前的时刻: 1743412467.2399597
+问题音频STT后的时刻: 1743412467.7008126
+问题音频STT时间: 0.46085286140441895
+
+
+[Agent] 最终接收到问题: 你好教教如何通过培训和优化流程提高兼职员工工作效率
+, 1743412467.7010047
+问题音频送入Planner的时刻: 1743412467.701881
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743412468.30486
+planner new_token time: 1743412468.697924
+planner new_token time: 1743412468.6985395
+First token received: 1, time: 1743412468.6987045
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412468.7141378
+talker first token time: 1743412468.9655826
+talker first token time: 1743412468.9919848
+talker first token time: 1743412469.0180564
+talker first token time: 1743412469.0439107
+talker first token time: 1743412469.0698748
+talker first token time: 1743412469.0959427
+talker first token time: 1743412469.1476958
+talker first token time: 1743412469.1737237
+talker first token time: 1743412469.1999876
+talker first token time: 1743412469.2260222
+talker first token time: 1743412469.2779217
+talker first token time: 1743412469.3038971
+talker first token time: 1743412469.3300998
+talker first token time: 1743412469.356232
+talker first token time: 1743412469.4084055
+talker first token time: 1743412469.4348984
+talker first token time: 1743412469.4609313
+talker first token time: 1743412469.4870813
+talker first token time: 1743412469.5390737
+talker first token time: 1743412469.5653567
+talker first token time: 1743412469.5915778
+talker first token time: 1743412469.6177926
+talker first token time: 1743412469.6702151
+talker first token time: 1743412469.6965425
+talker first token time: 1743412469.7228377
+talker first token time: 1743412469.748981
+talker first token time: 1743412469.7750964
+talker first token time: 1743412469.8276057
+talker first token time: 1743412469.8541777
+talker first token time: 1743412469.8809555
+talker first token time: 1743412469.9074645
+talker first token time: 1743412469.9599862
+talker first token time: 1743412469.986601
+talker first token time: 1743412470.0131376
+talker first token time: 1743412470.0398197
+talker first token time: 1743412470.0663881
+talker first token time: 1743412470.1193287
+talker first token time: 1743412470.1461565
+talker first token time: 1743412470.1730053
+talker first token time: 1743412470.19948
+talker first token time: 1743412470.2261357
+talker first token time: 1743412470.2527685
+talker first token time: 1743412470.3057134
+talker first token time: 1743412470.332592
+talker first token time: 1743412470.3594224
+talker first token time: 1743412470.3858423
+talker first token time: 1743412470.4122694
+talker first token time: 1743412470.466599
+
+talker输出：
+
+Token count: 178, Total time: 6.4156 seconds, One token time: 0.0360 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要提高兼职员工的工作效率，可以通过以下方式来进行：一是提供专业培训，让他们掌握所需技能；二是优化工作流程，使其更加高效和流畅；三是明确岗位职责，减少不必要的沟通和干扰；四是给予适当的激励和奖励，激发他们的积极性和主动性。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200703_M_R002S05C01_agent_added/out_003-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 679861, dtype: float32, min: -0.258575439453125, max: 0.229583740234375
+问题音频时间长度: 42.4913125
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于店铺即将开展的优惠活动你有什么建议吗比如买多少赠多少发放优惠券等你怎么看待这些促销策略同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗
+, 1743412472.3676748
+问题音频STT前的时刻: 1743412472.3677888
+问题音频STT后的时刻: 1743412474.0080092
+问题音频STT时间: 1.6402204036712646
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于店铺即将开展的优惠活动,你有什么建议吗?比如买多少赠多少,发放优惠券等,你怎么看待这些促销策略?同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗
+, 1743412474.0082297
+问题音频送入Planner的时刻: 1743412474.0086405
+planner new_token time: 1743412474.6616604
+planner new_token time: 1743412475.05518
+First token received: 0, time: 1743412475.055313
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743412475.4490962
+planner new_token time: 1743412475.8418236
+planner new_token time: 1743412476.2351916
+planner new_token time: 1743412476.6285126
+planner new_token time: 1743412477.0222478
+planner new_token time: 1743412477.415676
+planner new_token time: 1743412477.8096094
+planner new_token time: 1743412478.2023482
+planner new_token time: 1743412478.5957193
+planner new_token time: 1743412478.9898374
+planner new_token time: 1743412479.3833857
+planner new_token time: 1743412479.776558
+planner new_token time: 1743412480.1706192
+planner new_token time: 1743412480.5649452
+planner new_token time: 1743412480.9588518
+planner new_token time: 1743412481.353169
+planner new_token time: 1743412481.7466319
+planner new_token time: 1743412482.1401508
+planner new_token time: 1743412482.5346258
+planner new_token time: 1743412482.9290762
+planner new_token time: 1743412483.3228517
+planner new_token time: 1743412483.716564
+planner new_token time: 1743412484.1115
+planner new_token time: 1743412484.505721
+planner new_token time: 1743412484.8994489
+planner new_token time: 1743412485.2937045
+planner new_token time: 1743412485.6885483
+planner new_token time: 1743412486.0823019
+planner new_token time: 1743412486.476438
+planner new_token time: 1743412486.870764
+planner new_token time: 1743412487.264666
+planner new_token time: 1743412487.658765
+planner new_token time: 1743412488.0533538
+planner new_token time: 1743412488.4476242
+planner new_token time: 1743412488.841965
+planner new_token time: 1743412489.2359595
+planner new_token time: 1743412489.6305897
+planner new_token time: 1743412490.025027
+planner new_token time: 1743412490.4189293
+planner new_token time: 1743412490.8136432
+planner new_token time: 1743412491.209262
+planner new_token time: 1743412491.6034393
+planner new_token time: 1743412491.9975817
+planner new_token time: 1743412491.9982538
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：优惠活动 外卖配送 饮料果汁口味增加 买多少赠多少 发放优惠券
+
+
+提取的关键词: ['优惠活动', '外卖配送', '饮料果汁口味增加', '买多少赠多少', '发放优惠券']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743412492.646058
+one token time in planner tools: 1743412493.0394866
+one token time in planner tools: 1743412493.4329698
+one token time in planner tools: 1743412493.826221
+one token time in planner tools: 1743412494.219395
+one token time in planner tools: 1743412494.6129177
+one token time in planner tools: 1743412495.00646
+one token time in planner tools: 1743412495.3996277
+one token time in planner tools: 1743412495.7928536
+one token time in planner tools: 1743412496.1865532
+one token time in planner tools: 1743412496.5799904
+one token time in planner tools: 1743412496.9735591
+one token time in planner tools: 1743412497.3677971
+one token time in planner tools: 1743412497.7610862
+one token time in planner tools: 1743412498.154447
+one token time in planner tools: 1743412498.5484514
+one token time in planner tools: 1743412498.9420185
+one token time in planner tools: 1743412499.335438
+one token time in planner tools: 1743412499.7291021
+one token time in planner tools: 1743412500.122682
+one token time in planner tools: 1743412500.5159633
+one token time in planner tools: 1743412500.9098105
+one token time in planner tools: 1743412501.3036435
+one token time in planner tools: 1743412501.697051
+one token time in planner tools: 1743412502.0905602
+one token time in planner tools: 1743412502.4849863
+one token time in planner tools: 1743412502.8785996
+one token time in planner tools: 1743412503.2729094
+one token time in planner tools: 1743412503.666552
+one token time in planner tools: 1743412504.059953
+one token time in planner tools: 1743412504.4532835
+one token time in planner tools: 1743412504.8475263
+one token time in planner tools: 1743412505.241058
+one token time in planner tools: 1743412505.634692
+one token time in planner tools: 1743412506.0285223
+one token time in planner tools: 1743412506.4221509
+one token time in planner tools: 1743412506.8159401
+one token time in planner tools: 1743412507.209902
+one token time in planner tools: 1743412507.6041796
+one token time in planner tools: 1743412507.997814
+one token time in planner tools: 1743412508.3915844
+one token time in planner tools: 1743412508.7854924
+one token time in planner tools: 1743412509.1797986
+one token time in planner tools: 1743412509.5737576
+one token time in planner tools: 1743412509.9689753
+one token time in planner tools: 1743412510.3632772
+one token time in planner tools: 1743412510.7572927
+one token time in planner tools: 1743412511.1511602
+one token time in planner tools: 1743412511.5456293
+one token time in planner tools: 1743412511.9396234
+one token time in planner tools: 1743412512.3333008
+one token time in planner tools: 1743412512.7282324
+one token time in planner tools: 1743412513.1224308
+one token time in planner tools: 1743412513.5167859
+one token time in planner tools: 1743412513.9106135
+one token time in planner tools: 1743412514.3056622
+one token time in planner tools: 1743412514.6999514
+one token time in planner tools: 1743412515.0939348
+one token time in planner tools: 1743412515.4880466
+one token time in planner tools: 1743412515.8826048
+one token time in planner tools: 1743412516.277432
+one token time in planner tools: 1743412516.6713452
+one token time in planner tools: 1743412517.066405
+one token time in planner tools: 1743412517.461489
+one token time in planner tools: 1743412517.8569694
+one token time in planner tools: 1743412518.2516024
+one token time in planner tools: 1743412518.6460524
+one token time in planner tools: 1743412519.0416276
+one token time in planner tools: 1743412519.4359155
+one token time in planner tools: 1743412519.8311634
+one token time in planner tools: 1743412520.2257748
+one token time in planner tools: 1743412520.6202528
+one token time in planner tools: 1743412521.0145752
+one token time in planner tools: 1743412521.409467
+one token time in planner tools: 1743412521.804011
+one token time in planner tools: 1743412522.1992233
+one token time in planner tools: 1743412522.59348
+one token time in planner tools: 1743412522.98831
+one token time in planner tools: 1743412523.3832824
+one token time in planner tools: 1743412523.778908
+one token time in planner tools: 1743412524.1733885
+one token time in planner tools: 1743412524.5686572
+one token time in planner tools: 1743412524.9632885
+one token time in planner tools: 1743412525.358929
+one token time in planner tools: 1743412525.753865
+one token time in planner tools: 1743412526.1495357
+one token time in planner tools: 1743412526.5447032
+one token time in planner tools: 1743412526.939305
+one token time in planner tools: 1743412527.3342547
+one token time in planner tools: 1743412527.7293084
+one token time in planner tools: 1743412528.1248527
+one token time in planner tools: 1743412528.5193849
+one token time in planner tools: 1743412528.9141288
+one token time in planner tools: 1743412529.309191
+one token time in planner tools: 1743412529.704249
+one token time in planner tools: 1743412530.0989127
+one token time in planner tools: 1743412530.494398
+one token time in planner tools: 1743412530.495785
+
+Token count: 98, Total time: 38.3980 seconds, One token time: 0.3918 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：优惠', '活动', ' ', '外', '卖', '配送', ' ', '饮', '料', '果汁', '口味', '增加', ' ', '买', '多少', '赠', '多少', ' 发', '放', '优惠', '券', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###對視頻的安全為相對化一定严格要求,让他们做到最好对,对这一块进行严格要求的进行把关还有就是咱们这个现在这个服务这个费用也要提高最后一个问题就是我们这个店铺这个这个像像是咱们这个我们要装贴一些东西那些气球啊一些到时候先来采购一下是吗准备一下想装饰一下便利对行好的特别的话主要一些这个气球啊一些就行到店长好的小话题你好,教教如何提高后厨效率和原材料储备量以减少客户等待时间。您好焦焦,基于之前我们讨论的内容,关于后勤部门上个月的工作情况,特别是员工请假,对工作的影响以及应对措施,您能详细说明一下吗?另外,对于客户反应的后厨偷工减料问题,您是如何调查和处理的?你好教教如何通过培训和优化流程提高兼职员工工作效率你好,焦焦,基于之前我们讨论的内容,关于店铺即将开展的优惠活动,你有什么建议吗?比如买多少赠多少,【发】放优惠券等,你怎么看待这些促销策略?同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议中提到，店铺将要开展优惠活动，并讨论了诸如“买多少赠多少”、“发放优惠券”等促销策略。对于这些促销策略，焦焦认为可以考虑结合实际情况制定具体的方案，比如设定一定的消费门槛来促进顾客消费。此外，关于外卖配送和饮料果汁口味增加的问题，焦焦建议在外卖平台上增加更多促销活动吸引顾客，并且尝试推出几款新口味的饮料果汁来满足不同消费者的需求。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###對視頻的安全為相對化一定严格要求,让他们做到最好对,对这一块进行严格要求的进行把关还有就是咱们这个现在这个服务这个费用也要提高最后一个问题就是我们这个店铺这个这个像像是咱们这个我们要装贴一些东西那些气球啊一些到时候先来采购一下是吗准备一下想装饰一下便利对行好的特别的话主要一些这个气球啊一些就行到店长好的小话题你好,教教如何提高后厨效率和原材料储备量以减少客户等待时间。您好焦焦,基于之前我们讨论的内容,关于后勤部门上个月的工作情况,特别是员工请假,对工作的影响以及应对措施,您能详细说明一下吗?另外,对于客户反应的后厨偷工减料问题,您是如何调查和处理的?你好教教如何通过培训和优化流程提高兼职员工工作效率你好,焦焦,基于之前我们讨论的内容,关于店铺即将开展的优惠活动,你有什么建议吗?比如买多少赠多少,【发】放优惠券等,你怎么看待这些促销策略?同时针对外卖配送和饮料果汁口味增加的问题你有什么好的建议吗###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议中提到，店铺将要开展优惠活动，并讨论了诸如“买多少赠多少”、“发放优惠券”等促销策略。对于这些促销策略，焦焦认为可以考虑结合实际情况制定具体的方案，比如设定一定的消费门槛来促进顾客消费。此外，关于外卖配送和饮料果汁口味增加的问题，焦焦建议在外卖平台上增加更多促销活动吸引顾客，并且尝试推出几款新口味的饮料果汁来满足不同消费者的需求。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

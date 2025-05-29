@@ -1,0 +1,650 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 65
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.19s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.09it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.48s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.75s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.90s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.51s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.84s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.77s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.65s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.59s/it]
+002,我是记者008,我是职业男性运动员007,会计直接做点行欢迎各位来到我们本次的一个专访我们荣幸请到了会计作家篮球运动这方面的大家都各行业的翘子来参加我们本次的专访现在我就开始为大家介绍一下我们这个各位在各个行业中的一些工作和生活的一些思想,那我们先从快点开始吧。您从事这个岗位多长时间了?正式的是三年然后有半年的时间实习半年的实验实习正式步入这个行业应该就是三年吧你是原来大学都学这个行业吗大学学的是专业是经济学跟着相关有相关的地方然后就是在大学期间考了照到畢業以後就從事這個行業了工作上有什么困难?工作上,对于筷子这个行业吧,还是越老越吃香。一开始的时候肯定就看资历,一开始的时候肯定工资没那么高。然后你学的内容,和你实际操作还是有区别的。进入这个行业,您跟别人学,那这个也好接触,您年轻嘛,也好接受,然后慢慢也会入正轨。您在,您进入这个公司三年了,也算是见证了公司的发展,您有什么感想,看法?其实都是不管是人还是一个公司它都是往前发展的它是有变化的对是然后我把国家政策的变化然后我也得随着这个变化不断学习对然后公司它也有人来人往有来的有走的然后各个政策也有变动然后也会有各种活动然后在服务的发展它也在慢慢扩大了对,完善公司的体制,自身来说我的技能与业务能力逐渐提高。是这样的,因为你工作了三年,你有什么经验或故事想要对一批新来的人说的话?一開始沒想到就是刚上班没想着尤其是这种像我这种职业没想着能挣多少钱先把这个你的技能掌握好了然后时间久了你的那个收入也会随着提高的然后然后这个这个进步你要是看着这个公司了你就在这长时间坚持下去第一份工作,正式的工作,也是同行畢業的吧,行政信息,還是跟稅務方面的相關的一個公司。快急是分很多種類是吧?快急它說分很多種吧也是,但是大致还是差不多的,有的人家会计他的能力比较强的,人家会退税的,做外贸行业的,人家的工资会更高,还有红地产行业的,工资会更高。然后他如果说考那个资格证厉害的话,他的工资也会更高的。最高的,我觉得最厉害的就是注册会计师。注册会计师。在做这份工作时,经常会面临什么样的问题?经常就在公司中吧,每当发公司的日子,那一天,就会问哪儿是发公司的。还有就是老板对这个税务方面,正怎么不是很了解,在对这个财务秩序方面会出现很多问题,然后就需要这个财务人员还得在账目上做就这个老板对这个钱的支取上面他有时候比较随意了这个账目没法就是他其实走这笔钱也许是自己消费了但是在工资上是不能这么说的吧就是需要财务这一块做一些调整请不吝点赞 订阅 转发 打赏支持明镜与点点栏目工作来帮助什么?觉得生活有什么最有挑战性的工作呢?挑战性?还是跟公司内的这些同事们的关系吧我去遊泳區是女生多的地方很多,很多的地方会引起战争。不是,不是,你得保持好你的态度。能中立就中立,不要这么多话。还有就是,刚才你也说了,保持中立。谢谢现
+[Text Detection] 在 508.47 秒检测到关键词 '娇娇',current_time: 496.00, 问题文本: 现在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的
+在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的目前对这个工作满意吗?还算满意吧,因为跟我们同事处的关系不错,老板也挺好的,算账也挺好的。刚才说初级中级高级之外,那初级职位和高级职位的薪水有什么差距?不同行业的高级,像是楼盘高的工作率就高,有些行业必须要求你,有些大企业必须要求你在某个职场,这是你的强能专业可以说是。那對於影響現在有很多如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,如果说他想从事会计这个其实居财务的也可以去跑公园他也有对口的然后银行也是对口的然后再一个就是从日本专业就是会计如果从日本专业的话进入社会就是要学习得学至少有一年不要想象不要把自己想象得太厉害了进入社会的第一年就是从最基础的过去就是拿著鏡子你要认清这个现实,但是你要学得好的话,这些能力强中慢慢地越来越好,但是这个会计这个行业吧,人太多了,还是你找准一个自己的位置,好不做就行。请不吝点赞 订阅 转发 打赏支持明镜与点点栏目一个月工作多少天?一个月工作四天的休息时间,其他就是上班时间。休息的你会干什么?出去跟朋友出去玩,吃饭逛街看电影。然后没事的话就去,如果有活家节假日的话就出去旅游。我们先把话题转到作家,作家,您从事作家多少年了?二十多年了。二十多年,老作家了?应该是,但是作品不是很多。也有一些很知名的是是什么经历你做的哪些好事?我的生活经历吧我从退役以后当过兵回想过去也想写一部小说跟战友之间的相处写一部小说所以才写了一本叫老兵突击老兵突击对这是很多有我的生活经历在里面再加一些衣服加工对,讲话从事作家,您一共出过几本书呢?出了三四本吧三四本那平常比如说,平常出来记的书,你比较喜欢阅读什么书籍或者杂志,哪些没情况符石什么陈忠实《白鹿鱼岸》陈忠实这些书籍杂志是您喜欢的,是吧?还有《废都》《废都》这个作品我也非常喜欢这本书籍当中的人物你最喜欢,这本书籍当中的哪些人物?您说的是我的作品对,不是,是你喜欢的,都可以说一说请不吝点赞 订阅 转发 打赏支持明镜与点点栏目因为福石这个人呢,他是我说的青词,福石写的青词,因为他拍过一个电视剧啊,主人公是一个拍卖行的老板,他写了一些很多社会真实的东西。一些我们告诉我们的教育长大教育告诉我们要诚实实际上实际越做上你要做一些非常能毁城市中心您的书记你们最喜欢哪些我的书记里边嗯老子老婆图记里边傻哥啊傻哥这个人物在咱们这个书里边他这个毕竟我虽然我写上了,但不能说他是个好兵。我们需要的兵,是灵魂型战士,打个儿需要灵魂性,他好像更像一个普通机器。但是说,他在我们这个军队里边也是主体。有很多原因是我们军队的训练和洗脑意识,把它给人家洗成那样所以说他就是一个服从工具这么多读了这么多书籍哪个书籍对你影响最大影响最大的军领题材的就是一座平台现实主义题材的就是符实的作品我都看了基本上都可以那
+[Text Detection] 在 1014.39 秒检测到关键词 '娇娇',current_time: 992.00, 问题文本: 那你就比较敬仰了不是他这个人比较写实实事比较知之久止我们现在的一些因素里边缺少一些唯物的东西唯心的东西挺多的唯心的东西挺多的所以我主张一些写实的东西你好 娇娇基于之前我们讨论的内容您提到了会计行业除极职位和高级职位再
+你就比较敬仰了不是他这个人比较写实实事比较知之久止我们现在的一些因素里边缺少一些唯物的东西唯心的东西挺多的唯心的东西挺多的所以我主张一些写实的东西你好 娇娇基于之前我们讨论的内容您提到了会计行业除极职位和高级职位再这是法律允许的,写一些真实的现实主义题材的东西。你有过改变自己的创作方法方式吗?你现在不是限制主义的,我想改变自己的方式。目前没有,因为我的限制主义题材的东西,我觉得我写的还是不到位。可以學大家您都算行業比較有些涉及一些敏感的东西,咱们就只说管控,出版社管控,咱们写不出来。语言文字上收集的线索,写的也是不到位的。那您工作和生活当中对主要的目标是什么?在生活中寻找创作的编曲工作,不是你这直接把工作跟生活,生活是寻找创作的缘起来的。我们这是好好生活嘛,自然的生活。对,在生活工作当中存在哪些主要问题呢?目前的主要问题。主要的問題就是想鍛鍊鍛鍊身體減減肥保持一些健康的狀態你是这些神功潜力度正在练习的问题吗?要控制眼神交接,眼神交接把体重减少。正气没有三高,远离三高。远离三高。你最喜欢的放松方式是什么?最喜欢的放松方式?那就是泡泡。泡泡。幸運當中就是溫泉對西湖我這是西安的溫泉西安說到溫泉了你覺得西安的溫泉環境怎麼樣不錯自然非常好這個溫泉這個是解壓因為你們做的家吧都是思想比較怎麼說呢寬補也容易抑郁是不是嗯,是。有的时候你写东西出版不了,或者你想表达,自然表达不出来,是有点……精神压力也大。对。这平常都是通过这个……通过这个……抛草。抛草。然后去淋淋油。感受一下大自然。在生活中您看到最遗憾的什么最自我的遗憾和自豪遗憾和自豪遗憾的事就是沒有在部隊繼續幹怎麼會是你不在部隊是因為什麼是因為因為那個當時沒有轉士官的名額了士官的名額我那个,沟通了就是那个,世博吧,当时没有去找他。因为我在我退役一年以后,他突然想起了我。让我重新归队,他想让我重新归队。你觉得这个好厉害所以一年以后想到了为什么不去找他呢这个去的时候他没在啊他爱人在家就是沟通方式咱们的沟通方式因为是有问题每次他一讲话的时候我一讲话一说我这个工作前头的事一说他就说不要讲了不用说这些事就是一个中国人的我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我说我后来一问我这退伍 他说不知道 他不知道这事那你最自豪的事情是什么最自豪的事 能写本好书写本反映自己生活的书反映自己生活的一些好书那咱把这个话题转到我们这个运动员运动员有什么想跟大家说的话你是哪方面的球员?篮球你是加入了职业队吗?对,加入职业队你是打什么位置的?我是打分类分类你对这个职业有什么规划?客户我用一种规划未来怎么怎么打入CBA啊就来了未来参加CLBA目前是在什么联赛目前还是大学生联赛未来不想加入CBA吗CBA是热情事故参加不了吧那你是对自己的能力有所怀疑吗是对自己的潜力和原来有所怀疑钱力钱力财力财力不行这样的那咱们就说一下目前你和哪个朋友相处得比较好都处得挺好都处得挺好相处得十分和谐团队必须一心在生活中讓你感到最快樂最快乐的事情是什么?最沮丧的事情是什么?什么事情和情况会令你感到生气、悲伤、高兴或者害怕?高兴的话就是打赢了嗯,嗯,才惹了之後你受傷過嗎?嗯,受傷過你打了幾年了?打了12年從多大開始?小學了吧小學小學都開始了那你記得你同年小學的時候發生的一些事情嗎?
+[Audio Detection] 在 1554.91 秒检测到关键词 '好交交'。
+detection_time: 1554.91, current_time: 1550.00
+比如说在生活当中哪些东西是你比较看重的?创新创新,那你的意义是什么?这些东西是一个意义意义是一个做人的原则还有就是,到这里了平常生活当中,择打的爱情,你还有什么爱?摄影摄影,去哪里摄影?以及生活中的DNA生活中的DNA以及瘀青点是吧还有我最想问你一个问题是平常就是平常训练有集训是吧对有集训集训预料在哪个月份展开即兴的话,有冬季即兴还有夏季即兴在篮球史上你最喜欢哪个人?是什么样的球员?是他的活感,他的担当最不喜欢哪个球员?最不喜欢?有才力和圆满能进,但是他不好好打平常你的闲暇时间多吗?不多平常如果有闲暇时间,你会经常去哪里?有闲暇时间,闲暇时间的话,拍摄,去找素材拍摄,找素材你最喜欢的旅游地点是哪里?西藏因为那是一个梦幻般的地方梦幻般的地方它会吸引到你它让我想比如说除了打篮球你还喜欢未来你觉得只能打一下这个路人吗对路人这个职业来满足你生活上的努力打篮球其实还越来越多,篮球并不是你家的。篮球只是热爱。工作归工作,篮球归篮球,它两个是不相干的,以及打比赛也是不相干的。打比赛你可以挤出来时间去打那场比赛然后获得奖金可以用来维持一下自己的生活在打篮球当中你会经常遇到哪些场面问题比如说有人侮辱你 对你有偏见 你会怎么办嗯 拿球说话呀侮辱我他 侮辱我说明啥 说明他球技不如我说明他技术 他没有能力目前在你生活中,当如目前你您现在多大了?我现在十几年了,十八岁七岁二十刚进入大学对嗯您最希望别人怎么记住您?最希望别人记住我?应得比赛了你比赛了?赛了?胜利你有什么看法和感觉呢?能力不大,野心很大怎么提高,咱说野心大了,怎么提高一下?特大师学几岁?在你成长过程中,你做的最大或最重要的决定是什么?最重要的决定,考驾照谢谢最后一个问题你对于友谊意味着什么友谊意味着友谊意味着什么友谊意味着兄弟友谊意味着总会有那么一个人陪你傻傻乐乐好的,那咱们今天的专访就到此结束,感谢相对的列宁,谢谢。谢谢大家
+[Audio Detection] 在 1965.34 秒检测到关键词 '好交交'。
+detection_time: 1965.34, current_time: 1953.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S08C01_agent_added/out_001-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 670885, dtype: float32, min: -0.210479736328125, max: 0.199462890625
+问题音频时间长度: 41.9303125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容你提到了在篮球生涯中遇到的问题比如有人侮辱你或对你有偏见我想问问面对这些挑战你通常是如何调整心态保持积极态度并继续在篮球领域追求进步的
+, 1743411028.0913038
+问题音频STT前的时刻: 1743411028.0914702
+问题音频STT后的时刻: 1743411028.7210994
+问题音频STT时间: 0.6296291351318359
+
+
+[Agent] 最终接收到问题: 你好,焦焦,会计工作中,你如何平衡与同事的关系,尤其是女性较多的环境?
+, 1743411028.7212825
+问题音频送入Planner的时刻: 1743411028.7216895
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743411029.3521419
+planner new_token time: 1743411029.746425
+planner new_token time: 1743411029.7469528
+First token received: 1, time: 1743411029.7478254
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411029.7980003
+talker first token time: 1743411030.4539855
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743411030.4881957
+talker first token time: 1743411030.5144238
+talker first token time: 1743411030.5663023
+talker first token time: 1743411030.5927699
+talker first token time: 1743411030.618996
+talker first token time: 1743411030.6450872
+talker first token time: 1743411030.671495
+talker first token time: 1743411030.6977422
+talker first token time: 1743411030.7239037
+talker first token time: 1743411030.750134
+talker first token time: 1743411030.7762961
+talker first token time: 1743411030.8283079
+talker first token time: 1743411030.8545554
+talker first token time: 1743411030.8806863
+talker first token time: 1743411030.906855
+talker first token time: 1743411030.9329026
+talker first token time: 1743411030.9848194
+talker first token time: 1743411031.0368168
+talker first token time: 1743411031.063165
+talker first token time: 1743411031.0896616
+talker first token time: 1743411031.1161013
+talker first token time: 1743411031.14237
+talker first token time: 1743411031.194787
+talker first token time: 1743411031.2210376
+talker first token time: 1743411031.2472277
+talker first token time: 1743411031.273539
+talker first token time: 1743411031.2999873
+talker first token time: 1743411031.3263564
+talker first token time: 1743411031.3789685
+talker first token time: 1743411031.431323
+talker first token time: 1743411031.4576917
+talker first token time: 1743411031.4840229
+talker first token time: 1743411031.510357
+talker first token time: 1743411031.5369036
+talker first token time: 1743411031.5632634
+talker first token time: 1743411031.5898745
+talker first token time: 1743411031.6162686
+talker first token time: 1743411031.6429336
+talker first token time: 1743411031.6695096
+talker first token time: 1743411031.696167
+talker first token time: 1743411031.722666
+talker first token time: 1743411031.7492044
+talker first token time: 1743411031.8019052
+talker first token time: 1743411031.8545723
+talker first token time: 1743411031.8810678
+talker first token time: 1743411031.9077225
+talker first token time: 1743411031.9341533
+talker first token time: 1743411031.9606676
+talker first token time: 1743411031.9873154
+talker first token time: 1743411032.013914
+talker first token time: 1743411032.0406814
+talker first token time: 1743411032.0674858
+talker first token time: 1743411032.1208773
+talker first token time: 1743411032.1475694
+talker first token time: 1743411032.1742108
+talker first token time: 1743411032.2010567
+talker first token time: 1743411032.2281423
+talker first token time: 1743411032.255051
+talker first token time: 1743411032.3093271
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在会计工作中，我始终保持专业和礼貌的态度与同事交流，无论他们是男性还是女性。我相信，只有通过建立良好的人际关系，才能更好地完成工作和项目。同时，我会尊重每个人的观点和想法，并在需要时提供帮助和支持。我相信，这种平衡和谐的关系不仅有助于工作效率的提高，也有助于个人职业发展。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S08C01_agent_added/out_001-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 670885, dtype: float32, min: -0.210479736328125, max: 0.199462890625
+问题音频时间长度: 41.9303125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容你提到了在篮球生涯中遇到的问题比如有人侮辱你或对你有偏见我想问问面对这些挑战你通常是如何调整心态保持积极态度并继续在篮球领域追求进步的
+, 1743411034.2191637
+问题音频STT前的时刻: 1743411034.2192712
+问题音频STT后的时刻: 1743411035.9546497
+问题音频STT时间: 1.7353785037994385
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,您提到了会计行业出级职位和高级职位在薪水上存在差距,能否具体说明一下出级和高级职位的薪资差异,并给出一些建议帮助采快专业的学生更好地规划。他们的职业发展路径
+, 1743411035.9548373
+问题音频送入Planner的时刻: 1743411035.9551878
+planner new_token time: 1743411036.606307
+planner new_token time: 1743411036.9971054
+First token received: 0, time: 1743411036.997225
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411037.3886607
+planner new_token time: 1743411037.7798917
+planner new_token time: 1743411038.1710787
+planner new_token time: 1743411038.5621548
+planner new_token time: 1743411038.9544768
+planner new_token time: 1743411039.345959
+planner new_token time: 1743411039.7369425
+planner new_token time: 1743411040.1291294
+planner new_token time: 1743411040.5207891
+planner new_token time: 1743411040.9123433
+planner new_token time: 1743411041.3044047
+planner new_token time: 1743411041.6952736
+planner new_token time: 1743411042.0870323
+planner new_token time: 1743411042.4786959
+planner new_token time: 1743411042.8699443
+planner new_token time: 1743411043.2624784
+planner new_token time: 1743411043.6545396
+planner new_token time: 1743411044.0465846
+planner new_token time: 1743411044.4376884
+planner new_token time: 1743411044.8295825
+planner new_token time: 1743411045.221506
+planner new_token time: 1743411045.6137435
+planner new_token time: 1743411046.005781
+planner new_token time: 1743411046.397768
+planner new_token time: 1743411046.789908
+planner new_token time: 1743411047.1824193
+planner new_token time: 1743411047.57481
+planner new_token time: 1743411047.9670684
+planner new_token time: 1743411048.3589988
+planner new_token time: 1743411048.7514007
+planner new_token time: 1743411049.1443162
+planner new_token time: 1743411049.5372803
+planner new_token time: 1743411049.9294565
+planner new_token time: 1743411050.3218298
+planner new_token time: 1743411050.7141166
+planner new_token time: 1743411051.107311
+planner new_token time: 1743411051.5000243
+planner new_token time: 1743411051.8924973
+planner new_token time: 1743411052.2849731
+planner new_token time: 1743411052.6781344
+planner new_token time: 1743411053.070899
+planner new_token time: 1743411053.464233
+planner new_token time: 1743411053.4650671
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：会计行业 出级职位 高级职位 薪资差异 职业发展路径
+
+
+提取的关键词: ['会计行业', '出级职位', '高级职位', '薪资差异', '职业发展路径']
+
+找到的上下文片段数量: 3
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743411054.6133757
+one token time in planner tools: 1743411055.0102751
+one token time in planner tools: 1743411055.4063313
+one token time in planner tools: 1743411055.8021793
+one token time in planner tools: 1743411056.1968386
+one token time in planner tools: 1743411056.5918884
+one token time in planner tools: 1743411056.9873967
+one token time in planner tools: 1743411057.3826115
+one token time in planner tools: 1743411057.779558
+one token time in planner tools: 1743411058.174708
+one token time in planner tools: 1743411058.5704124
+one token time in planner tools: 1743411058.9662504
+one token time in planner tools: 1743411059.362112
+one token time in planner tools: 1743411059.757785
+one token time in planner tools: 1743411060.1536422
+one token time in planner tools: 1743411060.5496118
+one token time in planner tools: 1743411060.9457154
+one token time in planner tools: 1743411061.342318
+one token time in planner tools: 1743411061.7383816
+one token time in planner tools: 1743411062.1343057
+one token time in planner tools: 1743411062.5303738
+one token time in planner tools: 1743411062.9264216
+one token time in planner tools: 1743411063.3222184
+one token time in planner tools: 1743411063.7185388
+one token time in planner tools: 1743411064.1143765
+one token time in planner tools: 1743411064.5106199
+one token time in planner tools: 1743411064.906707
+one token time in planner tools: 1743411065.3026366
+one token time in planner tools: 1743411065.6987317
+one token time in planner tools: 1743411066.09508
+one token time in planner tools: 1743411066.491203
+one token time in planner tools: 1743411066.8874092
+one token time in planner tools: 1743411067.2835536
+one token time in planner tools: 1743411067.6796048
+one token time in planner tools: 1743411068.0757034
+one token time in planner tools: 1743411068.471777
+one token time in planner tools: 1743411068.8681455
+one token time in planner tools: 1743411069.2645743
+one token time in planner tools: 1743411069.66086
+one token time in planner tools: 1743411070.0573184
+one token time in planner tools: 1743411070.4532127
+one token time in planner tools: 1743411070.8495457
+one token time in planner tools: 1743411071.2459927
+one token time in planner tools: 1743411071.642712
+one token time in planner tools: 1743411072.0404716
+one token time in planner tools: 1743411072.4367158
+one token time in planner tools: 1743411072.8334286
+one token time in planner tools: 1743411073.2297943
+one token time in planner tools: 1743411073.6261897
+one token time in planner tools: 1743411074.0227828
+one token time in planner tools: 1743411074.420053
+one token time in planner tools: 1743411074.8165486
+one token time in planner tools: 1743411075.2126856
+one token time in planner tools: 1743411075.6092217
+one token time in planner tools: 1743411076.0058649
+one token time in planner tools: 1743411076.4033916
+one token time in planner tools: 1743411076.7999082
+one token time in planner tools: 1743411077.1963246
+one token time in planner tools: 1743411077.5924752
+one token time in planner tools: 1743411077.9889147
+one token time in planner tools: 1743411078.3857799
+one token time in planner tools: 1743411078.7823918
+one token time in planner tools: 1743411079.1787794
+one token time in planner tools: 1743411079.5752
+one token time in planner tools: 1743411079.9720805
+one token time in planner tools: 1743411080.3685658
+one token time in planner tools: 1743411080.7652562
+one token time in planner tools: 1743411081.1629019
+one token time in planner tools: 1743411081.560426
+one token time in planner tools: 1743411081.958038
+one token time in planner tools: 1743411082.3550475
+one token time in planner tools: 1743411082.7526705
+one token time in planner tools: 1743411083.1500108
+one token time in planner tools: 1743411083.546804
+one token time in planner tools: 1743411083.9437447
+one token time in planner tools: 1743411084.3407137
+one token time in planner tools: 1743411084.7386231
+one token time in planner tools: 1743411085.135802
+one token time in planner tools: 1743411085.5333772
+one token time in planner tools: 1743411085.9310744
+one token time in planner tools: 1743411086.3292487
+one token time in planner tools: 1743411086.7262325
+one token time in planner tools: 1743411087.1236832
+one token time in planner tools: 1743411087.5205653
+one token time in planner tools: 1743411087.91847
+one token time in planner tools: 1743411088.3161094
+one token time in planner tools: 1743411088.713587
+one token time in planner tools: 1743411089.1109781
+one token time in planner tools: 1743411089.5080786
+one token time in planner tools: 1743411089.9052308
+one token time in planner tools: 1743411090.3030307
+one token time in planner tools: 1743411090.701198
+one token time in planner tools: 1743411091.099461
+one token time in planner tools: 1743411091.4976318
+one token time in planner tools: 1743411091.8945441
+one token time in planner tools: 1743411092.2922854
+one token time in planner tools: 1743411092.6898084
+one token time in planner tools: 1743411093.0874634
+one token time in planner tools: 1743411093.4856396
+one token time in planner tools: 1743411093.8834465
+one token time in planner tools: 1743411094.2813063
+one token time in planner tools: 1743411094.6794813
+one token time in planner tools: 1743411095.0778894
+one token time in planner tools: 1743411095.4760675
+one token time in planner tools: 1743411095.8742137
+one token time in planner tools: 1743411096.2722259
+one token time in planner tools: 1743411096.2736297
+
+Token count: 107, Total time: 42.7250 seconds, One token time: 0.3993 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：会计', '行业', ' ', '出', '级', '职位', ' ', '高', '级', '职位', ' ', '薪', '资', '差异', ' ', '职', '业', '发展', '路径', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###还有就是老板对这个税务方面,正怎么不是很了解,在对这个财务秩序方面会出现很多问题,然后就需要这个财务人员还得在账目上做就这个老板对这个钱的支取上面他有时候比较随意了这个账目没法就是他其实走这笔钱也许是自己消费了但是在工资上是不能这么说的吧就是需要财务这一块做一些调整请不吝点赞 订阅 转发 打赏支持明镜与点点栏目工作来帮助什么?觉得生活有什么最有挑战性的工作呢?挑战性?还是跟公司内的这些同事们的关系吧我去遊泳區是女生多的地方很多,很多的地方会引起战争。不是,不是,你得保持好你的态度。能中立就中立,不要这么多话。还有就是,刚才你也说了,保持中立。谢谢现在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的目前对这个工作满意吗?还算满意吧,因为跟我们同事处的关系不错,老板也挺好的,算账也挺好的。刚才说初级中级高级之外,那初级职位和【高】级职位的薪水有什么差距?不同行业的高级,像是楼盘高的工作率就高,有些行业必须要求你,有些大企业必须要求你在某个职场,这是你的强能专业可以说是。那對於影響現在有很多如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,如果说他想从事会计这个其实居财务的也可以去跑公园他也有对口的然后银行也是对口的然后再一个就是从日本专业就是会计如果从日本专业的话进入社会就是要学习得学至少有一年不要想象不要把自己想象得太厉害了进入社会的第一年就是从最基础的过去就是拿著鏡子你要认清这个现实,但是你要学得好的话,这些能力强中慢慢地越来越好,但是这个会计这个行业吧,人太多了,还是你找准一个自己的位置,好不做就行。\n---\n一些我们告诉我们的教育长大教育告诉我们要诚实实际上实际越做上你要做一些非常能毁城市中心您的书记你们最喜欢哪些我的书记里边嗯老子老婆图记里边傻哥啊傻哥这个人物在咱们这个书里边他这个毕竟我虽然我写上了,但不能说他是个好兵。我们需要的兵,是灵魂型战士,打个儿需要灵魂性,他好像更像一个普通机器。但是说,他在我们这个军队里边也是主体。有很多原因是我们军队的训练和洗脑意识,把它给人家洗成那样所以说他就是一个服从工具这么多读了这么多书籍哪个书籍对你影响最大影响最大的军领题材的就是一座平台现实主义题材的就是符实的作品我都看了基本上都可以那你就比较敬仰了不是他这个人比较写实实事比较知之久止我们现在的一些因素里边缺少一些唯物的东西唯心的东西挺多的唯心的东西挺多的所以我主张一些写实的东西你好 娇娇基于之前我们讨论的内容您提到了【会】计行业除极职位和高级职位再这是法律允许的,写一些真实的现实主义题材的东西。你有过改变自己的创作方法方式吗?你现在不是限制主义的,我想改变自己的方式。目前没有,因为我的限制主义题材的东西,我觉得我写的还是不到位。可以學大家您都算行業比較有些涉及一些敏感的东西,咱们就只说管控,出版社管控,咱们写不出来。语言文字上收集的线索,写的也是不到位的。那您工作和生活当中对主要的目标是什么?在生活中寻找创作的编曲工作,不是你这直接把工作跟生活,生活是寻找创作的缘起来的。我们这是好好生活嘛,自然的生活。对,在生活工作当中存在哪些主要问题呢?目前的主要问题。主要的問題就是想鍛鍊鍛鍊身體減減肥保持一些健康的狀態你是这些神功潜力度正在练习的问题吗?要控制眼神交接,眼神交接把体重减\n---\n打比赛你可以挤出来时间去打那场比赛然后获得奖金可以用来维持一下自己的生活在打篮球当中你会经常遇到哪些场面问题比如说有人侮辱你 对你有偏见 你会怎么办嗯 拿球说话呀侮辱我他 侮辱我说明啥 说明他球技不如我说明他技术 他没有能力目前在你生活中,当如目前你您现在多大了?我现在十几年了,十八岁七岁二十刚进入大学对嗯您最希望别人怎么记住您?最希望别人记住我?应得比赛了你比赛了?赛了?胜利你有什么看法和感觉呢?能力不大,野心很大怎么提高,咱说野心大了,怎么提高一下?特大师学几岁?在你成长过程中,你做的最大或最重要的决定是什么?最重要的决定,考驾照谢谢最后一个问题你对于友谊意味着什么友谊意味着友谊意味着什么友谊意味着兄弟友谊意味着总会有那么一个人陪你傻傻乐乐好的,那咱们今天的专访就到此结束,感谢相对的列宁,谢谢。谢谢大家你好,焦焦,会计工作中,你如何平衡与同事的关系,尤其是女性较多的环境?你好,焦焦,基于之前我们讨论的内容,您提到了【会】计行业出级职位和高级职位在薪水上存在差距,能否具体说明一下出级和高级职位的薪资差异,并给出一些建议帮助采快专业的学生更好地规划。他们的职业发展###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n在会计行业中，初级职位和高级职位在薪资上确实存在较大差异。初级会计员可能月薪几千元至万元左右，而高级会计师或财务经理的年薪则可能达到数万甚至更高。对于想要在这个行业发展的学生来说，建议首先扎实掌握基础知识，并通过相关资格考试（如CPA）提升自身竞争力；其次，积累实际工作经验，积极参与项目，不断拓宽视野；最后，注重人际关系的建立，尤其是在女性较多的工作环境中，学会妥善处理与同事的关系尤为重要。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###还有就是老板对这个税务方面,正怎么不是很了解,在对这个财务秩序方面会出现很多问题,然后就需要这个财务人员还得在账目上做就这个老板对这个钱的支取上面他有时候比较随意了这个账目没法就是他其实走这笔钱也许是自己消费了但是在工资上是不能这么说的吧就是需要财务这一块做一些调整请不吝点赞 订阅 转发 打赏支持明镜与点点栏目工作来帮助什么?觉得生活有什么最有挑战性的工作呢?挑战性?还是跟公司内的这些同事们的关系吧我去遊泳區是女生多的地方很多,很多的地方会引起战争。不是,不是,你得保持好你的态度。能中立就中立,不要这么多话。还有就是,刚才你也说了,保持中立。谢谢现在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的目前对这个工作满意吗?还算满意吧,因为跟我们同事处的关系不错,老板也挺好的,算账也挺好的。刚才说初级中级高级之外,那初级职位和【高】级职位的薪水有什么差距?不同行业的高级,像是楼盘高的工作率就高,有些行业必须要求你,有些大企业必须要求你在某个职场,这是你的强能专业可以说是。那對於影響現在有很多如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,但是如果说他想从事会计,其实决财务的也可以去看,如果说他想从事会计这个其实居财务的也可以去跑公园他也有对口的然后银行也是对口的然后再一个就是从日本专业就是会计如果从日本专业的话进入社会就是要学习得学至少有一年不要想象不要把自己想象得太厉害了进入社会的第一年就是从最基础的过去就是拿著鏡子你要认清这个现实,但是你要学得好的话,这些能力强中慢慢地越来越好,但是这个会计这个行业吧,人太多了,还是你找准一个自己的位置,好不做就行。
+---
+一些我们告诉我们的教育长大教育告诉我们要诚实实际上实际越做上你要做一些非常能毁城市中心您的书记你们最喜欢哪些我的书记里边嗯老子老婆图记里边傻哥啊傻哥这个人物在咱们这个书里边他这个毕竟我虽然我写上了,但不能说他是个好兵。我们需要的兵,是灵魂型战士,打个儿需要灵魂性,他好像更像一个普通机器。但是说,他在我们这个军队里边也是主体。有很多原因是我们军队的训练和洗脑意识,把它给人家洗成那样所以说他就是一个服从工具这么多读了这么多书籍哪个书籍对你影响最大影响最大的军领题材的就是一座平台现实主义题材的就是符实的作品我都看了基本上都可以那你就比较敬仰了不是他这个人比较写实实事比较知之久止我们现在的一些因素里边缺少一些唯物的东西唯心的东西挺多的唯心的东西挺多的所以我主张一些写实的东西你好 娇娇基于之前我们讨论的内容您提到了【会】计行业除极职位和高级职位再这是法律允许的,写一些真实的现实主义题材的东西。你有过改变自己的创作方法方式吗?你现在不是限制主义的,我想改变自己的方式。目前没有,因为我的限制主义题材的东西,我觉得我写的还是不到位。可以學大家您都算行業比較有些涉及一些敏感的东西,咱们就只说管控,出版社管控,咱们写不出来。语言文字上收集的线索,写的也是不到位的。那您工作和生活当中对主要的目标是什么?在生活中寻找创作的编曲工作,不是你这直接把工作跟生活,生活是寻找创作的缘起来的。我们这是好好生活嘛,自然的生活。对,在生活工作当中存在哪些主要问题呢?目前的主要问题。主要的問題就是想鍛鍊鍛鍊身體減減肥保持一些健康的狀態你是这些神功潜力度正在练习的问题吗?要控制眼神交接,眼神交接把体重减
+---
+打比赛你可以挤出来时间去打那场比赛然后获得奖金可以用来维持一下自己的生活在打篮球当中你会经常遇到哪些场面问题比如说有人侮辱你 对你有偏见 你会怎么办嗯 拿球说话呀侮辱我他 侮辱我说明啥 说明他球技不如我说明他技术 他没有能力目前在你生活中,当如目前你您现在多大了?我现在十几年了,十八岁七岁二十刚进入大学对嗯您最希望别人怎么记住您?最希望别人记住我?应得比赛了你比赛了?赛了?胜利你有什么看法和感觉呢?能力不大,野心很大怎么提高,咱说野心大了,怎么提高一下?特大师学几岁?在你成长过程中,你做的最大或最重要的决定是什么?最重要的决定,考驾照谢谢最后一个问题你对于友谊意味着什么友谊意味着友谊意味着什么友谊意味着兄弟友谊意味着总会有那么一个人陪你傻傻乐乐好的,那咱们今天的专访就到此结束,感谢相对的列宁,谢谢。谢谢大家你好,焦焦,会计工作中,你如何平衡与同事的关系,尤其是女性较多的环境?你好,焦焦,基于之前我们讨论的内容,您提到了【会】计行业出级职位和高级职位在薪水上存在差距,能否具体说明一下出级和高级职位的薪资差异,并给出一些建议帮助采快专业的学生更好地规划。他们的职业发展###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+在会计行业中，初级职位和高级职位在薪资上确实存在较大差异。初级会计员可能月薪几千元至万元左右，而高级会计师或财务经理的年薪则可能达到数万甚至更高。对于想要在这个行业发展的学生来说，建议首先扎实掌握基础知识，并通过相关资格考试（如CPA）提升自身竞争力；其次，积累实际工作经验，积极参与项目，不断拓宽视野；最后，注重人际关系的建立，尤其是在女性较多的工作环境中，学会妥善处理与同事的关系尤为重要。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S08C01_agent_added/out_001-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 670885, dtype: float32, min: -0.210479736328125, max: 0.199462890625
+问题音频时间长度: 41.9303125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容你提到了在篮球生涯中遇到的问题比如有人侮辱你或对你有偏见我想问问面对这些挑战你通常是如何调整心态保持积极态度并继续在篮球领域追求进步的
+, 1743411098.074034
+问题音频STT前的时刻: 1743411098.0741453
+问题音频STT后的时刻: 1743411098.691187
+问题音频STT时间: 0.6170415878295898
+
+
+[Agent] 最终接收到问题: 你好教教如何平衡现实主义创作与法律限制写出真实题材作品
+, 1743411098.6916006
+问题音频送入Planner的时刻: 1743411098.69208
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743411099.2981253
+planner new_token time: 1743411099.6927636
+planner new_token time: 1743411099.6933343
+First token received: 1, time: 1743411099.693609
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743411099.7084672
+talker first token time: 1743411099.997896
+talker first token time: 1743411100.024624
+talker first token time: 1743411100.0506775
+talker first token time: 1743411100.0765305
+talker first token time: 1743411100.1023972
+talker first token time: 1743411100.1283333
+talker first token time: 1743411100.179953
+talker first token time: 1743411100.2058952
+talker first token time: 1743411100.23181
+talker first token time: 1743411100.2577662
+talker first token time: 1743411100.283736
+talker first token time: 1743411100.3355772
+talker first token time: 1743411100.3615992
+talker first token time: 1743411100.387793
+talker first token time: 1743411100.4139476
+talker first token time: 1743411100.4400206
+talker first token time: 1743411100.4920511
+talker first token time: 1743411100.5441034
+talker first token time: 1743411100.5703351
+talker first token time: 1743411100.596478
+talker first token time: 1743411100.6229753
+talker first token time: 1743411100.6493735
+talker first token time: 1743411100.675692
+talker first token time: 1743411100.7279177
+talker first token time: 1743411100.7542143
+talker first token time: 1743411100.7806618
+talker first token time: 1743411100.8072326
+talker first token time: 1743411100.8598297
+talker first token time: 1743411100.8914304
+talker first token time: 1743411100.9179146
+talker first token time: 1743411100.9440916
+talker first token time: 1743411100.970329
+talker first token time: 1743411100.9967554
+talker first token time: 1743411101.0493054
+talker first token time: 1743411101.1020842
+talker first token time: 1743411101.1284547
+talker first token time: 1743411101.154948
+talker first token time: 1743411101.181361
+talker first token time: 1743411101.2078812
+talker first token time: 1743411101.2604065
+talker first token time: 1743411101.286985
+talker first token time: 1743411101.3133996
+talker first token time: 1743411101.3401103
+talker first token time: 1743411101.3668966
+talker first token time: 1743411101.4199073
+talker first token time: 1743411101.446566
+talker first token time: 1743411101.473102
+talker first token time: 1743411101.5262203
+talker first token time: 1743411101.5529578
+talker first token time: 1743411101.60603
+talker first token time: 1743411101.6592684
+talker first token time: 1743411101.6858778
+talker first token time: 1743411101.7127647
+talker first token time: 1743411101.7393763
+talker first token time: 1743411101.7661624
+talker first token time: 1743411101.792997
+talker first token time: 1743411101.8198857
+talker first token time: 1743411101.872997
+talker first token time: 1743411101.8996217
+talker first token time: 1743411101.9262877
+talker first token time: 1743411101.9535236
+talker first token time: 1743411102.007284
+talker first token time: 1743411102.0340705
+talker first token time: 1743411102.0609248
+talker first token time: 1743411102.0879874
+talker first token time: 1743411102.1413558
+talker first token time: 1743411102.1681273
+talker first token time: 1743411102.2215245
+talker first token time: 1743411102.2483904
+talker first token time: 1743411102.275295
+talker first token time: 1743411102.3021984
+talker first token time: 1743411102.3290498
+talker first token time: 1743411102.3829284
+talker first token time: 1743411102.4100745
+talker first token time: 1743411102.436949
+talker first token time: 1743411102.463836
+talker first token time: 1743411102.4907618
+talker first token time: 1743411102.5177443
+talker first token time: 1743411102.571411
+talker first token time: 1743411102.5984766
+talker first token time: 1743411102.625471
+talker first token time: 1743411102.6526203
+talker first token time: 1743411102.6805358
+talker first token time: 1743411102.7080338
+talker first token time: 1743411102.7353423
+talker first token time: 1743411102.762489
+talker first token time: 1743411102.8175457
+
+talker输出：
+
+Token count: 61, Total time: 2.5358 seconds, One token time: 0.0416 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在创作真实题材作品时，既要遵循艺术的真实原则，又要遵守法律的限制。首先，要通过深入研究和调查，获取第一手资料，力求作品的逼真度。其次，要注意作品的可信度，不能胡编乱造，甚至诽谤、侵权他人。最后，要在法律的框架内进行创作，尊重社会伦理道德，不得违反相关法律法规。只有这样，才能既展示生活的真实性，又维护法律的权威性，创造出既有艺术价值又有社会意义的作品。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S08C01_agent_added/out_001-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 670885, dtype: float32, min: -0.210479736328125, max: 0.199462890625
+问题音频时间长度: 41.9303125
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容你提到了在篮球生涯中遇到的问题比如有人侮辱你或对你有偏见我想问问面对这些挑战你通常是如何调整心态保持积极态度并继续在篮球领域追求进步的
+, 1743411104.7190866
+问题音频STT前的时刻: 1743411104.719401
+问题音频STT后的时刻: 1743411106.2863715
+问题音频STT时间: 1.5669705867767334
+
+
+[Agent] 最终接收到问题: 你好焦焦,基于之前我们讨论的内容,你提到了在篮球生涯中遇到的问题,比如有人侮辱你或对你有偏见。我想问问面对这些挑战你通常是如何调整心态保持积极态度并继续在篮球领域追求进步的
+, 1743411106.2866967
+问题音频送入Planner的时刻: 1743411106.2876563
+planner new_token time: 1743411106.940931
+planner new_token time: 1743411107.3349264
+First token received: 0, time: 1743411107.3351512
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743411107.7305639
+planner new_token time: 1743411108.124637
+planner new_token time: 1743411108.5184176
+planner new_token time: 1743411108.912573
+planner new_token time: 1743411109.3071332
+planner new_token time: 1743411109.7018795
+planner new_token time: 1743411110.0956616
+planner new_token time: 1743411110.4898767
+planner new_token time: 1743411110.8839245
+planner new_token time: 1743411111.2774584
+planner new_token time: 1743411111.6714098
+planner new_token time: 1743411112.066257
+planner new_token time: 1743411112.4604747
+planner new_token time: 1743411112.854259
+planner new_token time: 1743411113.2485182
+planner new_token time: 1743411113.642599
+planner new_token time: 1743411114.0364382
+planner new_token time: 1743411114.4309566
+planner new_token time: 1743411114.824964
+planner new_token time: 1743411115.2193732
+planner new_token time: 1743411115.6138418
+planner new_token time: 1743411116.0082145
+planner new_token time: 1743411116.4026706
+planner new_token time: 1743411116.796538
+planner new_token time: 1743411117.1907117
+planner new_token time: 1743411117.5853622
+planner new_token time: 1743411117.9793909
+planner new_token time: 1743411118.3735664
+planner new_token time: 1743411118.7677686
+planner new_token time: 1743411119.1620517
+planner new_token time: 1743411119.5558805
+planner new_token time: 1743411119.9502363
+planner new_token time: 1743411120.3470225
+planner new_token time: 1743411120.7412162
+planner new_token time: 1743411121.135315
+planner new_token time: 1743411121.529726
+planner new_token time: 1743411121.530427
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：调整心态 积极态度 篮球生涯 挑战
+
+
+提取的关键词: ['调整心态', '积极态度', '篮球生涯', '挑战']
+
+找到的上下文片段数量: 2
+one token time in planner tools: 1743411122.4176686
+one token time in planner tools: 1743411122.8130786
+one token time in planner tools: 1743411123.2088733
+one token time in planner tools: 1743411123.6041598
+one token time in planner tools: 1743411124.0004466
+one token time in planner tools: 1743411124.3955507
+one token time in planner tools: 1743411124.7911432
+one token time in planner tools: 1743411125.186167
+one token time in planner tools: 1743411125.5815592
+one token time in planner tools: 1743411125.9767494
+one token time in planner tools: 1743411126.3722904
+one token time in planner tools: 1743411126.7675984
+one token time in planner tools: 1743411127.1631012
+one token time in planner tools: 1743411127.5592418
+one token time in planner tools: 1743411127.9548957
+one token time in planner tools: 1743411128.3503819
+one token time in planner tools: 1743411128.7459486
+one token time in planner tools: 1743411129.141501
+one token time in planner tools: 1743411129.5369363
+one token time in planner tools: 1743411129.9321218
+one token time in planner tools: 1743411130.3284738
+one token time in planner tools: 1743411130.724088
+one token time in planner tools: 1743411131.1200233
+one token time in planner tools: 1743411131.5157435
+one token time in planner tools: 1743411131.9118507
+one token time in planner tools: 1743411132.3073606
+one token time in planner tools: 1743411132.7031605
+one token time in planner tools: 1743411133.099648
+one token time in planner tools: 1743411133.495504
+one token time in planner tools: 1743411133.891005
+one token time in planner tools: 1743411134.287153
+one token time in planner tools: 1743411134.6836941
+one token time in planner tools: 1743411135.079333
+one token time in planner tools: 1743411135.4759688
+one token time in planner tools: 1743411135.87168
+one token time in planner tools: 1743411136.2677693
+one token time in planner tools: 1743411136.663819
+one token time in planner tools: 1743411137.0598776
+one token time in planner tools: 1743411137.4560673
+one token time in planner tools: 1743411137.8516612
+one token time in planner tools: 1743411138.2477806
+one token time in planner tools: 1743411138.6436694
+one token time in planner tools: 1743411139.03973
+one token time in planner tools: 1743411139.4355562
+one token time in planner tools: 1743411139.8309863
+one token time in planner tools: 1743411140.226969
+one token time in planner tools: 1743411140.6240082
+one token time in planner tools: 1743411141.0198905
+one token time in planner tools: 1743411141.416881
+one token time in planner tools: 1743411141.8127077
+one token time in planner tools: 1743411142.2098794
+one token time in planner tools: 1743411142.606974
+one token time in planner tools: 1743411143.003001
+one token time in planner tools: 1743411143.3998759
+one token time in planner tools: 1743411143.7974207
+one token time in planner tools: 1743411144.1944196
+one token time in planner tools: 1743411144.5913234
+one token time in planner tools: 1743411144.988071
+one token time in planner tools: 1743411145.3845162
+one token time in planner tools: 1743411145.7807326
+one token time in planner tools: 1743411146.1770341
+one token time in planner tools: 1743411146.573215
+one token time in planner tools: 1743411146.9699934
+one token time in planner tools: 1743411147.3661733
+one token time in planner tools: 1743411147.7628677
+one token time in planner tools: 1743411148.1603959
+one token time in planner tools: 1743411148.5571396
+one token time in planner tools: 1743411148.9537146
+one token time in planner tools: 1743411149.350413
+one token time in planner tools: 1743411149.7468023
+one token time in planner tools: 1743411150.1443627
+one token time in planner tools: 1743411150.540813
+one token time in planner tools: 1743411150.9389594
+one token time in planner tools: 1743411151.3359914
+one token time in planner tools: 1743411151.7332284
+one token time in planner tools: 1743411152.1301265
+one token time in planner tools: 1743411152.527211
+one token time in planner tools: 1743411152.9246542
+one token time in planner tools: 1743411153.3225422
+one token time in planner tools: 1743411153.7202332
+one token time in planner tools: 1743411154.117712
+one token time in planner tools: 1743411154.5147324
+one token time in planner tools: 1743411154.912548
+one token time in planner tools: 1743411155.3089886
+one token time in planner tools: 1743411155.705865
+one token time in planner tools: 1743411156.103171
+one token time in planner tools: 1743411156.5019364
+one token time in planner tools: 1743411156.503364
+
+Token count: 88, Total time: 34.9076 seconds, One token time: 0.3967 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：调整', '心态', ' ', '积', '极', '态度', ' ', '篮', '球', '生涯', ' ', '挑', '战', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###快急是分很多種類是吧?快急它說分很多種吧也是,但是大致还是差不多的,有的人家会计他的能力比较强的,人家会退税的,做外贸行业的,人家的工资会更高,还有红地产行业的,工资会更高。然后他如果说考那个资格证厉害的话,他的工资也会更高的。最高的,我觉得最厉害的就是注册会计师。注册会计师。在做这份工作时,经常会面临什么样的问题?经常就在公司中吧,每当发公司的日子,那一天,就会问哪儿是发公司的。还有就是老板对这个税务方面,正怎么不是很了解,在对这个财务秩序方面会出现很多问题,然后就需要这个财务人员还得在账目上做就这个老板对这个钱的支取上面他有时候比较随意了这个账目没法就是他其实走这笔钱也许是自己消费了但是在工资上是不能这么说的吧就是需要财务这一块做一些调整请不吝点赞 订阅 转发 打赏支持明镜与点点栏目工作来帮助什么?觉得生活有什么最有【挑】战性的工作呢?挑战性?还是跟公司内的这些同事们的关系吧我去遊泳區是女生多的地方很多,很多的地方会引起战争。不是,不是,你得保持好你的态度。能中立就中立,不要这么多话。还有就是,刚才你也说了,保持中立。谢谢现在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的目前对这个工作满意吗?还算满意吧,因为跟我们同事处的关系不错,老板也挺好的,算账也挺好的。刚才说初级中级高级之外,那初级职位和高级职位的薪水有什么差距?不同行业的高级,像是楼盘高的工作率就高,有些行业必须要求你,有些大企业必须要求你在某个职场,这是你的强能专业可以说\n---\n打比赛你可以挤出来时间去打那场比赛然后获得奖金可以用来维持一下自己的生活在打篮球当中你会经常遇到哪些场面问题比如说有人侮辱你 对你有偏见 你会怎么办嗯 拿球说话呀侮辱我他 侮辱我说明啥 说明他球技不如我说明他技术 他没有能力目前在你生活中,当如目前你您现在多大了?我现在十几年了,十八岁七岁二十刚进入大学对嗯您最希望别人怎么记住您?最希望别人记住我?应得比赛了你比赛了?赛了?胜利你有什么看法和感觉呢?能力不大,野心很大怎么提高,咱说野心大了,怎么提高一下?特大师学几岁?在你成长过程中,你做的最大或最重要的决定是什么?最重要的决定,考驾照谢谢最后一个问题你对于友谊意味着什么友谊意味着友谊意味着什么友谊意味着兄弟友谊意味着总会有那么一个人陪你傻傻乐乐好的,那咱们今天的专访就到此结束,感谢相对的列宁,谢谢。谢谢大家你好,焦焦,会计工作中,你如何平衡与同事的关系,尤其是女性较多的环境?你好,焦焦,基于之前我们讨论的内容,您提到了会计行业出级职位和高级职位在薪水上存在差距,能否具体说明一下出级和高级职位的薪资差异,并给出一些建议帮助采快专业的学生更好地规划。他们的职业发展路径你好教教如何平衡现实主义创作与法律限制写出真实题材作品你好焦焦,基于之前我们讨论的内容,你提到了在篮球生涯中遇到的问题,比如有人侮辱你或对你有偏见。我想问问面对这些挑战你通常是如何【调】整心态保持积极态度并继续在篮球领域追求进###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n在会议中提到，会计行业中初级职位与高级职位的薪水存在差距，特别是高级职位如注册会计师的薪资普遍较高。注册会计师面临的常见问题是每月发放工资的日子同事们会互相询问、老板对税务知识缺乏导致财务秩序混乱以及需要财务人员进行账目调整等。对于初入会计领域的学生，建议先取得相关资格证书，积累工作经验，并不断提升专业技能以促进职业发展。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###快急是分很多種類是吧?快急它說分很多種吧也是,但是大致还是差不多的,有的人家会计他的能力比较强的,人家会退税的,做外贸行业的,人家的工资会更高,还有红地产行业的,工资会更高。然后他如果说考那个资格证厉害的话,他的工资也会更高的。最高的,我觉得最厉害的就是注册会计师。注册会计师。在做这份工作时,经常会面临什么样的问题?经常就在公司中吧,每当发公司的日子,那一天,就会问哪儿是发公司的。还有就是老板对这个税务方面,正怎么不是很了解,在对这个财务秩序方面会出现很多问题,然后就需要这个财务人员还得在账目上做就这个老板对这个钱的支取上面他有时候比较随意了这个账目没法就是他其实走这笔钱也许是自己消费了但是在工资上是不能这么说的吧就是需要财务这一块做一些调整请不吝点赞 订阅 转发 打赏支持明镜与点点栏目工作来帮助什么?觉得生活有什么最有【挑】战性的工作呢?挑战性?还是跟公司内的这些同事们的关系吧我去遊泳區是女生多的地方很多,很多的地方会引起战争。不是,不是,你得保持好你的态度。能中立就中立,不要这么多话。还有就是,刚才你也说了,保持中立。谢谢现在想问一下对个人的个人品质性格和能力对做好你这份工作来讲重要吗你好娇娇会计工作中你如何平衡与同事的关系尤其是女性较多的环境那很重要你如果说这个人品格不好的话做财务是做不了的目前对这个工作满意吗?还算满意吧,因为跟我们同事处的关系不错,老板也挺好的,算账也挺好的。刚才说初级中级高级之外,那初级职位和高级职位的薪水有什么差距?不同行业的高级,像是楼盘高的工作率就高,有些行业必须要求你,有些大企业必须要求你在某个职场,这是你的强能专业可以说
+---
+打比赛你可以挤出来时间去打那场比赛然后获得奖金可以用来维持一下自己的生活在打篮球当中你会经常遇到哪些场面问题比如说有人侮辱你 对你有偏见 你会怎么办嗯 拿球说话呀侮辱我他 侮辱我说明啥 说明他球技不如我说明他技术 他没有能力目前在你生活中,当如目前你您现在多大了?我现在十几年了,十八岁七岁二十刚进入大学对嗯您最希望别人怎么记住您?最希望别人记住我?应得比赛了你比赛了?赛了?胜利你有什么看法和感觉呢?能力不大,野心很大怎么提高,咱说野心大了,怎么提高一下?特大师学几岁?在你成长过程中,你做的最大或最重要的决定是什么?最重要的决定,考驾照谢谢最后一个问题你对于友谊意味着什么友谊意味着友谊意味着什么友谊意味着兄弟友谊意味着总会有那么一个人陪你傻傻乐乐好的,那咱们今天的专访就到此结束,感谢相对的列宁,谢谢。谢谢大家你好,焦焦,会计工作中,你如何平衡与同事的关系,尤其是女性较多的环境?你好,焦焦,基于之前我们讨论的内容,您提到了会计行业出级职位和高级职位在薪水上存在差距,能否具体说明一下出级和高级职位的薪资差异,并给出一些建议帮助采快专业的学生更好地规划。他们的职业发展路径你好教教如何平衡现实主义创作与法律限制写出真实题材作品你好焦焦,基于之前我们讨论的内容,你提到了在篮球生涯中遇到的问题,比如有人侮辱你或对你有偏见。我想问问面对这些挑战你通常是如何【调】整心态保持积极态度并继续在篮球领域追求进###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+在会议中提到，会计行业中初级职位与高级职位的薪水存在差距，特别是高级职位如注册会计师的薪资普遍较高。注册会计师面临的常见问题是每月发放工资的日子同事们会互相询问、老板对税务知识缺乏导致财务秩序混乱以及需要财务人员进行账目调整等。对于初入会计领域的学生，建议先取得相关资格证书，积累工作经验，并不断提升专业技能以促进职业发展。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

@@ -1,0 +1,803 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 73
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.23s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.32it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.34s/it]Loading Whisper model...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.99s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  5.04s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.65s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.97s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.86s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.70s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.63s/it]
+因为我有行,好的,把大家叫过来开个会议大家说一下大家个个上个月的一些部分的情况先汇报一下嗯,策划上个月策划了3000场婚礼3000场婚礼?嗯有大型的吗?有大型的,其中有大型的,还有小型的大型的有多少场大型的有一千场大型的有一千场嗯其他部门呢执行部门主要是根据上个月那个排的那个时间一共跟进了两千场那个婚礼我们是有2000场是完美爱神套餐是31800剩下的1000呢是我们那个高端有活动的是原价是46990现在是39800好,业务这方面,上策划的,上策划的三年三年有嗯有业务上个月谈了谈成内情况成交主要是在完美爱神讨餐因为是3万1800比较经济实惠人员配置和生产的人员配置上是这样的我想继续推这个完美爱神套餐你看这个婚礼特约人员配置有专业婚礼主持人一名婚礼音像总控师一名特约双机为摄像师全程服务还专业摄像摇背一台你先简单的介介绍一下这个你的业务情况马上就弹成了多少场?这个上月不是三天多长吗?三天多长,是吧所有的业务都是在上个月完成的吗?还是怎么的情况?基本上都是上个月完成的上个月完成的是吧那咱近期呢,因为有一场这个有一场这个是一个那个咱要举办一个大型的策划一场大型的婚礼这个有什么方法呢因为这场婚礼策划的话是国外的一位富豪咱们要策一场大型的那富豪打算地点在哪提摘直接把他们都包了迪拜那个酒店住的酒店是吧我们得弄点特色来是吧你不说上来就是高达上但是有咱们那个特色是吧我们公司的特色在哪里谢谢大家接这么大的项目特别在于你看就是客户有什么要求啊不能光注重这个花钱这些还要给给顾客一种特殊的感觉因为咱要根据那个他在迪拜旅行但是他是那个华裔他也想为啥找到咱们他为啥会找迪拜的一些公司呢是因为咱们这个他想中国方也带有中国传统的咱这个项目这边实施你觉得有什么困难主要是咱们去夥伴一些是怎么费用啊对咱们得做一些限制考察对比如说限制考察主要是咱们这个物料啊咱要是在国内的话都有咱们相关合作的这个公司一块配合咱们过去那边的话咱们需要提前去过去做准备不管是物料还有还有这个设备啊还有场地啊一些沟通不小心前去坐了然后也需要跟那边了解一下那边的一些习惯基本上咱这去参加婚礼的大部分都是一些中国人华裔的一些人也有当地的本地人他但是希望做一场就是包括说中国的方式当时国外具体的演员他想让咱们出一套方案,出一套详细的一些整个流程,整个方案。这段夫妇他们的背景和出身,他们都是华裔,都是华裔,他们的生活经历我们应该知道的。他們也是移民過去他就是想讓咱們見詳細的整个计划,整个策划这边,实施类,我们的业务这方面,整个报价,他们是想整一个豪华的中国类似的婚礼吗?对,就这种,没有什么策划这边。如果在经费有限的情况下可以去把...就很想讓咱報價你可以决定,你可以策划一个方案。它的价格,它没有固定的价格吗?固定价格就是,可以比咱,平常你设计比咱公司高120。咱们这个一晚上,在迪拜如果是一个豪华的酒店的话,一晚上的租资费是两万美金。这个价格可以
+[Audio Detection] 在 501.79 秒检测到关键词 '好交交'。
+detection_time: 501.79, current_time: 496.00
+这个主要看客户经历,他是国内哪个城市,哪个地方,他有什么特点。如果是大国后,我们值得下什么心思。但是我们的报价应该要更高一点。到时候咱们各部门先把各部门需要的东西现在在会上讨论一下然后给出一个前期的保健吧,后期肯定要做调整的是吧还有就是,刚才说唐朝这个客户,他是在西安祖籍是西安的西安的对历史也對中國的一些歷史啥也比較很熟悉这方面你觉得有什么好的想法策划西安那边的话就是红卫生育是吧西安那边西安那边著名的应该是冰蛮园冰蛮园再清潮一下秦朝秦氏风格怎么样可以唐朝那个秦氏秦秦太太难度有点大因为他记载的不是那么详细对其实那个杨贵兵他们那个那种唐代的地位好像等比较多一点反正就是那种雍容华贵的那种风格哈哈雍容华贵是吧杨贵兵吗嗯那那咱就一那这对新婚女的和这个夫妇胖吗?看过发过照片,身材还是可以的。嗯。也微胖,女士微胖,男的,女士稍微有点。那咱们订做女士的服装的时候,第一,偏瘦。因为,如果是传统服装,杨卫飞是很胖的呀。这个衣服上来说咱们有点想着出场,这个女士出场,迎亲出场是怎么出场我的建议就是,吹着几样飞机,然后弄上中国特色他是拉一个风筝或者什么,巨型龙或者凤凰这类东西带着中国的商务人员,然后他绕空中转圈然后迎亲的出场就是这样可是那样是行不通的呀啊怎么行你就不能挂着中国国旗在外国国际我们不是挂国旗对,是中国风的只要有东西啊,风啊之类的他们应该是禁飞的我们做的是低空飞行低空飞行上边挂转一些这方面咱们先策划出然后当地的,他可以和当地的一些类似于拉风的这些东西咱们去解决这个问题可以在这出计划出计划 报价实施难度如果太大了,就能放弃如果他们在当地也不允许转,不允许买,咱们也只能放弃这个拔萨这场主要是为了让公司想推展海外业务所以就是一场关键之战所以各位希望可以认真一点这两个混凝一定要含有两个元素龙凤元素对中国的一个传统元素男女龙女凤所以昏袍也是往这个方面发展去制定这个方案龙凤对然后还有就是那个大轿36台大轿或者是更多的对不止8台大轿肯定是没有混凝的对人越多越好但是大家這裡有紀錄啊咱们的目标是最大一次长得多少?这个,查查资料应该72现在国内很少有长这种吧?对国内一般偏向的就是现在的高码分子如果男孩要去外地到迪拜省的话,这边项目是有很难度的难度就是因为咱们之前跟国外的这个没有太多这样的业务嘛所以这个难度就是在这儿过去的话,咱们说的不可能大部分还得从当地解决如果咱们运过去的话,成本太高了有些东西到当地去解决就行了这个是问题别的到我们没有什么就跟咱们的策划师把这个方案提出提供出来了然后基调有了然后我们就准备这些物料然后设备然后再跟当地的那边沟通就可以了是咱这个基本上到当地比如说实施的时候对,我们主要是监督一下对,他们也得准备好方案夫妇有带亲人吗?对,带亲人的话肯定不是迪拜的咱们得想办法接送他们这个问题就是在你的整个婚礼的策划方案里面这我查到是64台大轿64台目前是最大的还要房轿跟那个小房子上车这个都找当地人的当地人你找64个人过去肯定是正经的我看肯定是当地人当地人必须他们服饰就得穿对对对这个可以带回去他们也需要他们的对他们需要准备这些不仅服饰然后这些这个就比如说需
+[Text Detection] 在 1008.74 秒检测到关键词 '娇娇',current_time: 992.00, 问题文本: 需要高规格的东西的话我们需要我们是准备的本地买材料在那弄本地还有本地不知道材料咱们能准备现在这种材料你好 娇娇基于之前我们讨论的内容关于策划一场具有中国特色的婚礼你认为我们应该如何结合唐朝和秦朝的元素
+要高规格的东西的话我们需要我们是准备的本地买材料在那弄本地还有本地不知道材料咱们能准备现在这种材料你好 娇娇基于之前我们讨论的内容关于策划一场具有中国特色的婚礼你认为我们应该如何结合唐朝和秦朝的元素乐队分好几种乐队的话是偏西式还是偏中式那中国风啊咱们这个咱公司乐队咱公司合作的乐队咱公司内部有吗内部在国内里面有合作的这些乐队啊唱琴腔到时候有人唱你这琴腔可以邀请他们一块做这个业务像整个流程,咱得找礼仪方面的助作是礼仪,策划是中国风浪礼仪是过去我们讲解的像什么行走啊,步伐啊,就得说一句把这个基调先定下来定下来然后在按这个风格的机要,然后准备东西对还有什么需要补充的吗?还有就是他们婚礼的,他们那个婚礼的区的后面他们就直接与酒店沟通,让酒店来推菜你看是他们看着人家你订哪个酒店?订迪拜的水下酒店这是一个十星级的酒店也是世界上最高级的酒店所以就是说跟上面来说跟那个酒精这个报个SB报个SB金费一晚上2万美金就是14万美金最少也大概7天一周吧对,两万美金应该是不够,咱们是8分的没回报两万的钱咱们这个人家需要住两万咱这肯定到时候很多麻烦事是吧先算成本价成本价两万然后一周是多少钱一周是咱们肯定不在哪儿住咱们是高级分析是需要跟着的他那个场面策划什么都需要咱们当场去做去看监管感叹对,很忙,对,怎么去?所以咱,本地咱过去也不用过去太多人对,比如说比划一下就是八万人民币一周的费用,小于一百万小于一百万报价也得高点,能够给客户报价得高点能力也得高点对,对,但是咱们这个报价也不能太高,是吧当地有很多华裔,他们都有很多国家都有这种民族风都想要有民族心,是吧如果把这一单整成的话,我相信会有更多的当地的土豪嘛,就能够有这种意义服装费咱们请之前那个有一个巴黎设计师我跟他挺熟的前面设计师,他们设计两套龙凤衣服大概估算的话一件拿20万算的话两件的话就40万40万40万这是把天坤的天坤里还有的还有远航因为你看有一些轿子是那个木匠有可能来不及做咱们还是得运输一点过去副轿好多,但是主轿又不好做了所以把主轿运输过去以及宾客看宾客,咱们可以包一艘大的航船都运过去,都接过去弄成中国航船我们今天可以外包这方面我觉得成本也不是不会太大运输费加接送费的话一百万打点吧就是新娘子从空中过然后用锁匠降到龙航上这都是直升机大概这些所有的加起来多少钱大概小三百万这成本成本是一人一笔我们在酒店办酒席的费用酒席费用的话应该再加一百万就四百万嗯,但是这个费用没有包含咱们的费用酒店费用是应该算咱们的服务费咱们的策划这不光是材料费对,这光是材料费咱这也是策划的服务策划部门嗯策划的话应该是小100万小100万,500万对,500万就是报完策划就是教师认工,工费,人工费我们这边的话就是他计算的那个运输的那一块已经到他那里头了对,对,对这个已经算了然后就是报人工费工科物料這個產品物料的話其實但是看它需要就比如说鲜花呀或者那些布料啊这些装饰品的东西这个倒没有这个成本倒没有那么多大概也就在20万左右吧嗯这是设备主要是咱们要到那边如果租那些设备的设备它肯定是租的咱们也就是几天的时间每天吧,就那个庆典啊,租的话,租金要没有那么贵,所以这个存本也没有那么高。下来也就是20多万,20万左右吧。那咱们要不要在迪拜当地找一些名人呢,来捧那些婚情?我觉得他中国风嘛可以有几万有些几万地方很成也可以把中国所有明星请过去找一些那个迪拜王室迪拜王室我们必须在迪拜我们必须在迪拜这方面我觉得可以让客户去与咱们沟通一下咱本地找咱们咱本地得去见咱有一些当地人就是粗鲁咱们这个档次的规模是吧就是看客户的他这个方面就是说不管是男方还是女方吧他们就有自己喜欢的明星啊或者比较充满的偶像他们想让在这个特殊的时间里有这个人出现咱们也可以跟他沟通然后设计一
+[Text Detection] 在 1561.19 秒检测到关键词 '娇娇',current_time: 1550.00, 问题文本: 一个这么个环节也挺好的对他在迪拜办婚礼他的目的就是提高观众度对你好 娇娇婚庆策划中涉及的礼仪和乐队具体有哪些中国风元素中国的一些礼节谁可以把国际运行请完谁怎么说呢怎么说呢 谁具备中国特色 中国美
+个这么个环节也挺好的对他在迪拜办婚礼他的目的就是提高观众度对你好 娇娇婚庆策划中涉及的礼仪和乐队具体有哪些中国风元素中国的一些礼节谁可以把国际运行请完谁怎么说呢怎么说呢 谁具备中国特色 中国美周涛也可以就能够实现这些那演艺方面演艺方面佟丽娅今年刚登上车来主持了一部佟丽娅就可以了年轻年轻有朝气那方面呢也挺有感觉的弹钢琴咱们可以找朗朗过去弹钢琴弹钢琴就我就算了弹钢琴是一种外国玩意那咱叫弹古镇对对对勾结轮到双节棍年龄要大得小以前有个婚庆电影曲那个不错,有中国特色,就是吹打弹墙。而且有现在人做,可以推那个具体咱这个流程还要抓紧时间搞出来嗯这是一个事情还有一个事情就是上次三天长这个收益情况上个月收益情况上个月收益情况是我们的利润是一个亿一个亿行,一个亿还可以比上上个月,上上个月不到一个亿上上个月不到一个亿是八千万吧我觉得结婚的人应该会很多上半年因为疫情的影响对啊业务方面有所下降嗯对吧还有就是咱们元月的工资嗯上半年工资也差错了迷信是吧给底下的员工要说清楚如果咱们下半年整得好的话抓紧,策划策略,什么都比较整理快,整理好的话,肯定有,也有养回行,打打包,对,嗯,还有就是下半年业务,这方面,嗯,这方面的情况情况,业务,业务,业务主要是粗化工本,粗化这些东西,我们想尽一切办法贴近客户,推广,推广,还是主动主推还是咱们那个完美女神那个套餐这个还是咱们下半年主推上半年这个套餐怎么样不错 销售的不错这个套餐成本大这个是下午上午的成本的话在一万五左右吧百分之五六十的利润率百分之五六十嗯对嗯百分之五六十还是可以的嗯那这个利润率可以再提高吗可以再提高吗这个如果提高的话也只能从咱们的一些呃就是咱们那些用品上还有跟这些酒店呀然后再进行商量吧跟他们再商量然后再进行制作一套方案然后让他们把这个价格再往下压一下然后咱们的利润率再提一点我觉得利润率可以再提一点因为现在所有的生意都是不太好做的嗯,所以说这些员工啥的,用到的钱也比较多有些咱们爷爷城市的,我们是赔钱的,是吧还有就是刚才我说的,特点海外业务咱国内已经有较大后方,做牛有所损失,是吧品牌知名度品牌效益是吧对那我想争取在不影响效果的不影响公司效果的情况下提高一下咱们这个营收行吧还有现在把咱们公司业务拓展在哪些城市比较好?北上广,北京,上海,广州,这些一线城市,就来找我们的人比较多。如果咱们下车到了三四线城市,对吗?对,我认为如果下到三四线的话,对于他们来说,他们的经费比较高。感谢观看降低咱们的成本就是说走完一个地城对 走完别种套餐用低套餐把那些我们的竞争对手挤过树档真的不行了那可以我们的大品牌优势可以把那些咱们有几盘呀主要是咱们的名气在这儿呢嘛然后再打造一款再稍微会民一点的我觉得现在北上网上结婚率也不算太高了现在北上网上基本上三四十结婚率但是他们带来的资产比较缓和这个业务可以,咱们套餐肯定比较美海外业务我们针对这一张手例我们可以叫它大堂这个系列如何用以保持业务的持续增长对然后我们再紧接改变策划出来一个系列经济型的叫迪拜海王两个项目就是说一个经济型的一个豪华型的这两个系列在统括这我们是高端我们不是说便宜这个就是不便宜这个肯定不便宜这个成本太大了这个成本咱也实际上这个成本咱也赚不了多少咱们有那个有有的量的要求不是多了咱们还不接对一年也接不了一年我们的要求绝对不能超过十个就大单的像那个大唐疯狂的那个一年准备接十个十个不超过十个但是我们要单量的单量利润也要高对这个人力物力耗费太大了对实力都不现场对这还有在当地还有有可能有产风险高收益,咱们都要计算买点保险风险也比较大刚才说到三四线城市三四线城市加大力度专门制定策划出来一个这个行业嗯只要是我们进驻三四线城市只要他们当地的强化机竞争对手拿他们单子然后来到我们这儿我们立刻就给优惠只要拿他们单子不做他们的来做我们的我们马上就给优惠这方面也要注意一下力度不能恶意请教育嗯这方面国家查理也比较严格方式方法,方式方法,业务这一块,下一个计划出来,合理合法合规,从一二线城市把一部分业务要转到三四线城市,行了,到时候制定计划,全力各部份全力配合,行了,行,好的,那本次會議结束会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/out_001-M_0.wav
+问题音频片段长度: 479424, dtype: float32, min: -0.195831298828125, max: 0.191009521484375
+问题音频时间长度: 29.964
+
+
+[Agent] 接收到问题: 结束
+, 1743412119.1194396
+问题音频STT前的时刻: 1743412119.119564
+问题音频STT后的时刻: 1743412119.789181
+问题音频STT时间: 0.6696169376373291
+
+
+[Agent] 最终接收到问题: 你好焦焦针对迪拜大型中国封婚礼策划你认为应如何突出公司特色
+, 1743412119.7893343
+问题音频送入Planner的时刻: 1743412119.7898273
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743412120.4182413
+planner new_token time: 1743412120.8127759
+planner new_token time: 1743412120.813272
+First token received: 1, time: 1743412120.814261
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412120.8688807
+talker first token time: 1743412121.4702914
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743412121.5042672
+talker first token time: 1743412121.5304139
+talker first token time: 1743412121.5564077
+talker first token time: 1743412121.582182
+talker first token time: 1743412121.6080515
+talker first token time: 1743412121.633905
+talker first token time: 1743412121.6854713
+talker first token time: 1743412121.7115448
+talker first token time: 1743412121.737692
+talker first token time: 1743412121.7637434
+talker first token time: 1743412121.7898014
+talker first token time: 1743412121.8159316
+talker first token time: 1743412121.841992
+talker first token time: 1743412121.9194074
+talker first token time: 1743412121.9454284
+talker first token time: 1743412121.9712317
+talker first token time: 1743412121.9970899
+talker first token time: 1743412122.0486937
+talker first token time: 1743412122.074715
+talker first token time: 1743412122.1015062
+talker first token time: 1743412122.1279628
+talker first token time: 1743412122.1541
+talker first token time: 1743412122.2061164
+talker first token time: 1743412122.232124
+talker first token time: 1743412122.2581766
+talker first token time: 1743412122.2842233
+talker first token time: 1743412122.3103716
+talker first token time: 1743412122.3364513
+talker first token time: 1743412122.3626046
+talker first token time: 1743412122.3887196
+talker first token time: 1743412122.4148145
+talker first token time: 1743412122.4407635
+talker first token time: 1743412122.5177808
+talker first token time: 1743412122.5437214
+talker first token time: 1743412122.5702744
+talker first token time: 1743412122.5962906
+talker first token time: 1743412122.6483016
+talker first token time: 1743412122.6743312
+talker first token time: 1743412122.7003863
+talker first token time: 1743412122.7266595
+talker first token time: 1743412122.7529569
+talker first token time: 1743412122.7792087
+talker first token time: 1743412122.8055177
+talker first token time: 1743412122.8318615
+talker first token time: 1743412122.8840177
+talker first token time: 1743412122.9101932
+talker first token time: 1743412122.9363592
+talker first token time: 1743412122.962622
+talker first token time: 1743412122.98883
+talker first token time: 1743412123.0150342
+talker first token time: 1743412123.0411897
+talker first token time: 1743412123.0673354
+talker first token time: 1743412123.0936136
+talker first token time: 1743412123.1712873
+talker first token time: 1743412123.1973922
+talker first token time: 1743412123.2235444
+talker first token time: 1743412123.2757585
+talker first token time: 1743412123.3021514
+talker first token time: 1743412123.3286328
+talker first token time: 1743412123.3548164
+talker first token time: 1743412123.3809912
+talker first token time: 1743412123.407139
+talker first token time: 1743412123.4333608
+talker first token time: 1743412123.459487
+talker first token time: 1743412123.4855924
+talker first token time: 1743412123.5117123
+talker first token time: 1743412123.5378547
+talker first token time: 1743412123.5640066
+talker first token time: 1743412123.5901856
+talker first token time: 1743412123.6163104
+talker first token time: 1743412123.6685722
+talker first token time: 1743412123.6947553
+talker first token time: 1743412123.7210572
+talker first token time: 1743412123.7473972
+talker first token time: 1743412123.7736778
+talker first token time: 1743412123.800029
+talker first token time: 1743412123.8264217
+talker first token time: 1743412123.9042876
+talker first token time: 1743412123.930466
+talker first token time: 1743412123.956692
+talker first token time: 1743412123.9828858
+talker first token time: 1743412124.034944
+talker first token time: 1743412124.0610538
+talker first token time: 1743412124.087075
+talker first token time: 1743412124.139233
+talker first token time: 1743412124.1657689
+talker first token time: 1743412124.1919978
+talker first token time: 1743412124.2183087
+talker first token time: 1743412124.2446759
+talker first token time: 1743412124.2711816
+talker first token time: 1743412124.2977052
+talker first token time: 1743412124.3500838
+talker first token time: 1743412124.3768847
+talker first token time: 1743412124.4035637
+talker first token time: 1743412124.4315784
+talker first token time: 1743412124.4579859
+talker first token time: 1743412124.4843645
+talker first token time: 1743412124.511098
+talker first token time: 1743412124.5374534
+talker first token time: 1743412124.6151679
+talker first token time: 1743412124.6671824
+talker first token time: 1743412124.6933732
+talker first token time: 1743412124.7196548
+talker first token time: 1743412124.7458818
+talker first token time: 1743412124.7986696
+talker first token time: 1743412124.8248258
+talker first token time: 1743412124.8512576
+talker first token time: 1743412124.8781295
+talker first token time: 1743412124.9043517
+talker first token time: 1743412124.9569526
+talker first token time: 1743412124.9833646
+talker first token time: 1743412125.0096931
+talker first token time: 1743412125.0359342
+talker first token time: 1743412125.062149
+talker first token time: 1743412125.0884368
+talker first token time: 1743412125.1146855
+talker first token time: 1743412125.1411426
+talker first token time: 1743412125.1675751
+talker first token time: 1743412125.1938305
+talker first token time: 1743412125.220161
+talker first token time: 1743412125.2731833
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对迪拜大型中国风婚礼策划，可以通过以下方式突出公司特色：
+
+1. 创新设计：结合中西方文化元素，打造独具特色的婚礼现场布置和活动环节。
+
+2. 高端服务：提供高品质的婚礼策划与执行服务，确保婚礼的每一个细节都能完美呈现。
+
+3. 专业指导：对于新人和家长提供个性化的婚礼规划建议和专业的婚礼指导，帮助他们实现梦想的婚礼。
+
+4. 强调中国文化：在策划过程中，特别强调中国的传统文化和风俗习惯，让来宾能够深入了解中国文化的魅力。
+
+5. 品牌形象宣传：通过精心策划和执行，使公司在行业内形成独特的品牌形象，并吸引更多的潜在客户。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/out_001-M_1.wav
+问题音频片段长度: 479424, dtype: float32, min: -0.195831298828125, max: 0.191009521484375
+问题音频时间长度: 29.964
+
+
+[Agent] 接收到问题: 结束
+, 1743412125.6484735
+问题音频STT前的时刻: 1743412125.6485875
+问题音频STT后的时刻: 1743412127.0861006
+问题音频STT时间: 1.4375131130218506
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于策划一场具有中国特色的婚礼,你认为我们应该如何结合唐朝和秦朝的元素,同时考虑到客户的祖籍背景和身材特点来设计这场婚礼的出场方式和服饰风格呢?
+, 1743412127.0862644
+问题音频送入Planner的时刻: 1743412127.0869355
+planner new_token time: 1743412127.7404246
+planner new_token time: 1743412128.1322367
+First token received: 0, time: 1743412128.1324263
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743412128.524416
+planner new_token time: 1743412128.9160852
+planner new_token time: 1743412129.3085058
+planner new_token time: 1743412129.7008195
+planner new_token time: 1743412130.0925138
+planner new_token time: 1743412130.485294
+planner new_token time: 1743412130.8774893
+planner new_token time: 1743412131.2695367
+planner new_token time: 1743412131.6619418
+planner new_token time: 1743412132.0541122
+planner new_token time: 1743412132.4463732
+planner new_token time: 1743412132.8393872
+planner new_token time: 1743412133.2309806
+planner new_token time: 1743412133.6231477
+planner new_token time: 1743412134.0156431
+planner new_token time: 1743412134.4077108
+planner new_token time: 1743412134.8000846
+planner new_token time: 1743412135.1922195
+planner new_token time: 1743412135.5843728
+planner new_token time: 1743412135.9765887
+planner new_token time: 1743412136.3685796
+planner new_token time: 1743412136.761207
+planner new_token time: 1743412137.1537971
+planner new_token time: 1743412137.5462568
+planner new_token time: 1743412137.9389164
+planner new_token time: 1743412138.3311892
+planner new_token time: 1743412138.7238894
+planner new_token time: 1743412139.116183
+planner new_token time: 1743412139.5082588
+planner new_token time: 1743412139.9009273
+planner new_token time: 1743412140.2958043
+planner new_token time: 1743412140.6881437
+planner new_token time: 1743412141.0805018
+planner new_token time: 1743412141.4729314
+planner new_token time: 1743412141.865171
+planner new_token time: 1743412142.2572744
+planner new_token time: 1743412142.6492138
+planner new_token time: 1743412143.041572
+planner new_token time: 1743412143.4341774
+planner new_token time: 1743412143.8285983
+planner new_token time: 1743412144.2215238
+planner new_token time: 1743412144.6149333
+planner new_token time: 1743412145.0081294
+planner new_token time: 1743412145.4014595
+planner new_token time: 1743412145.4022918
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：中国特色 婚礼 唐朝 秦朝 客户背景 服饰风格 出场方式
+
+
+提取的关键词: ['中国特色', '婚礼', '唐朝', '秦朝', '客户背景', '服饰风格', '出场方式']
+
+找到的上下文片段数量: 4
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743412147.5264492
+one token time in planner tools: 1743412147.9302227
+one token time in planner tools: 1743412148.3320553
+one token time in planner tools: 1743412148.733867
+one token time in planner tools: 1743412149.1357462
+one token time in planner tools: 1743412149.5377114
+one token time in planner tools: 1743412149.9403698
+one token time in planner tools: 1743412150.3430793
+one token time in planner tools: 1743412150.7456787
+one token time in planner tools: 1743412151.1480634
+one token time in planner tools: 1743412151.5504186
+one token time in planner tools: 1743412151.9525988
+one token time in planner tools: 1743412152.3545437
+one token time in planner tools: 1743412152.7569642
+one token time in planner tools: 1743412153.15914
+one token time in planner tools: 1743412153.5618615
+one token time in planner tools: 1743412153.9648015
+one token time in planner tools: 1743412154.368053
+one token time in planner tools: 1743412154.770301
+one token time in planner tools: 1743412155.172316
+one token time in planner tools: 1743412155.574294
+one token time in planner tools: 1743412155.9763203
+one token time in planner tools: 1743412156.378683
+one token time in planner tools: 1743412156.7806582
+one token time in planner tools: 1743412157.1834826
+one token time in planner tools: 1743412157.5862901
+one token time in planner tools: 1743412157.988788
+one token time in planner tools: 1743412158.3912637
+one token time in planner tools: 1743412158.793834
+one token time in planner tools: 1743412159.1963472
+one token time in planner tools: 1743412159.5991852
+one token time in planner tools: 1743412160.0022213
+one token time in planner tools: 1743412160.4053159
+one token time in planner tools: 1743412160.8079832
+one token time in planner tools: 1743412161.210165
+one token time in planner tools: 1743412161.612737
+one token time in planner tools: 1743412162.015266
+one token time in planner tools: 1743412162.4184887
+one token time in planner tools: 1743412162.821297
+one token time in planner tools: 1743412163.2240238
+one token time in planner tools: 1743412163.6264274
+one token time in planner tools: 1743412164.0289195
+one token time in planner tools: 1743412164.4318087
+one token time in planner tools: 1743412164.834323
+one token time in planner tools: 1743412165.23717
+one token time in planner tools: 1743412165.639922
+one token time in planner tools: 1743412166.0428317
+one token time in planner tools: 1743412166.4456499
+one token time in planner tools: 1743412166.8480215
+one token time in planner tools: 1743412167.2511888
+one token time in planner tools: 1743412167.6540205
+one token time in planner tools: 1743412168.0569623
+one token time in planner tools: 1743412168.460285
+one token time in planner tools: 1743412168.8636923
+one token time in planner tools: 1743412169.2667124
+one token time in planner tools: 1743412169.669184
+one token time in planner tools: 1743412170.0717235
+one token time in planner tools: 1743412170.4758067
+one token time in planner tools: 1743412170.879122
+one token time in planner tools: 1743412171.282076
+one token time in planner tools: 1743412171.6848207
+one token time in planner tools: 1743412172.0883608
+one token time in planner tools: 1743412172.4919152
+one token time in planner tools: 1743412172.8957655
+one token time in planner tools: 1743412173.3000214
+one token time in planner tools: 1743412173.7030625
+one token time in planner tools: 1743412174.1064975
+one token time in planner tools: 1743412174.5094378
+one token time in planner tools: 1743412174.9133782
+one token time in planner tools: 1743412175.3175147
+one token time in planner tools: 1743412175.721018
+one token time in planner tools: 1743412176.1237926
+one token time in planner tools: 1743412176.5268333
+one token time in planner tools: 1743412176.9299853
+one token time in planner tools: 1743412177.3343492
+one token time in planner tools: 1743412177.7386532
+one token time in planner tools: 1743412178.1419287
+one token time in planner tools: 1743412178.5450969
+one token time in planner tools: 1743412178.9484737
+one token time in planner tools: 1743412179.3527765
+one token time in planner tools: 1743412179.756578
+one token time in planner tools: 1743412180.1598496
+one token time in planner tools: 1743412180.5635123
+one token time in planner tools: 1743412180.9676855
+one token time in planner tools: 1743412181.3722568
+one token time in planner tools: 1743412181.7768633
+one token time in planner tools: 1743412182.1808383
+one token time in planner tools: 1743412182.5850127
+one token time in planner tools: 1743412182.9902976
+one token time in planner tools: 1743412183.3949249
+one token time in planner tools: 1743412183.7995777
+one token time in planner tools: 1743412184.203529
+one token time in planner tools: 1743412184.6078708
+one token time in planner tools: 1743412185.0125735
+one token time in planner tools: 1743412185.417296
+one token time in planner tools: 1743412185.8214598
+one token time in planner tools: 1743412186.225312
+one token time in planner tools: 1743412186.6289988
+one token time in planner tools: 1743412187.0333939
+one token time in planner tools: 1743412187.4379494
+one token time in planner tools: 1743412187.8418248
+one token time in planner tools: 1743412188.2461247
+one token time in planner tools: 1743412188.6504705
+one token time in planner tools: 1743412189.0551178
+one token time in planner tools: 1743412189.4588835
+one token time in planner tools: 1743412189.863322
+one token time in planner tools: 1743412190.2681923
+one token time in planner tools: 1743412190.672982
+one token time in planner tools: 1743412191.0774946
+one token time in planner tools: 1743412191.4815686
+one token time in planner tools: 1743412191.8867435
+one token time in planner tools: 1743412191.888273
+
+Token count: 112, Total time: 46.3488 seconds, One token time: 0.4138 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：中国特色', ' ', '婚', '礼', ' ', '唐', '朝', ' ', '秦', '朝', ' ', '客', '户', '背景', ' ', '服饰', '风格', ' ', '出', '场', '方式', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###为为我有行,好的,把大家叫过来开个会议大家说一下大家个个上个月的一些部分的情况先汇报一下嗯,策划上个月策划了3000场【婚】礼3000场婚礼?嗯有大型的吗?有大型的,其中有大型的,还有小型的大型的有多少场大型的有一千场大型的有一千场嗯其他部门呢执行部门主要是根据上个月那个排的那个时间一共跟进了两千场那个婚礼我们是有2000场是完美爱神套餐是31800剩下的1000呢是我们那个高端有活动的是原价是46990现在是39800好,业务这方面,上策划的,上策划的三年三年有嗯有业务上个月谈了谈成内情况成交主要是在完美爱神讨餐因为是3万1800比较经济实惠人员配置和生产的人员配置上是这样的我想继续推这个完美爱神套餐你看这个婚礼特约人员配置有专业婚礼主持人一名婚礼音像总控师一名特约双机为摄像师全程服务还专业摄像摇背一台你先简单的介介绍一下这个你的业务情况马上就弹成了多少场?这个上月不是三天多长吗?三天多长,是吧所有的业务都是在上个月完成的吗?还是怎么的情况?基本上都是上个月完成的上个月完成的是吧那咱近期呢,因为有一场这个有一场这个是一个那个咱要举办一个大型的策划一场大型的婚礼这个有什么方法呢因为这场婚礼策划的话是国外的一位富豪咱们要策一场大型的那富豪打算地点在哪提摘直接把他们都包了迪拜那个酒店住的酒店是吧我们得弄点特色来是吧你不说上来就是高达上但是有咱们那个特色是吧我们公司的特色在哪里谢谢大家接这么大的项目特别在于你看就是客户有什么要求啊不能光注重这个花钱这些还要给给顾客一种特殊的感觉因为咱要根据那个他在迪拜旅行但是他是那个华裔他也想为啥找到咱们他为啥会找迪拜的一些公司呢是因为咱们这个他想中国方也带有中国传统的咱这个项目这边实施你觉得有什么困难主要是咱们去夥伴一些是怎么费用啊对咱们得做一些限制考察对比如说限制考察主要是咱们这个物料啊咱要是在国内的话都有咱们相关合作的这个公司一块配合咱们过去那边的话咱们需要提前去过去做准备不管是物料还有还有这个设备啊还有场地啊一些沟通不小心前去坐了然后也需要跟那边了解一下那边的一些习惯基本上咱这去参加婚礼的大部分都是一些中国人华裔的一些人也有当地的本地人他但是希望做一场就是包括说中国的方式当时国外具体的演员他想让咱们出一套方案,出一套详细的一些整个流程,整个\n---\n这个衣服上来说咱们有点想着出场,这个女士出场,迎亲出场是怎么出场我的建议就是,吹着几样飞机,然后弄上中国特色他是拉一个风筝或者什么,巨型龙或者凤凰这类东西带着中国的商务人员,然后他绕空中转圈然后迎亲的出场就是这样可是那样是行不通的呀啊怎么行你就不能挂着中国国旗在外国国际我们不是挂国旗对,是中国风的只要有东西啊,风啊之类的他们应该是禁飞的我们做的是低空飞行低空飞行上边挂转一些这方面咱们先策划出然后当地的,他可以和当地的一些类似于拉风的这些东西咱们去解决这个问题可以在这出计划出计划 报价实施难度如果太大了,就能放弃如果他们在当地也不允许转,不允许买,咱们也只能放弃这个拔萨这场主要是为了让公司想推展海外业务所以就是一场关键之战所以各位希望可以认真一点这两个混凝一定要含有两个元素龙凤这个衣服上来说咱们有点想着出场,这个女士出场,迎亲出场是怎么出场我的建议就是,吹着几样飞机,然后弄上【中】国特色他是拉一个风筝或者什么,巨型龙或者凤凰这类东西带着中国的商务人员,然后他绕空中转圈然后迎亲的出场就是这样可是那样是行不通的呀啊怎么行你就不能挂着中国国旗在外国国际我们不是挂国旗对,是中国风的只要有东西啊,风啊之类的他们应该是禁飞的我们做的是低空飞行低空飞行上边挂转一些这方面咱们先策划出然后当地的,他可以和当地的一些类似于拉风的这些东西咱们去解决这个问题可以在这出计划出计划 报价实施难度如果太大了,就能放弃如果他们在当地也不允许转,不允许买,咱们也只能放弃这个拔萨这场主要是为了让公司想推展海外业务所以就是一场关键之战所以各位希望可以认真一点这两个混凝一定要含有两个元素龙凤元素对中国的一个传统元素男女龙女凤所以昏袍也是往这个方面发展去制定这个方案龙凤对然后还有就是那个大轿36台大轿或者是更多的对不止8台大轿肯定是没有混凝的对人越多越好但是大家這裡有紀錄啊咱们的目标是最大一次长得多少?这个,查查资料应该72现在国内很少有长这种吧?对国内一般偏向的就是现在的高码分子如果男孩要去外地到迪拜省的话,这边项目是有很难度的难度就是因为咱们之前跟国外的这个没有太多这样的业务嘛所以这个难度就是在这儿过去的话,咱们说的不可能大部分还得从当地解决如果咱们运过去的话,成本太高了有些东西到当地去解决就行了这个是问题别的到我们没有什么就跟咱们的策划师把这个方案提出提供出来了然后基调有了然后我们就准备这些物料然后设备然后再跟当地的那边沟通就可以了是咱这个基本上到当地比如说实施的时候对,我们主要是监督一下对,他们也得准备好方案夫妇有带亲人吗?对,带亲人的话肯定不是迪拜的咱们得想办法接送他们这个问题就是在你的整个婚礼的策划方案里面这我查到是64台大轿64台目前是最大的还要房轿跟那个小房子上车这个都找当地人的当地人你找64个人过去肯定是正经的我看肯定是当地人当地人必须他们服饰就得穿对对对这个可以带回去他们也需要他们的对他们需要准备这些不仅服饰然后这些这个就比如说需要高规格的东西的话我们需要我们是准备的本地买材料在那弄本地还有本地不知道材料咱们能准备现在这种材料你好 娇娇基于之前我们讨论的内容关于策划一场具有中国特色的婚礼你认为我们应该如何结合唐朝和秦朝的元素乐队分好几种乐队的话是偏西式还是偏中式那中国风啊咱们这个咱公司乐队咱公司合作的乐队咱公司内部有吗内部在国内里面有合作的这些乐队啊唱琴腔到时候有人唱你这琴腔可以邀请他们一块做这个业务像整个流程,咱得找礼仪方面的助作是礼仪,策划是中国风浪礼仪是过去我们讲解的像什么行走啊,步伐啊,就得说一句把这个基调先定下来定下来然后在按这个风格的机要,然后准备东西对还有什么需要补充的吗?还有就是他们婚礼的,他们那个婚礼的区的后面他们就直接与酒店沟通,让酒店来推菜你看是他们看着人家你订哪个酒店?订迪拜的水下酒店这是一个十星级的酒店也是世界上最高级的酒店所以就是说跟上面来说跟那个酒精这个报个SB报个SB金费一晚上2万美金就是14万美金最少也大概7天一周吧对,两万美金应该是不够,咱们是8分的没回报两万的钱咱们这个人家需要住两万咱这肯定到时候很多麻烦事是吧先算成本价成本价两万然后一周是多少钱一周是咱们肯定不在哪儿住咱们是高级分析是需要跟着的他那个场面策划什么都需要咱们当场去做去看监管感叹对,很忙,对,怎么去?所以咱,本地咱过去也不用过去太多人对,比如说比划一下就是八万人民币一周的费用,小于一百万小于一百万报价也得高点,能够给客户报价得高点能力也得高点对,对,但是咱们这个报价也不能太高,是吧当地有很多华裔,他们都有很多国家都有这种民族风都想要有民族心,是吧如果把这一单整成的话,我相信会有更多的当地的土豪嘛,就能够有这种意义服装费咱们请之前那个有一个巴黎设计师我跟他挺熟的前面设计师,他们设计两套龙凤衣服大概估算的话一件拿20万算的话两件的话就40万40万40万这是把天坤的天坤里还有的还有远航因为你看有一些轿子是那个木匠有可能来不及做咱们还是得运输一点过去副轿好多,但是主轿又不好做了所以把主轿运输过去以及宾客看宾客,咱们可以包一艘大的航船都运过去,都接过去弄成中国航船我们今天可以外包这方面我觉得成本也不是不会太大运输费加接送费的话一百万打点吧就是新娘子从空中过然后用锁匠降到龙航上这都是直升机大概这些所有的加起来多少钱大概小三\n---\n那咱们要不要在迪拜当地找一些名人呢,来捧那些婚情?我觉得他中国风嘛可以有几万有些几万地方很成也可以把中国所有明星请过去找一些那个迪拜王室迪拜王室我们必须在迪拜我们必须在迪拜这方面我觉得可以让客户去与咱们沟通一下咱本地找咱们咱本地得去见咱有一些当地人就是粗鲁咱们这个档次的规模是吧就是看客户的他这个方面就是说不管是男方还是女方吧他们就有自己喜欢的明星啊或者比较充满的偶像他们想让在这个特殊的时间里有这个人出现咱们也可以跟他沟通然后设计一个这么个环节也挺好的对他在迪拜办婚礼他的目的就是提高观众度对你好 娇娇婚庆策划中涉及的礼仪和乐队具体有哪些中国风元素中国的一些礼节谁可以把国际运行请完谁怎么说呢怎么说呢 谁具备【中】国特色 中国美周涛也可以就能够实现这些那演艺方面演艺方面佟丽娅今年刚登上车来主持了一部佟丽娅就可以了年轻年轻有朝气那方面呢也挺有感觉的弹钢琴咱们可以找朗朗过去弹钢琴弹钢琴就我就算了弹钢琴是一种外国玩意那咱叫弹古镇对对对勾结轮到双节棍年龄要大得小以前有个婚庆电影曲那个不错,有中国特色,就是吹打弹墙。而且有现在人做,可以推那个具体咱这个流程还要抓紧时间搞出来嗯这是一个事情还有一个事情就是上次三天长这个收益情况上个月收益情况上个月收益情况是我们的利润是一个亿一个亿行,一个亿还可以比上上个月,上上个月不到一个亿上上个月不到一个亿是八千万吧我觉得结婚的人应该会很多上半年因为疫情的影响对啊业务方面有所下降嗯对吧还有就是咱们元月的工资嗯上半年工资也差错了迷信是吧给底下的员工要说清楚如果咱们下半年整得好的话抓紧,策划策略,什么都比较整理快,整理好的话,肯定有,也有养回行,打打包,对,嗯,还有就是下半年业务,这方面,嗯,这方面的情况情况,业务,业务,业务主要是粗化工本,粗化这些东西,我们想尽一切办法贴近客户,推广,推广,还是主动主推还是咱们那个完美女神那个套餐这个还是咱们下半年主推上半年这个套餐怎么样不错 销售的不错这个套餐成本大这个是下午上午的成本的话在一万五左右吧百分之五六十的利润率百分之五六十嗯对嗯百分之五六十还是可以的嗯那这个利润率可以再提高吗可以再提高吗这个如果提高的话也只能从咱们的一些呃就是咱们那些用品上还有跟这些酒店呀然后再进行商量吧跟他们再商量然后再进行制作一套方案然后让他们把这个价格再往下压一下然后咱们的利润率再提一点我觉得利润率可以再提一点因为现在所有的生意都是不太好做的嗯,所以说这些员工啥的,用到的钱也比较多有些咱们爷爷城市的,我们是赔钱的,是吧还有就是刚才我说的,特点海外业务咱国内已经有较大后方,做牛有所损失,是吧品牌知名度品牌效益是吧对那我想争取在不影响效果的不影响公司效果的情况下提高一下咱们这个营收行吧还有现在把咱们公司业务拓展在哪些城市比较好?北上广,北京,上海,广州,这些一线城市,就来找我们的人比较\n---\n感谢观看降低咱们的成本就是说走完一个地城对 走完别种套餐用低套餐把那些我们的竞争对手挤过树档真的不行了那可以我们的大品牌优势可以把那些咱们有几盘呀主要是咱们的名气在这儿呢嘛然后再打造一款再稍微会民一点的我觉得现在北上网上结婚率也不算太高了现在北上网上基本上三四十结婚率但是他们带来的资产比较缓和这个业务可以,咱们套餐肯定比较美海外业务我们针对这一张手例我们可以叫它大堂这个系列如何用以保持业务的持续增长对然后我们再紧接改变策划出来一个系列经济型的叫迪拜海王两个项目就是说一个经济型的一个豪华型的这两个系列在统括这我们是高端我们不是说便宜这个就是不便宜这个肯定不便宜这个成本太大了这个成本咱也实际上这个成本咱也赚不了多少咱们有那个有有的量的要求不是多了咱们还不接对一年也接不了一年我们的要求绝对不能超过十个就大单的像那个大唐疯狂的那个一年准备接十个十个不超过十个但是我们要单量的单量利润也要高对这个人力物力耗费太大了对实力都不现场对这还有在当地还有有可能有产风险高收益,咱们都要计算买点保险风险也比较大刚才说到三四线城市三四线城市加大力度专门制定策划出来一个这个行业嗯只要是我们进驻三四线城市只要他们当地的强化机竞争对手拿他们单子然后来到我们这儿我们立刻就给优惠只要拿他们单子不做他们的来做我们的我们马上就给优惠这方面也要注意一下力度不能恶意请教育嗯这方面国家查理也比较严格方式方法,方式方法,业务这一块,下一个计划出来,合理合法合规,从一二线城市把一部分业务要转到三四线城市,行了,到时候制定计划,全力各部份全力配合,行了,行,好的,那本次會議结束你好焦焦针对迪拜大型中国封婚礼策划你认为应如何突出公司特色你好,焦焦,基于之前我们讨论的内容,关于策划一场具有【中】国特色的婚礼,你认为我们应该如何结合唐朝和秦朝的元素,同时考虑到客户的祖籍背景和身材特点来设计这场婚礼的出场方式和服饰风格呢?###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n为了策划一场具有中国特色的婚礼，可以结合唐朝和秦朝的元素。首先，在出场方式上，可以通过低空飞行展示中国特色的龙或凤凰等图案，增加仪式感；其次，在服饰风格上，可以选择具有唐朝秦朝特色的服饰，如华丽的龙凤婚服，并确保新娘的服装适合她的身材特点。此外，还可以邀请知名艺人如周涛、佟丽娅参与婚礼表演，增添文化氛围。通过这种方式，既能展现中国传统文化的魅力，也能满足客户对于独特婚礼体验的需求。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###为为我有行,好的,把大家叫过来开个会议大家说一下大家个个上个月的一些部分的情况先汇报一下嗯,策划上个月策划了3000场【婚】礼3000场婚礼?嗯有大型的吗?有大型的,其中有大型的,还有小型的大型的有多少场大型的有一千场大型的有一千场嗯其他部门呢执行部门主要是根据上个月那个排的那个时间一共跟进了两千场那个婚礼我们是有2000场是完美爱神套餐是31800剩下的1000呢是我们那个高端有活动的是原价是46990现在是39800好,业务这方面,上策划的,上策划的三年三年有嗯有业务上个月谈了谈成内情况成交主要是在完美爱神讨餐因为是3万1800比较经济实惠人员配置和生产的人员配置上是这样的我想继续推这个完美爱神套餐你看这个婚礼特约人员配置有专业婚礼主持人一名婚礼音像总控师一名特约双机为摄像师全程服务还专业摄像摇背一台你先简单的介介绍一下这个你的业务情况马上就弹成了多少场?这个上月不是三天多长吗?三天多长,是吧所有的业务都是在上个月完成的吗?还是怎么的情况?基本上都是上个月完成的上个月完成的是吧那咱近期呢,因为有一场这个有一场这个是一个那个咱要举办一个大型的策划一场大型的婚礼这个有什么方法呢因为这场婚礼策划的话是国外的一位富豪咱们要策一场大型的那富豪打算地点在哪提摘直接把他们都包了迪拜那个酒店住的酒店是吧我们得弄点特色来是吧你不说上来就是高达上但是有咱们那个特色是吧我们公司的特色在哪里谢谢大家接这么大的项目特别在于你看就是客户有什么要求啊不能光注重这个花钱这些还要给给顾客一种特殊的感觉因为咱要根据那个他在迪拜旅行但是他是那个华裔他也想为啥找到咱们他为啥会找迪拜的一些公司呢是因为咱们这个他想中国方也带有中国传统的咱这个项目这边实施你觉得有什么困难主要是咱们去夥伴一些是怎么费用啊对咱们得做一些限制考察对比如说限制考察主要是咱们这个物料啊咱要是在国内的话都有咱们相关合作的这个公司一块配合咱们过去那边的话咱们需要提前去过去做准备不管是物料还有还有这个设备啊还有场地啊一些沟通不小心前去坐了然后也需要跟那边了解一下那边的一些习惯基本上咱这去参加婚礼的大部分都是一些中国人华裔的一些人也有当地的本地人他但是希望做一场就是包括说中国的方式当时国外具体的演员他想让咱们出一套方案,出一套详细的一些整个流程,整个
+---
+这个衣服上来说咱们有点想着出场,这个女士出场,迎亲出场是怎么出场我的建议就是,吹着几样飞机,然后弄上中国特色他是拉一个风筝或者什么,巨型龙或者凤凰这类东西带着中国的商务人员,然后他绕空中转圈然后迎亲的出场就是这样可是那样是行不通的呀啊怎么行你就不能挂着中国国旗在外国国际我们不是挂国旗对,是中国风的只要有东西啊,风啊之类的他们应该是禁飞的我们做的是低空飞行低空飞行上边挂转一些这方面咱们先策划出然后当地的,他可以和当地的一些类似于拉风的这些东西咱们去解决这个问题可以在这出计划出计划 报价实施难度如果太大了,就能放弃如果他们在当地也不允许转,不允许买,咱们也只能放弃这个拔萨这场主要是为了让公司想推展海外业务所以就是一场关键之战所以各位希望可以认真一点这两个混凝一定要含有两个元素龙凤这个衣服上来说咱们有点想着出场,这个女士出场,迎亲出场是怎么出场我的建议就是,吹着几样飞机,然后弄上【中】国特色他是拉一个风筝或者什么,巨型龙或者凤凰这类东西带着中国的商务人员,然后他绕空中转圈然后迎亲的出场就是这样可是那样是行不通的呀啊怎么行你就不能挂着中国国旗在外国国际我们不是挂国旗对,是中国风的只要有东西啊,风啊之类的他们应该是禁飞的我们做的是低空飞行低空飞行上边挂转一些这方面咱们先策划出然后当地的,他可以和当地的一些类似于拉风的这些东西咱们去解决这个问题可以在这出计划出计划 报价实施难度如果太大了,就能放弃如果他们在当地也不允许转,不允许买,咱们也只能放弃这个拔萨这场主要是为了让公司想推展海外业务所以就是一场关键之战所以各位希望可以认真一点这两个混凝一定要含有两个元素龙凤元素对中国的一个传统元素男女龙女凤所以昏袍也是往这个方面发展去制定这个方案龙凤对然后还有就是那个大轿36台大轿或者是更多的对不止8台大轿肯定是没有混凝的对人越多越好但是大家這裡有紀錄啊咱们的目标是最大一次长得多少?这个,查查资料应该72现在国内很少有长这种吧?对国内一般偏向的就是现在的高码分子如果男孩要去外地到迪拜省的话,这边项目是有很难度的难度就是因为咱们之前跟国外的这个没有太多这样的业务嘛所以这个难度就是在这儿过去的话,咱们说的不可能大部分还得从当地解决如果咱们运过去的话,成本太高了有些东西到当地去解决就行了这个是问题别的到我们没有什么就跟咱们的策划师把这个方案提出提供出来了然后基调有了然后我们就准备这些物料然后设备然后再跟当地的那边沟通就可以了是咱这个基本上到当地比如说实施的时候对,我们主要是监督一下对,他们也得准备好方案夫妇有带亲人吗?对,带亲人的话肯定不是迪拜的咱们得想办法接送他们这个问题就是在你的整个婚礼的策划方案里面这我查到是64台大轿64台目前是最大的还要房轿跟那个小房子上车这个都找当地人的当地人你找64个人过去肯定是正经的我看肯定是当地人当地人必须他们服饰就得穿对对对这个可以带回去他们也需要他们的对他们需要准备这些不仅服饰然后这些这个就比如说需要高规格的东西的话我们需要我们是准备的本地买材料在那弄本地还有本地不知道材料咱们能准备现在这种材料你好 娇娇基于之前我们讨论的内容关于策划一场具有中国特色的婚礼你认为我们应该如何结合唐朝和秦朝的元素乐队分好几种乐队的话是偏西式还是偏中式那中国风啊咱们这个咱公司乐队咱公司合作的乐队咱公司内部有吗内部在国内里面有合作的这些乐队啊唱琴腔到时候有人唱你这琴腔可以邀请他们一块做这个业务像整个流程,咱得找礼仪方面的助作是礼仪,策划是中国风浪礼仪是过去我们讲解的像什么行走啊,步伐啊,就得说一句把这个基调先定下来定下来然后在按这个风格的机要,然后准备东西对还有什么需要补充的吗?还有就是他们婚礼的,他们那个婚礼的区的后面他们就直接与酒店沟通,让酒店来推菜你看是他们看着人家你订哪个酒店?订迪拜的水下酒店这是一个十星级的酒店也是世界上最高级的酒店所以就是说跟上面来说跟那个酒精这个报个SB报个SB金费一晚上2万美金就是14万美金最少也大概7天一周吧对,两万美金应该是不够,咱们是8分的没回报两万的钱咱们这个人家需要住两万咱这肯定到时候很多麻烦事是吧先算成本价成本价两万然后一周是多少钱一周是咱们肯定不在哪儿住咱们是高级分析是需要跟着的他那个场面策划什么都需要咱们当场去做去看监管感叹对,很忙,对,怎么去?所以咱,本地咱过去也不用过去太多人对,比如说比划一下就是八万人民币一周的费用,小于一百万小于一百万报价也得高点,能够给客户报价得高点能力也得高点对,对,但是咱们这个报价也不能太高,是吧当地有很多华裔,他们都有很多国家都有这种民族风都想要有民族心,是吧如果把这一单整成的话,我相信会有更多的当地的土豪嘛,就能够有这种意义服装费咱们请之前那个有一个巴黎设计师我跟他挺熟的前面设计师,他们设计两套龙凤衣服大概估算的话一件拿20万算的话两件的话就40万40万40万这是把天坤的天坤里还有的还有远航因为你看有一些轿子是那个木匠有可能来不及做咱们还是得运输一点过去副轿好多,但是主轿又不好做了所以把主轿运输过去以及宾客看宾客,咱们可以包一艘大的航船都运过去,都接过去弄成中国航船我们今天可以外包这方面我觉得成本也不是不会太大运输费加接送费的话一百万打点吧就是新娘子从空中过然后用锁匠降到龙航上这都是直升机大概这些所有的加起来多少钱大概小三
+---
+那咱们要不要在迪拜当地找一些名人呢,来捧那些婚情?我觉得他中国风嘛可以有几万有些几万地方很成也可以把中国所有明星请过去找一些那个迪拜王室迪拜王室我们必须在迪拜我们必须在迪拜这方面我觉得可以让客户去与咱们沟通一下咱本地找咱们咱本地得去见咱有一些当地人就是粗鲁咱们这个档次的规模是吧就是看客户的他这个方面就是说不管是男方还是女方吧他们就有自己喜欢的明星啊或者比较充满的偶像他们想让在这个特殊的时间里有这个人出现咱们也可以跟他沟通然后设计一个这么个环节也挺好的对他在迪拜办婚礼他的目的就是提高观众度对你好 娇娇婚庆策划中涉及的礼仪和乐队具体有哪些中国风元素中国的一些礼节谁可以把国际运行请完谁怎么说呢怎么说呢 谁具备【中】国特色 中国美周涛也可以就能够实现这些那演艺方面演艺方面佟丽娅今年刚登上车来主持了一部佟丽娅就可以了年轻年轻有朝气那方面呢也挺有感觉的弹钢琴咱们可以找朗朗过去弹钢琴弹钢琴就我就算了弹钢琴是一种外国玩意那咱叫弹古镇对对对勾结轮到双节棍年龄要大得小以前有个婚庆电影曲那个不错,有中国特色,就是吹打弹墙。而且有现在人做,可以推那个具体咱这个流程还要抓紧时间搞出来嗯这是一个事情还有一个事情就是上次三天长这个收益情况上个月收益情况上个月收益情况是我们的利润是一个亿一个亿行,一个亿还可以比上上个月,上上个月不到一个亿上上个月不到一个亿是八千万吧我觉得结婚的人应该会很多上半年因为疫情的影响对啊业务方面有所下降嗯对吧还有就是咱们元月的工资嗯上半年工资也差错了迷信是吧给底下的员工要说清楚如果咱们下半年整得好的话抓紧,策划策略,什么都比较整理快,整理好的话,肯定有,也有养回行,打打包,对,嗯,还有就是下半年业务,这方面,嗯,这方面的情况情况,业务,业务,业务主要是粗化工本,粗化这些东西,我们想尽一切办法贴近客户,推广,推广,还是主动主推还是咱们那个完美女神那个套餐这个还是咱们下半年主推上半年这个套餐怎么样不错 销售的不错这个套餐成本大这个是下午上午的成本的话在一万五左右吧百分之五六十的利润率百分之五六十嗯对嗯百分之五六十还是可以的嗯那这个利润率可以再提高吗可以再提高吗这个如果提高的话也只能从咱们的一些呃就是咱们那些用品上还有跟这些酒店呀然后再进行商量吧跟他们再商量然后再进行制作一套方案然后让他们把这个价格再往下压一下然后咱们的利润率再提一点我觉得利润率可以再提一点因为现在所有的生意都是不太好做的嗯,所以说这些员工啥的,用到的钱也比较多有些咱们爷爷城市的,我们是赔钱的,是吧还有就是刚才我说的,特点海外业务咱国内已经有较大后方,做牛有所损失,是吧品牌知名度品牌效益是吧对那我想争取在不影响效果的不影响公司效果的情况下提高一下咱们这个营收行吧还有现在把咱们公司业务拓展在哪些城市比较好?北上广,北京,上海,广州,这些一线城市,就来找我们的人比较
+---
+感谢观看降低咱们的成本就是说走完一个地城对 走完别种套餐用低套餐把那些我们的竞争对手挤过树档真的不行了那可以我们的大品牌优势可以把那些咱们有几盘呀主要是咱们的名气在这儿呢嘛然后再打造一款再稍微会民一点的我觉得现在北上网上结婚率也不算太高了现在北上网上基本上三四十结婚率但是他们带来的资产比较缓和这个业务可以,咱们套餐肯定比较美海外业务我们针对这一张手例我们可以叫它大堂这个系列如何用以保持业务的持续增长对然后我们再紧接改变策划出来一个系列经济型的叫迪拜海王两个项目就是说一个经济型的一个豪华型的这两个系列在统括这我们是高端我们不是说便宜这个就是不便宜这个肯定不便宜这个成本太大了这个成本咱也实际上这个成本咱也赚不了多少咱们有那个有有的量的要求不是多了咱们还不接对一年也接不了一年我们的要求绝对不能超过十个就大单的像那个大唐疯狂的那个一年准备接十个十个不超过十个但是我们要单量的单量利润也要高对这个人力物力耗费太大了对实力都不现场对这还有在当地还有有可能有产风险高收益,咱们都要计算买点保险风险也比较大刚才说到三四线城市三四线城市加大力度专门制定策划出来一个这个行业嗯只要是我们进驻三四线城市只要他们当地的强化机竞争对手拿他们单子然后来到我们这儿我们立刻就给优惠只要拿他们单子不做他们的来做我们的我们马上就给优惠这方面也要注意一下力度不能恶意请教育嗯这方面国家查理也比较严格方式方法,方式方法,业务这一块,下一个计划出来,合理合法合规,从一二线城市把一部分业务要转到三四线城市,行了,到时候制定计划,全力各部份全力配合,行了,行,好的,那本次會議结束你好焦焦针对迪拜大型中国封婚礼策划你认为应如何突出公司特色你好,焦焦,基于之前我们讨论的内容,关于策划一场具有【中】国特色的婚礼,你认为我们应该如何结合唐朝和秦朝的元素,同时考虑到客户的祖籍背景和身材特点来设计这场婚礼的出场方式和服饰风格呢?###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+为了策划一场具有中国特色的婚礼，可以结合唐朝和秦朝的元素。首先，在出场方式上，可以通过低空飞行展示中国特色的龙或凤凰等图案，增加仪式感；其次，在服饰风格上，可以选择具有唐朝秦朝特色的服饰，如华丽的龙凤婚服，并确保新娘的服装适合她的身材特点。此外，还可以邀请知名艺人如周涛、佟丽娅参与婚礼表演，增添文化氛围。通过这种方式，既能展现中国传统文化的魅力，也能满足客户对于独特婚礼体验的需求。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/out_001-M_2.wav
+问题音频片段长度: 479424, dtype: float32, min: -0.195831298828125, max: 0.191009521484375
+问题音频时间长度: 29.964
+
+
+[Agent] 接收到问题: 结束
+, 1743412192.1052709
+问题音频STT前的时刻: 1743412192.1054103
+问题音频STT后的时刻: 1743412192.6860192
+问题音频STT时间: 0.5806088447570801
+
+
+[Agent] 最终接收到问题: 你好焦焦,婚庆策划中涉及的礼仪和乐队具体有哪些中国风元素?
+, 1743412192.6862056
+问题音频送入Planner的时刻: 1743412192.6869748
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743412193.286185
+planner new_token time: 1743412193.679892
+planner new_token time: 1743412193.6803062
+First token received: 1, time: 1743412193.6804
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412193.691928
+talker first token time: 1743412193.9681625
+talker first token time: 1743412193.9948862
+talker first token time: 1743412194.0209298
+talker first token time: 1743412194.0468154
+talker first token time: 1743412194.0727654
+talker first token time: 1743412194.1244538
+talker first token time: 1743412194.1518404
+talker first token time: 1743412194.1778262
+talker first token time: 1743412194.2038095
+talker first token time: 1743412194.2297902
+talker first token time: 1743412194.2558646
+talker first token time: 1743412194.2819784
+talker first token time: 1743412194.3339596
+talker first token time: 1743412194.3600304
+talker first token time: 1743412194.4119542
+talker first token time: 1743412194.438023
+talker first token time: 1743412194.4642148
+talker first token time: 1743412194.490299
+talker first token time: 1743412194.5426714
+talker first token time: 1743412194.568868
+talker first token time: 1743412194.5950384
+talker first token time: 1743412194.6212497
+talker first token time: 1743412194.6735315
+talker first token time: 1743412194.6998022
+talker first token time: 1743412194.7522159
+talker first token time: 1743412194.7786107
+talker first token time: 1743412194.8051264
+talker first token time: 1743412194.831369
+talker first token time: 1743412194.8577685
+talker first token time: 1743412194.8842614
+talker first token time: 1743412194.9106688
+talker first token time: 1743412194.9371874
+talker first token time: 1743412194.963897
+talker first token time: 1743412194.990462
+talker first token time: 1743412195.0169394
+talker first token time: 1743412195.0699403
+talker first token time: 1743412195.0964365
+talker first token time: 1743412195.1228378
+talker first token time: 1743412195.1492856
+talker first token time: 1743412195.2021613
+talker first token time: 1743412195.2288
+talker first token time: 1743412195.25523
+talker first token time: 1743412195.2818842
+talker first token time: 1743412195.3086112
+talker first token time: 1743412195.362226
+
+talker输出：
+
+Token count: 123, Total time: 4.4306 seconds, One token time: 0.0360 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在婚庆策划中，中国风元素通常体现在以下几个方面：礼仪方面，比如传统的婚礼仪式、敬茶环节等；乐队方面，可以选择中国民乐或者民族摇滚等风格的音乐，演奏传统的中国音乐，营造喜庆的氛围。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/out_001-M_3.wav
+问题音频片段长度: 479424, dtype: float32, min: -0.195831298828125, max: 0.191009521484375
+问题音频时间长度: 29.964
+
+
+[Agent] 接收到问题: 结束
+, 1743412195.7225444
+问题音频STT前的时刻: 1743412195.7226968
+问题音频STT后的时刻: 1743412197.546796
+问题音频STT时间: 1.8240993022918701
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,提到了上个月的收益情况达到了一个亿,而上上个月是八千万。我想请问一下,针对这个收益增长,我们下半年的业务推广策略有哪些调整?特别是在人员工资和利润率方面我们计划如何优化以保持业务的持续增长
+, 1743412197.547166
+问题音频送入Planner的时刻: 1743412197.547506
+planner new_token time: 1743412198.2010956
+planner new_token time: 1743412198.5949438
+First token received: 0, time: 1743412198.5950878
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743412198.9883142
+planner new_token time: 1743412199.381527
+planner new_token time: 1743412199.7747533
+planner new_token time: 1743412200.1684318
+planner new_token time: 1743412200.5628328
+planner new_token time: 1743412200.9557202
+planner new_token time: 1743412201.3495655
+planner new_token time: 1743412201.7438185
+planner new_token time: 1743412202.136979
+planner new_token time: 1743412202.530572
+planner new_token time: 1743412202.923696
+planner new_token time: 1743412203.3179152
+planner new_token time: 1743412203.7116404
+planner new_token time: 1743412204.1049042
+planner new_token time: 1743412204.4997427
+planner new_token time: 1743412204.8936539
+planner new_token time: 1743412205.286981
+planner new_token time: 1743412205.6805282
+planner new_token time: 1743412206.074029
+planner new_token time: 1743412206.4679248
+planner new_token time: 1743412206.861764
+planner new_token time: 1743412207.2561045
+planner new_token time: 1743412207.6499608
+planner new_token time: 1743412208.044441
+planner new_token time: 1743412208.4390743
+planner new_token time: 1743412208.8330796
+planner new_token time: 1743412209.2264433
+planner new_token time: 1743412209.6207886
+planner new_token time: 1743412210.0152013
+planner new_token time: 1743412210.4092386
+planner new_token time: 1743412210.8036835
+planner new_token time: 1743412211.1982226
+planner new_token time: 1743412211.5925877
+planner new_token time: 1743412211.986578
+planner new_token time: 1743412212.3809028
+planner new_token time: 1743412212.776356
+planner new_token time: 1743412212.7770326
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：收益增长 业务推广策略 人员工资 利润率 优化
+
+
+提取的关键词: ['收益增长', '业务推广策略', '人员工资', '利润率', '优化']
+
+找到的上下文片段数量: 1
+one token time in planner tools: 1743412213.5227973
+one token time in planner tools: 1743412213.917688
+one token time in planner tools: 1743412214.3121583
+one token time in planner tools: 1743412214.7054012
+one token time in planner tools: 1743412215.0996642
+one token time in planner tools: 1743412215.494077
+one token time in planner tools: 1743412215.8885307
+one token time in planner tools: 1743412216.2828739
+one token time in planner tools: 1743412216.6775222
+one token time in planner tools: 1743412217.0718734
+one token time in planner tools: 1743412217.4665477
+one token time in planner tools: 1743412217.8609731
+one token time in planner tools: 1743412218.2556064
+one token time in planner tools: 1743412218.649704
+one token time in planner tools: 1743412219.044356
+one token time in planner tools: 1743412219.4388506
+one token time in planner tools: 1743412219.8332179
+one token time in planner tools: 1743412220.227543
+one token time in planner tools: 1743412220.6220498
+one token time in planner tools: 1743412221.017199
+one token time in planner tools: 1743412221.411698
+one token time in planner tools: 1743412221.8058155
+one token time in planner tools: 1743412222.2004507
+one token time in planner tools: 1743412222.5950747
+one token time in planner tools: 1743412222.989613
+one token time in planner tools: 1743412223.3845325
+one token time in planner tools: 1743412223.7792506
+one token time in planner tools: 1743412224.1743953
+one token time in planner tools: 1743412224.5703926
+one token time in planner tools: 1743412224.9646454
+one token time in planner tools: 1743412225.3593566
+one token time in planner tools: 1743412225.753954
+one token time in planner tools: 1743412226.1498547
+one token time in planner tools: 1743412226.5446239
+one token time in planner tools: 1743412226.939676
+one token time in planner tools: 1743412227.3357701
+one token time in planner tools: 1743412227.7304027
+one token time in planner tools: 1743412228.1261156
+one token time in planner tools: 1743412228.520792
+one token time in planner tools: 1743412228.9155927
+one token time in planner tools: 1743412229.3106685
+one token time in planner tools: 1743412229.7053537
+one token time in planner tools: 1743412230.1002846
+one token time in planner tools: 1743412230.495634
+one token time in planner tools: 1743412230.8905318
+one token time in planner tools: 1743412231.2849782
+one token time in planner tools: 1743412231.6799476
+one token time in planner tools: 1743412232.0748832
+one token time in planner tools: 1743412232.471288
+one token time in planner tools: 1743412232.8660169
+one token time in planner tools: 1743412233.2621884
+one token time in planner tools: 1743412233.657998
+one token time in planner tools: 1743412234.053694
+one token time in planner tools: 1743412234.4498003
+one token time in planner tools: 1743412234.8448997
+one token time in planner tools: 1743412235.2397726
+one token time in planner tools: 1743412235.6352065
+one token time in planner tools: 1743412236.0301855
+one token time in planner tools: 1743412236.4251287
+one token time in planner tools: 1743412236.8197937
+one token time in planner tools: 1743412237.2151341
+one token time in planner tools: 1743412237.6112182
+one token time in planner tools: 1743412238.006115
+one token time in planner tools: 1743412238.4007804
+one token time in planner tools: 1743412238.7959447
+one token time in planner tools: 1743412239.1922224
+one token time in planner tools: 1743412239.5882607
+one token time in planner tools: 1743412239.9839032
+one token time in planner tools: 1743412240.379442
+one token time in planner tools: 1743412240.7750723
+one token time in planner tools: 1743412241.1705897
+one token time in planner tools: 1743412241.566799
+one token time in planner tools: 1743412241.961885
+one token time in planner tools: 1743412242.3578746
+one token time in planner tools: 1743412242.754121
+one token time in planner tools: 1743412243.1500304
+one token time in planner tools: 1743412243.5462162
+one token time in planner tools: 1743412243.9421303
+one token time in planner tools: 1743412244.3378813
+one token time in planner tools: 1743412244.733431
+one token time in planner tools: 1743412245.130017
+one token time in planner tools: 1743412245.5262575
+one token time in planner tools: 1743412245.9222019
+one token time in planner tools: 1743412246.3178585
+one token time in planner tools: 1743412246.713478
+one token time in planner tools: 1743412247.1089704
+one token time in planner tools: 1743412247.5051587
+one token time in planner tools: 1743412247.9001265
+one token time in planner tools: 1743412248.296162
+one token time in planner tools: 1743412248.692192
+one token time in planner tools: 1743412249.0889153
+one token time in planner tools: 1743412249.485131
+one token time in planner tools: 1743412249.8808835
+one token time in planner tools: 1743412250.2761765
+one token time in planner tools: 1743412250.6727083
+one token time in planner tools: 1743412251.0693645
+one token time in planner tools: 1743412251.070722
+
+Token count: 97, Total time: 38.2007 seconds, One token time: 0.3938 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：收益', '增长', ' ', '业务', '推广', '策略', ' ', '人员', '工资', ' ', '利', '润', '率', ' ', '优化', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###感谢观看降低咱们的成本就是说走完一个地城对 走完别种套餐用低套餐把那些我们的竞争对手挤过树档真的不行了那可以我们的大品牌优势可以把那些咱们有几盘呀主要是咱们的名气在这儿呢嘛然后再打造一款再稍微会民一点的我觉得现在北上网上结婚率也不算太高了现在北上网上基本上三四十结婚率但是他们带来的资产比较缓和这个业务可以,咱们套餐肯定比较美海外业务我们针对这一张手例我们可以叫它大堂这个系列如何用以保持业务的持续增长对然后我们再紧接改变策划出来一个系列经济型的叫迪拜海王两个项目就是说一个经济型的一个豪华型的这两个系列在统括这我们是高端我们不是说便宜这个就是不便宜这个肯定不便宜这个成本太大了这个成本咱也实际上这个成本咱也赚不了多少咱们有那个有有的量的要求不是多了咱们还不接对一年也接不了一年我们的要求绝对不能超过十个就大单的像那个大唐疯狂的那个一年准备接十个十个不超过十个但是我们要单量的单量利润也要高对这个人力物力耗费太大了对实力都不现场对这还有在当地还有有可能有产风险高收益,咱们都要计算买点保险风险也比较大刚才说到三四线城市三四线城市加大力度专门制定策划出来一个这个行业嗯只要是我们进驻三四线城市只要他们当地的强化机竞争对手拿他们单子然后来到我们这儿我们立刻就给优惠只要拿他们单子不做他们的来做我们的我们马上就给优惠这方面也要注意一下力度不能恶意请教育嗯这方面国家查理也比较严格方式方法,方式方法,业务这一块,下一个计划出来,合理合法合规,从一二线城市把一部分业务要转到三四线城市,行了,到时候制定计划,全力各部份全力配合,行了,行,好的,那本次會議结束你好焦焦针对迪拜大型中国封婚礼策划你认为应如何突出公司特色你好,焦焦,基于之前我们讨论的内容,关于策划一场具有中国特色的婚礼,你认为我们应该如何结合唐朝和秦朝的元素,同时考虑到客户的祖籍背景和身材###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n根据会议内容，对于策划一场具有中国特色的婚礼，可以结合唐代与秦代的元素，并考虑客户的祖籍背景和身材。具体而言，可以从以下几个方面入手：一是选择具有代表性的文化符号，如唐代服饰、建筑风格等；二是融入秦代的历史故事或象征性元素；三是定制符合客户身材特点的礼服设计；四是注重仪式感，采用传统礼仪程序，使婚礼既具有文化底蕴又不失现代感。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###感谢观看降低咱们的成本就是说走完一个地城对 走完别种套餐用低套餐把那些我们的竞争对手挤过树档真的不行了那可以我们的大品牌优势可以把那些咱们有几盘呀主要是咱们的名气在这儿呢嘛然后再打造一款再稍微会民一点的我觉得现在北上网上结婚率也不算太高了现在北上网上基本上三四十结婚率但是他们带来的资产比较缓和这个业务可以,咱们套餐肯定比较美海外业务我们针对这一张手例我们可以叫它大堂这个系列如何用以保持业务的持续增长对然后我们再紧接改变策划出来一个系列经济型的叫迪拜海王两个项目就是说一个经济型的一个豪华型的这两个系列在统括这我们是高端我们不是说便宜这个就是不便宜这个肯定不便宜这个成本太大了这个成本咱也实际上这个成本咱也赚不了多少咱们有那个有有的量的要求不是多了咱们还不接对一年也接不了一年我们的要求绝对不能超过十个就大单的像那个大唐疯狂的那个一年准备接十个十个不超过十个但是我们要单量的单量利润也要高对这个人力物力耗费太大了对实力都不现场对这还有在当地还有有可能有产风险高收益,咱们都要计算买点保险风险也比较大刚才说到三四线城市三四线城市加大力度专门制定策划出来一个这个行业嗯只要是我们进驻三四线城市只要他们当地的强化机竞争对手拿他们单子然后来到我们这儿我们立刻就给优惠只要拿他们单子不做他们的来做我们的我们马上就给优惠这方面也要注意一下力度不能恶意请教育嗯这方面国家查理也比较严格方式方法,方式方法,业务这一块,下一个计划出来,合理合法合规,从一二线城市把一部分业务要转到三四线城市,行了,到时候制定计划,全力各部份全力配合,行了,行,好的,那本次會議结束你好焦焦针对迪拜大型中国封婚礼策划你认为应如何突出公司特色你好,焦焦,基于之前我们讨论的内容,关于策划一场具有中国特色的婚礼,你认为我们应该如何结合唐朝和秦朝的元素,同时考虑到客户的祖籍背景和身材###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+根据会议内容，对于策划一场具有中国特色的婚礼，可以结合唐代与秦代的元素，并考虑客户的祖籍背景和身材。具体而言，可以从以下几个方面入手：一是选择具有代表性的文化符号，如唐代服饰、建筑风格等；二是融入秦代的历史故事或象征性元素；三是定制符合客户身材特点的礼服设计；四是注重仪式感，采用传统礼仪程序，使婚礼既具有文化底蕴又不失现代感。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200617_M_R001S04C01_agent_added/out_001-M_4.wav
+问题音频片段长度: 479424, dtype: float32, min: -0.195831298828125, max: 0.191009521484375
+问题音频时间长度: 29.964
+
+
+[Agent] 接收到问题: 结束
+, 1743412251.2816758
+问题音频STT前的时刻: 1743412251.2818162
+问题音频STT后的时刻: 1743412251.8989537
+问题音频STT时间: 0.6171374320983887
+
+
+[Agent] 最终接收到问题: 你好,焦焦,如何有效控制三四现成实时业务成本,并避免恶意竞争?
+, 1743412251.8992045
+问题音频送入Planner的时刻: 1743412251.8996208
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1743412252.5027223
+planner new_token time: 1743412252.897109
+planner new_token time: 1743412252.8975894
+First token received: 1, time: 1743412252.897767
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412252.9080734
+talker first token time: 1743412253.1603491
+talker first token time: 1743412253.1870737
+talker first token time: 1743412253.2129123
+talker first token time: 1743412253.2389402
+talker first token time: 1743412253.2650063
+talker first token time: 1743412253.2909615
+talker first token time: 1743412253.3169427
+talker first token time: 1743412253.3430805
+talker first token time: 1743412253.369094
+talker first token time: 1743412253.3950133
+talker first token time: 1743412253.421148
+talker first token time: 1743412253.447235
+talker first token time: 1743412253.4732313
+talker first token time: 1743412253.5250978
+talker first token time: 1743412253.5770326
+talker first token time: 1743412253.6032748
+talker first token time: 1743412253.6295617
+talker first token time: 1743412253.6820033
+talker first token time: 1743412253.708244
+talker first token time: 1743412253.7344558
+talker first token time: 1743412253.7609386
+talker first token time: 1743412253.7871227
+talker first token time: 1743412253.813551
+talker first token time: 1743412253.8400638
+talker first token time: 1743412253.8664565
+talker first token time: 1743412253.918697
+talker first token time: 1743412253.9709325
+talker first token time: 1743412253.9971979
+talker first token time: 1743412254.0237675
+talker first token time: 1743412254.0500593
+talker first token time: 1743412254.102613
+talker first token time: 1743412254.1289704
+talker first token time: 1743412254.1552048
+talker first token time: 1743412254.181545
+talker first token time: 1743412254.2340183
+talker first token time: 1743412254.2866254
+talker first token time: 1743412254.3130198
+talker first token time: 1743412254.3395615
+talker first token time: 1743412254.3921382
+talker first token time: 1743412254.419427
+talker first token time: 1743412254.4723454
+talker first token time: 1743412254.4990237
+talker first token time: 1743412254.5257442
+talker first token time: 1743412254.5522425
+talker first token time: 1743412254.605358
+talker first token time: 1743412254.6583025
+talker first token time: 1743412254.6848774
+talker first token time: 1743412254.7116776
+talker first token time: 1743412254.7385387
+talker first token time: 1743412254.7654119
+talker first token time: 1743412254.7922277
+talker first token time: 1743412254.8455439
+talker first token time: 1743412254.8728428
+talker first token time: 1743412254.9261854
+talker first token time: 1743412254.9801345
+talker first token time: 1743412255.0335617
+talker first token time: 1743412255.0603836
+talker first token time: 1743412255.08724
+talker first token time: 1743412255.1141093
+talker first token time: 1743412255.1675043
+talker first token time: 1743412255.1945217
+talker first token time: 1743412255.2213016
+talker first token time: 1743412255.248079
+talker first token time: 1743412255.27487
+talker first token time: 1743412255.3016832
+talker first token time: 1743412255.3550806
+talker first token time: 1743412255.3820975
+talker first token time: 1743412255.4089637
+talker first token time: 1743412255.4358323
+talker first token time: 1743412255.4626608
+talker first token time: 1743412255.5174177
+
+talker输出：
+
+Token count: 46, Total time: 1.6726 seconds, One token time: 0.0364 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+控制三四线城市业务成本并避免恶意竞争的有效方法包括：首先，进行市场调研，准确评估三四线城市的市场规模和潜力；其次，制定合理的定价策略，避免价格恶性竞争；再次，优化运营效率，降低人力、物力等成本；此外，可以考虑与当地企业合作，共享资源，降低成本；最后，注重品牌建设和客户服务，提高客户满意度和忠诚度，从而保持长期的竞争优势。
+talker 输出结束
+
+会议数据处理完成。

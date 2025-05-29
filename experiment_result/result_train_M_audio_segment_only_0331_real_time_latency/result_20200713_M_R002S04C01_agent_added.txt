@@ -1,0 +1,204 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 70
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.36s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.04it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.66s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.07s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.72s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.10s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:04,  4.96s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.78s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.75s/it]
+002我是总经理005一店店长018二店店长0193店店长025四店店长行好了今天把各店各店店呢招过来开一个联盟职业会说一下我们各地的一些情况有些问题哪个店开始收集我们一店先说就是因为上万年收集停了那个什么然后销量不太好最近呢我们店呢就是搞了一个活动就是转发朋友圈三天都有那个小凳子相送我们在这个然后还建了一个群转发的这个全部加到群里头39元然后报名39元的话可以然后就是就是报名费499元照一次 赠一次现在搞这个活动就是为了就是说促进就是大家都来照相嘛 因为他只要他来了因为我们这个底片就赠十几张大概的话一般的人就是说都要底片 要是一边的话就得就加钱嘛现在说是说是 反正就是说499两次还有就是赠这个小车啊什么的好多礼品基本上现在反正家长都是对孩子们都舍得花钱吧基本上一般来照的话都得反正一千块钱而且就是说如果他就是觉得我们照的好了办会员的话然后可以储存储存就是一千的话然后就是以后可以顶顶这些这个照相的这个费用还有就是就是就是通过朋友圈如果你拉进我们群里头五个人就赠你个什么东西十个人就赠一个但是有效的进来以后呢就是确实是拉进来的有效的这个会员就是都拉进来都赠你的东西我们准备就是过几天然后到月底吧然后在这个区里搞这秒杀的这个活动就是看看现在已经一百多人了就是还有就是就是这些销量好像就是说反正这次应该招的人不少现在已经有一定的有一部分了我们一调的话就是现在反正就是这样就是这样情况像二调像我们二调然后也是因为离这个医院不是比较近吗然后就是我们会去医院就跟着新生儿他们父母发一些广告宣传就是后来就是也反而受疫情影响是有点影响但是相对来说不是特别大因为毕竟比较近嘛比较方便你想有的人他们这个周围不是也有一些月子中心啊什么的就直接就是说从院子从医院出来就直接跑月子中心了然后到时候摄像就是也就就近解决了所以说来我们店里头摄像的人也不少然后我们针对也是有一些活动的比如说我们这个到时候也是说他也是有那个活动就499可以送两套然后另外还有就是送一些钥匙扣一些周边还要送相框然后另外我们朋友圈也有活动就是转发朋友圈三天的话可以到店里领取一个精美相框然后另外就是说如果就是他当天就是预定的话现在是50块钱预定预定大礼包咱们是这周呃运步的时候会有一个厂家大促销就五十块钱订金到时候就会有平衡车呀那些画架呀还有一些嗯那个毛绒玩具这些都是任选其一的到时候都是赠送赠送给顾客另外的话咱这五十块钱订金还包括就是一些折扣券因为都是跟厂家搞活动嘛就像一些知名的那些嗯那个纸尿裤还有鲜奶粉它是都有优惠的然后另外还有就是咱那个还会送底片如果说你50块钱预订的话到时候还会多做送三两张底片然后这个宝爸宝妈们他们可能对那个其他不感兴趣但是对底片挺感兴趣的因为本身咱这就算是一个高端儿童摄影本身它就是平常就是你买多少套你订多少钱的套戏就给你多少张底片一般不是全送所以他们有时候会为了多要几个那个底片的话他们会可能就是说会按咱的要求比如说转发朋友圈啊几赞啊或者交订金这一类的所以说就是这个月我们力度我们相对来说是比较大的然后另外就是说现在已经就是我们也是建立微信群到时候就具体介绍一下咱们活动情况还有些订金也都是由我们这个专专门人员收的现在已经预定了大概现在有80来位了,因为现在才月周嘛,陆续还会有这是我们二地整体的情况我们店呢,因为是处在高档小区的门口而且我们离幼儿园也比较近我们推出的活动是,我们鼓励自己的员工,就是每一个员工都建一个群把自己所认识的亲朋好友同事邻居都搬到群里面我们在前面发了通知就是原价398元的套餐因为我们马上就是公司成立十周年了在成立十周年的那一天进店的话是398元套餐只需要198元就可以让家里有宝宝的这些宝妈们或者爷爷奶奶任何一个人带着孩子就可以来参加这个活动看的是我们好像是少挣了200块钱但是这个宣传率都是很大的而且孩子们既然到了我们的招商馆也不可能只有这一个活动他可能会发现其他的主题比如说也有一些中国风的一些主题还有一些游乐的比如说小男孩有各种各样的玩具在那摆着你可以穿不同的衣服拿着不同的玩具比如说枪啊还有一些飞机的模型啊让他们坐在上面体验一下我是冰女的然后给她拍一张照片小姑娘呢就有各种各样的公主裙还有一些就是说白雪公主和七个小矮人那种场景然后她穿上白雪公主的服装和七个小矮人站在一起拍一张照片就挺有经典意义的而这些主题呢会很吸引当然这个我们可以做少量的比如说九折的优惠呀八折的呀这样的优惠吸引他们他们进来之后就不单单是去享受那个3901
+[Text Detection] 在 522.73 秒检测到关键词 '娇娇',current_time: 496.00, 问题文本: 198的这个优惠孩子们会发现其他的项目我们让孩子在里面游玩让孩子自由地在里面跑啊跳啊然后会发现那个主题我们就趁机给他做一个推荐给他做一个介绍推广这样会带动消费我们是做了这个活动目前你好 娇娇针对一电促销活动效果如何是否
+98的这个优惠孩子们会发现其他的项目我们让孩子在里面游玩让孩子自由地在里面跑啊跳啊然后会发现那个主题我们就趁机给他做一个推荐给他做一个介绍推广这样会带动消费我们是做了这个活动目前你好 娇娇针对一电促销活动效果如何是否因为是联合店嘛就是按照咱们的活动这里和上面的大会议相同我们要做一个活动就是提前预约可以离50离100因为现在因为疫情然后所以说将会有一部分的新生儿就是出生对于他们百日的时候需要照一些照片然后我们就是可以进行一个提前预约我们这里有很多主题,挨着公园,咱们这里有专业人员进行一些布置。大概的话就是,其实上半年的盈利情况不是特别好,因为大家都出不了门,也没有人来招相。所以说上半年我们主要工作还是与一些就是马拉教教书生的一些就是孕妇进行宣传然后给他们一些就是拍一些就是一些照片他们看到我们工作室的实力然后这样的话就是他们就会来我们的工作室给他们呃还是进行摆的照的纪念什么的他们就证明了一个情况嗯行嗯就是我这边嗯咱们各个店的一个嗯,这个人员现在是一个什么样的情况,目前各店还需要再招人吗?嗯。还需要一个这个,怎么说呢,一个这个,嗯,这个人员的一个筛检呢?各店的人员现在能不能满足现在一个业务呢?嗯之前的那个呃有一部水人他就是说有辞职的现在就是说我觉得我们应该招点逗孩子就是那种助理吧助理的因为孩子们他到底小逗逗他还能笑有的孩子他照照照不耐烦哭啊怎么着都得逗他然后就是再添一点这些玩具孩子的玩具因为逗他的时候还有我们就是造型师我们孩子们还就是说它就是简单的一个化妆就是某个孔头啊,然后也是修一下这个,就是打个粉底,头发,主要是发型。孩子的这个发型现在就是跟以前不一样,以前有的戴个假发什么的,现在就是自然嘛,要求。就是给孩子就是做发型的这个,就是美容师吧,就是说这种我觉得应该再招两名。其他店呢像我们二店那个修图图师应该找两名因为之前咱不都是有好多他老家不是咱这儿的因为疫情他不是回老家吗过年前就早早回去了因为疫情也一直没来然后后来期间就交了辞职报告说来不了了就因为疫情影响然后一开始也是前期因为疫情比较严重嘛咱们现有的那个修图师人员是够了但是现在就是随着减风然后慢慢的人也越来越多了所以需要两名修图师另外还有这个前台前台那个有个前台他那个怀孕了然后肚子越来越大不方便我们早已经把这些人员申请已经上吊给人资了人资也正在积极就是招聘我们这边有一个休产架的因为他这个申请是一年半所以我们需要招人就是招两个吧我的建議是招一个幼教类的因为他带孩子如果说他就是做这个行业的话他对孩子的心理都会有一定的经验因为过去我们拍照片让孩子站在这这样那样很死板的要带动孩子在游戏中因为我们会推出一个项目就叫欢乐一家人或者亲子互动让孩子和父母在游戏的过程中给孩子抓拍一些非常可爱的瞬间因为我们唱歌老师最美丽的永远不是照片而是照片所留下的故事和美丽的瞬间这当孩子百岁的时候第一次邀请我们去给孩子拍照或者周岁时候第一次来我们拍照的时候我们都会给他们推出一个套餐就是今天你第一次来我们可以给你打个八折或者九折那么以后每年孩子过生日的时候邀请你过来我们都会给你打或者都会给你预备一张礼物这样的话就是好像就是要对这个留住了这个客户对还有对人家的信息还有一些登记对这个就是详细的住址包括电话号码我们都要有登记如果是夫妻双方带来的话我们会登记夫妻双方电话号码因为有的人电话号码他会变更一年之后啊或者说多长时间之后你再打这电话可能就空号了关机了所以夫妻双方呢我们都会留我们留了点有的人就不愿意给你留电话号码想来的我们下次再来想来的我们一定不要泄露人家信息我们保证我们不会泄露人家信息我们就是留人家电话号码当有活动的时候我们可以及时通知到您这样您也可以得到实惠我们也可以更好的给您服务一般情况下我们服务人员这样很耐心的很礼貌的介绍我们的服务宗旨之后一般父亲都会给电话或者联系方式微信都行对 我们会加上他的微信然后有活动的话跟人家说或者说我们有一些比如说增加一些什么玩具或者一些主题的拍照一些项目我们就拍给人家看或者在群里面分享别的小朋友就让人家的爸爸妈妈去分享人家孩子的那些图片对其实就好像跟吃的一样就是勾起了别人的食欲其实勾起了其他的家长带着自己的孩子也去拍一张那样的照片那样一组照片的一个预望或者说他的儿子或者女儿正好不来一起在看手机或者看电脑我也想拍这样的可能就真的还得一句话也不多嘛几百块钱父母就真的带来而且我们也会给老客户一幅幅度的一个优惠他们会过来的然后我们店的话主打的就是比較時尚的因为我们就是走的还是稍微比较高档的一些就是像三变化就是走一些就是可能就是亲子的那种然后就是也就是相当于展现一下孩子的那个就是和父母之间的护士然后我们呢就是首先考虑的就是因为现在越来越多的90后成为了父母然后他们只要知道可能我们一些年纪比较不小的人,他们的观念跟他一样我们提供的方法就是提前进行预约,然后我们按照他们的想法进行一个设计设计出一个他们想要的主题,我们的主题是如前面的就是说非得说几件什么167温馨然后主要照相啊而不是主要就是留下小时候到底是什么样然后长大以后你看完之后就感觉就是能找到一些就是孩子还在小然后父母那个时候又是一起陪伴然后我们主打就是比较时尚流行然后就是是不是外景也挺多对然后我们是相当于是专人专设计不局限于一个就是工作室就是预约场景,然后预约各种地方然后这样的话,可能价格会贵一点都是在摄影棚里头拍的对,因为这个场景的话也是在我们室内有很多景点也是比较好找的没有说假体会多然后我们现在修的话就是设计师有啊,所以几个摄影师,我们的摄影啊,当然都是比较...优
+[Text Detection] 在 1127.76 秒检测到关键词 '娇娇',current_time: 1116.00, 问题文本: 优秀的,就是学设计师对厂者经验一个设计,别的话我们不喜欢。你好,娇娇,基于之前我们讨论的内容,关于各店人员配置和招聘需求,你能否详细说明一下目前各店的人员状况以及是否需要招聘
+秀的,就是学设计师对厂者经验一个设计,别的话我们不喜欢。你好,娇娇,基于之前我们讨论的内容,关于各店人员配置和招聘需求,你能否详细说明一下目前各店的人员状况以及是否需要招聘首先去踩个点踩个点以后我们肯定要进行适当的布置不能说就是纯自然的因为那样的话它可能拍出来效果并不一样效果比较轻对我们主要是像一些比较年轻的人就是喜欢拍一些比较好看的户外的 唯美的不是说就是孩子这些就是比较自然的话那也不是人家特别想象的那种感觉嗯这种感觉的一些摄影目前咱们各店拍小孩子的一些这个照片的时候小孩子这方面刚才A店说招几个助理是吧对就是演奏师嘛他就是因为他这个演奏师还不是我去做的有什么更好的办法吗嗯引斗师其实他就是有时候比摄影师不更了解孩子吗还有心和力其实引斗师做的话也得有一定的经验他因为他第一他得跟你说就是引斗孩子小而且他还得引孩子比如说他怎么照出来漂亮是吧抬头啊低头啊灯光在哪边他都得有一定的经验你不能说乱演演员也不行是吧对嗯这个小孩子这个一定要拍出来这个效果嗯是吧嗯他这个好的演奏师他完全就是说就是跟这个摄影师搭档是吧嗯对对对他怎么能排出更漂亮演奏他这个位置这孩子怎么这个摆摆姿势是吧他这个都得不能说啊就是说除了演奏还是笑是吧然后还有这个跟摄影师配合好这个该抬头抬头该斜着拍啊 怎么拍摄影师就是抓住瞬间所以引动是很重要还有现在就是儿童摄影有的是室内室外不像以前就是穿个衣服特别死板现在你看我们服装间衣服特别多因为有的孩子喜欢现在就是有清源有一阵就流行汉服拍汉服的特别多也是对小小女孩喜欢小婚纱啊什么的啊小男生女生的话也比较麻烦发卡啊帽子造型造型哎呀就衣服鞋鞋子我们都得配因为配汉服吧他就是穿那个小绣花鞋的比较多嗯所以我们可以我们四个调可以就是说衣服可以互换一点经常换好这样的话给客户也有新鲜感老是对一些衣服减少成本对我们不能说一直换一直更新其实应该是一直更新但是我们因为是连锁可以先互换或者一年更新一回人家药房还可以去调我们药房没有可以就近然后客户等了十分钟几分钟的另一份调过来我们也可以我们也可以这一系列然后下一系列我们要去另一件去调去也可以有的不是现在孩子漂亮很多,可以自己戴两身中式啊,漂亮衣服挺多的最近有一段还拍爱莎公主啊,挺多的就是这样还有就是在孩子方面,咱们得给家长做好沟通带孩子来拍照片,最好就是让孩子亲近的人因为有的孩子就是妈妈带大的,跟妈妈比较亲近最好让妈妈带过来有的是跟爷爷奶奶一块看大的所以最好是让爷爷奶奶配着来因为这样的话相对来说一是孩子可以消除孩子的陌生感这样他不会紧张另外的话就是说相对来说他亲近的人他的话更容易听得进去就比如说我们需要他做个什么姿势或者往哪看的话家长就在这一方他就容易朝这方面注意要不然就是说过来工作人员或者说不是经常带他的家长的话他可能就不太配合我们也得提前给家长沟通好了说最好就让亲近的人过来谁看他时间长一点最好让他陪着过来然后孩子一进入我们的进店以后首先第一件事情做的不是让他拍照是让他先熟悉环境给那个玩具啊或者给那个小零食啊慢慢地聊喜欢什么然后在不经意间我们可以抓拍几张嗯好 就是现在有些孩子吧,进店以后呢,他有的喜欢外景,外景的话,那个四店出外景比较多,是吧?我们这边啊,嗯,我们这个几个店也有外景,就比较说小公园,小公园比较多小公园有的时候喜欢就是,排不同的这个,就是春夏秋冬,有春天,四季场景啊因为小公园其实有一棵树都可以拍还剩四季拍外景的话准备个小帐篷几个月的孩子拍照挺难的他有时候一会儿困了,一会儿饿了他不如大一点的三四周要好点其实要是说小的一周以下的孩子父母带来其实蛮辛苦的一般有的时候甚至拍两回休息的地方兩回三回都是正常我们有那种可追跌的那些设备就是可以提供一些休息的你好 教教如何提升儿摄影效果特别是在引导师和摄影师配合方面要给他们提供一些水啊甚至一些零食我们常常有一些就是小方骨就不会蛀牙的那种方式还有面包啊什么的因为家长有时候可能也是拍实验堂的都累了对 拍原来那种小面包还挺不错的就会长辈也挺行的其实可以给小孩子准备一些漂亮的小糕点卡通人物的那些小糕点可以给孩子其实小孩吃到多少其实是安慰和哄孩子的一个工作因为你花掉太多的钱但是这种小心思很巧妙的很容易得到父母的认可和孩子的认可主要在细节上做到动人处就可以了就是让孩子进到我们的店之后会有一种归属感就好像在家里一样那么的随意每一个服务人员的耐心和周到首先让孩子放松他不紧张不是到一个生的没生的地方让孩子越快进入这种接纳我们越快混熟我们的拍摄时间越短我们功效越高而且跟两个关系拉近的话咱们的摄影师也能不能进一步的精状对而且我们都在状态这样因为现在就是以自然不像我们小时候就是摆个姿势现在都是以自然笑一笑但是现在镜头上没有人这样拍所以对于摄影师的要求也挺多你看拍外景的时候,一棵小草别说现在摄影真的,他们有的说你们后期修图其实不是,其实有个小草,排除它的生命力活力其实有一句话就是说,这个世间从来不缺少美而是缺乏发现美的眼睛攝影師就是一個很典型的力量自己发现美的一双眼睛她就长了一双发现美的眼睛长湿的话需要曲颈斜的话她就是通过长湿的方式角度不同像我一样其实我看过一个小男孩其实他就是在一周半不到两周的时候拍的那个照片但是他就是一个那时候还很小嘛就穿了中式的服装坐在一个围棋的旁边很专注的下的时候有抓拍的一张,等于照片是爷爷奶奶带孩子拍的嘛给爸爸发过去之后发过来哎哟,看我儿子就觉得多大的孩子似的其实就是小孩看到这个新的玩具,家里没有那个玩具家里都是玩具,没有给他买这个围棋因为他不会玩嘛他觉得很新鲜,拿起来那个围棋就准备往那儿走就是那个摄影师有专注这一点拍下来很专注,就好像他真的在下棋一样就好像那台有多大好几个其实他不到两周,我就觉得这个摄影师这一点抓的非常好就那张照片,哎呀,现在把它放大了别人谁看了,感觉都不像是免了孩子很专注的演出神情的动作我们店就有一个摄影师,就是有的孩子比如说拍摆天照的时候他不是有的孩子流口水吗?其实还,就是说咱们家里大人流口水感觉特别脏孩子流口水感觉还挺可爱是吧去攝影室就是他正流口水還抓她留口水的瞬间拍了一张照挺可爱口水下来跟孩子复合咱不说脏了吗她大时候留的口水抓拍的特别好发现一个小孩也就是一两周的样子其实刚开始设计的根本就没有动作我们有一些花草草的一盆一盆的花就在这旁边放着然后就有有一个浇水的壶小孩拿起了壶他就去喷在家里见过爸爸妈妈摄影师立刻抓住拍下来了特别可爱本来以为穿着衣服他没有换衣服之前穿着自己的衣服就很专注特别的可爱拍的效果也挺好的摄影师都会有那种应变的感觉對其实这一点还是很得到家长的认可的我们不能说照摄影师我们设计的什么就是什么不能可以实际应用感觉美的事我都看看对其实本身这个孩子无论是从百岁开始进入我们店还是从一周岁或者说几周之后才了解我们才走进我们店其实都是可以叫做快乐通联每一张照片都给孩子美好的一个瞬间的记忆让当父母打开孩子过去的相册的时候从几个月到几岁是吧年年的孩子长大父母看着亲戚父母的笑容孩子的笑容就是对我们工作的一个认可是我们其实都可以赠一张就是全家福就是一张简简单单的最后拍一下然后孩子也可以看看跟父母就是每一年每一年的这个全家福就是这样的话也能增进一下家人之间的感情这样的话就是合家欢大家也都能看到彼此都在一起像连续三年以上在我们店里拍这个生日照我们可以给他们做一个相册然后把孩子的照片都装在一起或者说有一些水明像画把孩子从一岁两岁三岁那样摆出来让孩子自己长大以后看看我小时候这样这样的一年一年都不一样我也会看见他们有可能第一年在我们这拍的他们第二年可能会搬到地方我也在他们这拍推荐另外一店 因为我们是连锁店合作一下所以对老公的尊重我觉得是很重要的不管在哪个店拍之前的政策我们都给他优惠的主要是我们这个名字地上我们个人的名片的时候,可以把他们拉到我们群里,然后告诉他们我们其他店的地址。如果你拿过进去,正好出去玩去了,或者怎么样,顺便在另外一点就可以。这个需要我们四个店的同理合作。对,但是咱们追踪客户的话,需要注意一点,咱们不能老巴朋友消或者是给人家发活动信息。咱们就比如说在这个小楼发一下就是比如就是他可能预订好的时间之后发一下你要是平常一直发发源有可能也会反对一种可能会平时的疲劳嗯对不能让我们这个客户对我们心疼还感有有的家长如果说让咱们可以发人的相片的话我们可以每天就是说要新拍的套戏啊可以发一个不见得非得发这个孩子看这个套戏的长久啊每天都可以发一个这个所
+[Text Detection] 在 2069.67 秒检测到关键词 '娇娇',current_time: 2046.00, 问题文本: 所以说她的父母朋友啊他们也可以在很多工作室的在工作室上对,在我们店最显眼的地方拍那个挂出来孩子的照片对对对行还有什么想要说的吗各位朋友你好,娇娇基于之前我们讨论的内容关于如何提升摄影服务
+以说她的父母朋友啊他们也可以在很多工作室的在工作室上对,在我们店最显眼的地方拍那个挂出来孩子的照片对对对行还有什么想要说的吗各位朋友你好,娇娇基于之前我们讨论的内容关于如何提升摄影服务没有了,没有了,这边,像这样就是下去以后,就是咱们斗狮这一块,各店要加大这个培养力度就是摄影师这一块,也要去加大这个培养最后建议每个店在前几个月收入决赌
+[Audio Detection] 在 2159.50 秒检测到关键词 '好交交'。
+detection_time: 2159.50, current_time: 2139.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S04C01_agent_added/out_003-F_0.wav
+问题音频片段长度: 139094, dtype: float32, min: -0.08296966552734375, max: 0.09859848022460938
+问题音频时间长度: 8.693375
+
+
+[Agent] 接收到问题: 其他的我这边也没有了那咱们等会就先到此为止吧再会吧
+, 1743412707.1538322
+问题音频STT前的时刻: 1743412707.1539807
+问题音频STT后的时刻: 1743412707.7520757
+问题音频STT时间: 0.5980949401855469
+
+
+[Agent] 最终接收到问题: 你好,焦焦,针对伊甸促销活动效果如何,是否达到预期销量提升?
+, 1743412707.75228
+问题音频送入Planner的时刻: 1743412707.7526572
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1743412708.3827548
+planner new_token time: 1743412708.7784555
+planner new_token time: 1743412708.7789764
+First token received: 1, time: 1743412708.780103
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1743412708.8353388
+talker first token time: 1743412709.5028434
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1743412709.5388992
+talker first token time: 1743412709.5918524
+talker first token time: 1743412709.6182542
+talker first token time: 1743412709.6444905
+talker first token time: 1743412709.6709504
+talker first token time: 1743412709.6974258
+talker first token time: 1743412709.7239408
+talker first token time: 1743412709.7767086
+talker first token time: 1743412709.8031013
+talker first token time: 1743412709.8295255
+talker first token time: 1743412709.8558145
+talker first token time: 1743412709.8820665
+talker first token time: 1743412709.9348998
+talker first token time: 1743412709.9619164
+talker first token time: 1743412709.9880445
+talker first token time: 1743412710.0144763
+talker first token time: 1743412710.04097
+talker first token time: 1743412710.093751
+talker first token time: 1743412710.1202457
+talker first token time: 1743412710.1467996
+talker first token time: 1743412710.173289
+talker first token time: 1743412710.227451
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+很抱歉，由于无法听到您的语音内容，我无法回答您的问题。如果您能提供更多的信息，我会尽力帮助您。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_M/20200713_M_R002S04C01_agent_added/out_003-F_1.wav
+问题音频片段长度: 139094, dtype: float32, min: -0.08296966552734375, max: 0.09859848022460938
+问题音频时间长度: 8.693375
+
+
+[Agent] 接收到问题: 其他的我这边也没有了那咱们等会就先到此为止吧再会吧
+, 1743412710.999498
+问题音频STT前的时刻: 1743412710.9996462
+问题音频STT后的时刻: 1743412713.2609274
+问题音频STT时间: 2.2612812519073486
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于各店人员配置和招聘需求,你能否详细说明一下下目前各店的人员状况,以及是否需要招聘新的助理,引斗师,修图师,修和前台人员?特别是考虑到疫情影响和业务需求的变化本来我应该如何调整人员的配置以满足业务发展和客户服务的需求
+, 1743412713.2613091
+问题音频送入Planner的时刻: 1743412713.2616072
+planner new_token time: 1743412713.9170954
+planner new_token time: 1743412714.308577
+First token received: 0, time: 1743412714.3087244
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1743412714.7006538
+planner new_token time: 1743412715.0920162
+planner new_token time: 1743412715.483459
+planner new_token time: 1743412715.876898
+planner new_token time: 1743412716.2695632
+planner new_token time: 1743412716.6620688
+planner new_token time: 1743412717.0546548
+planner new_token time: 1743412717.446745
+planner new_token time: 1743412717.839196
+planner new_token time: 1743412718.2314038
+planner new_token time: 1743412718.6231768
+planner new_token time: 1743412719.0153925
+planner new_token time: 1743412719.4074767
+planner new_token time: 1743412719.7996624
+planner new_token time: 1743412720.1924486
+planner new_token time: 1743412720.5850096
+planner new_token time: 1743412720.977778
+planner new_token time: 1743412721.3706245
+planner new_token time: 1743412721.7626982
+planner new_token time: 1743412722.1555147
+planner new_token time: 1743412722.5481665
+planner new_token time: 1743412722.9403162
+planner new_token time: 1743412723.333297
+planner new_token time: 1743412723.7257957
+planner new_token time: 1743412724.1181126
+planner new_token time: 1743412724.5124567
+planner new_token time: 1743412724.9061334
+planner new_token time: 1743412725.3006291
+planner new_token time: 1743412725.6934443
+planner new_token time: 1743412726.0863373
+planner new_token time: 1743412726.4793248
+planner new_token time: 1743412726.8725307
+planner new_token time: 1743412727.265346
+planner new_token time: 1743412727.6580942
+planner new_token time: 1743412728.051195
+planner new_token time: 1743412728.4445488
+planner new_token time: 1743412728.8373091
+planner new_token time: 1743412729.2311084
+planner new_token time: 1743412729.6249146
+planner new_token time: 1743412730.0177195
+planner new_token time: 1743412730.4104729
+planner new_token time: 1743412730.411271
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：人员配置 招聘需求 影响疫情 业务需求变化 客户服务需求
+
+
+提取的关键词: ['人员配置', '招聘需求', '影响疫情', '业务需求变化', '客户服务需求']
+
+找到的上下文片段数量: 3
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+one token time in planner tools: 1743412732.2358136
+one token time in planner tools: 1743412732.6380997
+one token time in planner tools: 1743412733.0391786
+one token time in planner tools: 1743412733.440036
+one token time in planner tools: 1743412733.8411887
+one token time in planner tools: 1743412734.2419276
+one token time in planner tools: 1743412734.6417944
+one token time in planner tools: 1743412735.0423412
+one token time in planner tools: 1743412735.443059
+one token time in planner tools: 1743412735.843861
+one token time in planner tools: 1743412736.2445126
+one token time in planner tools: 1743412736.6450155
+one token time in planner tools: 1743412737.046005
+one token time in planner tools: 1743412737.4467223
+one token time in planner tools: 1743412737.8476467
