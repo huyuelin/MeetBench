@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeetAll · MeetBench · MeetMaster</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Custom style -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">MeetBench Suite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+          <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3" target="_blank" href="https://github.com/MeetBench/MeetBench"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="vh-100 d-flex align-items-center text-white bg-gradient">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="display-4 fw-bold mb-3">MeetAll · MeetBench · MeetMaster</h1>
+      <p class="lead mb-4">A Multimodal &amp; Multilingual Meeting-Agent Suite for <span class="text-info">ACM Multimedia 2025</span></p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a href="https://arxiv.org/pdf/2308.03688" class="btn btn-outline-light btn-lg" target="_blank"><i class="fas fa-file-pdf"></i> Read the Paper</a>
+        <a href="#features" class="btn btn-primary btn-lg"><i class="fas fa-arrow-down"></i> Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in">Key Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card p-4 h-100 text-center">
+            <i class="fas fa-database fa-3x mb-3 text-primary"></i>
+            <h5>Rich Data</h5>
+            <p class="small">200&nbsp;h bilingual (English &amp; Mandarin) audio with aligned transcripts.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card p-4 h-100 text-center">
+            <i class="fas fa-question-circle fa-3x mb-3 text-primary"></i>
+            <h5>Diverse QA</h5>
+            <p class="small">2&nbsp;000+ human-verified QA pairs spanning 108 complexity cells.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card p-4 h-100 text-center">
+            <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
+            <h5>Dual-Process Agent</h5>
+            <p class="small">Fast <strong>Planner</strong> &amp; Reasoning-centric <strong>Talker</strong> enable both low latency and strong performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section id="components" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in">Components</h2>
+      <div class="row g-5">
+        <!-- MeetAll -->
+        <div class="col-md-4" data-aos="fade-right">
+          <div class="card h-100 border-0 shadow-lg">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title"><i class="fas fa-users text-warning"></i> MeetAll</h4>
+              <p class="card-text flex-grow-1">231 real-world meetings captured with 8-channel microphone arrays, enriched with voice-cloned agent turns.</p>
+              <a class="stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#datasetModal">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <!-- MeetBench -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-lg">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title"><i class="fas fa-chart-line text-success"></i> MeetBench</h4>
+              <p class="card-text flex-grow-1">CompassJudger &amp; Prometheus re-engineered for meeting assistants – evaluate factuality, user needs, conciseness, structure and completeness.</p>
+              <a class="stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#benchmarkModal">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <!-- MeetMaster -->
+        <div class="col-md-4" data-aos="fade-left">
+          <div class="card h-100 border-0 shadow-lg">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title"><i class="fas fa-brain text-danger"></i> MeetMaster</h4>
+              <p class="card-text flex-grow-1">Baseline agent achieving 22.5&nbsp;% higher quality and 1.5&nbsp;s faster responses vs. single-model baselines.</p>
+              <a class="stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#agentModal">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in">Benchmark Results</h2>
+      <div class="table-responsive" data-aos="fade-up">
+        <table class="table table-striped table-hover align-middle text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Model</th><th>Factual</th><th>User&nbsp;Needs</th><th>Concise</th><th>Structure</th><th>Complete</th><th>Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>LLAMA-7B</td><td>3.59</td><td>3.31</td><td>4.01</td><td>3.67</td><td>3.05</td><td>3.30</td></tr>
+            <tr><td>LLAMA-13B</td><td>5.58</td><td>5.07</td><td>6.14</td><td>6.08</td><td>4.77</td><td>5.13</td></tr>
+            <tr><td>Qwen2.5-7B-Inst.</td><td>7.31</td><td>6.18</td><td>7.06</td><td>6.89</td><td>5.56</td><td>6.29</td></tr>
+            <tr class="table-primary"><td><strong>MeetMaster</strong></td><td><strong>7.50</strong></td><td><strong>6.57</strong></td><td><strong>7.76</strong></td><td><strong>7.33</strong></td><td><strong>6.36</strong></td><td><strong>6.59</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <p class="text-center mb-5">Please open an issue on GitHub or drop us an email at
+        <a href="mailto:huyuelin@126.com">huyuelin@126.com</a></p>
+      <div class="d-flex justify-content-center gap-3">
+        <a class="btn btn-dark" target="_blank" href="https://github.com/MeetBench/MeetBench"><i class="fab fa-github"></i> Repository</a>
+        <a class="btn btn-outline-secondary" target="_blank" href="https://arxiv.org/pdf/2308.03688"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container small">
+      © 2025 MeetBench Team · CC BY-NC 4.0 (data) · Apache 2.0 (code)
+    </div>
+  </footer>
+
+  <!-- MODALS (optional detailed info) -->
+  <div class="modal fade" id="datasetModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">MeetAll Dataset</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MeetAll comprises 231 meetings, 200&nbsp;h audio, bilingual transcripts, and 2 000 agent QA turns with high-fidelity voice cloning.</p>
+          <ul>
+            <li>108 complexity cells across 4 cognitive axes</li>
+            <li>Voice-cloned agent utterances via F5-TTS</li>
+            <li>CC BY-NC 4.0 license</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="benchmarkModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">MeetBench Benchmark</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <p>MeetBench adapts CompassJudger and Prometheus to quantify assistant responses along five dimensions plus overall Prometheus score.</p>
+          <p>Scripts located in <code>/MeetBench_Benchmark/</code>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="agentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">MeetMaster Agent</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <p>MeetMaster employs parallel <strong>Planner</strong> and <strong>Talker</strong> modules, reducing latency by up to 1.5&nbsp;s while boosting quality by 22.5&nbsp;% on complex queries.</p>
+          <p>Implementation in <code>/baseline/MeetMaster/</code>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Bundles -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html> 
