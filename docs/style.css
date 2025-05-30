@@ -1,0 +1,43 @@
+/* Custom styles for MeetBench GitHub Pages site */
+
+/* Hero section gradient background */
+#hero {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Feature cards */
+.feature-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Component cards */
+.card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.25s ease;
+}
+
+/* Navbar transparent until scrolled */
+.navbar{
+  transition: background-color 0.3s ease;
+}
+body:not(.scrolled) .navbar {
+  background-color: rgba(0,0,0,0.15) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Footer */
+footer {
+  background: #000;
+} 
