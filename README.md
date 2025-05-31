@@ -1,4 +1,5 @@
 # MeetAll · MeetBench · MeetMaster
+![image](https://github.com/user-attachments/assets/ecd96592-b8b3-4705-8013-c8c687debc32)
 
 > Multimodal & Multilingual Meeting Agent Suite  
 > **ACM Multimedia 2025 – Dataset Track (under review)**
@@ -6,6 +7,7 @@
 This repository hosts the complete, open–source implementation that accompanies our paper
 
 > **"MeetBench: A Multimodal, Multilingual Meeting-Agent Dataset and Benchmark"**
+![image](https://github.com/user-attachments/assets/f9c43081-7e9d-4121-abc9-447fdf42ee8b)
 
 It contains three tightly–coupled components:
 
@@ -14,6 +16,9 @@ It contains three tightly–coupled components:
 | **MeetAll** | 231 real-world meetings (≈ 140 h) with aligned transcripts, audio recordings, and 1 180 human-verified agent QA turns | `huggingface` |
 | **MeetBench** | A multi-criteria benchmark (CompassJudger + Prometheus) for evaluating meeting assistants across factuality, user-need satisfaction, conciseness, structure and completeness | `./MeetBench_Benchmark/` |
 | **MeetMaster** | A dual-process baseline agent (⚡ Talker + 🧠 Planner) that delivers both low-latency and strong reasoning | `./MeetMaster/` |
+
+![image](https://github.com/user-attachments/assets/3984b31d-9738-40cb-8db1-5b13416665be)
+
 
 All data, code, and pre-trained checkpoints will be released upon acceptance. Please ⭐ **Star** and **Watch** this repo to get notified!
 
